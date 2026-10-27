@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+*.rtf
+.DS_Store
+__pycache__/
+*.pyc
+assets/generated/
+assets/approved/
+local/
+.venv/

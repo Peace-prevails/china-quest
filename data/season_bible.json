@@ -1,0 +1,17 @@
+{
+  "title": "China Quest",
+  "setting": "Beijing",
+  "player": {
+    "gender": null,
+    "appearance": null,
+    "perspective": "first_person"
+  },
+  "confirmed_premise": "第一季故事核心（初稿，可持续规划但须保留已设伏笔）\n\n第一季背景在北京，玩家是刚到北京的外国游客，本想旅游，却因在胡同面馆点餐而卷入一场诡异的十亿元遗产纠纷。顾承泽带着遗产文件找到玩家，第二名争夺者否认顾承泽的判断；老板娘认出文件上的旧名字并透露此人曾被认为已死。陌生短信约玩家次日中午到文件上的地址。后续需解释遗产、身份错认、旧人死亡传闻与两名争夺者的真实动机；尚未确定的最终谜底，不得伪装为已确定事实。避免强制恋爱线及玩家性别假设。\n\n可能的后续学习场景：EP02 地铁问路（去哪里／怎么走），EP03 商场购物（这个／那个／太贵了），EP04 四合院询问人物（谁／认识），EP05 餐厅交流（喜欢／可以吗），EP06 胡同揭秘（为什么／怎么办）。这是规划方向而非已确认完整剧本。",
+  "ending_status": "unresolved",
+  "rules": [
+    "No forced romance",
+    "No free text in MVP",
+    "No real legal signing",
+    "Clicks do not measure speaking proficiency"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "characters": [
+    {
+      "id": "OWNER",
+      "name": "老板娘",
+      "provisional": false,
+      "appearance": "老板娘：43 岁左右北京胡同面馆女老板，爽快、精明、生活化。方圆脸、左侧浅法令纹更深、眼尾细纹、略不整齐的眉型、小幅度牙列差异，自然肤色、真实皮肤纹理。常穿深色针织衫及洗旧围裙。",
+      "approved_reference_image": null,
+      "voice_style": {
+        "teaching": "standard_mandarin",
+        "npc": "beijing_natural",
+        "status": "not_produced"
+      }
+    },
+    {
+      "id": "XIAOCHEN",
+      "name": "小陈",
+      "provisional": false,
+      "appearance": "小陈：24 岁左右北京男服务员，机灵嘴快，略方偏长脸、单眼皮/内双不完全对称、鼻尖微圆、短乱发、颧部细小痘印；朴素工作服。",
+      "approved_reference_image": null,
+      "voice_style": {
+        "teaching": "standard_mandarin",
+        "npc": "beijing_natural",
+        "status": "not_produced"
+      }
+    },
+    {
+      "id": "GU",
+      "name": "顾承泽",
+      "provisional": false,
+      "appearance": "顾承泽：31 岁男性，富家人、有控制感但压着焦虑，偏瘦长脸、左眉尾轻微断眉、右侧鼻梁不完美、眼周有疲惫纹理、薄唇、常穿黑西装。不能是标准化偶像脸。",
+      "approved_reference_image": null,
+      "voice_style": {
+        "teaching": "standard_mandarin",
+        "npc": "beijing_natural",
+        "status": "not_produced"
+      }
+    },
+    {
+      "id": "RIVAL",
+      "name": "陆骁",
+      "provisional": true,
+      "appearance": "第二位争夺者（暂名“陆骁”，角色名标记 provisional）：33 岁男性，更急、更直接，宽下颌、眉骨明显、微不对称耳朵、鼻背轻微旧伤、肤质偏粗、深灰风衣。与顾承泽不能长得相像。",
+      "approved_reference_image": null,
+      "voice_style": {
+        "teaching": "standard_mandarin",
+        "npc": "beijing_natural",
+        "status": "not_produced"
+      }
+    }
+  ]
+}

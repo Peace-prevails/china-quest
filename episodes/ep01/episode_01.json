@@ -1,0 +1,2585 @@
+{
+  "id": "EP01",
+  "title": {
+    "zh": "一碗牛肉面，十亿遗产",
+    "en": "The Billion-Yuan Noodles"
+  },
+  "start": "start",
+  "scenes": [
+    {
+      "id": "S0",
+      "title": "胡同入口：引导 / 找面馆",
+      "canonical_script": "背景：BG_HUTONG。傍晚玩家拖着行李，手机快没电，想吃饭；远处“好运面馆”灯牌。\n任务英文：“Find a noodle shop.”\n热点：看招牌（查看“面馆”）、问路人（“面馆在哪里？”→“往前走，右边。”）、直接往前走。问路也可选“我听不懂”→阿姨重说“前面，右边。”\n所有路线汇合 S1；状态 `asked_directions`、`used_help_location`。"
+    },
+    {
+      "id": "S1",
+      "title": "面馆内：认识对象",
+      "canonical_script": "背景：BG_SHOP_MAIN；老板娘出场。\n老板娘：“你好！吃点什么？” EN: “Hi! What would you like to eat?”\n英文任务：“Look at the menu and order something.”\n三个可点击热点：墙上菜单（推荐）、老板娘（“我要……”/“我听不懂”）、柜台矿泉水；打开物品卡不单独生成完整新镜头。\n玩家进入 S2 菜单并最终 S3 确认点单。"
+    },
+    {
+      "id": "S2",
+      "title": "菜单热点：有限探索 / 真正的视觉学习",
+      "canonical_script": "使用 UI 原生绘制清晰文本与价格，**不要依赖图片模型写汉字**。菜单仅四项：牛肉面 ¥28、炸酱面 ¥24、矿泉水 ¥3、可乐 ¥5。价格为虚构面馆内部设定。\n点击商品显示图标/实物插图、中文、拼音、英文，并提供：“这个是什么？”（老板娘回答“这是牛肉面。”）/“这个多少钱？”（报价格）/“我要这个。”（选中）/关闭。\n允许看多个选项、返回菜单，提交必须选至少一份主食。此处的 `item_selected` 决定下一幕实物上菜，支持牛肉面/炸酱面。玩家可说“我听不懂”，显示帮助。"
+    },
+    {
+      "id": "S3",
+      "title": "点餐确认：受限分支",
+      "canonical_script": "老板娘：“你要牛肉面？”或“你要炸酱面？”（根据 `item_selected`）。\n选项：“对，我要这个。”（确认）/“我不要这个。”（回到菜单）/“我听不懂。”（慢速、简化并给英文提示）。\n老板娘：“要不要辣？”玩家：“我要辣。” / “我不要辣。” / “我听不懂。”（NPC 重说）。记录 `spicy`。\n老板娘：“还要水吗？”玩家：“我要水。” / “我不要水。”。记录 `wants_water`。\n上菜台词：“好嘞，面来了！”；食物/饮料按状态展示。所有合法状态可顺利进入 S4。"
+    },
+    {
+      "id": "S4",
+      "title": "价格与付款前：可选但建议触发一个问价机会",
+      "canonical_script": "玩家可以：“这个多少钱？”（按订单总价动态呈现，别写死）／“水多少钱？”（3 元）／“先吃面。”。\n学习“多少钱”；保留漫画式后文“十个亿 vs 28 元”的反差。S4 结束进入 S5。"
+    },
+    {
+      "id": "S5",
+      "title": "限时自由探索：主线前最后的小游戏区域",
+      "canonical_script": "仍在 BG_SHOP_MAIN，可使用热点导航切换 BG_COUNTER、BG_DOOR，也可复用单一 BG 并以 UI 热点表现。\n只允许 5 个热点，每个 2–3 种动作，最多 2–3 轮短对话，不无限生成：\n1) 老板娘：“洗手间在哪里？”→“在后面，左边。”；“这个多少钱？”→菜单价；“这是什么？”→“这是菜单。”\n2) 小陈：“你是谁？”→“我是小陈，在这里帮忙。”；“这个好吃吗？”→“好吃！”；“门口那是什么？”→“一辆很贵的车。”\n3) 菜单：继续看四项，复现这个/那个/多少钱；此处允许练习但不会改变已完成订单。\n4) 角落的红色文件袋：看一眼（可观察封套但看不清名字，设置 `saw_red_envelope=true`）、问小陈“这是什么？”→“我不知道。”、不碰。\n5) 门口：看外面、问“谁来了？”→“不知道，刚停了一辆车。”、继续吃面。\n关键原则：不要求探索完所有点；点击“继续吃面”直接推进 S6。访问过的热点允许重玩。未探索线索保留在回放中。"
+    },
+    {
+      "id": "S6",
+      "title": "顾承泽出现：剧情由日常升级",
+      "canonical_script": "背景 BG_DOOR + CH_GU 立绘，关键事件 CG_FILE_SLAM 可选播放。\n顾承泽：“终于找到你了！这个，是你的。”把正式文件袋放到桌上。\n选项：“这是什么？”→“一份遗产文件。”；“你是谁？”→“我叫顾承泽。”；“我不认识你。”→“我知道，但事情很复杂。”；“我要吃饭。”→老板娘插科打诨；“我听不懂。”→顾承泽简化为“这是你的钱。”。\n这些是短分支，均收束 S7。保留 `first_reaction`。"
+    },
+    {
+      "id": "S7",
+      "title": "十亿元：本集核心语言迁移",
+      "canonical_script": "顾承泽：“这十个亿，是你的。你要不要？” EN: “This one billion yuan is yours. Do you want it?”\n选项：\n- “我要。”→顾承泽拿出笔：“太好了，请在这里签字。”，`inheritance_response=accept`，**不得真让玩家签署法律文件**。\n- “我不要。”→“十个亿都不要？为什么？”，`inheritance_response=reject`。\n- “这是什么？”→“这是一份遗产文件，名字是你的。”，`inheritance_response=question`。\n- “这是谁的？”→顾承泽迟疑：“现在……是你的。”，`inheritance_response=ownership`。\n选择后不管如何都由第二人打断、进入 S8；别把上述选项误判为中文错误。若已见红文件袋，追加一句玩家识别文件袋的特殊台词，作为差异化奖励。"
+    },
+    {
+      "id": "S8",
+      "title": "第二争夺者闯入：态度与跨集状态",
+      "canonical_script": "第二争夺者冲进店：“等等！不能给他！他认错人了！”（由于玩家没有固定性别，NPC 台词只用“你”；此处“他”指顾承泽）。\n玩家选项：“你是谁？”、“我不认识他。”、“我也不认识你。”、“文件给我。”。\n分别记录 `trust_alignment=question_second/against_gu/distrust_both/wants_document`；每个 NPC 给一句不同反馈但汇合 S9。\n注意避免视角歧义，旁白明确“第二个男人指着顾承泽”。"
+    },
+    {
+      "id": "S9",
+      "title": "悬念结尾",
+      "canonical_script": "老板娘看到文件上某个名字，喃喃：“这个名字……我二十年前见过。”“不可能，那个人不是已经死了吗？”\n玩家任选：“什么意思？”、“谁死了？”、“这是什么？”；老板娘只说：“现在不能说。”\n手机屏幕收到简体中文短信（UI 文本渲染，不依赖生成图写字）：“不要相信他们。明天中午，去文件上的地址。” 翻译英文可点开。\n画面黑，EP01 END。记录完整 `episode_01_state` 留给 EP02；玩家可以回放探索，不要求重新看所有剧情。"
+    }
+  ],
+  "initial_state": {
+    "item_selected": null,
+    "spicy": null,
+    "wants_water": false,
+    "asked_directions": false,
+    "used_help_location": false,
+    "explored_hotspots": [],
+    "saw_red_envelope": false,
+    "first_reaction": null,
+    "inheritance_response": null,
+    "trust_alignment": null
+  },
+  "initial_learning": {
+    "hint_usage": {},
+    "phrase_exposure": {},
+    "replay_count": 0
+  },
+  "menu": [
+    {
+      "id": "beef",
+      "zh": "牛肉面",
+      "en": "Beef noodles",
+      "price": 28,
+      "main": true
+    },
+    {
+      "id": "zhajiang",
+      "zh": "炸酱面",
+      "en": "Zhajiang noodles",
+      "price": 24,
+      "main": true
+    },
+    {
+      "id": "water",
+      "zh": "矿泉水",
+      "en": "Water",
+      "price": 3,
+      "main": false
+    },
+    {
+      "id": "cola",
+      "zh": "可乐",
+      "en": "Cola",
+      "price": 5,
+      "main": false
+    }
+  ],
+  "nodes": [
+    {
+      "id": "start",
+      "scene_id": "S0",
+      "speaker": "narrator",
+      "zh": "北京，傍晚。",
+      "en": "Find a noodle shop.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG01_HUTONG"
+      ],
+      "learning_tags": [
+        "在哪里"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "start_0",
+          "zh": "看招牌",
+          "en": "Look at the sign",
+          "pinyin": null,
+          "next": "welcome",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "start_1",
+          "zh": "面馆在哪里？",
+          "en": "Where is the noodle shop?",
+          "pinyin": null,
+          "next": "directions",
+          "set": {
+            "asked_directions": true
+          },
+          "requires": {}
+        },
+        {
+          "id": "start_2",
+          "zh": "往前走",
+          "en": "Walk ahead",
+          "pinyin": null,
+          "next": "welcome",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "directions",
+      "scene_id": "S0",
+      "speaker": "aunt",
+      "zh": "往前走，右边。",
+      "en": "Go ahead, on the right.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG01_HUTONG"
+      ],
+      "learning_tags": [
+        "我听不懂"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "directions_0",
+          "zh": "谢谢",
+          "en": "Thanks",
+          "pinyin": null,
+          "next": "welcome",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "directions_1",
+          "zh": "我听不懂",
+          "en": "I do not understand",
+          "pinyin": null,
+          "next": "directions_help",
+          "set": {
+            "used_help_location": true
+          },
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "directions_help",
+      "scene_id": "S0",
+      "speaker": "aunt",
+      "zh": "前面，右边。",
+      "en": "Ahead. Right.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG01_HUTONG"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "directions_help_0",
+          "zh": "往前走",
+          "en": "Walk ahead",
+          "pinyin": null,
+          "next": "welcome",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "welcome",
+      "scene_id": "S1",
+      "speaker": "OWNER",
+      "zh": "你好！吃点什么？",
+      "en": "Look at the menu and order something.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我听不懂"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "welcome_0",
+          "zh": "菜单",
+          "en": "Menu",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "welcome_1",
+          "zh": "我要……",
+          "en": "I want…",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "welcome_2",
+          "zh": "我听不懂",
+          "en": "I do not understand",
+          "pinyin": null,
+          "next": "welcome_help",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "welcome_3",
+          "zh": "矿泉水",
+          "en": "Bottled water",
+          "pinyin": null,
+          "next": "water_card",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "welcome_help",
+      "scene_id": "S1",
+      "speaker": "OWNER",
+      "zh": "看看菜单。",
+      "en": "Look at the menu.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "welcome_help_0",
+          "zh": "菜单",
+          "en": "Menu",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "water_card",
+      "scene_id": "S1",
+      "speaker": "narrator",
+      "zh": "矿泉水，三元。",
+      "en": "Bottled water, ¥3.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "water_card_0",
+          "zh": "看菜单",
+          "en": "View menu",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "menu",
+      "scene_id": "S2",
+      "speaker": "narrator",
+      "zh": "菜单",
+      "en": "Menu",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "menu",
+      "choices": [
+        {
+          "id": "menu_0",
+          "zh": "牛肉面",
+          "en": "Beef noodles",
+          "pinyin": null,
+          "next": "item_beef",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "menu_1",
+          "zh": "炸酱面",
+          "en": "Zhajiang noodles",
+          "pinyin": null,
+          "next": "item_zhajiang",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "menu_2",
+          "zh": "矿泉水",
+          "en": "Water",
+          "pinyin": null,
+          "next": "item_water",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "menu_3",
+          "zh": "可乐",
+          "en": "Cola",
+          "pinyin": null,
+          "next": "item_cola",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "item_beef",
+      "scene_id": "S2",
+      "speaker": "narrator",
+      "zh": "牛肉面",
+      "en": "Beef noodles",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "这个",
+        "多少钱",
+        "我听不懂"
+      ],
+      "kind": "item_card",
+      "choices": [
+        {
+          "id": "item_beef_0",
+          "zh": "这个是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "explain_beef",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_beef_1",
+          "zh": "这个多少钱？",
+          "en": "How much is this?",
+          "pinyin": null,
+          "next": "price_beef",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_beef_2",
+          "zh": "我要这个。",
+          "en": "I want this.",
+          "pinyin": null,
+          "next": "confirm",
+          "set": {
+            "item_selected": "beef"
+          },
+          "requires": {}
+        },
+        {
+          "id": "item_beef_3",
+          "zh": "我听不懂",
+          "en": "I do not understand",
+          "pinyin": null,
+          "next": "explain_beef",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_beef_4",
+          "zh": "关闭",
+          "en": "Close",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "explain_beef",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "这是牛肉面。",
+      "en": "This is Beef noodles.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "explain_beef_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_beef",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "price_beef",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "28元。",
+      "en": "¥28.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "price_beef_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_beef",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "item_zhajiang",
+      "scene_id": "S2",
+      "speaker": "narrator",
+      "zh": "炸酱面",
+      "en": "Zhajiang noodles",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "这个",
+        "多少钱",
+        "我听不懂"
+      ],
+      "kind": "item_card",
+      "choices": [
+        {
+          "id": "item_zhajiang_0",
+          "zh": "这个是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "explain_zhajiang",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_zhajiang_1",
+          "zh": "这个多少钱？",
+          "en": "How much is this?",
+          "pinyin": null,
+          "next": "price_zhajiang",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_zhajiang_2",
+          "zh": "我要这个。",
+          "en": "I want this.",
+          "pinyin": null,
+          "next": "confirm",
+          "set": {
+            "item_selected": "zhajiang"
+          },
+          "requires": {}
+        },
+        {
+          "id": "item_zhajiang_3",
+          "zh": "我听不懂",
+          "en": "I do not understand",
+          "pinyin": null,
+          "next": "explain_zhajiang",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_zhajiang_4",
+          "zh": "关闭",
+          "en": "Close",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "explain_zhajiang",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "这是炸酱面。",
+      "en": "This is Zhajiang noodles.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "explain_zhajiang_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_zhajiang",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "price_zhajiang",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "24元。",
+      "en": "¥24.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "price_zhajiang_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_zhajiang",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "item_water",
+      "scene_id": "S2",
+      "speaker": "narrator",
+      "zh": "矿泉水",
+      "en": "Water",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "多少钱",
+        "我听不懂"
+      ],
+      "kind": "item_card",
+      "choices": [
+        {
+          "id": "item_water_0",
+          "zh": "这个是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "explain_water",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_water_1",
+          "zh": "这个多少钱？",
+          "en": "How much is this?",
+          "pinyin": null,
+          "next": "price_water",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_water_2",
+          "zh": "我听不懂",
+          "en": "I do not understand",
+          "pinyin": null,
+          "next": "explain_water",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_water_3",
+          "zh": "关闭",
+          "en": "Close",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "explain_water",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "这是矿泉水。",
+      "en": "This is Water.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "explain_water_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_water",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "price_water",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "3元。",
+      "en": "¥3.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "price_water_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_water",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "item_cola",
+      "scene_id": "S2",
+      "speaker": "narrator",
+      "zh": "可乐",
+      "en": "Cola",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "多少钱",
+        "我听不懂"
+      ],
+      "kind": "item_card",
+      "choices": [
+        {
+          "id": "item_cola_0",
+          "zh": "这个是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "explain_cola",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_cola_1",
+          "zh": "这个多少钱？",
+          "en": "How much is this?",
+          "pinyin": null,
+          "next": "price_cola",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_cola_2",
+          "zh": "我听不懂",
+          "en": "I do not understand",
+          "pinyin": null,
+          "next": "explain_cola",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "item_cola_3",
+          "zh": "关闭",
+          "en": "Close",
+          "pinyin": null,
+          "next": "menu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "explain_cola",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "这是可乐。",
+      "en": "This is Cola.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "explain_cola_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_cola",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "price_cola",
+      "scene_id": "S2",
+      "speaker": "OWNER",
+      "zh": "5元。",
+      "en": "¥5.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "price_cola_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "item_cola",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "confirm",
+      "scene_id": "S3",
+      "speaker": "OWNER",
+      "zh": "你要{item_name}？",
+      "en": "You want {item_en}?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我不要",
+        "这个",
+        "我听不懂"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "confirm_0",
+          "zh": "对，我要这个。",
+          "en": "Yes, I want this.",
+          "pinyin": null,
+          "next": "spice",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "confirm_1",
+          "zh": "我不要这个。",
+          "en": "I do not want this.",
+          "pinyin": null,
+          "next": "menu",
+          "set": {
+            "item_selected": null
+          },
+          "requires": {}
+        },
+        {
+          "id": "confirm_2",
+          "zh": "我听不懂。",
+          "en": "I do not understand.",
+          "pinyin": null,
+          "next": "confirm_help",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "confirm_help",
+      "scene_id": "S3",
+      "speaker": "OWNER",
+      "zh": "这个，{item_name}。要吗？",
+      "en": "This is {item_en}. Do you want it?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我不要",
+        "这个"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "confirm_help_0",
+          "zh": "我要这个。",
+          "en": "I want this.",
+          "pinyin": null,
+          "next": "spice",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "confirm_help_1",
+          "zh": "我不要这个。",
+          "en": "I do not want this.",
+          "pinyin": null,
+          "next": "menu",
+          "set": {
+            "item_selected": null
+          },
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "spice",
+      "scene_id": "S3",
+      "speaker": "OWNER",
+      "zh": "要不要辣？",
+      "en": "Do you want it spicy?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我不要",
+        "我听不懂"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "spice_0",
+          "zh": "我要辣。",
+          "en": "Spicy, please.",
+          "pinyin": null,
+          "next": "water",
+          "set": {
+            "spicy": true
+          },
+          "requires": {}
+        },
+        {
+          "id": "spice_1",
+          "zh": "我不要辣。",
+          "en": "No spice.",
+          "pinyin": null,
+          "next": "water",
+          "set": {
+            "spicy": false
+          },
+          "requires": {}
+        },
+        {
+          "id": "spice_2",
+          "zh": "我听不懂。",
+          "en": "I do not understand.",
+          "pinyin": null,
+          "next": "spice_help",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "spice_help",
+      "scene_id": "S3",
+      "speaker": "OWNER",
+      "zh": "辣？不辣？",
+      "en": "Spicy? Or no spice?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我不要"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "spice_help_0",
+          "zh": "我要辣。",
+          "en": "Spicy.",
+          "pinyin": null,
+          "next": "water",
+          "set": {
+            "spicy": true
+          },
+          "requires": {}
+        },
+        {
+          "id": "spice_help_1",
+          "zh": "我不要辣。",
+          "en": "No spice.",
+          "pinyin": null,
+          "next": "water",
+          "set": {
+            "spicy": false
+          },
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "water",
+      "scene_id": "S3",
+      "speaker": "OWNER",
+      "zh": "还要水吗？",
+      "en": "Would you like water too?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我不要"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "water_0",
+          "zh": "我要水。",
+          "en": "I want water.",
+          "pinyin": null,
+          "next": "served",
+          "set": {
+            "wants_water": true
+          },
+          "requires": {}
+        },
+        {
+          "id": "water_1",
+          "zh": "我不要水。",
+          "en": "No water.",
+          "pinyin": null,
+          "next": "served",
+          "set": {
+            "wants_water": false
+          },
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "served",
+      "scene_id": "S3",
+      "speaker": "OWNER",
+      "zh": "好嘞，面来了！",
+      "en": "Here are your noodles!",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "served_0",
+          "zh": "谢谢",
+          "en": "Thanks",
+          "pinyin": null,
+          "next": "bill",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "render": {
+        "food": "item_selected",
+        "water": "wants_water"
+      }
+    },
+    {
+      "id": "bill",
+      "scene_id": "S4",
+      "speaker": "narrator",
+      "zh": "先吃点面吧。",
+      "en": "Enjoy your noodles.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "多少钱"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "bill_0",
+          "zh": "这个多少钱？",
+          "en": "How much is this?",
+          "pinyin": null,
+          "next": "total",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "bill_1",
+          "zh": "水多少钱？",
+          "en": "How much is water?",
+          "pinyin": null,
+          "next": "water_price",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "bill_2",
+          "zh": "先吃面。",
+          "en": "Eat first.",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "total",
+      "scene_id": "S4",
+      "speaker": "OWNER",
+      "zh": "一共{total}元。",
+      "en": "The total is ¥{total}.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "total_0",
+          "zh": "好",
+          "en": "Okay",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "water_price",
+      "scene_id": "S4",
+      "speaker": "OWNER",
+      "zh": "水三元。",
+      "en": "Water is ¥3.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "water_price_0",
+          "zh": "好",
+          "en": "Okay",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "explore",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "面馆里热闹起来。",
+      "en": "Explore, or keep eating to continue.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "hub",
+      "choices": [
+        {
+          "id": "explore_0",
+          "zh": "老板娘",
+          "en": "Owner",
+          "pinyin": null,
+          "next": "hotspot_owner",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "explore_1",
+          "zh": "小陈",
+          "en": "Xiao Chen",
+          "pinyin": null,
+          "next": "hotspot_chen",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "explore_2",
+          "zh": "菜单",
+          "en": "Menu",
+          "pinyin": null,
+          "next": "hotspot_menu",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "explore_3",
+          "zh": "红色文件袋",
+          "en": "Red envelope",
+          "pinyin": null,
+          "next": "hotspot_envelope",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "explore_4",
+          "zh": "门口",
+          "en": "Door",
+          "pinyin": null,
+          "next": "hotspot_door",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "explore_5",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "hotspot_owner",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "老板娘",
+      "en": "Owner",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "多少钱",
+        "在哪里"
+      ],
+      "kind": "hotspot",
+      "choices": [
+        {
+          "id": "hotspot_owner_0",
+          "zh": "洗手间在哪里？",
+          "en": "Where is the restroom?",
+          "pinyin": null,
+          "next": "reply_owner0",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_owner_1",
+          "zh": "这个多少钱？",
+          "en": "How much is this?",
+          "pinyin": null,
+          "next": "reply_owner1",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_owner_2",
+          "zh": "这是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "reply_owner2",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_owner_3",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "on_enter": {
+        "append_explored_hotspots": "owner"
+      }
+    },
+    {
+      "id": "reply_owner0",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "在后面，左边。",
+      "en": "At the back, on the left.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_owner0_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_owner",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_owner0_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_owner1",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "{item_price}元。",
+      "en": "¥{item_price}.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_owner1_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_owner",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_owner1_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_owner2",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "这是菜单。",
+      "en": "This is the menu.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_owner2_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_owner",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_owner2_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "hotspot_chen",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "小陈",
+      "en": "Xiao Chen",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "你是谁"
+      ],
+      "kind": "hotspot",
+      "choices": [
+        {
+          "id": "hotspot_chen_0",
+          "zh": "你是谁？",
+          "en": "Who are you?",
+          "pinyin": null,
+          "next": "reply_chen0",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_chen_1",
+          "zh": "这个好吃吗？",
+          "en": "Is this tasty?",
+          "pinyin": null,
+          "next": "reply_chen1",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_chen_2",
+          "zh": "门口那是什么？",
+          "en": "What is that outside?",
+          "pinyin": null,
+          "next": "reply_chen2",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_chen_3",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "on_enter": {
+        "append_explored_hotspots": "chen"
+      }
+    },
+    {
+      "id": "reply_chen0",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "我是小陈，在这里帮忙。",
+      "en": "I am Xiao Chen. I help here.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_chen0_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_chen",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_chen0_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_chen1",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "好吃！",
+      "en": "Yes!",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_chen1_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_chen",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_chen1_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_chen2",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "一辆很贵的车。",
+      "en": "A very expensive car.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_chen2_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_chen",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_chen2_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "hotspot_menu",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "菜单",
+      "en": "Menu",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "那个",
+        "多少钱"
+      ],
+      "kind": "hotspot",
+      "choices": [
+        {
+          "id": "hotspot_menu_0",
+          "zh": "这个是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "reply_menu0",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_menu_1",
+          "zh": "那个多少钱？",
+          "en": "How much is that?",
+          "pinyin": null,
+          "next": "reply_menu1",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_menu_2",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "on_enter": {
+        "append_explored_hotspots": "menu"
+      }
+    },
+    {
+      "id": "reply_menu0",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "牛肉面、炸酱面、矿泉水、可乐。",
+      "en": "Beef noodles, zhajiang noodles, water, cola.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_menu0_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_menu",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_menu0_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_menu1",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "牛肉面28元，炸酱面24元，水3元，可乐5元。",
+      "en": "Beef ¥28, zhajiang ¥24, water ¥3, cola ¥5.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_menu1_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_menu",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_menu1_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "hotspot_envelope",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "红色文件袋",
+      "en": "Red envelope",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "hotspot",
+      "choices": [
+        {
+          "id": "hotspot_envelope_0",
+          "zh": "看一眼",
+          "en": "Look",
+          "pinyin": null,
+          "next": "reply_envelope0",
+          "set": {
+            "saw_red_envelope": true
+          },
+          "requires": {}
+        },
+        {
+          "id": "hotspot_envelope_1",
+          "zh": "这是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "reply_envelope1",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_envelope_2",
+          "zh": "不碰",
+          "en": "Leave it alone",
+          "pinyin": null,
+          "next": "reply_envelope2",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_envelope_3",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "on_enter": {
+        "append_explored_hotspots": "envelope"
+      }
+    },
+    {
+      "id": "reply_envelope0",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "封套上有字，但看不清名字。",
+      "en": "There is writing, but you cannot read the name.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_envelope0_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_envelope",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_envelope0_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_envelope1",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "我不知道。",
+      "en": "I do not know.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_envelope1_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_envelope",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_envelope1_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_envelope2",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "你没有碰文件袋。",
+      "en": "You leave the envelope alone.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_envelope2_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_envelope",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_envelope2_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "hotspot_door",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "门口",
+      "en": "Door",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "hotspot",
+      "choices": [
+        {
+          "id": "hotspot_door_0",
+          "zh": "看外面",
+          "en": "Look outside",
+          "pinyin": null,
+          "next": "reply_door0",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_door_1",
+          "zh": "谁来了？",
+          "en": "Who arrived?",
+          "pinyin": null,
+          "next": "reply_door1",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_door_2",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "reply_door2",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "hotspot_door_3",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "explore",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "on_enter": {
+        "append_explored_hotspots": "door"
+      }
+    },
+    {
+      "id": "reply_door0",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "一辆车停在门口。",
+      "en": "A car is parked outside.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_door0_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_door",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_door0_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_door1",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "不知道，刚停了一辆车。",
+      "en": "I do not know. A car just stopped.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_door1_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_door",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_door1_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "reply_door2",
+      "scene_id": "S5",
+      "speaker": "narrator",
+      "zh": "你回到座位。",
+      "en": "You return to your seat.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "reply_door2_0",
+          "zh": "返回",
+          "en": "Back",
+          "pinyin": null,
+          "next": "hotspot_door",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "reply_door2_1",
+          "zh": "继续吃面",
+          "en": "Keep eating",
+          "pinyin": null,
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "gu",
+      "scene_id": "S6",
+      "speaker": "GU",
+      "zh": "终于找到你了！这个，是你的。",
+      "en": "Finally found you! This is yours.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG04_DOOR",
+        "CH03_GU"
+      ],
+      "learning_tags": [
+        "我要",
+        "这个",
+        "你是谁",
+        "我不认识",
+        "我听不懂"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_0",
+          "zh": "这是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "gu_what",
+          "set": {
+            "first_reaction": "what"
+          },
+          "requires": {}
+        },
+        {
+          "id": "gu_1",
+          "zh": "你是谁？",
+          "en": "Who are you?",
+          "pinyin": null,
+          "next": "gu_identity",
+          "set": {
+            "first_reaction": "identity"
+          },
+          "requires": {}
+        },
+        {
+          "id": "gu_2",
+          "zh": "我不认识你。",
+          "en": "I do not know you.",
+          "pinyin": null,
+          "next": "gu_stranger",
+          "set": {
+            "first_reaction": "stranger"
+          },
+          "requires": {}
+        },
+        {
+          "id": "gu_3",
+          "zh": "我要吃饭。",
+          "en": "I want to eat.",
+          "pinyin": null,
+          "next": "gu_eat",
+          "set": {
+            "first_reaction": "eat"
+          },
+          "requires": {}
+        },
+        {
+          "id": "gu_4",
+          "zh": "我听不懂。",
+          "en": "I do not understand.",
+          "pinyin": null,
+          "next": "gu_help",
+          "set": {
+            "first_reaction": "help"
+          },
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "gu_what",
+      "scene_id": "S6",
+      "speaker": "GU",
+      "zh": "一份遗产文件。",
+      "en": "An inheritance document.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG04_DOOR",
+        "CH03_GU"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_what_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "billion",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "gu_identity",
+      "scene_id": "S6",
+      "speaker": "GU",
+      "zh": "我叫顾承泽。",
+      "en": "My name is Gu Chengze.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG04_DOOR",
+        "CH03_GU"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_identity_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "billion",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "gu_stranger",
+      "scene_id": "S6",
+      "speaker": "GU",
+      "zh": "我知道，但事情很复杂。",
+      "en": "I know, but it is complicated.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG04_DOOR",
+        "CH03_GU"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_stranger_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "billion",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "gu_eat",
+      "scene_id": "S6",
+      "speaker": "GU",
+      "zh": "老板娘：先让人吃口面！",
+      "en": "Owner: Let them eat first!",
+      "pinyin": null,
+      "asset_refs": [
+        "BG04_DOOR",
+        "CH03_GU"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_eat_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "billion",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "gu_help",
+      "scene_id": "S6",
+      "speaker": "GU",
+      "zh": "这是你的钱。",
+      "en": "This is your money.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG04_DOOR",
+        "CH03_GU"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_help_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "billion",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "billion",
+      "scene_id": "S7",
+      "speaker": "GU",
+      "zh": "这十个亿，是你的。你要不要？",
+      "en": "This one billion yuan is yours. Do you want it?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "我要",
+        "我不要"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "billion_0",
+          "zh": "我要。",
+          "en": "I want it.",
+          "pinyin": null,
+          "next": "inherit_accept",
+          "set": {
+            "inheritance_response": "accept"
+          },
+          "requires": {}
+        },
+        {
+          "id": "billion_1",
+          "zh": "我不要。",
+          "en": "I do not want it.",
+          "pinyin": null,
+          "next": "inherit_reject",
+          "set": {
+            "inheritance_response": "reject"
+          },
+          "requires": {}
+        },
+        {
+          "id": "billion_2",
+          "zh": "这是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "inherit_question",
+          "set": {
+            "inheritance_response": "question"
+          },
+          "requires": {}
+        },
+        {
+          "id": "billion_3",
+          "zh": "这是谁的？",
+          "en": "Whose is this?",
+          "pinyin": null,
+          "next": "inherit_ownership",
+          "set": {
+            "inheritance_response": "ownership"
+          },
+          "requires": {}
+        }
+      ],
+      "conditional_lines": [
+        {
+          "requires": {
+            "saw_red_envelope": true
+          },
+          "zh": "你认出了那个红色文件袋。",
+          "en": "You recognize that red envelope."
+        }
+      ]
+    },
+    {
+      "id": "inherit_accept",
+      "scene_id": "S7",
+      "speaker": "GU",
+      "zh": "太好了，请在这里签字。",
+      "en": "Great. Please sign here.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "inherit_accept_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "rival",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "inherit_reject",
+      "scene_id": "S7",
+      "speaker": "GU",
+      "zh": "十个亿都不要？为什么？",
+      "en": "You do not want a billion? Why?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "inherit_reject_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "rival",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "inherit_question",
+      "scene_id": "S7",
+      "speaker": "GU",
+      "zh": "这是一份遗产文件，名字是你的。",
+      "en": "An inheritance document with your name.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "inherit_question_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "rival",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "inherit_ownership",
+      "scene_id": "S7",
+      "speaker": "GU",
+      "zh": "现在……是你的。",
+      "en": "Now… it is yours.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "inherit_ownership_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "rival",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "rival",
+      "scene_id": "S8",
+      "speaker": "RIVAL",
+      "zh": "第二个男人指着顾承泽：“等等！不能给你！他认错人了！”",
+      "en": "The second man points at Gu: “Wait! He cannot give it to you! He has the wrong person!”",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "你是谁",
+        "我不认识"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "rival_0",
+          "zh": "你是谁？",
+          "en": "Who are you?",
+          "pinyin": null,
+          "next": "align_question_second",
+          "set": {
+            "trust_alignment": "question_second"
+          },
+          "requires": {}
+        },
+        {
+          "id": "rival_1",
+          "zh": "我不认识他。",
+          "en": "I do not know him.",
+          "pinyin": null,
+          "next": "align_against_gu",
+          "set": {
+            "trust_alignment": "against_gu"
+          },
+          "requires": {}
+        },
+        {
+          "id": "rival_2",
+          "zh": "我也不认识你。",
+          "en": "I do not know you either.",
+          "pinyin": null,
+          "next": "align_distrust_both",
+          "set": {
+            "trust_alignment": "distrust_both"
+          },
+          "requires": {}
+        },
+        {
+          "id": "rival_3",
+          "zh": "文件给我。",
+          "en": "Give me the document.",
+          "pinyin": null,
+          "next": "align_wants_document",
+          "set": {
+            "trust_alignment": "wants_document"
+          },
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "align_question_second",
+      "scene_id": "S8",
+      "speaker": "RIVAL",
+      "zh": "我姓陆。先别相信顾承泽。",
+      "en": "My surname is Lu. Do not trust Gu yet.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "align_question_second_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "name",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "align_against_gu",
+      "scene_id": "S8",
+      "speaker": "RIVAL",
+      "zh": "那就别接他的文件。",
+      "en": "Then do not take his document.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "align_against_gu_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "name",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "align_distrust_both",
+      "scene_id": "S8",
+      "speaker": "RIVAL",
+      "zh": "你小心一点是对的。",
+      "en": "You are right to be careful.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "align_distrust_both_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "name",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "align_wants_document",
+      "scene_id": "S8",
+      "speaker": "RIVAL",
+      "zh": "先等等，你还不知道里面是什么。",
+      "en": "Wait. You do not know what is inside.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "align_wants_document_0",
+          "zh": "继续",
+          "en": "Continue",
+          "pinyin": null,
+          "next": "name",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "name",
+      "scene_id": "S9",
+      "speaker": "OWNER",
+      "zh": "这个名字……我二十年前见过。不可能，那个人不是已经死了吗？",
+      "en": "This name… I saw it twenty years ago. Impossible. Was that person not already dead?",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [
+        "这个",
+        "那个"
+      ],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "name_0",
+          "zh": "什么意思？",
+          "en": "What does that mean?",
+          "pinyin": null,
+          "next": "silence",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "name_1",
+          "zh": "谁死了？",
+          "en": "Who died?",
+          "pinyin": null,
+          "next": "silence",
+          "set": {},
+          "requires": {}
+        },
+        {
+          "id": "name_2",
+          "zh": "这是什么？",
+          "en": "What is this?",
+          "pinyin": null,
+          "next": "silence",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "silence",
+      "scene_id": "S9",
+      "speaker": "OWNER",
+      "zh": "现在不能说。",
+      "en": "I cannot say now.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "silence_0",
+          "zh": "看手机",
+          "en": "Check phone",
+          "pinyin": null,
+          "next": "sms",
+          "set": {},
+          "requires": {}
+        }
+      ]
+    },
+    {
+      "id": "sms",
+      "scene_id": "S9",
+      "speaker": "narrator",
+      "zh": "不要相信他们。明天中午，去文件上的地址。",
+      "en": "Do not trust them. Tomorrow at noon, go to the address on the document.",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "sms",
+      "choices": [
+        {
+          "id": "sms_0",
+          "zh": "结束",
+          "en": "End",
+          "pinyin": null,
+          "next": "end",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "translation_collapsed": true
+    },
+    {
+      "id": "end",
+      "scene_id": "S9",
+      "speaker": "narrator",
+      "zh": "第一集完",
+      "en": "EP01 END",
+      "pinyin": null,
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "end",
+      "choices": [],
+      "persist": "episode_01_state"
+    }
+  ]
+}
