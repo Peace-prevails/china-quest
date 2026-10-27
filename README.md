@@ -53,3 +53,14 @@ python3 scripts/review_assets.py --record assets/generated/characters/CH01_OWNER
 下一步：确认控制台模型与单张预算 → 只生成一张验证下载 → 人工审核 → 再决定候选批次。之后补齐拼音／教学语音和手机端 UI。暂不充值、不做视频、不自动批量调用。
 
 接口依据：[火山方舟官方图片生成 API](https://console.volcengine.com/ark/region:cn-beijing/docs/image-generation-api)，核对于 2026-10-27。pro/flash、lite 等模型参数不同，尺寸／价格以实际模型控制台为准。
+
+## 阶段验收与存档
+
+```sh
+python3 scripts/checkpoint.py stage-02
+# 写入 docs/checkpoints/stage-02.json，标签不可覆盖；包含校验、测试、12 项 dry-run 输出
+python3 scripts/story.py --resume
+python3 scripts/story.py --replay-exploration
+```
+
+终端试玩每次选择自动存档，输入 `q` 保存退出。完成后可直接回放 S5 探索；回放另存 episode_01_replay.json，不覆盖给 EP02 的主线结尾。校验器遍历所有可达剧情状态并验证每个状态能结束，资产引用必须形成无环依赖图。GitHub Actions 在 Python 3.11 和 3.14 上运行离线验收，不使用 API Key。

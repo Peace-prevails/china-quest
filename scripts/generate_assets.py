@@ -28,7 +28,9 @@ def image_type(data):
 def reference(aid,assets):
  p=ROOT/'assets/approved'/aid/'reference.json'
  if not p.exists():raise ValueError(f'{aid}: approved reference required')
- record=read(p);image=ROOT/record['path'];data=image.read_bytes()
+ record=read(p);image=(ROOT/record['path']).resolve()
+ if not image.is_relative_to((ROOT/'assets/approved'/aid).resolve()):raise ValueError('Reference must be inside its approved asset directory')
+ data=image.read_bytes()
  if digest(data)!=record['sha256']:raise ValueError('Approved reference changed')
  return {'asset_id':aid,'sha256':record['sha256'],'path':record['path']},'data:'+mimetypes.guess_type(image.name)[0]+';base64,'+base64.b64encode(data).decode()
 def run(args):
@@ -61,9 +63,9 @@ def run(args):
     if args.resume:
      image=ROOT/old['path']
      if digest(image.read_bytes())!=old['sha256']:raise ValueError('Cached image changed')
-     print('CACHED',a['id']);continue
+     print('CACHED',a['id']);count+=1;continue
     raise ValueError('Existing candidate: use --resume or a new --candidate label')
-   if old['status']=='requesting' or old['status']=='uncertain':raise ValueError('Uncertain paid request; inspect record and provider history before any new candidate')
+   if old['status'] in ['requesting','uncertain'] and not (folder/'response.json').exists():raise ValueError('Uncertain paid request; inspect record and provider history before any new candidate')
   else:
    write(record_path,{'asset_id':a['id'],'category':a['category'],'status':'requesting','request_id':str(uuid.uuid4()),'fingerprint':fingerprint,'prompt':a['prompt'],'model':model,'size':a['size'],'references':refs,'price_ceiling_rmb':args.unit_price_rmb,'created_at':time.time()})
   record=read(record_path)
@@ -73,7 +75,8 @@ def run(args):
    response=read(folder/'response.json');rows=response.get('data',[])
    if len(rows)!=1 or rows[0].get('error'):raise ValueError('Expected exactly one successful image; inspect response')
    row=rows[0];data=base64.b64decode(row['b64_json']) if row.get('b64_json') else download(row['url'])
-   suffix=image_type(data);path=folder/('image'+suffix);path.write_bytes(data)
+   suffix=image_type(data);path=folder/('image'+suffix)
+   temporary=folder/('image'+suffix+'.tmp');temporary.write_bytes(data);temporary.replace(path)
    record.update(status='generated',path=str(path.relative_to(ROOT)),sha256=digest(data));write(record_path,record);print('GENERATED',a['id'],record['path']);count+=1
   except Exception as e:
    record['status']='download_failed' if (folder/'response.json').exists() else 'uncertain';record['error_type']=type(e).__name__;write(record_path,record);print('FAILED',a['id'],record['status']);failed=True;break

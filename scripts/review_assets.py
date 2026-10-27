@@ -2,18 +2,23 @@ import argparse,html,shutil
 from common import ROOT,read,write,digest
 
 def review(record_path,status,note):
+ if status not in ['approved','rejected']:raise ValueError('Invalid review decision')
+ if not note or not note.strip():raise ValueError('Review note is required')
  path=record_path.resolve()
- if not path.is_relative_to(ROOT/'assets/generated'):raise ValueError('Record must be inside generated assets')
+ if not path.is_relative_to((ROOT/'assets/generated').resolve()):raise ValueError('Record must be inside generated assets')
  record=read(path)
  if record['status']!='generated':raise ValueError('Only a downloaded, unreviewed candidate may be reviewed')
  image=(ROOT/record['path']).resolve()
- if not image.is_relative_to(ROOT/'assets/generated') or digest(image.read_bytes())!=record['sha256']:raise ValueError('Candidate integrity check failed')
+ if not image.is_relative_to((ROOT/'assets/generated').resolve()) or digest(image.read_bytes())!=record['sha256']:raise ValueError('Candidate integrity check failed')
  if status=='approved':
-  folder=ROOT/'assets/approved'/record['asset_id'];folder.mkdir(parents=True,exist_ok=True)
+  folder=(ROOT/'assets/approved'/record['asset_id']).resolve()
+  if folder.parent != (ROOT/'assets/approved').resolve():raise ValueError('Invalid asset ID')
+  folder.mkdir(parents=True,exist_ok=True)
   target=folder/(record['sha256']+image.suffix)
-  if not target.exists():shutil.copyfile(image,target)
   reference=folder/'reference.json'
   if reference.exists():raise ValueError('Reference already locked; do not overwrite approved identity')
+  if target.exists() and digest(target.read_bytes())!=record['sha256']:raise ValueError('Existing approved file failed integrity check')
+  if not target.exists():shutil.copyfile(image,target)
   write(reference,{'asset_id':record['asset_id'],'path':str(target.relative_to(ROOT)),'sha256':record['sha256'],'review_note':note,'source_record':str(path.relative_to(ROOT))})
  record.update(status=status,review_note=note);write(path,record)
 def gallery():
