@@ -64,3 +64,12 @@ python3 scripts/story.py --replay-exploration
 ```
 
 终端试玩每次选择自动存档，输入 `q` 保存退出。完成后可直接回放 S5 探索；回放另存 episode_01_replay.json，不覆盖给 EP02 的主线结尾。校验器遍历所有可达剧情状态并验证每个状态能结束，资产引用必须形成无环依赖图。GitHub Actions 在 Python 3.11 和 3.14 上运行离线验收，不使用 API Key。
+
+```sh
+python3 scripts/asset_status.py
+python3 scripts/asset_status.py --output local/asset-status.json
+# 仅在全部 12 项通过人工审核后才允许导出：
+python3 scripts/asset_status.py --export-approved local/approved-manifest.json
+```
+
+当前阶段与未完成项见 [docs/PROGRESS.md](docs/PROGRESS.md)。离线 HTTP 集成测试会临时监听 127.0.0.1，需要运行环境允许本机端口；不调用外部图片服务。

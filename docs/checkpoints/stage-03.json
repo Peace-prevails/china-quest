@@ -1,0 +1,44 @@
+{
+  "label": "stage-03",
+  "time": "2026-10-27T23:48:15.459562+08:00",
+  "python": "3.14.3",
+  "paid_api_calls": 0,
+  "passed": true,
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate_story.py"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 68 nodes; 10 scenes; 12 assets; 22767 reachable states, 3840 ending states; no dead ends.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "FAILED TEST uncertain\nFAILED TEST download_failed\nGENERATED TEST assets/generated/props/TEST/0751f69d2b46a6c46d0494ea71bcedf28ab081dd5f147010b70b04b54df6732e/image.png\nCACHED TEST\nGENERATED FIRST assets/generated/props/FIRST/da44cda7340ebda58d69637ed376ed7f82f3f5278eaa6ee3191d8e06e77501f2/image.png\nCACHED FIRST\nGENERATED TEST assets/generated/props/TEST/633734ef2338dfed915252d4fced39cc8a35fd9bb7aeafe431c4a1eb9485c6b3/image.png\nGENERATED TEST assets/generated/props/TEST/633734ef2338dfed915252d4fced39cc8a35fd9bb7aeafe431c4a1eb9485c6b3/image.png\nPASS: 68 nodes; 10 scenes; 12 assets; 22767 reachable states, 3840 ending states; no dead ends.\n",
+      "stderr": "test_ambiguous_post_never_retries (test_assets.AssetTests.test_ambiguous_post_never_retries) ... ok\ntest_download_resume_and_review (test_assets.AssetTests.test_download_resume_and_review) ... ok\ntest_completed_cache_counts_towards_selection_limit (test_assets.RecoveryTests.test_completed_cache_counts_towards_selection_limit) ... ok\ntest_invalid_budget_is_rejected_before_request (test_assets.RecoveryTests.test_invalid_budget_is_rejected_before_request) ... ok\ntest_saved_response_after_crash_never_reposts (test_assets.RecoveryTests.test_saved_response_after_crash_never_reposts) ... ok\ntest_request_download_review_and_reference (test_http_pipeline.HTTPIntegrationTests.test_request_download_review_and_reference) ... ok\ntest_empty_inventory_and_dependency_blocks (test_inventory.InventoryTests.test_empty_inventory_and_dependency_blocks) ... ok\ntest_all_order_and_plot_branches (test_pipeline.StoryTests.test_all_order_and_plot_branches) ... ok\ntest_graph (test_pipeline.StoryTests.test_graph) ... ok\ntest_invalid_image (test_pipeline.StoryTests.test_invalid_image) ... ok\ntest_paid_guard (test_pipeline.StoryTests.test_paid_guard) ... ok\ntest_bad_save_and_choice_rejected (test_validation.ValidationTests.test_bad_save_and_choice_rejected) ... ok\ntest_help_and_envelope_rewards (test_validation.ValidationTests.test_help_and_envelope_rewards) ... ok\ntest_reference_cycles_rejected (test_validation.ValidationTests.test_reference_cycles_rejected) ... ok\ntest_save_resume_and_isolated_replay (test_validation.ValidationTests.test_save_resume_and_isolated_replay) ... ok\ntest_unknown_reference_rejected (test_validation.ValidationTests.test_unknown_reference_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 1.229s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/generate_assets.py",
+        "--dry-run",
+        "--max-images",
+        "12"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"asset_id\": \"BG01_HUTONG\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"北京胡同傍晚街景，灰砖、生活磨损、面馆空白灯牌，无人物。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"0c5c2f79e07c0b0a4a769b8f2b00dc02fa7124a22e9b2cbb4586f6a290bc0bca\", \"paid\": false}\n{\"asset_id\": \"BG02_SHOP_MAIN\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"北京胡同小面馆室内主视角，无人物。左侧墙上空白菜单，后方柜台，右侧入口，前景木桌。固定布局。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"e635c8f5acd46445f2e0238dde80274c8b272f319b5aa27c0a07335b18f2f4fd\", \"paid\": false}\n{\"asset_id\": \"BG03_COUNTER\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"严格沿用参考面馆布局、材质、照明，柜台和空白菜单近景。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9\", \"size\": \"2K\", \"references\": [], \"blocked\": [\"BG02_SHOP_MAIN: approved reference required\"], \"cache_key\": \"6034d04996b1f0e28d42dd311990d584c37a75a970f6395a7c44819715d7b0f8\", \"paid\": false}\n{\"asset_id\": \"BG04_DOOR\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"严格沿用参考面馆布局、材质、照明，门口视角。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9\", \"size\": \"2K\", \"references\": [], \"blocked\": [\"BG02_SHOP_MAIN: approved reference required\"], \"cache_key\": \"453867c6719dc98815498ac143ed69a4ffcf1dd4e0d675289c113ba81eb294fe\", \"paid\": false}\n{\"asset_id\": \"CH01_OWNER\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"老板娘：43 岁左右北京胡同面馆女老板，爽快、精明、生活化。方圆脸、左侧浅法令纹更深、眼尾细纹、略不整齐的眉型、小幅度牙列差异，自然肤色、真实皮肤纹理。常穿深色针织衫及洗旧围裙。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"17082d802f9c40aa13fccb4670d4f62c30b998711f625cd23e0407631c406bda\", \"paid\": false}\n{\"asset_id\": \"CH02_XIAOCHEN\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"小陈：24 岁左右北京男服务员，机灵嘴快，略方偏长脸、单眼皮/内双不完全对称、鼻尖微圆、短乱发、颧部细小痘印；朴素工作服。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"d361bc54cbb55cb817a99751310380b54c182dfb5401194d7deacdbcc4070028\", \"paid\": false}\n{\"asset_id\": \"CH03_GU\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"顾承泽：31 岁男性，富家人、有控制感但压着焦虑，偏瘦长脸、左眉尾轻微断眉、右侧鼻梁不完美、眼周有疲惫纹理、薄唇、常穿黑西装。不能是标准化偶像脸。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"b9f10e7f597dbe2f4534989a7ff3b3581ac038ef5a419a1edb92382f654ba28b\", \"paid\": false}\n{\"asset_id\": \"CH04_RIVAL\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"第二位争夺者（暂名“陆骁”，角色名标记 provisional）：33 岁男性，更急、更直接，宽下颌、眉骨明显、微不对称耳朵、鼻背轻微旧伤、肤质偏粗、深灰风衣。与顾承泽不能长得相像。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"1f63bf11f938b1d35b24c1c40cd8e6749855e3737123df733b94c3b8db4293cf\", \"paid\": false}\n{\"asset_id\": \"PR01_BEEF_NOODLES\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"真实牛肉面食品近景，普通面馆瓷碗。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 1:1\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"ab6c8ca81c0b822607d26e1ec00c5558e8212a596b083188409010da80879071\", \"paid\": false}\n{\"asset_id\": \"PR02_WATER\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"普通无品牌矿泉水，透明瓶。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 1:1\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"70faa00418ea8bb40894343d1b5ddbe97ff2d5d5b41ee7af4cfb4e89c9f40a05\", \"paid\": false}\n{\"asset_id\": \"PR03_ENVELOPE\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"正式红色遗产文件封套，无可读文字。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 1:1\", \"size\": \"2K\", \"references\": [], \"blocked\": [], \"cache_key\": \"a2351993c396949468585bd14b81bf94b51d95cfa1fe039fc7c205e76bb7fb80\", \"paid\": false}\n{\"asset_id\": \"CG01_FILE_SLAM\", \"model\": \"UNCONFIGURED: supply console model/endpoint ID\", \"prompt\": \"参考图中的顾承泽在同一面馆把红色文件袋放到木桌上，真实手部，无文字。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9\", \"size\": \"2K\", \"references\": [], \"blocked\": [\"BG02_SHOP_MAIN: approved reference required\", \"CH03_GU: approved reference required\", \"PR03_ENVELOPE: approved reference required\"], \"cache_key\": \"ab9cec5bab11f798d4ba99e15f8188701b240efab7e8c95b4067c23a3a5a492c\", \"paid\": false}\n",
+      "stderr": ""
+    }
+  ]
+}

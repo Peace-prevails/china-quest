@@ -27,3 +27,33 @@ class AssetTests(unittest.TestCase):
     with self.assertRaises(ValueError):g.run(args)
     self.assertEqual(post.call_count,1)
 if __name__=='__main__':unittest.main()
+
+class RecoveryTests(unittest.TestCase):
+ def test_completed_cache_counts_towards_selection_limit(self):
+  with tempfile.TemporaryDirectory() as temp:
+   root=pathlib.Path(temp).resolve()
+   assets=[{'id':aid,'category':'props','model':None,'prompt':aid,'size':'2K','reference_assets':[]} for aid in ['FIRST','SECOND']]
+   args=g.parser().parse_args(['--model','test-model','--unit-price-rmb','1','--max-spend-rmb','1','--confirm-paid','--max-images','1'])
+   with patch.object(g,'ROOT',root),patch.object(g,'manifest',return_value={'assets':assets}),patch.dict(g.os.environ,{'ARK_API_KEY':'test'}),patch.object(g,'request_json',return_value={'data':[{'b64_json':'iVBORw0KGgo='}]}) as post:
+    g.run(args);args.resume=True;g.run(args)
+    self.assertEqual(post.call_count,1)
+    self.assertFalse((root/'assets/generated/props/SECOND').exists())
+
+ def test_saved_response_after_crash_never_reposts(self):
+  with tempfile.TemporaryDirectory() as temp:
+   root=pathlib.Path(temp).resolve()
+   args=g.parser().parse_args(['--asset-id','TEST','--model','test-model','--unit-price-rmb','1','--max-spend-rmb','1','--confirm-paid'])
+   asset={'id':'TEST','category':'props','prompt':'Test','size':'2K','reference_assets':[]}
+   with patch.object(g,'ROOT',root),patch.object(g,'manifest',return_value={'assets':[asset]}),patch.dict(g.os.environ,{'ARK_API_KEY':'test'}),patch.object(g,'request_json',return_value={'data':[{'b64_json':'iVBORw0KGgo='}]}) as post:
+    g.run(args)
+    record=next(root.rglob('record.json'));data=read(record);data['status']='requesting';g.write(record,data)
+    g.run(args)
+    self.assertEqual(post.call_count,1)
+    self.assertEqual(read(record)['status'],'generated')
+
+ def test_invalid_budget_is_rejected_before_request(self):
+  for value in ['nan','inf','-1','0']:
+   args=g.parser().parse_args(['--model','test-model','--unit-price-rmb',value,'--max-spend-rmb','1','--confirm-paid'])
+   with patch.object(g,'request_json') as post:
+    with self.assertRaises(ValueError):g.run(args)
+    post.assert_not_called()
