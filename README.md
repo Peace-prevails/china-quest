@@ -73,3 +73,5 @@ python3 scripts/asset_status.py --export-approved local/approved-manifest.json
 ```
 
 当前阶段与未完成项见 [docs/PROGRESS.md](docs/PROGRESS.md)。离线 HTTP 集成测试会临时监听 127.0.0.1，需要运行环境允许本机端口；不调用外部图片服务。
+
+诊断补充：HTTP 错误现在保存为脱敏的 http_error 字段。`request_rejected` 表示接口明确拒绝请求，修复原因后用新 candidate 标签留下重试记录；超时或 5xx 继续记为 uncertain 并禁止自动重发。`ModelNotOpen` 需要先在火山方舟控制台“开通管理”开通目标模型，Key 有效和模型目录中存在该 ID 都不能替代开通。

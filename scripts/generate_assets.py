@@ -8,6 +8,23 @@ def dotenv():
   for line in p.read_text().splitlines():
    if line.strip() and not line.lstrip().startswith('#') and '=' in line:
     k,v=line.split('=',1);os.environ.setdefault(k.strip(),v.strip().strip('\"\''))
+def http_error_details(error,key=''):
+ """Retain useful provider diagnostics, never credentials or response headers wholesale."""
+ try:body=error.read(65536).decode('utf-8',errors='replace')
+ finally:error.close()
+ if key:body=body.replace(key,'[REDACTED]')
+ try:
+  parsed=json.loads(body);provider=parsed.get('error',{})
+  if not isinstance(provider,dict):provider={}
+ except (ValueError,AttributeError):provider={}
+ details={'status':error.code}
+ for field in ['code','type','message','param']:
+  value=provider.get(field)
+  if isinstance(value,(str,int)):details[field]=str(value)[:3000]
+ request_id=error.headers.get('x-request-id') or error.headers.get('x-tt-logid') if error.headers else None
+ if request_id:details['request_id']=request_id
+ if not provider:details['body_excerpt']=body[:1000]
+ return details
 def request_json(payload,key):
  req=urllib.request.Request(API,json.dumps(payload).encode(),{'Authorization':'Bearer '+key,'Content-Type':'application/json'})
  # A timeout/5xx may already have incurred cost. Persist uncertainty and stop.
@@ -65,6 +82,7 @@ def run(args):
      if digest(image.read_bytes())!=old['sha256']:raise ValueError('Cached image changed')
      print('CACHED',a['id']);count+=1;continue
     raise ValueError('Existing candidate: use --resume or a new --candidate label')
+   if old['status']=='request_rejected':raise ValueError('Request was rejected; fix the recorded cause and use a new candidate label for an audited retry')
    if old['status'] in ['requesting','uncertain'] and not (folder/'response.json').exists():raise ValueError('Uncertain paid request; inspect record and provider history before any new candidate')
   else:
    write(record_path,{'asset_id':a['id'],'category':a['category'],'status':'requesting','request_id':str(uuid.uuid4()),'fingerprint':fingerprint,'prompt':a['prompt'],'model':model,'size':a['size'],'references':refs,'price_ceiling_rmb':args.unit_price_rmb,'created_at':time.time()})
@@ -79,7 +97,16 @@ def run(args):
    temporary=folder/('image'+suffix+'.tmp');temporary.write_bytes(data);temporary.replace(path)
    record.update(status='generated',path=str(path.relative_to(ROOT)),sha256=digest(data));write(record_path,record);print('GENERATED',a['id'],record['path']);count+=1
   except Exception as e:
-   record['status']='download_failed' if (folder/'response.json').exists() else 'uncertain';record['error_type']=type(e).__name__;write(record_path,record);print('FAILED',a['id'],record['status']);failed=True;break
+   record['status']='download_failed' if (folder/'response.json').exists() else 'uncertain'
+   record['error_type']=type(e).__name__
+   if isinstance(e,urllib.error.HTTPError):
+    details=http_error_details(e,os.environ.get('ARK_API_KEY',''))
+    record['http_error']=details
+    if record['status']=='uncertain' and e.code in [400,401,403,404,405,413,415,422]:record['status']='request_rejected'
+   write(record_path,record)
+   print('FAILED',a['id'],record['status'])
+   if record.get('http_error'):print(json.dumps(record['http_error'],ensure_ascii=False))
+   failed=True;break
  if failed:raise SystemExit(1)
 def parser():
  p=argparse.ArgumentParser();p.add_argument('--dry-run',action='store_true');p.add_argument('--asset-id');p.add_argument('--max-images',type=int,default=1);p.add_argument('--max-spend-rmb',type=float);p.add_argument('--unit-price-rmb',type=float);p.add_argument('--model');p.add_argument('--resume',action='store_true');p.add_argument('--confirm-paid',action='store_true');p.add_argument('--candidate',default='1');return p

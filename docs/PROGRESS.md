@@ -26,3 +26,20 @@
 4. 另行确认候选批次费用后，生成角色与 BG02 候选；锁定参考图，再派生其余素材。
 
 当前没有批准生产图；pinyin 尚为空、TTS 尚未制作、手机 UI 尚未开发。首轮候选目标 22 张，不能把 12 张基础素材当作全部生成预算。
+
+## 阶段 4：真实接口诊断（2026-10-28）
+
+用户已批准总预算 40 元。官方核对模型 ID 为 doubao-seedream-5-0-flash-260915，当前公开输出图单价为 0.12 元／张。本地默认模型已配置，未提交凭据。
+
+只读 GET /api/v3/models 返回 200，确认 Key 可鉴权；目录包含目标模型。另一次故意省略必填 prompt 的参数探测未发起生图，返回 HTTP 404、错误码 ModelNotOpen，正文明确说明当前账号未开通目标 Flash 模型。模型目录存在并不表示当前账号已开通。
+
+之前第一次真实请求只保存 HTTPError 类型，丢失了状态码与正文，无法事后证明原请求的具体错误或计费结果；该历史记录保留为 uncertain，不自动重发。新增诊断确认为当前开通状态问题，不能当作原请求的原始响应。
+
+修复：保存脱敏 HTTP 状态、提供方错误码、消息及 request ID；明确的请求拒绝与可能已执行的超时／服务端错误分别记录，均不自动重试。新增 4 项回归测试。
+
+下一步：在账号控制台“开通管理”开通 Seedream 5.0 Flash，随后在 40 元总预算内测试 1 张；历史不确定请求保守预留 0.12 元。当前使用的 Runtime API Key 不具备模型开通管理 API 所需的 Access Key 鉴权凭证，不尝试更改无关账号设置。
+
+官方说明：
+- https://console.volcengine.com/ark/region:cn-beijing/docs/activation-management
+- https://console.volcengine.com/ark/region:cn-beijing/docs/model-pricing
+- https://docs.volcengine.com/docs/ark/error-codes?lang=zh
