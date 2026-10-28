@@ -1,0 +1,10 @@
+{
+  "approved_total_rmb": 40,
+  "generated_image_estimate_rmb": 0.36,
+  "uncertain_request_reserve_rmb": 0.12,
+  "actual_billed_rmb": null,
+  "new_candidates_this_stage": 2,
+  "new_candidate_estimate_rmb": 0.24,
+  "note": "List-price estimate only; no provider billing query. Identity remains unlocked.",
+  "remaining_after_estimates_and_reserves_rmb": 39.52
+}

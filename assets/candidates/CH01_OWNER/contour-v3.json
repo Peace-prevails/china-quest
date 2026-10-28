@@ -1,0 +1,23 @@
+{
+  "asset_id": "CH01_OWNER",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "真实摄影人物选角照，43岁北京胡同面馆女老板，半身正面，3:4。脸部骨相是画面重点：明显方圆脸，横向偏宽，下半脸有宽度，双侧下颌角清楚，下颌宽度接近颧骨宽度，不往下巴收尖；短而宽平的下巴，略外展的颧弓，脸颊有适度自然软组织。中等偏宽鼻翼、鼻头略厚，眉毛较浓且左右略不齐，左侧法令纹较明显、眼尾细纹和皮肤毛孔。神态爽利、稳当、精明，轻微闭嘴笑。正常女性面容，不男性化、不夸张粗犷、不肥胖、不衰老化。不要窄脸、鹅蛋脸、尖下巴、瓜子脸、整容脸或广告模特脸。黑发朴素束起，深色针织衫、洗旧围裙，双手放低不挡脸。自然窗光，背景为虚化朴素面馆，无文字，不磨皮。",
+  "size": "2K",
+  "sha256": "9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba",
+  "references": [],
+  "price_ceiling_rmb": 0.12,
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/CH01_OWNER/contour-v3.jpg",
+  "dimensions": [
+    1776,
+    2368
+  ],
+  "user_direction": "面部轮廓更有特色，有一点北方特色",
+  "generation_mode": "Seedream text-to-image new identity candidate; not an edit of the unapproved earlier image",
+  "visual_review": [
+    "Lower face and chin are broader than the first revision; jaw contour is more visible.",
+    "Keeps midlife skin detail, dark knitwear and worn apron.",
+    "Face remains softly rounded; this is a stylistic character direction, not an assertion of regional appearance."
+  ],
+  "sha256_matches": true
+}

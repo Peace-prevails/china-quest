@@ -1,0 +1,12 @@
+{
+  "asset_id": "CH01_OWNER",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "人物身份候选，摄影级北京现实主义都市短剧半身肖像，3:4。43岁左右胡同面馆女老板，爽快精明、亲切有生活气。面部辨识度重点：略宽的方圆脸、适度外展的颧骨与颧弓、清楚而不夸张的下颌角、短而略宽的下巴，脸颊仍有自然饱满感；略厚实鼻头、眉型轻微不对称，左侧法令纹略深，眼尾细纹，真实毛孔。避免纤细鹅蛋脸、尖下巴、整容模板脸、夸张粗犷化或过度老化。黑发随意束起，深色针织衫与洗旧围裙。自然窗光、朴素面馆背景虚化，人物正面略转，双手自然放低不遮脸。朴素真实摄影，不磨皮，不加文字。",
+  "size": "2K",
+  "sha256": "88716c4fcc20c32bb83e38b2177d34cdb745cb8e722ec4bb022bd34f156bf054",
+  "references": [],
+  "price_ceiling_rmb": 0.12,
+  "status": "not_selected",
+  "image": "assets/candidates/CH01_OWNER/contour-v2.jpg",
+  "review_note": "Natural character but lower-face contour remains tapered; another candidate requested with a broader mandible."
+}
