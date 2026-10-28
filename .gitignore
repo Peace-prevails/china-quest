@@ -6,6 +6,5 @@
 __pycache__/
 *.pyc
 assets/generated/
-assets/approved/
 local/
 .venv/

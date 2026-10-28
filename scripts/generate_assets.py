@@ -1,6 +1,7 @@
 """One HTTP request per image. Ambiguous POST failures are never retried automatically."""
 import argparse,base64,json,math,mimetypes,os,time,urllib.request,urllib.error,uuid
 from common import ROOT,read,write,digest,manifest
+from production_budget import reserve,synchronize
 API='https://ark.cn-beijing.volces.com/api/v3/images/generations'
 def dotenv():
  p=ROOT/'.env'
@@ -49,7 +50,7 @@ def reference(aid,assets):
  if not image.is_relative_to((ROOT/'assets/approved'/aid).resolve()):raise ValueError('Reference must be inside its approved asset directory')
  data=image.read_bytes()
  if digest(data)!=record['sha256']:raise ValueError('Approved reference changed')
- return {'asset_id':aid,'sha256':record['sha256'],'path':record['path']},'data:'+mimetypes.guess_type(image.name)[0]+';base64,'+base64.b64encode(data).decode()
+ return {'asset_id':aid,'sha256':record['sha256'],'path':record['path'],'scope':record.get('reference_scope','full_image')},'data:'+mimetypes.guess_type(image.name)[0]+';base64,'+base64.b64encode(data).decode()
 def run(args):
  dotenv();all_assets={a['id']:a for a in manifest()['assets']}
  selected=[all_assets[args.asset_id]] if args.asset_id else list(all_assets.values())
@@ -65,7 +66,15 @@ def run(args):
   for aid in a['reference_assets']:
    try:r,img=reference(aid,all_assets);refs.append(r);images.append(img)
    except ValueError as e:blocked.append(str(e))
-  payload={'model':model,'prompt':a['prompt'],'size':a['size'],'response_format':'url','watermark':False}
+  scope_notes=[]
+  for index,ref in enumerate(refs,1):
+   if ref['scope']=='identity_only':
+    if a['category']=='backgrounds':raise ValueError('An identity-only reference cannot define a background')
+    scope_notes.append(f'参考图{index}（{ref["asset_id"]}）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。')
+   elif ref['scope']=='scene_layout':scope_notes.append(f'参考图{index}（{ref["asset_id"]}）仅约束场景布局、建筑材质与室内陈设。')
+   elif ref['scope']=='object_only':scope_notes.append(f'参考图{index}（{ref["asset_id"]}）只参考主体物品，忽略其背景。')
+  effective_prompt=a['prompt']+('\n'+'\n'.join(scope_notes) if scope_notes else '')
+  payload={'model':model,'prompt':effective_prompt,'size':a['size'],'response_format':'url','watermark':False}
   if images:payload['image']=images
   fingerprint=digest(json.dumps({'payload':payload,'refs':refs,'candidate':args.candidate},sort_keys=True).encode())
   folder=ROOT/'assets/generated'/a['category']/a['id']/fingerprint
@@ -85,7 +94,8 @@ def run(args):
    if old['status']=='request_rejected':raise ValueError('Request was rejected; fix the recorded cause and use a new candidate label for an audited retry')
    if old['status'] in ['requesting','uncertain'] and not (folder/'response.json').exists():raise ValueError('Uncertain paid request; inspect record and provider history before any new candidate')
   else:
-   write(record_path,{'asset_id':a['id'],'category':a['category'],'status':'requesting','request_id':str(uuid.uuid4()),'fingerprint':fingerprint,'prompt':a['prompt'],'model':model,'size':a['size'],'references':refs,'price_ceiling_rmb':args.unit_price_rmb,'created_at':time.time()})
+   reserve(ROOT,fingerprint,a['id'],model,args.unit_price_rmb)
+   write(record_path,{'asset_id':a['id'],'category':a['category'],'status':'requesting','request_id':str(uuid.uuid4()),'fingerprint':fingerprint,'candidate':args.candidate,'prompt':effective_prompt,'model':model,'size':a['size'],'references':refs,'price_ceiling_rmb':args.unit_price_rmb,'created_at':time.time()})
   record=read(record_path)
   try:
    if not (folder/'response.json').exists():
@@ -95,7 +105,7 @@ def run(args):
    row=rows[0];data=base64.b64decode(row['b64_json']) if row.get('b64_json') else download(row['url'])
    suffix=image_type(data);path=folder/('image'+suffix)
    temporary=folder/('image'+suffix+'.tmp');temporary.write_bytes(data);temporary.replace(path)
-   record.update(status='generated',path=str(path.relative_to(ROOT)),sha256=digest(data));write(record_path,record);print('GENERATED',a['id'],record['path']);count+=1
+   record.update(status='generated',path=str(path.relative_to(ROOT)),sha256=digest(data));write(record_path,record);synchronize(ROOT);print('GENERATED',a['id'],record['path']);count+=1
   except Exception as e:
    record['status']='download_failed' if (folder/'response.json').exists() else 'uncertain'
    record['error_type']=type(e).__name__
@@ -103,7 +113,7 @@ def run(args):
     details=http_error_details(e,os.environ.get('ARK_API_KEY',''))
     record['http_error']=details
     if record['status']=='uncertain' and e.code in [400,401,403,404,405,413,415,422]:record['status']='request_rejected'
-   write(record_path,record)
+   write(record_path,record);synchronize(ROOT)
    print('FAILED',a['id'],record['status'])
    if record.get('http_error'):print(json.dumps(record['http_error'],ensure_ascii=False))
    failed=True;break

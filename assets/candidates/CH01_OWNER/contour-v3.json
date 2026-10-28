@@ -6,7 +6,7 @@
   "sha256": "9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba",
   "references": [],
   "price_ceiling_rmb": 0.12,
-  "status": "awaiting_human_review",
+  "status": "approved",
   "image": "assets/candidates/CH01_OWNER/contour-v3.jpg",
   "dimensions": [
     1776,
@@ -19,5 +19,8 @@
     "Keeps midlife skin detail, dark knitwear and worn apron.",
     "Face remains softly rounded; this is a stylistic character direction, not an assertion of regional appearance."
   ],
-  "sha256_matches": true
+  "sha256_matches": true,
+  "reference_scope": "identity_only",
+  "ignore_background": true,
+  "review_note": "User approved the person only; background explicitly excluded."
 }

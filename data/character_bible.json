@@ -5,7 +5,7 @@
       "name": "老板娘",
       "provisional": false,
       "appearance": "老板娘：43岁左右北京胡同面馆女老板，爽快、精明、有生活气。略宽的方圆脸，颧骨适度外展、颧弓有结构，脸颊饱满但下颌角清楚，短而略宽的下巴；不要尖下巴或削瘦鹅蛋脸。略厚实的鼻头、自然微不对称的眉毛，左侧浅法令纹更深、眼尾细纹、轻微牙列差异，自然肤色与真实皮肤纹理。深色针织衫、洗旧围裙。",
-      "approved_reference_image": null,
+      "approved_reference_image": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
       "voice_style": {
         "teaching": "standard_mandarin",
         "npc": "beijing_natural",
@@ -15,8 +15,10 @@
         "version": 2,
         "user_direction": "面部轮廓需要有特色，有一点北方特色",
         "interpretation": "通过略宽的方圆脸、颧弓和下颌结构增加辨识度；属于虚构角色美术选择，不代表地域人口固定长相。",
-        "identity_locked": false
-      }
+        "identity_locked": true
+      },
+      "reference_scope": "identity_only",
+      "ignore_reference_background": true
     },
     {
       "id": "XIAOCHEN",

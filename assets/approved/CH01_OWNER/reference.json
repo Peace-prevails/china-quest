@@ -1,0 +1,9 @@
+{
+  "asset_id": "CH01_OWNER",
+  "path": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
+  "sha256": "9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba",
+  "review_note": "用户已确认contour-v3，仅作为人物参考，不参考背景。",
+  "source_record": "assets/generated/characters/CH01_OWNER/bc7628a4469c7f9a4a089dc53acfe3fd53e16c18209ec7c6712e9396e2682ca8/record.json",
+  "reference_scope": "identity_only",
+  "ignore_background": true
+}

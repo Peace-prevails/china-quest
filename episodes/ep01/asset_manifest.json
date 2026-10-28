@@ -1,7 +1,7 @@
 {
   "version": 1,
   "base_asset_count": 12,
-  "candidate_budget_note": "12 base assets; 4×3 character + 3 core interior candidates + 7 remaining = 22 images before rejections. No paid batch authorized.",
+  "candidate_budget_note": "Base plan 22 images including identity candidates; user approved 40 RMB total and continuing after owner identity approval. This stage: 3 candidates each for Xiao Chen, Gu, rival and BG02 = 12 Flash images, estimated 1.44 RMB.",
   "assets": [
     {
       "id": "BG01_HUTONG",
@@ -23,7 +23,7 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "北京胡同小面馆室内主视角，无人物。左侧墙上空白菜单，后方柜台，右侧入口，前景木桌。固定布局。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9",
+      "prompt": "16:9真实摄影，北京胡同口普通小面馆，傍晚，玩家坐在前景木桌旁的平视室内主视角，35mm镜头。空间小而可信：左墙四块空白菜单板；后墙靠左一个小木柜台，后方通厨房；右侧靠前是木框玻璃入口门，门外隐约胡同灰砖；中间留出通道，四张旧木桌配木椅，地面灰色旧水泥砖。暖色顶灯混合门口冷色傍晚光，磨损墙面、真实尺度、干净但有使用痕迹。店内无人，无人物照片，不用任何人物参考照片里的背景。菜单板和门牌均留白，无可读文字、无字母、无品牌，不要豪华餐厅或复古影棚，前景桌面给后续食物与文件袋留位置。",
       "reference_assets": [],
       "candidate_target": 3,
       "approved_reference_image": null,
@@ -69,8 +69,10 @@
       "prompt": "真实摄影人物选角照，43岁北京胡同面馆女老板，半身正面，3:4。脸部骨相是画面重点：明显方圆脸，横向偏宽，下半脸有宽度，双侧下颌角清楚，下颌宽度接近颧骨宽度，不往下巴收尖；短而宽平的下巴，略外展的颧弓，脸颊有适度自然软组织。中等偏宽鼻翼、鼻头略厚，眉毛较浓且左右略不齐，左侧法令纹较明显、眼尾细纹和皮肤毛孔。神态爽利、稳当、精明，轻微闭嘴笑。正常女性面容，不男性化、不夸张粗犷、不肥胖、不衰老化。不要窄脸、鹅蛋脸、尖下巴、瓜子脸、整容脸或广告模特脸。黑发朴素束起，深色针织衫、洗旧围裙，双手放低不挡脸。自然窗光，背景为虚化朴素面馆，无文字，不磨皮。",
       "reference_assets": [],
       "candidate_target": 3,
-      "approved_reference_image": null,
-      "transparency": "requires_reviewed_cutout"
+      "approved_reference_image": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
+      "transparency": "requires_reviewed_cutout",
+      "reference_scope": "identity_only",
+      "ignore_reference_background": true
     },
     {
       "id": "CH02_XIAOCHEN",
@@ -79,7 +81,7 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "小陈：24 岁左右北京男服务员，机灵嘴快，略方偏长脸、单眼皮/内双不完全对称、鼻尖微圆、短乱发、颧部细小痘印；朴素工作服。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4",
+      "prompt": "真实摄影选角照，3:4正面半身，24岁北京面馆男服务员小陈。年轻、机灵嘴快，略方偏长脸，左右单眼皮和内双不完全对称，鼻尖微圆，短乱发，颧部轻微痘印和真实毛孔。朴素灰蓝工作衫，绝非西装或偶像造型，神态自然有机灵劲。自然柔光，单一中灰无干扰背景，双手放低，完整露出头顶和肩膀。不要磨皮、尖下巴、模特脸、文字。人物参考图背景不用于游戏。",
       "reference_assets": [],
       "candidate_target": 3,
       "approved_reference_image": null,
@@ -92,7 +94,7 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "顾承泽：31 岁男性，富家人、有控制感但压着焦虑，偏瘦长脸、左眉尾轻微断眉、右侧鼻梁不完美、眼周有疲惫纹理、薄唇、常穿黑西装。不能是标准化偶像脸。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4",
+      "prompt": "真实摄影选角照，3:4正面半身，31岁男性顾承泽，富家人，有控制感、克制中带焦虑。偏瘦长脸，左眉尾一小段断眉，鼻梁右侧轻微不规则，疲惫眼周与真实皮肤，薄唇，黑色西装配素色衬衣，不打夸张领带。偏收窄的下颌，不能宽方脸，不能网红偶像模板。自然中性柔光，单一中灰无干扰背景，手放低。无文字，不磨皮。",
       "reference_assets": [],
       "candidate_target": 3,
       "approved_reference_image": null,
@@ -105,7 +107,7 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "第二位争夺者（暂名“陆骁”，角色名标记 provisional）：33 岁男性，更急、更直接，宽下颌、眉骨明显、微不对称耳朵、鼻背轻微旧伤、肤质偏粗、深灰风衣。与顾承泽不能长得相像。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4",
+      "prompt": "真实摄影选角照，3:4正面半身，33岁男性陆骁（暂名），急切、直接、警惕。宽下颌方脸、眉骨明显，微不对称耳朵，鼻背轻微愈合旧伤，肤质偏粗有毛孔，短发。深灰风衣，朴素深色内搭。脸部偏宽，明确区别于偏瘦长脸黑西装顾承泽，不是同一个演员，不是偶像模特脸。自然中性柔光，单一中灰无干扰背景，双手放低。无文字，不磨皮。",
       "reference_assets": [],
       "candidate_target": 3,
       "approved_reference_image": null,

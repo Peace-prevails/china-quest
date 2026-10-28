@@ -75,3 +75,22 @@ python3 scripts/asset_status.py --export-approved local/approved-manifest.json
 当前阶段与未完成项见 [docs/PROGRESS.md](docs/PROGRESS.md)。离线 HTTP 集成测试会临时监听 127.0.0.1，需要运行环境允许本机端口；不调用外部图片服务。
 
 诊断补充：HTTP 错误现在保存为脱敏的 http_error 字段。`request_rejected` 表示接口明确拒绝请求，修复原因后用新 candidate 标签留下重试记录；超时或 5xx 继续记为 uncertain 并禁止自动重发。`ModelNotOpen` 需要先在火山方舟控制台“开通管理”开通目标模型，Key 有效和模型目录中存在该 ID 都不能替代开通。
+
+## 人物参考范围与累计预算
+
+审批人物时默认只锁人物身份（identity_only），不把人物照片里的背景当作场景。可显式指定：
+
+```sh
+python3 scripts/review_assets.py --record PATH_TO_RECORD --decision approved --scope identity_only --note '只参考人物，不参考背景'
+```
+
+后续请求会附上每张参考图的用途说明；人物参考禁止用于定义背景资产。场景批准图使用 scene_layout，道具使用 object_only。老板娘 contour-v3 已由用户批准，仅人物；批准图和范围记录保存在 assets/approved/ 并进入 Git。
+
+累计预算写入 data/production_budget.json，以请求 fingerprint 去重，成功、下载失败、超时等请求均保守占用预算，明确拒绝的请求不占用。删除本地生成图不会抹掉已存预算条目。数字为按公开单价的估计及预留，不是供应商账单。
+
+```sh
+python3 scripts/generate_candidate_batch.py              # 12 张选角候选 dry-run
+# 仅在用户批准预算与继续制作后运行：
+python3 scripts/generate_candidate_batch.py --execute    # 逐张执行；中断后可重复同命令，缓存命中不重发
+python3 scripts/build_candidate_gallery.py
+```
