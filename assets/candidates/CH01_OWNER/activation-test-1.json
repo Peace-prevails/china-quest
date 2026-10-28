@@ -1,0 +1,26 @@
+{
+  "asset_id": "CH01_OWNER",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "老板娘：43 岁左右北京胡同面馆女老板，爽快、精明、生活化。方圆脸、左侧浅法令纹更深、眼尾细纹、略不整齐的眉型、小幅度牙列差异，自然肤色、真实皮肤纹理。常穿深色针织衫及洗旧围裙。。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 3:4",
+  "size": "2K",
+  "sha256": "dad5805bf50d2c3191c10f8d990cb2fac7c06af80016c414916b0d03f3caaa57",
+  "references": [],
+  "price_ceiling_rmb": 0.12,
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/CH01_OWNER/activation-test-1.jpg",
+  "dimensions": [
+    1776,
+    2368
+  ],
+  "source_record": "assets/generated/characters/CH01_OWNER/3cb9a27166a9047aad5f82cca52a87ce091d428a4da5af901acdc952a2af65d6/record.json",
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_observations": [
+    "Natural skin texture, dark knitwear and worn apron match the direction.",
+    "Hand close to chin and detailed background need adjustment for an overlay sprite.",
+    "Opaque JPEG; this is an identity candidate, not a transparent production sprite."
+  ],
+  "cost_note": "Official list-price estimate 0.12 RMB; actual settlement not queried."
+}

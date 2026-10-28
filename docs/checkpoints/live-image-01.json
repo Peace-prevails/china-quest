@@ -1,0 +1,8 @@
+{
+  "approved_total_rmb": 40,
+  "generated_image_estimate_rmb": 0.12,
+  "uncertain_request_reserve_rmb": 0.12,
+  "actual_billed_rmb": null,
+  "note": "Conservative estimate from request records, not provider billing. No image is human-approved yet.",
+  "remaining_after_estimates_and_reserves_rmb": 39.76
+}

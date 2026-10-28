@@ -43,3 +43,13 @@
 - https://console.volcengine.com/ark/region:cn-beijing/docs/activation-management
 - https://console.volcengine.com/ark/region:cn-beijing/docs/model-pricing
 - https://docs.volcengine.com/docs/ark/error-codes?lang=zh
+
+## 阶段 5：首张真实生图成功（2026-10-28）
+
+用户确认已开通模型后，以新候选标签 activation-test-1 生成老板娘身份候选。请求成功、图片已立即下载为 JPEG（1776×2368）、SHA256 校验通过。无重复重发历史 uncertain 请求。
+
+可版本化候选图与无敏感信息的元数据保存在 assets/candidates/CH01_OWNER/。原始 API 响应及可能带签名的下载 URL 只在被忽略的 generated 目录内。本候选未经人工选定，未进入 approved，也未作为派生参考图。
+
+视觉检查：年龄感、针织衫、旧围裙与自然皮肤纹理基本符合方向；手在下巴附近，背景较复杂，后续用于叠加立绘需调整姿态与抠图。JPEG 不具有透明背景。下一步按交接要求制作候选并由人选定 approved_reference_image，再派生后续素材。
+
+官方公开单价估算本张 0.12 元，历史 uncertain 请求保守预留 0.12 元，40 元预算剩余估计 39.76 元；未查询供应商实际结算。首张验收与预算记录见 checkpoints/live-image-01.json。
