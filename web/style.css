@@ -4,3 +4,5 @@
 .dialogue-stage{aspect-ratio:16/8.5;max-height:58svh}.dialogue-stage .scene-img{object-fit:cover}.dialogue-stage .location{max-width:42%;font-size:10px}.dialogue-stage .scene-caption{font-size:17px}@media(max-width:700px){.dialogue-stage{aspect-ratio:4/3;max-height:44svh;min-height:260px}.dialogue-stage .location{max-width:43%;font-size:8px;line-height:1.5}}
 
 .story-context{border-left:3px solid #b67b50;padding:1px 16px;margin:12px 0 22px;color:#ced7d0;font-size:14px;line-height:1.65}.story-context p{margin:6px 0}.story-context p+ p{color:#aab9b2}.dialogue-stage[data-expression="serving"],.dialogue-stage[data-expression="meal"]{aspect-ratio:16/9;max-height:none}
+/* Keep the scene full width when its height is capped on wide screens. */
+.stage{width:100%}
