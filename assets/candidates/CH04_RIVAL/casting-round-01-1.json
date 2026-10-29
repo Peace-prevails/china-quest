@@ -1,0 +1,22 @@
+{
+  "asset_id": "CH04_RIVAL",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "真实摄影选角照，3:4正面半身，33岁男性陆骁（暂名），急切、直接、警惕。宽下颌方脸、眉骨明显，微不对称耳朵，鼻背轻微愈合旧伤，肤质偏粗有毛孔，短发。深灰风衣，朴素深色内搭。脸部偏宽，明确区别于偏瘦长脸黑西装顾承泽，不是同一个演员，不是偶像模特脸。自然中性柔光，单一中灰无干扰背景，双手放低。无文字，不磨皮。",
+  "size": "2K",
+  "references": [],
+  "sha256": "20faa1df1ff0e42699918b154c312e1b9d84aec3b78c18bd5b58bb82bdb0fc8b",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "ae0aedb3dd7ea9aebf8af5a239ed0a5d8def954ec9ef95800869ff3e99ab494d",
+  "candidate": "casting-round-01-1",
+  "status": "approved",
+  "image": "assets/candidates/CH04_RIVAL/casting-round-01-1.jpg",
+  "reference_scope": "identity_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "推荐作为脸型方向：宽下颌、眉骨与粗皮肤，与顾承泽有所区分。鼻背应调整为淡旧痕。",
+  "visual_review_complete": true,
+  "ignore_background": true
+}

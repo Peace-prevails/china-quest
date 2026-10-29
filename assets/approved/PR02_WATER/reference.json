@@ -1,0 +1,9 @@
+{
+  "asset_id": "PR02_WATER",
+  "path": "assets/approved/PR02_WATER/732d8887e9c7a0ced91acb410c9974d68b74cd44e617e2881afc46f66d2742ee.jpg",
+  "sha256": "732d8887e9c7a0ced91acb410c9974d68b74cd44e617e2881afc46f66d2742ee",
+  "review_note": "用户明确回复三件都采用；只参考物品本身。",
+  "source_record": "assets/generated/props/PR02_WATER/c191f93661e2aa69f8e77cb34c41c01c1c695a0bff1d3181cc971406e835aa13/record.json",
+  "reference_scope": "object_only",
+  "ignore_background": false
+}

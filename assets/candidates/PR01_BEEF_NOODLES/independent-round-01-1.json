@@ -1,0 +1,21 @@
+{
+  "asset_id": "PR01_BEEF_NOODLES",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "1:1真实食品摄影，普通白色瓷碗里的一份北京小面馆牛肉汤面，几片正常份量的炖牛肉、可见面条、葱花与热汤，牛肉纹理自然，简单木桌，柔和中性室内光，碗完整入镜。没有人物、手、餐厅标识或任何文字。食品比例可信，不要夸张广告摆盘，不要餐具穿模。",
+  "size": "2K",
+  "references": [],
+  "sha256": "23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "fcca46c4f4de5a4950f16869cd28d1b0c4c409581d54d54fde0254fa782d0cd5",
+  "candidate": "independent-round-01-1",
+  "status": "approved",
+  "image": "assets/candidates/PR01_BEEF_NOODLES/independent-round-01-1.jpg",
+  "reference_scope": "object_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "食品形态与碗比例可信；菜品卡可用，暂未人工批准。",
+  "visual_review_complete": true
+}

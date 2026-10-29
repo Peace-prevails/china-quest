@@ -94,3 +94,7 @@ python3 scripts/generate_candidate_batch.py              # 12 张选角候选 dr
 python3 scripts/generate_candidate_batch.py --execute    # 逐张执行；中断后可重复同命令，缓存命中不重发
 python3 scripts/build_candidate_gallery.py
 ```
+
+生图连接如遇本机 urllib TLS 中断，可在同样的审批和累计预算限制下使用 `ARK_HTTP_TRANSPORT=curl`。Key 通过临时权限文件传入，不出现在进程参数中；网络错误仍保守记录为 uncertain，不做自动付费重试。人工决定新尝试时必须保留旧请求预留并使用可审计的新 candidate 标签。
+
+现代胡同资料与设计边界见 [docs/hutong_2026_reference_notes.md](docs/hutong_2026_reference_notes.md)。12项基础图片目前已生成，待审阅与已批准状态以画廊及 approved/reference.json 为准，生成成功不等于最终资产全部验收通过。

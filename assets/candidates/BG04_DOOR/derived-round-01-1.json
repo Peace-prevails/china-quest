@@ -1,0 +1,27 @@
+{
+  "asset_id": "BG04_DOOR",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9真实摄影，严格依据参考图中已批准面馆的右侧木框玻璃门，坐在面馆内向右侧入口看，保持门的木框样式、玻璃分格、门外灰砖胡同、同一块地砖与墙体。傍晚冷色户外光与暖灯混合。门口留出一个完整站立人物的位置。无人物、无文字、无数字门牌、无商标，不改变门的位置与结构，不借用任何人物肖像的背景。\n参考图1（BG02_SHOP_MAIN）仅约束场景布局、建筑材质与室内陈设。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "scope": "scene_layout"
+    }
+  ],
+  "sha256": "67924aae7a3eafbe9092304c0c3e5ef19e18a0f7acdc69b9d7d9cb27290368e4",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "13aa98d53cca80dbdefd7e4db01390f060ab8468ad08bcc92878ddb5d9a69222",
+  "candidate": "derived-round-01-1",
+  "status": "rejected",
+  "image": "assets/candidates/BG04_DOOR/derived-round-01-1.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "退回：纯背景误生人物；已另做新版。"
+}

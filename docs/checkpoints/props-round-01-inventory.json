@@ -1,0 +1,10 @@
+{
+  "planned_images": 3,
+  "completed_images": 3,
+  "archives": [
+    "assets/candidates/PR01_BEEF_NOODLES/independent-round-01-1.jpg",
+    "assets/candidates/PR02_WATER/independent-round-01-1.jpg",
+    "assets/candidates/PR03_ENVELOPE/independent-round-01-1.jpg"
+  ],
+  "actual_billing_queried": false
+}

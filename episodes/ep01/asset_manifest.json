@@ -10,11 +10,22 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "北京胡同傍晚街景，灰砖、生活磨损、面馆空白灯牌，无人物。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9",
+      "prompt": "2026年前后的北京东城普通生活胡同，16:9纪实摄影，平视35mm。约5米宽的干燥平整沥青路面，有井盖；低矮一层灰砖四合院院墙和灰瓦硬山屋顶，砖缝与轻微修补真实，绝非废墟。深红或深灰院门，部分换成普通现代金属门窗。门口几盆菊花与绿植，院墙上探出槐树叶。两辆普通自行车、一辆小型电动自行车整齐贴边；巷子较宽的远处仅一辆普通白色紧凑型家用轿车靠墙停放，不堵路。少量真实空调外机、配电箱，线缆沿墙规整收束，不能满天乱线。前方右侧是正在营业的小面馆，简单木框玻璃门、朴素空白招牌，店内暖光。傍晚但天色明亮，灰墙细节可见，正常曝光和生活色彩。无人、无文字、无数字、无车牌内容、无品牌。不要红灯笼排阵、牌楼、青石古街、过度破损积水、老式二八车主景或民国影视滤镜。",
       "reference_assets": [],
       "candidate_target": 1,
-      "approved_reference_image": null,
-      "transparency": "opaque"
+      "approved_reference_image": "assets/approved/BG01_HUTONG/ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3.jpg",
+      "transparency": "opaque",
+      "historical_accuracy": {
+        "target_period": "circa 2026",
+        "setting_type": "fictional contemporary residential Beijing hutong with a small noodle shop",
+        "user_direction": "可无文字；加入花、自行车、靠边小汽车等现代生活细节；具体构图由执行者决定",
+        "notes": [
+          "Not a reconstruction of a named real street.",
+          "One car only in a wider section; no claim all hutongs permit parking.",
+          "Owner portrait backgrounds are not used."
+        ]
+      },
+      "reference_scope": "scene_layout"
     },
     {
       "id": "BG02_SHOP_MAIN",
@@ -26,8 +37,9 @@
       "prompt": "16:9真实摄影，北京胡同口普通小面馆，傍晚，玩家坐在前景木桌旁的平视室内主视角，35mm镜头。空间小而可信：左墙四块空白菜单板；后墙靠左一个小木柜台，后方通厨房；右侧靠前是木框玻璃入口门，门外隐约胡同灰砖；中间留出通道，四张旧木桌配木椅，地面灰色旧水泥砖。暖色顶灯混合门口冷色傍晚光，磨损墙面、真实尺度、干净但有使用痕迹。店内无人，无人物照片，不用任何人物参考照片里的背景。菜单板和门牌均留白，无可读文字、无字母、无品牌，不要豪华餐厅或复古影棚，前景桌面给后续食物与文件袋留位置。",
       "reference_assets": [],
       "candidate_target": 3,
-      "approved_reference_image": null,
-      "transparency": "opaque"
+      "approved_reference_image": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "transparency": "opaque",
+      "reference_scope": "scene_layout"
     },
     {
       "id": "BG03_COUNTER",
@@ -36,7 +48,7 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "严格沿用参考面馆布局、材质、照明，柜台和空白菜单近景。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9",
+      "prompt": "16:9真实摄影，严格依据参考图中已批准面馆的空间，不引入人物照片背景。镜头推进到后方靠左的小木柜台，近景能看到左侧空白菜单板及后方厨房入口；相同木材、墙面、地砖与暖灯混合傍晚光，保留布局相对位置，真实35mm平视摄影。空白菜单板无任何文字，无新门窗、无人物、无商标、无数字，柜台台面留空，不改变装修，不变成另一家店。",
       "reference_assets": [
         "BG02_SHOP_MAIN"
       ],
@@ -51,7 +63,7 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "严格沿用参考面馆布局、材质、照明，门口视角。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9",
+      "prompt": "16:9真实摄影，空无一人的面馆门口近景。只拍参考面馆右侧现有的木框玻璃门：镜头朝向门口并推进，门占画面主体，门外同一灰砖胡同。沿用相同门框分格、金属门把、磨损墙体、地砖与傍晚冷暖光。背景层必须绝对空无一人：没有人、没有人体、没有人影、没有倒影中的人、没有人物照片。不要增加门窗，不改变装修，不包含任何文字或数字。画面中不出现桌子挡住门。",
       "reference_assets": [
         "BG02_SHOP_MAIN"
       ],
@@ -84,8 +96,9 @@
       "prompt": "真实摄影选角照，3:4正面半身，24岁北京面馆男服务员小陈。年轻、机灵嘴快，略方偏长脸，左右单眼皮和内双不完全对称，鼻尖微圆，短乱发，颧部轻微痘印和真实毛孔。朴素灰蓝工作衫，绝非西装或偶像造型，神态自然有机灵劲。自然柔光，单一中灰无干扰背景，双手放低，完整露出头顶和肩膀。不要磨皮、尖下巴、模特脸、文字。人物参考图背景不用于游戏。",
       "reference_assets": [],
       "candidate_target": 3,
-      "approved_reference_image": null,
-      "transparency": "requires_reviewed_cutout"
+      "approved_reference_image": "assets/approved/CH02_XIAOCHEN/05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41.jpg",
+      "transparency": "requires_reviewed_cutout",
+      "reference_scope": "identity_only"
     },
     {
       "id": "CH03_GU",
@@ -97,8 +110,9 @@
       "prompt": "真实摄影选角照，3:4正面半身，31岁男性顾承泽，富家人，有控制感、克制中带焦虑。偏瘦长脸，左眉尾一小段断眉，鼻梁右侧轻微不规则，疲惫眼周与真实皮肤，薄唇，黑色西装配素色衬衣，不打夸张领带。偏收窄的下颌，不能宽方脸，不能网红偶像模板。自然中性柔光，单一中灰无干扰背景，手放低。无文字，不磨皮。",
       "reference_assets": [],
       "candidate_target": 3,
-      "approved_reference_image": null,
-      "transparency": "requires_reviewed_cutout"
+      "approved_reference_image": "assets/approved/CH03_GU/ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626.jpg",
+      "transparency": "requires_reviewed_cutout",
+      "reference_scope": "identity_only"
     },
     {
       "id": "CH04_RIVAL",
@@ -110,8 +124,9 @@
       "prompt": "真实摄影选角照，3:4正面半身，33岁男性陆骁（暂名），急切、直接、警惕。宽下颌方脸、眉骨明显，微不对称耳朵，鼻背轻微愈合旧伤，肤质偏粗有毛孔，短发。深灰风衣，朴素深色内搭。脸部偏宽，明确区别于偏瘦长脸黑西装顾承泽，不是同一个演员，不是偶像模特脸。自然中性柔光，单一中灰无干扰背景，双手放低。无文字，不磨皮。",
       "reference_assets": [],
       "candidate_target": 3,
-      "approved_reference_image": null,
-      "transparency": "requires_reviewed_cutout"
+      "approved_reference_image": "assets/approved/CH04_RIVAL/20faa1df1ff0e42699918b154c312e1b9d84aec3b78c18bd5b58bb82bdb0fc8b.jpg",
+      "transparency": "requires_reviewed_cutout",
+      "reference_scope": "identity_only"
     },
     {
       "id": "PR01_BEEF_NOODLES",
@@ -120,11 +135,12 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "真实牛肉面食品近景，普通面馆瓷碗。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 1:1",
+      "prompt": "1:1真实食品摄影，普通白色瓷碗里的一份北京小面馆牛肉汤面，几片正常份量的炖牛肉、可见面条、葱花与热汤，牛肉纹理自然，简单木桌，柔和中性室内光，碗完整入镜。没有人物、手、餐厅标识或任何文字。食品比例可信，不要夸张广告摆盘，不要餐具穿模。",
       "reference_assets": [],
       "candidate_target": 1,
-      "approved_reference_image": null,
-      "transparency": "opaque"
+      "approved_reference_image": "assets/approved/PR01_BEEF_NOODLES/23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e.jpg",
+      "transparency": "opaque",
+      "reference_scope": "object_only"
     },
     {
       "id": "PR02_WATER",
@@ -133,11 +149,12 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "普通无品牌矿泉水，透明瓶。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 1:1",
+      "prompt": "1:1真实物品摄影，一瓶普通无品牌500毫升透明矿泉水，瓶盖淡蓝，透明无字空白瓶身，不贴商标，装满清水，瓶底和瓶盖完整入镜，放在普通木桌，柔和中性光，背景虚化无干扰。无人物、无文字、无品牌、水瓶不变形。",
       "reference_assets": [],
       "candidate_target": 1,
-      "approved_reference_image": null,
-      "transparency": "opaque"
+      "approved_reference_image": "assets/approved/PR02_WATER/732d8887e9c7a0ced91acb410c9974d68b74cd44e617e2881afc46f66d2742ee.jpg",
+      "transparency": "opaque",
+      "reference_scope": "object_only"
     },
     {
       "id": "PR03_ENVELOPE",
@@ -146,20 +163,21 @@
       "size": "2K",
       "model": null,
       "estimated_unit_rmb": null,
-      "prompt": "正式红色遗产文件封套，无可读文字。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 1:1",
+      "prompt": "1:1真实物品摄影，一个正式但普通的深红色纸质文件袋，A4文件大小的比例，封套平放在木桌上，三分之四俯视角，单个文件袋完整入镜，纸张折痕和封口结构可信，低调正式。表面完全空白，不印任何字、章、徽标、数字，不能像钞票、证件或请柬；无人物、无手。中性自然室内光。",
       "reference_assets": [],
       "candidate_target": 1,
-      "approved_reference_image": null,
-      "transparency": "opaque"
+      "approved_reference_image": "assets/approved/PR03_ENVELOPE/81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa.jpg",
+      "transparency": "opaque",
+      "reference_scope": "object_only"
     },
     {
       "id": "CG01_FILE_SLAM",
       "category": "cg",
       "aspect_ratio": "16:9",
       "size": "2K",
-      "model": null,
-      "estimated_unit_rmb": null,
-      "prompt": "参考图中的顾承泽在同一面馆把红色文件袋放到木桌上，真实手部，无文字。摄影级北京现实主义都市短剧剧照，自然混合光、真实皮肤纹理、不过度磨皮，不要偶像模板脸、假文字或多余手指。画面比例 16:9",
+      "model": "doubao-seedream-5-0-pro-260628",
+      "estimated_unit_rmb": 0.64,
+      "prompt": "16:9北京现实主义都市短剧真实摄影剧照。使用参考图1的同一家面馆，保持左墙四块空白菜单板、后方靠左小木柜台和厨房、右侧玻璃入口门、前景木桌，傍晚冷暖混合光。镜头为玩家坐在前景桌边的第一人称，不出现玩家身体，不预设玩家性别。参考图2的顾承泽穿同款黑西装，站在桌子对面稍偏右，克制焦虑，俯身用一只自然的右手把参考图3的深红色空白文件袋放到桌面中央，手指结构自然可信，文件袋大小符合A4。保持人物脸型与疲惫眼周，鼻梁是正常皮肤，减淡参考图中过重的红色痕迹，眉尾只留轻微自然断眉，不出现新鲜伤口。不借用人物参考背景，不借用道具参考桌面。无其他人物、无文字、无数字、无标志，不增加新道具。",
       "reference_assets": [
         "BG02_SHOP_MAIN",
         "CH03_GU",

@@ -25,36 +25,42 @@
       "name": "小陈",
       "provisional": false,
       "appearance": "小陈：24 岁左右北京男服务员，机灵嘴快，略方偏长脸、单眼皮/内双不完全对称、鼻尖微圆、短乱发、颧部细小痘印；朴素工作服。",
-      "approved_reference_image": null,
+      "approved_reference_image": "assets/approved/CH02_XIAOCHEN/05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41.jpg",
       "voice_style": {
         "teaching": "standard_mandarin",
         "npc": "beijing_natural",
         "status": "not_produced"
-      }
+      },
+      "reference_scope": "identity_only",
+      "ignore_reference_background": true
     },
     {
       "id": "GU",
       "name": "顾承泽",
       "provisional": false,
       "appearance": "顾承泽：31 岁男性，富家人、有控制感但压着焦虑，偏瘦长脸、左眉尾轻微断眉、右侧鼻梁不完美、眼周有疲惫纹理、薄唇、常穿黑西装。不能是标准化偶像脸。",
-      "approved_reference_image": null,
+      "approved_reference_image": "assets/approved/CH03_GU/ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626.jpg",
       "voice_style": {
         "teaching": "standard_mandarin",
         "npc": "beijing_natural",
         "status": "not_produced"
-      }
+      },
+      "reference_scope": "identity_only",
+      "ignore_reference_background": true
     },
     {
       "id": "RIVAL",
       "name": "陆骁",
       "provisional": true,
       "appearance": "第二位争夺者（暂名“陆骁”，角色名标记 provisional）：33 岁男性，更急、更直接，宽下颌、眉骨明显、微不对称耳朵、鼻背轻微旧伤、肤质偏粗、深灰风衣。与顾承泽不能长得相像。",
-      "approved_reference_image": null,
+      "approved_reference_image": "assets/approved/CH04_RIVAL/20faa1df1ff0e42699918b154c312e1b9d84aec3b78c18bd5b58bb82bdb0fc8b.jpg",
       "voice_style": {
         "teaching": "standard_mandarin",
         "npc": "beijing_natural",
         "status": "not_produced"
-      }
+      },
+      "reference_scope": "identity_only",
+      "ignore_reference_background": true
     }
   ]
 }

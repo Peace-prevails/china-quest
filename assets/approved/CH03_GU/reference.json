@@ -1,0 +1,9 @@
+{
+  "asset_id": "CH03_GU",
+  "path": "assets/approved/CH03_GU/ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626.jpg",
+  "sha256": "ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626",
+  "review_note": "用户明确选定候选2；仅人物参考，不参考背景。",
+  "source_record": "assets/generated/characters/CH03_GU/f329ee3c75e7f7639e82d9abc9f38307916764de0090250eaa93057907a68953/record.json",
+  "reference_scope": "identity_only",
+  "ignore_background": true
+}

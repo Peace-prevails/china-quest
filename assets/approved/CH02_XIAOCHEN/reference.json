@@ -1,0 +1,9 @@
+{
+  "asset_id": "CH02_XIAOCHEN",
+  "path": "assets/approved/CH02_XIAOCHEN/05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41.jpg",
+  "sha256": "05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41",
+  "review_note": "用户明确选定候选1；仅人物参考，不参考背景。",
+  "source_record": "assets/generated/characters/CH02_XIAOCHEN/80176e928b4a9ce91553b4c7c4a429285d8881c749984422a862443a93dceef1/record.json",
+  "reference_scope": "identity_only",
+  "ignore_background": true
+}

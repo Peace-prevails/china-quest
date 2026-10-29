@@ -1,0 +1,9 @@
+{
+  "asset_id": "PR01_BEEF_NOODLES",
+  "path": "assets/approved/PR01_BEEF_NOODLES/23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e.jpg",
+  "sha256": "23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e",
+  "review_note": "用户明确回复三件都采用；只参考物品本身。",
+  "source_record": "assets/generated/props/PR01_BEEF_NOODLES/fcca46c4f4de5a4950f16869cd28d1b0c4c409581d54d54fde0254fa782d0cd5/record.json",
+  "reference_scope": "object_only",
+  "ignore_background": false
+}

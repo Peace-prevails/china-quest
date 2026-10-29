@@ -1,0 +1,21 @@
+{
+  "asset_id": "BG01_HUTONG",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "2026年前后的北京东城普通生活胡同，16:9纪实摄影，平视35mm。约5米宽的干燥平整沥青路面，有井盖；低矮一层灰砖四合院院墙和灰瓦硬山屋顶，砖缝与轻微修补真实，绝非废墟。深红或深灰院门，部分换成普通现代金属门窗。门口几盆菊花与绿植，院墙上探出槐树叶。两辆普通自行车、一辆小型电动自行车整齐贴边；巷子较宽的远处仅一辆普通白色紧凑型家用轿车靠墙停放，不堵路。少量真实空调外机、配电箱，线缆沿墙规整收束，不能满天乱线。前方右侧是正在营业的小面馆，简单木框玻璃门、朴素空白招牌，店内暖光。傍晚但天色明亮，灰墙细节可见，正常曝光和生活色彩。无人、无文字、无数字、无车牌内容、无品牌。不要红灯笼排阵、牌楼、青石古街、过度破损积水、老式二八车主景或民国影视滤镜。",
+  "size": "2K",
+  "references": [],
+  "sha256": "ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "1fc8383e15626c74683f54e2d6799ddb60ba976706a9c6c7e81a60e2acc90eda",
+  "candidate": "modern-beijing-2026-curl-v1",
+  "status": "approved",
+  "image": "assets/candidates/BG01_HUTONG/modern-beijing-2026-curl-v1.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "当前推荐：2026年前后普通生活胡同方向；有盆花、自行车、电动自行车、靠边家用车、空调外机及沥青路面；虚构地点，不标为实景复原。",
+  "visual_review_complete": true
+}

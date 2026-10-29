@@ -1,0 +1,172 @@
+{
+  "approved_total_rmb": 40,
+  "currency": "CNY",
+  "authorization": "User approved 40 RMB total and asked to continue.",
+  "price_note": "0.12 RMB / Flash output image based on official price checked 2026-10-28. Estimates and uncertain reserves, not provider settlement.",
+  "entries": {
+    "bc7628a4469c7f9a4a089dc53acfe3fd53e16c18209ec7c6712e9396e2682ca8": {
+      "asset_id": "CH01_OWNER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "4e8e4fe91a3ff44f0ffd07a66e8ee39ad4f96f3ffaeb0310c6ebcc0677f234ad": {
+      "asset_id": "CH01_OWNER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "3cb9a27166a9047aad5f82cca52a87ce091d428a4da5af901acdc952a2af65d6": {
+      "asset_id": "CH01_OWNER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "6eda9994a047df7c29bc2ff19cc15f9055405a7cb9e6854498aa931cda6b827a": {
+      "asset_id": "CH01_OWNER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "uncertain",
+      "price_ceiling_rmb": 0.12
+    },
+    "80176e928b4a9ce91553b4c7c4a429285d8881c749984422a862443a93dceef1": {
+      "asset_id": "CH02_XIAOCHEN",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "8f68f56f1f596667444c926ed19cfcc6f79260f76894fc31ad6ef4ed28722142": {
+      "asset_id": "CH02_XIAOCHEN",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "8e694b1728bc2222cef8d562814e515b5ae701e8eb5cd50e0eec8c31ab040b6b": {
+      "asset_id": "CH02_XIAOCHEN",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "c2d3e6ba235593d9dad634e4fe2d18db8364775e7692ee85c7854c1558b7137e": {
+      "asset_id": "CH03_GU",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "f329ee3c75e7f7639e82d9abc9f38307916764de0090250eaa93057907a68953": {
+      "asset_id": "CH03_GU",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "616fad6365fceb0c70dd51c338bfc8d22378ae9f43c2f7c7d535ac8c4b53163b": {
+      "asset_id": "CH03_GU",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "ae0aedb3dd7ea9aebf8af5a239ed0a5d8def954ec9ef95800869ff3e99ab494d": {
+      "asset_id": "CH04_RIVAL",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "5abf781a1aac8c44464c00b0772346cbd771001e903b9b46bac1917f851dc1a6": {
+      "asset_id": "CH04_RIVAL",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "f520f1e9974e5e5383e73f9e777a295836d6331750f3ecd5ce45bf101493ba80": {
+      "asset_id": "CH04_RIVAL",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "78fe0d08baa789e20964b55687d6c2f3c414f10f2b14cd72bfdc6b0f1192b873": {
+      "asset_id": "BG02_SHOP_MAIN",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "77edfd96ffc8302a173f2e59070ff4acae32add15a500df2ba493c1467c73957": {
+      "asset_id": "BG02_SHOP_MAIN",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "53b5963c3ef2908aaa4ef77a5d63a2ec041fbf7b04175b2f42605f8c934dcca5": {
+      "asset_id": "BG02_SHOP_MAIN",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "4ccdaa5eb12765c2ed95ab8cfe39f92c265397c2aba60fdb83f274545a2c77f5": {
+      "asset_id": "BG01_HUTONG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "uncertain",
+      "price_ceiling_rmb": 0.12
+    },
+    "fcca46c4f4de5a4950f16869cd28d1b0c4c409581d54d54fde0254fa782d0cd5": {
+      "asset_id": "PR01_BEEF_NOODLES",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "c191f93661e2aa69f8e77cb34c41c01c1c695a0bff1d3181cc971406e835aa13": {
+      "asset_id": "PR02_WATER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "46977ce1fb89ed682f061a95273f44f32309af4f15b005098e08b4c26301ccf5": {
+      "asset_id": "PR03_ENVELOPE",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "1f9bccf0e60976c857382d74230a618e99358c2e49303cc82a35e831c3d5adf9": {
+      "asset_id": "BG03_COUNTER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "13aa98d53cca80dbdefd7e4db01390f060ab8468ad08bcc92878ddb5d9a69222": {
+      "asset_id": "BG04_DOOR",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "rejected",
+      "price_ceiling_rmb": 0.12
+    },
+    "2c5eff001e0bcaaf88ce8e1c00af1945fd7bde404cf02fed0e8820731afd8dc4": {
+      "asset_id": "BG04_DOOR",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "f5182cb45375426e038e038b592bcd182eef322375dc930ef168a75741c1b602": {
+      "asset_id": "BG01_HUTONG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "2ad6eda1ca91e21e401fcad33a563e0cf0875674a8ce1b76dc79aab2d7e10cf0": {
+      "asset_id": "BG01_HUTONG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "uncertain",
+      "price_ceiling_rmb": 0.12
+    },
+    "1fc8383e15626c74683f54e2d6799ddb60ba976706a9c6c7e81a60e2acc90eda": {
+      "asset_id": "BG01_HUTONG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "approved",
+      "price_ceiling_rmb": 0.12
+    },
+    "cae3a998ef54ffd47bfe020fba75f6faf599a360fe0f61b135ab314a9223c4dc": {
+      "asset_id": "CG01_FILE_SLAM",
+      "model": "doubao-seedream-5-0-pro-260628",
+      "status": "generated",
+      "price_ceiling_rmb": 0.64
+    }
+  },
+  "reserved_and_estimated_rmb": 3.76,
+  "remaining_estimate_rmb": 36.24
+}

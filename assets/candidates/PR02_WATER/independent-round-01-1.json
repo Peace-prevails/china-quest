@@ -1,0 +1,21 @@
+{
+  "asset_id": "PR02_WATER",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "1:1真实物品摄影，一瓶普通无品牌500毫升透明矿泉水，瓶盖淡蓝，透明无字空白瓶身，不贴商标，装满清水，瓶底和瓶盖完整入镜，放在普通木桌，柔和中性光，背景虚化无干扰。无人物、无文字、无品牌、水瓶不变形。",
+  "size": "2K",
+  "references": [],
+  "sha256": "732d8887e9c7a0ced91acb410c9974d68b74cd44e617e2881afc46f66d2742ee",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "c191f93661e2aa69f8e77cb34c41c01c1c695a0bff1d3181cc971406e835aa13",
+  "candidate": "independent-round-01-1",
+  "status": "approved",
+  "image": "assets/candidates/PR02_WATER/independent-round-01-1.jpg",
+  "reference_scope": "object_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "无品牌透明水瓶，轮廓完整；仍是带背景图片，叠加时需另做透明层。",
+  "visual_review_complete": true
+}

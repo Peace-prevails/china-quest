@@ -1,0 +1,9 @@
+{
+  "asset_id": "PR03_ENVELOPE",
+  "path": "assets/approved/PR03_ENVELOPE/81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa.jpg",
+  "sha256": "81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa",
+  "review_note": "用户明确回复三件都采用；只参考物品本身。",
+  "source_record": "assets/generated/props/PR03_ENVELOPE/46977ce1fb89ed682f061a95273f44f32309af4f15b005098e08b4c26301ccf5/record.json",
+  "reference_scope": "object_only",
+  "ignore_background": false
+}

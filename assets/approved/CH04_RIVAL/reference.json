@@ -1,0 +1,9 @@
+{
+  "asset_id": "CH04_RIVAL",
+  "path": "assets/approved/CH04_RIVAL/20faa1df1ff0e42699918b154c312e1b9d84aec3b78c18bd5b58bb82bdb0fc8b.jpg",
+  "sha256": "20faa1df1ff0e42699918b154c312e1b9d84aec3b78c18bd5b58bb82bdb0fc8b",
+  "review_note": "用户明确选定候选1；仅人物参考，不参考背景。",
+  "source_record": "assets/generated/characters/CH04_RIVAL/ae0aedb3dd7ea9aebf8af5a239ed0a5d8def954ec9ef95800869ff3e99ab494d/record.json",
+  "reference_scope": "identity_only",
+  "ignore_background": true
+}

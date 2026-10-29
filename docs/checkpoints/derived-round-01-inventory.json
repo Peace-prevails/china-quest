@@ -1,0 +1,10 @@
+{
+  "batch": "derived-round-01",
+  "planned_images": 2,
+  "completed_images": 2,
+  "archives": [
+    "assets/candidates/BG03_COUNTER/derived-round-01-1.jpg",
+    "assets/candidates/BG04_DOOR/derived-round-01-1.jpg"
+  ],
+  "actual_billing_queried": false
+}

@@ -1,0 +1,28 @@
+{
+  "asset_id": "BG04_DOOR",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9真实摄影，空无一人的面馆门口近景。只拍参考面馆右侧现有的木框玻璃门：镜头朝向门口并推进，门占画面主体，门外同一灰砖胡同。沿用相同门框分格、金属门把、磨损墙体、地砖与傍晚冷暖光。背景层必须绝对空无一人：没有人、没有人体、没有人影、没有倒影中的人、没有人物照片。不要增加门窗，不改变装修，不包含任何文字或数字。画面中不出现桌子挡住门。\n参考图1（BG02_SHOP_MAIN）仅约束场景布局、建筑材质与室内陈设。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "scope": "scene_layout"
+    }
+  ],
+  "sha256": "1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "2c5eff001e0bcaaf88ce8e1c00af1945fd7bde404cf02fed0e8820731afd8dc4",
+  "candidate": "door-clean-01",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BG04_DOOR/door-clean-01.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "重做版本：已去除误生人物，保留批准主场景的木框玻璃门、冷暖光与墙面材质。",
+  "visual_review_complete": true
+}

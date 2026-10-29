@@ -1,0 +1,21 @@
+{
+  "asset_id": "PR03_ENVELOPE",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "1:1真实物品摄影，一个正式但普通的深红色纸质文件袋，A4文件大小的比例，封套平放在木桌上，三分之四俯视角，单个文件袋完整入镜，纸张折痕和封口结构可信，低调正式。表面完全空白，不印任何字、章、徽标、数字，不能像钞票、证件或请柬；无人物、无手。中性自然室内光。",
+  "size": "2K",
+  "references": [],
+  "sha256": "81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "46977ce1fb89ed682f061a95273f44f32309af4f15b005098e08b4c26301ccf5",
+  "candidate": "independent-round-01-1",
+  "status": "approved",
+  "image": "assets/candidates/PR03_ENVELOPE/independent-round-01-1.jpg",
+  "reference_scope": "object_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "深红空白文件袋，未出现文字；后续CG只参考文件袋本身，不参考桌面。",
+  "visual_review_complete": true
+}

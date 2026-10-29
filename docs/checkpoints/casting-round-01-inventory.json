@@ -1,0 +1,20 @@
+{
+  "batch": "casting-round-01",
+  "planned_images": 12,
+  "completed_images": 12,
+  "archives": [
+    "assets/candidates/CH02_XIAOCHEN/casting-round-01-1.jpg",
+    "assets/candidates/CH02_XIAOCHEN/casting-round-01-2.jpg",
+    "assets/candidates/CH02_XIAOCHEN/casting-round-01-3.jpg",
+    "assets/candidates/CH03_GU/casting-round-01-1.jpg",
+    "assets/candidates/CH03_GU/casting-round-01-2.jpg",
+    "assets/candidates/CH03_GU/casting-round-01-3.jpg",
+    "assets/candidates/CH04_RIVAL/casting-round-01-1.jpg",
+    "assets/candidates/CH04_RIVAL/casting-round-01-2.jpg",
+    "assets/candidates/CH04_RIVAL/casting-round-01-3.jpg",
+    "assets/candidates/BG02_SHOP_MAIN/casting-round-01-1.jpg",
+    "assets/candidates/BG02_SHOP_MAIN/casting-round-01-2.jpg",
+    "assets/candidates/BG02_SHOP_MAIN/casting-round-01-3.jpg"
+  ],
+  "actual_billing_queried": false
+}

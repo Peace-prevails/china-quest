@@ -1,6 +1,7 @@
 """Inspect candidate inventory and readiness without making network requests."""
 import argparse
 from common import ROOT, manifest, read, write, digest
+from production_budget import load_budget,total_reserved
 
 
 def inventory():
@@ -27,8 +28,9 @@ def inventory():
     for row in rows:
         row['blocked_by']=[aid for aid in row['dependencies'] if aid not in approved_ids]
         row['ready_for_generation']=not row['blocked_by'] and not row['errors']
+    budget=load_budget(ROOT)
     return {'base_assets':len(rows),'candidate_target_total':sum(row['candidate_target'] for row in rows),
-            'approved_assets':len(approved_ids),'assets':rows,'paid_generation_authorized':False}
+            'approved_assets':len(approved_ids),'assets':rows,'paid_generation_authorized':bool(budget),'budget':{'approved_total_rmb':budget['approved_total_rmb'],'estimated_and_reserved_rmb':float(total_reserved(budget))} if budget else None}
 
 
 def export_approved(path):

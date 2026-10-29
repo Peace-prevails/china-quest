@@ -1,5 +1,5 @@
 """One HTTP request per image. Ambiguous POST failures are never retried automatically."""
-import argparse,base64,json,math,mimetypes,os,time,urllib.request,urllib.error,uuid
+import argparse,base64,email,io,json,math,mimetypes,os,subprocess,tempfile,time,urllib.request,urllib.error,uuid
 from common import ROOT,read,write,digest,manifest
 from production_budget import reserve,synchronize
 API='https://ark.cn-beijing.volces.com/api/v3/images/generations'
@@ -26,7 +26,25 @@ def http_error_details(error,key=''):
  if request_id:details['request_id']=request_id
  if not provider:details['body_excerpt']=body[:1000]
  return details
+def curl_request_json(payload,key):
+ # Keep the key out of argv, shell history and printed diagnostics.
+ with tempfile.TemporaryDirectory(prefix='china-quest-ark-') as folder:
+  from pathlib import Path
+  directory=Path(folder);body=directory/'request.json';headers=directory/'headers';response=directory/'response.json';received_headers=directory/'response.headers'
+  body.write_text(json.dumps(payload));headers.write_text('Authorization: Bearer '+key+'\nContent-Type: application/json\n');headers.chmod(0o600)
+  command=['curl','--silent','--show-error','--fail-with-body','--connect-timeout','20','--max-time','180','--retry','0','--header','@'+str(headers),'--data-binary','@'+str(body),'--output',str(response),'--dump-header',str(received_headers),'--write-out','%{http_code}',API]
+  result=subprocess.run(command,capture_output=True,text=True)
+  content=response.read_bytes() if response.exists() else b''
+  status=int(result.stdout.strip()) if result.stdout.strip().isdigit() else 0
+  if status>=400:
+   raw=received_headers.read_text(errors='replace') if received_headers.exists() else ''
+   block=raw.rstrip().split('\n\n')[-1]
+   parsed=email.message_from_string('\n'.join(block.splitlines()[1:]))
+   raise urllib.error.HTTPError(API,status,'Ark rejected request',parsed,io.BytesIO(content))
+  if result.returncode:raise urllib.error.URLError('curl transport: '+result.stderr.replace(key,'[REDACTED]')[:1000])
+  return json.loads(content)
 def request_json(payload,key):
+ if os.getenv('ARK_HTTP_TRANSPORT')=='curl':return curl_request_json(payload,key)
  req=urllib.request.Request(API,json.dumps(payload).encode(),{'Authorization':'Bearer '+key,'Content-Type':'application/json'})
  # A timeout/5xx may already have incurred cost. Persist uncertainty and stop.
  with urllib.request.urlopen(req,timeout=180) as response:return json.load(response)
@@ -109,12 +127,15 @@ def run(args):
   except Exception as e:
    record['status']='download_failed' if (folder/'response.json').exists() else 'uncertain'
    record['error_type']=type(e).__name__
+   if isinstance(e,urllib.error.URLError) and not isinstance(e,urllib.error.HTTPError):
+    record['network_error']=str(e.reason).replace(os.environ.get('ARK_API_KEY',''),'[REDACTED]')[:1000] if os.environ.get('ARK_API_KEY') else str(e.reason)[:1000]
    if isinstance(e,urllib.error.HTTPError):
     details=http_error_details(e,os.environ.get('ARK_API_KEY',''))
     record['http_error']=details
     if record['status']=='uncertain' and e.code in [400,401,403,404,405,413,415,422]:record['status']='request_rejected'
    write(record_path,record);synchronize(ROOT)
    print('FAILED',a['id'],record['status'])
+   if record.get('network_error'):print('NETWORK',record['network_error'])
    if record.get('http_error'):print(json.dumps(record['http_error'],ensure_ascii=False))
    failed=True;break
  if failed:raise SystemExit(1)

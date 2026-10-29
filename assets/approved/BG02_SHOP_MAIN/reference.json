@@ -1,0 +1,9 @@
+{
+  "asset_id": "BG02_SHOP_MAIN",
+  "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+  "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+  "review_note": "用户明确选定候选3；仅锁定面馆布局。",
+  "source_record": "assets/generated/backgrounds/BG02_SHOP_MAIN/53b5963c3ef2908aaa4ef77a5d63a2ec041fbf7b04175b2f42605f8c934dcca5/record.json",
+  "reference_scope": "scene_layout",
+  "ignore_background": false
+}

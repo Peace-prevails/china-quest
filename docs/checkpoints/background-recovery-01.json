@@ -1,0 +1,8 @@
+{
+  "requests": [
+    "BG04_DOOR door-clean-01",
+    "BG01_HUTONG hutong-recovery-01"
+  ],
+  "prior_hutong_uncertain_request_preserved": true,
+  "estimate_rmb": 0.24
+}

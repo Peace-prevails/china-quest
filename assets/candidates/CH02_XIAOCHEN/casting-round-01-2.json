@@ -1,0 +1,21 @@
+{
+  "asset_id": "CH02_XIAOCHEN",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "真实摄影选角照，3:4正面半身，24岁北京面馆男服务员小陈。年轻、机灵嘴快，略方偏长脸，左右单眼皮和内双不完全对称，鼻尖微圆，短乱发，颧部轻微痘印和真实毛孔。朴素灰蓝工作衫，绝非西装或偶像造型，神态自然有机灵劲。自然柔光，单一中灰无干扰背景，双手放低，完整露出头顶和肩膀。不要磨皮、尖下巴、模特脸、文字。人物参考图背景不用于游戏。",
+  "size": "2K",
+  "references": [],
+  "sha256": "ea13054ddd4596cfa0e2d652d94374953e853633478bc3c1f8434ae5412f29e6",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "8f68f56f1f596667444c926ed19cfcc6f79260f76894fc31ad6ef4ed28722142",
+  "candidate": "casting-round-01-2",
+  "status": "not_selected",
+  "image": "assets/candidates/CH02_XIAOCHEN/casting-round-01-2.jpg",
+  "reference_scope": "identity_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "神态更安静、学生气更重；工作衫领型与另外两张不同。",
+  "visual_review_complete": true
+}

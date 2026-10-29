@@ -1,0 +1,21 @@
+{
+  "asset_id": "BG02_SHOP_MAIN",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9真实摄影，北京胡同口普通小面馆，傍晚，玩家坐在前景木桌旁的平视室内主视角，35mm镜头。空间小而可信：左墙四块空白菜单板；后墙靠左一个小木柜台，后方通厨房；右侧靠前是木框玻璃入口门，门外隐约胡同灰砖；中间留出通道，四张旧木桌配木椅，地面灰色旧水泥砖。暖色顶灯混合门口冷色傍晚光，磨损墙面、真实尺度、干净但有使用痕迹。店内无人，无人物照片，不用任何人物参考照片里的背景。菜单板和门牌均留白，无可读文字、无字母、无品牌，不要豪华餐厅或复古影棚，前景桌面给后续食物与文件袋留位置。",
+  "size": "2K",
+  "references": [],
+  "sha256": "309a6d5cc662656b7c2547745f05951d38e2fe9f9a48b3aa2f225f03b0468f5c",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "77edfd96ffc8302a173f2e59070ff4acae32add15a500df2ba493c1467c73957",
+  "candidate": "casting-round-01-2",
+  "status": "not_selected",
+  "image": "assets/candidates/BG02_SHOP_MAIN/casting-round-01-2.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "后厨、柜台和门关系清楚；前景玻璃杯会干扰道具层，定稿需移除。",
+  "visual_review_complete": true
+}

@@ -1,0 +1,22 @@
+{
+  "asset_id": "CH03_GU",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "真实摄影选角照，3:4正面半身，31岁男性顾承泽，富家人，有控制感、克制中带焦虑。偏瘦长脸，左眉尾一小段断眉，鼻梁右侧轻微不规则，疲惫眼周与真实皮肤，薄唇，黑色西装配素色衬衣，不打夸张领带。偏收窄的下颌，不能宽方脸，不能网红偶像模板。自然中性柔光，单一中灰无干扰背景，手放低。无文字，不磨皮。",
+  "size": "2K",
+  "references": [],
+  "sha256": "ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "f329ee3c75e7f7639e82d9abc9f38307916764de0090250eaa93057907a68953",
+  "candidate": "casting-round-01-2",
+  "status": "approved",
+  "image": "assets/candidates/CH03_GU/casting-round-01-2.jpg",
+  "reference_scope": "identity_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "推荐作为脸型方向：正视、克制、瘦长轮廓。鼻梁红痕仍需修正，不应作为新伤。",
+  "visual_review_complete": true,
+  "ignore_background": true
+}

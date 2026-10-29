@@ -1,0 +1,40 @@
+{
+  "asset_id": "CG01_FILE_SLAM",
+  "model": "doubao-seedream-5-0-pro-260628",
+  "prompt": "16:9北京现实主义都市短剧真实摄影剧照。使用参考图1的同一家面馆，保持左墙四块空白菜单板、后方靠左小木柜台和厨房、右侧玻璃入口门、前景木桌，傍晚冷暖混合光。镜头为玩家坐在前景桌边的第一人称，不出现玩家身体，不预设玩家性别。参考图2的顾承泽穿同款黑西装，站在桌子对面稍偏右，克制焦虑，俯身用一只自然的右手把参考图3的深红色空白文件袋放到桌面中央，手指结构自然可信，文件袋大小符合A4。保持人物脸型与疲惫眼周，鼻梁是正常皮肤，减淡参考图中过重的红色痕迹，眉尾只留轻微自然断眉，不出现新鲜伤口。不借用人物参考背景，不借用道具参考桌面。无其他人物、无文字、无数字、无标志，不增加新道具。\n参考图1（BG02_SHOP_MAIN）仅约束场景布局、建筑材质与室内陈设。\n参考图2（CH03_GU）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。\n参考图3（PR03_ENVELOPE）只参考主体物品，忽略其背景。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "scope": "scene_layout"
+    },
+    {
+      "asset_id": "CH03_GU",
+      "sha256": "ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626",
+      "path": "assets/approved/CH03_GU/ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626.jpg",
+      "scope": "identity_only"
+    },
+    {
+      "asset_id": "PR03_ENVELOPE",
+      "sha256": "81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa",
+      "path": "assets/approved/PR03_ENVELOPE/81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa.jpg",
+      "scope": "object_only"
+    }
+  ],
+  "sha256": "7fbbc42efd922037a068d36a4f46df9436af55418a241b4d0a850ff43bbc7a24",
+  "price_ceiling_rmb": 0.64,
+  "fingerprint": "cae3a998ef54ffd47bfe020fba75f6faf599a360fe0f61b135ab314a9223c4dc",
+  "candidate": "cg-pro-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/CG01_FILE_SLAM/cg-pro-v1.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "使用已批准顾承泽、面馆与红文件袋；背景布局保持，人物鼻梁红痕已减淡；右手放文件袋动作与第一人称视点基本可信。",
+  "visual_review_complete": true
+}

@@ -1,0 +1,9 @@
+{
+  "asset_id": "BG01_HUTONG",
+  "path": "assets/approved/BG01_HUTONG/ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3.jpg",
+  "sha256": "ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3",
+  "review_note": "用户确认现代北京生活胡同版本可以用，作为EP01开场背景。",
+  "source_record": "assets/generated/backgrounds/BG01_HUTONG/1fc8383e15626c74683f54e2d6799ddb60ba976706a9c6c7e81a60e2acc90eda/record.json",
+  "reference_scope": "scene_layout",
+  "ignore_background": false
+}

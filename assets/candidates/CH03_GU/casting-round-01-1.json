@@ -1,0 +1,21 @@
+{
+  "asset_id": "CH03_GU",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "真实摄影选角照，3:4正面半身，31岁男性顾承泽，富家人，有控制感、克制中带焦虑。偏瘦长脸，左眉尾一小段断眉，鼻梁右侧轻微不规则，疲惫眼周与真实皮肤，薄唇，黑色西装配素色衬衣，不打夸张领带。偏收窄的下颌，不能宽方脸，不能网红偶像模板。自然中性柔光，单一中灰无干扰背景，手放低。无文字，不磨皮。",
+  "size": "2K",
+  "references": [],
+  "sha256": "68ad2c62931b1fad78ce137d866034cdee3cafde4b37e4c0a22ee64c8cbe1fa8",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "c2d3e6ba235593d9dad634e4fe2d18db8364775e7692ee85c7854c1558b7137e",
+  "candidate": "casting-round-01-1",
+  "status": "not_selected",
+  "image": "assets/candidates/CH03_GU/casting-round-01-1.jpg",
+  "reference_scope": "identity_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "疲惫与焦虑明显，但视线偏低；眉尾和鼻梁痕迹过重，选脸后应减淡。",
+  "visual_review_complete": true
+}
