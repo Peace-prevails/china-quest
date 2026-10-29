@@ -78,4 +78,4 @@
 
 验收：剧情全部可达状态检查；参考范围、预算累计与安全传输回归测试；每张候选的下载与SHA256校验。验收报告见 checkpoints/stage-07.json，画廊见 assets/candidates/review.html。
 
-GitHub普通Git推送遇到空响应／超时；本地提交完整保留，正在改用官方GitHub Git Data API同步，成功与否以远端分支验证为准。
+GitHub普通Git推送遇到空响应／超时后，已使用官方GitHub Git Data API同步成功；逐个核对blob与tree哈希，远端主分支达到347be4079a0cb2c563d41b4d700db43418ddc7fe，本地提交ID完整保留，未强推或改写历史。
