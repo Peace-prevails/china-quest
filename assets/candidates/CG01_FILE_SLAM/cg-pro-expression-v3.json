@@ -1,0 +1,28 @@
+{
+  "asset_id": "CG01_FILE_SLAM",
+  "model": "doubao-seedream-5-0-pro-260628",
+  "prompt": "Use case: identity-preserve\n对参考图做极轻微的面部表情编辑，其他全部保持原样，包括人物骨相、年龄、发型、黑西装、身体姿势、手指、红文件袋、桌面、场景构图和光线。\n将脸部处理为真实日常交流中的安静疲惫神态：眉毛放松，不抬眉、不皱眉；上眼睑略微低垂，眼睛自然大小，视线平静地接近镜头，不侧看、不瞪眼；嘴唇轻轻自然合拢，唇部放松，下颌放松，嘴角中性。像一个刚刚赶到、略微疲倦的人把文件放下后，平静等对方回应的抓拍瞬间。紧迫感只由原来的俯身动作表达，脸上不额外演出焦虑。不微笑、不惊讶、不张嘴，不增加额头纹，不摆拍，不磨皮，保留自然皮肤纹理和细微左右差异。\n脸部修改幅度小，其余画面尽可能原样保留，写实摄影，16:9，无文字无标志。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "CG01_FILE_SLAM",
+      "sha256": "7fbbc42efd922037a068d36a4f46df9436af55418a241b4d0a850ff43bbc7a24",
+      "path": "assets/candidates/CG01_FILE_SLAM/cg-pro-v1.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "69bc06211051fd276a00917f570949c1312ca10d2e5c83d9c1b792c5dec62ce4",
+  "price_ceiling_rmb": 0.6,
+  "fingerprint": "12332c4bd7a001aaf834ca703e374e46b48f5c26e6be0ee0cb0ed076b45424d9",
+  "candidate": "cg-pro-expression-v3",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/CG01_FILE_SLAM/cg-pro-expression-v3.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "recommendation": "推荐审阅：眉眼和嘴唇放松，疲惫而平静；从v1原图局部编辑，场景、动作、文件袋保持。",
+  "visual_review_complete": true
+}

@@ -34,3 +34,15 @@ class ScopeAndBudgetTests(unittest.TestCase):
   with tempfile.TemporaryDirectory() as temp,patch.object(generation,'ROOT',pathlib.Path(temp)),patch.object(generation,'manifest',return_value={'assets':[asset]}),patch.object(generation,'reference',return_value=({'asset_id':'OWNER','scope':'identity_only'},'fixture')),patch.dict(generation.os.environ,{'ARK_API_KEY':'fixture'}),patch.object(generation,'request_json') as post:
    with self.assertRaisesRegex(ValueError,'cannot define a background'):generation.run(args)
    post.assert_not_called()
+ def test_edit_uses_archived_target_and_rejects_modified_image(self):
+  asset={'id':'CG','category':'cg','model':'fixture','prompt':'Original generation','size':'2K','reference_assets':[]}
+  args=generation.parser().parse_args(['--dry-run','--edit-target','assets/candidates/CG/v1.png','--edit-prompt-file','edit.txt'])
+  import io,json
+  with tempfile.TemporaryDirectory() as temp,patch.object(generation,'ROOT',pathlib.Path(temp)),patch.object(generation,'manifest',return_value={'assets':[asset]}):
+   root=pathlib.Path(temp);target=root/args.edit_target;target.parent.mkdir(parents=True);target.write_bytes(b'\x89PNG\r\n\x1a\nfixture')
+   write(target.with_suffix('.json'),{'asset_id':'CG','sha256':digest(target.read_bytes())});(root/'edit.txt').write_text('Change expression only')
+   output=io.StringIO()
+   with patch('sys.stdout',output):generation.run(args)
+   result=json.loads(output.getvalue());self.assertEqual(result['prompt'],'Change expression only');self.assertEqual(result['references'][0]['scope'],'edit_target')
+   target.write_bytes(b'\x89PNG\r\n\x1a\ntampered')
+   with self.assertRaisesRegex(ValueError,'hash mismatch'):generation.run(args)

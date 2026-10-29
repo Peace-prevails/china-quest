@@ -27,7 +27,7 @@
   "price_ceiling_rmb": 0.64,
   "fingerprint": "cae3a998ef54ffd47bfe020fba75f6faf599a360fe0f61b135ab314a9223c4dc",
   "candidate": "cg-pro-v1",
-  "status": "awaiting_human_review",
+  "status": "rejected",
   "image": "assets/candidates/CG01_FILE_SLAM/cg-pro-v1.jpg",
   "reference_scope": "full_image",
   "background_is_reference": false,
@@ -35,6 +35,6 @@
     "downloaded": true,
     "sha256_matches": true
   },
-  "recommendation": "使用已批准顾承泽、面馆与红文件袋；背景布局保持，人物鼻梁红痕已减淡；右手放文件袋动作与第一人称视点基本可信。",
+  "recommendation": "用户反馈：人物表情有点假，其他部分可以。保留为局部表情修改的原图。",
   "visual_review_complete": true
 }

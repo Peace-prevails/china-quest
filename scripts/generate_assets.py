@@ -84,6 +84,15 @@ def run(args):
   for aid in a['reference_assets']:
    try:r,img=reference(aid,all_assets);refs.append(r);images.append(img)
    except ValueError as e:blocked.append(str(e))
+  if getattr(args,'edit_target',None):
+   target=(ROOT/args.edit_target).resolve()
+   if not target.is_relative_to((ROOT/'assets/candidates').resolve()):raise ValueError('Edit target must be an archived candidate')
+   data=target.read_bytes();image_type(data)
+   metadata=read(target.with_suffix('.json'))
+   if metadata['asset_id']!=a['id'] or digest(data)!=metadata['sha256']:raise ValueError('Edit target identity or hash mismatch')
+   if not getattr(args,'edit_prompt_file',None):raise ValueError('Edit requires an explicit prompt file')
+   refs=[{'asset_id':a['id'],'sha256':digest(data),'path':str(target.relative_to(ROOT.resolve())),'scope':'edit_target'}]
+   images=['data:'+mimetypes.guess_type(target.name)[0]+';base64,'+base64.b64encode(data).decode()];blocked=[]
   scope_notes=[]
   for index,ref in enumerate(refs,1):
    if ref['scope']=='identity_only':
@@ -91,14 +100,15 @@ def run(args):
     scope_notes.append(f'参考图{index}（{ref["asset_id"]}）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。')
    elif ref['scope']=='scene_layout':scope_notes.append(f'参考图{index}（{ref["asset_id"]}）仅约束场景布局、建筑材质与室内陈设。')
    elif ref['scope']=='object_only':scope_notes.append(f'参考图{index}（{ref["asset_id"]}）只参考主体物品，忽略其背景。')
-  effective_prompt=a['prompt']+('\n'+'\n'.join(scope_notes) if scope_notes else '')
+  base_prompt=(ROOT/args.edit_prompt_file).read_text() if getattr(args,'edit_target',None) else a['prompt']
+  effective_prompt=base_prompt+('\n'+'\n'.join(scope_notes) if scope_notes else '')
   payload={'model':model,'prompt':effective_prompt,'size':a['size'],'response_format':'url','watermark':False}
   if images:payload['image']=images
   fingerprint=digest(json.dumps({'payload':payload,'refs':refs,'candidate':args.candidate},sort_keys=True).encode())
   folder=ROOT/'assets/generated'/a['category']/a['id']/fingerprint
   record_path=folder/'record.json'
   if args.dry_run:
-   print(json.dumps({'asset_id':a['id'],'model':model or 'UNCONFIGURED: supply console model/endpoint ID','prompt':a['prompt'],'size':a['size'],'references':refs,'blocked':blocked,'cache_key':fingerprint,'paid':False},ensure_ascii=False));count+=1;continue
+   print(json.dumps({'asset_id':a['id'],'model':model or 'UNCONFIGURED: supply console model/endpoint ID','prompt':effective_prompt,'size':a['size'],'references':refs,'blocked':blocked,'cache_key':fingerprint,'paid':False},ensure_ascii=False));count+=1;continue
   if not model:raise ValueError('Use --model or ARK_IMAGE_MODEL from your console')
   if blocked:raise ValueError('; '.join(blocked))
   if record_path.exists():
@@ -140,7 +150,7 @@ def run(args):
    failed=True;break
  if failed:raise SystemExit(1)
 def parser():
- p=argparse.ArgumentParser();p.add_argument('--dry-run',action='store_true');p.add_argument('--asset-id');p.add_argument('--max-images',type=int,default=1);p.add_argument('--max-spend-rmb',type=float);p.add_argument('--unit-price-rmb',type=float);p.add_argument('--model');p.add_argument('--resume',action='store_true');p.add_argument('--confirm-paid',action='store_true');p.add_argument('--candidate',default='1');return p
+ p=argparse.ArgumentParser();p.add_argument('--edit-target');p.add_argument('--edit-prompt-file');p.add_argument('--dry-run',action='store_true');p.add_argument('--asset-id');p.add_argument('--max-images',type=int,default=1);p.add_argument('--max-spend-rmb',type=float);p.add_argument('--unit-price-rmb',type=float);p.add_argument('--model');p.add_argument('--resume',action='store_true');p.add_argument('--confirm-paid',action='store_true');p.add_argument('--candidate',default='1');return p
 if __name__=='__main__':
  try:
   args=parser().parse_args()
