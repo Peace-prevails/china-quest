@@ -1,0 +1,9 @@
+{
+  "asset_id": "CG01_FILE_SLAM",
+  "path": "assets/approved/CG01_FILE_SLAM/69bc06211051fd276a00917f570949c1312ca10d2e5c83d9c1b792c5dec62ce4.jpg",
+  "sha256": "69bc06211051fd276a00917f570949c1312ca10d2e5c83d9c1b792c5dec62ce4",
+  "review_note": "用户确认采用表情修正版 cg-pro-expression-v3。",
+  "source_record": "assets/generated/cg/CG01_FILE_SLAM/12332c4bd7a001aaf834ca703e374e46b48f5c26e6be0ee0cb0ed076b45424d9/record.json",
+  "reference_scope": "full_image",
+  "ignore_background": false
+}

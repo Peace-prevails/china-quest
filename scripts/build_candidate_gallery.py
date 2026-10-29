@@ -14,7 +14,7 @@ def build():
             image=Path(data['image']).name
             source=aid+'/'+image
             label=path.stem.replace('casting-round-01-','候选 ').replace('independent-round-01-','初稿 ').replace('derived-round-01-','派生 ')
-            status=('已选定 · 仅人物，不参考背景' if data.get('reference_scope')=='identity_only' else '已选定 · 场景布局' if data.get('reference_scope')=='scene_layout' else '已选定 · 仅道具') if data['status']=='approved' else {'rejected':'已退回','not_selected':'未选用'}.get(data['status'],'待审阅')
+            status=('已选定 · 仅人物，不参考背景' if data.get('reference_scope')=='identity_only' else '已选定 · 场景布局' if data.get('reference_scope')=='scene_layout' else '已选定 · 仅道具' if data.get('reference_scope')=='object_only' else '已选定 · 完整剧情画面') if data['status']=='approved' else {'rejected':'已退回','not_selected':'未选用'}.get(data['status'],'待审阅')
             recommendation=data.get('recommendation','')
             cards.append('<article><a href="'+html.escape(source)+'" target="_blank" rel="noopener"><img loading="lazy" src="'+html.escape(source)+'" alt="'+html.escape(title+' '+label)+'"></a><div><h3>'+html.escape(label)+'</h3><p class="status">'+status+'</p><p>'+html.escape(recommendation)+'</p><details><summary>提示词与记录</summary><p>'+html.escape(data['prompt'])+'</p><a href="'+aid+'/'+path.name+'">JSON 记录</a></details></div></article>')
         sections.append('<section id="'+aid+'"><h2>'+html.escape(title)+'</h2><div class="grid">'+(''.join(cards) if cards else '<p>暂无图片；胡同请求网络失败，已保留费用预留且未自动重发。</p>')+'</div></section>')

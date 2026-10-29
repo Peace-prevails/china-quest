@@ -15,7 +15,7 @@
   "price_ceiling_rmb": 0.6,
   "fingerprint": "12332c4bd7a001aaf834ca703e374e46b48f5c26e6be0ee0cb0ed076b45424d9",
   "candidate": "cg-pro-expression-v3",
-  "status": "awaiting_human_review",
+  "status": "approved",
   "image": "assets/candidates/CG01_FILE_SLAM/cg-pro-expression-v3.jpg",
   "reference_scope": "full_image",
   "background_is_reference": false,
@@ -23,6 +23,6 @@
     "downloaded": true,
     "sha256_matches": true
   },
-  "recommendation": "推荐审阅：眉眼和嘴唇放松，疲惫而平静；从v1原图局部编辑，场景、动作、文件袋保持。",
+  "recommendation": "用户已确认采用：表情修正版 v3，作为正式剧情 CG。",
   "visual_review_complete": true
 }
