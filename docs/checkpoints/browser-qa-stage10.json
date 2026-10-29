@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-29",
+  "url": "http://127.0.0.1:8767",
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "horizontal_overflow": false
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "horizontal_overflow": false
+    }
+  ],
+  "verified": [
+    "resume from title after reload",
+    "all menu images loaded",
+    "zhajiang plus water totals 27",
+    "envelope clue appears in billion scene",
+    "reject inheritance and distrust both reach end",
+    "SMS rendered as native text",
+    "replay door visit preserves original 1/5 exploration ending",
+    "no browser error/warning logs"
+  ],
+  "screenshots": [
+    "docs/screenshots/ep01-mobile-menu.jpg",
+    "docs/screenshots/ep01-desktop-menu.jpg"
+  ],
+  "limitations": [
+    "No recorded dialogue",
+    "No transparent character sprites",
+    "Local preview only"
+  ]
+}

@@ -2,7 +2,25 @@
 
 北京都市荒诞悬疑 × 零基础中文。EP01《一碗牛肉面，十亿遗产》。
 
-当前交付是结构化故事与 Seedream 图片生产／审核流水线，不是完整手机游戏。Python 3.11+，仅使用标准库，无需安装依赖。
+当前交付包含可本地运行的手机浏览器第一集试玩版、结构化故事与 Seedream 图片生产／审核流水线。Python 3.11+ 标准库启动，浏览器无需安装依赖；开发检验另需 Node.js 22+。
+
+## 浏览器试玩
+
+```sh
+python3 scripts/serve_game.py
+```
+
+打开 http://127.0.0.1:8767 。完整覆盖 S0–S9、菜单点单、动态账单、五个探索热点、正式 CG、短信结尾与独立探索回放。每次选择保存到当前浏览器 localStorage；结尾可下载 JSON 存档。英文任务始终显示，翻译和拼音可切换，每个新场景默认展开。
+
+`web/` 是无需打包依赖的前端源文件。`scripts/build_web.py` 校验12项批准图哈希，将前端、故事及批准图复制到 `local/web/`；服务器只公开此目录，不公开整个仓库。当前入口仅限本机；手机尺寸已在浏览器检验，尚未部署公网。
+
+本版为文字与拼音试玩：人物用肖像头像显示；语音、透明立绘尚未制作。炸酱面和可乐使用明确的UI图标。拼音采用教学用读音提示（含一／不变调），后续录音前仍需逐句校音。
+
+```sh
+python3 -m unittest discover -s tests -p test_web.py -v
+```
+
+包含128条网页/Python剧情对照路线、存档恢复、回放隔离、全部选项及动态台词拼音覆盖与公开素材包检查。
 
 ## 本地验收
 
@@ -14,7 +32,7 @@ python3 scripts/generate_assets.py --dry-run --asset-id CH01_OWNER --max-images 
 python3 scripts/review_assets.py
 ```
 
-终端试玩包含菜单卡、点餐取消／帮助、动态账单、五个可重玩热点、S6–S9 收束与结尾状态保存。探索没有强制计时，不要求完成全部热点，选择“继续吃面”即可退出。S6 后不再返回探索。中英文已提供；pinyin 字段保留空值，尚待逐句校对，不宣称已交付中文语音／拼音教学体验。语音配置已预留，本阶段不调用 TTS。
+终端试玩包含菜单卡、点餐取消／帮助、动态账单、五个可重玩热点、S6–S9 收束与结尾状态保存。探索没有强制计时，不要求完成全部热点，选择“继续吃面”即可退出。S6 后不再返回探索。中英文及浏览器拼音已提供；动态台词通过 web/pinyin.json 匹配，语音配置已预留，本阶段不调用 TTS。
 
 ## 单张付费测试（需要人工批准张数和费用）
 
@@ -26,7 +44,7 @@ python3 scripts/review_assets.py
 python3 scripts/generate_assets.py --asset-id CH01_OWNER --model MODEL --max-images 1 --unit-price-rmb PRICE --max-spend-rmb CAP --confirm-paid
 ```
 
-`--unit-price-rmb` 是人工确认的单张费用上限，不是程序自动估价。每轮最大张数×单价必须小于预算。多轮调用需人工累计预算。当前未授权任何付费生成。
+`--unit-price-rmb` 是人工确认的单张费用上限，不是程序自动估价。每轮最大张数×单价必须小于预算。多轮调用需人工累计预算。用户已批准累计40元图片预算，已生成素材的估计与预留记录见 data/production_budget.json。
 
 每次 HTTP 请求仅生成一张；不发送新版 pro/flash 不支持的 sequential 参数。返回 URL 立即下载，记录响应、SHA256、提示词、模型、参考图哈希。生成 POST 超时／错误不自动重试，避免重复扣费；只有下载 GET 指数退避重试。状态 `uncertain` 必须先查供应商账单。下载失败可使用同命令 `--resume` 重用已保存响应，不重复 POST（链接过期需人工处理）。缓存命中校验文件哈希。候选通过 `--candidate 2` / `3` 区分；同候选重复运行必须 `--resume`。
 
@@ -97,4 +115,4 @@ python3 scripts/build_candidate_gallery.py
 
 生图连接如遇本机 urllib TLS 中断，可在同样的审批和累计预算限制下使用 `ARK_HTTP_TRANSPORT=curl`。Key 通过临时权限文件传入，不出现在进程参数中；网络错误仍保守记录为 uncertain，不做自动付费重试。人工决定新尝试时必须保留旧请求预留并使用可审计的新 candidate 标签。
 
-现代胡同资料与设计边界见 [docs/hutong_2026_reference_notes.md](docs/hutong_2026_reference_notes.md)。12项基础图片目前已生成，待审阅与已批准状态以画廊及 approved/reference.json 为准，生成成功不等于最终资产全部验收通过。
+现代胡同资料与设计边界见 [docs/hutong_2026_reference_notes.md](docs/hutong_2026_reference_notes.md)。12项基础图片均已获得用户批准，正式清单为 episodes/ep01/approved_asset_manifest.json。
