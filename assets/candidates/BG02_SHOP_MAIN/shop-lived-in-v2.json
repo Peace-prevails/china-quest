@@ -1,0 +1,28 @@
+{
+  "asset_id": "BG02_SHOP_MAIN",
+  "model": "doubao-seedream-5-0-pro-260628",
+  "prompt": "编辑这张真实北京胡同面馆室内照片，保留同一房间的摄像机位置、四张旧木桌和椅子、右边木框玻璃门、后方左侧小柜台和厨房入口、墙面结构与灯光。把空旷、无法识别用途的墙面改成一眼看得出是日常营业面馆的空间：\n1. 左墙现有的四个深木框不改变位置和大小，内部不再留白，分别放入没有任何文字的写实菜品海报照片：第一幅一碗牛肉汤面，第二幅一碗深色炸酱拌面，第三幅白瓷盘里的黄瓜凉菜，第四幅一碟卤牛肉。每幅是朴素近景食品摄影，暖白底，无文字无价格。\n2. 左墙菜品海报下方、后排桌旁加一条很窄的深色木搁板，上面整齐放两只不锈钢筷子筒、一叠白瓷小碗、一只红盖辣椒油罐、一只小醋壶。真实餐具尺度。\n3. 后方小柜台的左端放一个小号不锈钢餐具架和一叠白瓷碗；厨房入口内只隐约可见一口不锈钢汤锅和暖色工作灯。避免堆满道具。\n墙面保留正常旧店使用痕迹，但减轻大片脱皮和灰暗脏污，使其看起来干净、正在营业。保持自然写实摄影，现有地砖、桌椅、柜台、门和镜头透视不变，不改成新房间或网红餐厅。前景玩家桌面完全留空，作为后续放面碗、红文件袋与人物动作的空间。店内无人，无字母、无汉字、无数字、无品牌、水印、二维码。16:9。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/candidates/BG02_SHOP_MAIN/casting-round-01-3.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "6d56024b07ad7540aaffbab5ebdcf125372e79e6ca3524d3f5d0fb0c491abb14",
+  "price_ceiling_rmb": 0.6,
+  "fingerprint": "f0b7662081906e8d7691d3a87dacaf2ea30820927cae86fc18493f3265878403",
+  "candidate": "shop-lived-in-v2",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BG02_SHOP_MAIN/shop-lived-in-v2.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

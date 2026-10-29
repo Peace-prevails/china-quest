@@ -34,7 +34,7 @@
     {
       "id": "S5",
       "title": "限时自由探索：主线前最后的小游戏区域",
-      "canonical_script": "仍在 BG_SHOP_MAIN，可使用热点导航切换 BG_COUNTER、BG_DOOR，也可复用单一 BG 并以 UI 热点表现。\n只允许 5 个热点，每个 2–3 种动作，最多 2–3 轮短对话，不无限生成：\n1) 老板娘：“洗手间在哪里？”→“在后面，左边。”；“这个多少钱？”→菜单价；“这是什么？”→“这是菜单。”\n2) 小陈：“你是谁？”→“我是小陈，在这里帮忙。”；“这个好吃吗？”→“好吃！”；“门口那是什么？”→“一辆很贵的车。”\n3) 菜单：继续看四项，复现这个/那个/多少钱；此处允许练习但不会改变已完成订单。\n4) 角落的红色文件袋：看一眼（可观察封套但看不清名字，设置 `saw_red_envelope=true`）、问小陈“这是什么？”→“我不知道。”、不碰。\n5) 门口：看外面、问“谁来了？”→“不知道，刚停了一辆车。”、继续吃面。\n关键原则：不要求探索完所有点；点击“继续吃面”直接推进 S6。访问过的热点允许重玩。未探索线索保留在回放中。"
+      "canonical_script": "仍在 BG_SHOP_MAIN，可使用热点导航切换 BG_COUNTER、BG_DOOR，也可复用单一 BG 并以 UI 热点表现。\n只允许 5 个热点，每个 2–3 种动作，最多 2–3 轮短对话，不无限生成：\n1) 老板娘：“洗手间在哪里？”→“在后面，左边。”；“这个多少钱？”→菜单价；“这是什么？”→“这是菜单。”\n2) 小陈：“你是谁？”→“我是小陈，在这里帮忙。”；“这个好吃吗？”→“好吃！”；“门口那是什么？”→“一辆很贵的车。”\n3) 菜单：继续看四项，复现这个/那个/多少钱；此处允许练习但不会改变已完成订单。\n4) 门外来客手中的红色文件袋：看一眼（透过玻璃观察袋子与文件，设置 `saw_red_envelope=true`）、问小陈“这是什么？”→“我不知道。”、不碰。\n5) 门口：看外面、问“谁来了？”→“不知道，刚停了一辆车。”、继续吃面。\n关键原则：不要求探索完所有点；点击“继续吃面”直接推进 S6。访问过的热点允许重玩。未探索线索保留在回放中。"
     },
     {
       "id": "S6",
@@ -125,7 +125,7 @@
           "zh": "看招牌",
           "en": "Look at the sign",
           "pinyin": "kàn zhāopái",
-          "next": "welcome",
+          "next": "enter_shop",
           "set": {},
           "requires": {}
         },
@@ -145,11 +145,15 @@
           "zh": "往前走",
           "en": "Walk ahead",
           "pinyin": "wǎng qián zǒu",
-          "next": "welcome",
+          "next": "enter_shop",
           "set": {},
           "requires": {}
         }
-      ]
+      ],
+      "context": {
+        "zh": "你在海外长大，刚到北京，中文只会一点。拖着行李走进胡同，手机快没电，肚子也饿了。今晚的目标很简单：找家店，吃碗面。",
+        "en": "You grew up overseas and have just arrived in Beijing. You speak only a little Chinese. With your suitcase beside you and your phone almost out of charge, your first goal is simple: find somewhere to eat."
+      }
     },
     {
       "id": "directions",
@@ -171,7 +175,7 @@
           "zh": "谢谢",
           "en": "Thanks",
           "pinyin": "xièxie",
-          "next": "welcome",
+          "next": "enter_shop",
           "set": {},
           "requires": {}
         },
@@ -206,7 +210,7 @@
           "zh": "往前走",
           "en": "Walk ahead",
           "pinyin": "wǎng qián zǒu",
-          "next": "welcome",
+          "next": "enter_shop",
           "set": {},
           "requires": {}
         }
@@ -1045,7 +1049,12 @@
       "render": {
         "food": "item_selected",
         "water": "wants_water"
-      }
+      },
+      "context": {
+        "zh": "过了一会儿，老板娘把你点的面放到桌上。",
+        "en": "A few minutes later, the owner brings the noodles you ordered."
+      },
+      "objective": "Your food is here. Thank the owner."
     },
     {
       "id": "bill",
@@ -1203,11 +1212,15 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
-      ]
+      ],
+      "context": {
+        "zh": "你开始吃面。一个穿灰蓝衬衫的年轻人在店里帮忙，老板娘叫他“小陈”。门外刚停下一辆车。你可以聊几句，也可以继续吃。",
+        "en": "As you eat, a young man in a gray-blue shirt helps around the shop. The owner calls him Xiao Chen. A car has just stopped outside. You can chat, look around, or keep eating."
+      }
     },
     {
       "id": "hotspot_owner",
@@ -1270,7 +1283,7 @@
     {
       "id": "reply_owner0",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "OWNER",
       "zh": "在后面，左边。",
       "en": "At the back, on the left.",
       "pinyin": "Zài hòumian, zuǒbian.",
@@ -1294,7 +1307,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1303,7 +1316,7 @@
     {
       "id": "reply_owner1",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "OWNER",
       "zh": "{item_price}元。",
       "en": "¥{item_price}.",
       "pinyin": null,
@@ -1327,7 +1340,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1336,7 +1349,7 @@
     {
       "id": "reply_owner2",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "OWNER",
       "zh": "这是菜单。",
       "en": "This is the menu.",
       "pinyin": "Zhè shì càidān.",
@@ -1360,7 +1373,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1426,7 +1439,7 @@
     {
       "id": "reply_chen0",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "XIAOCHEN",
       "zh": "我是小陈，在这里帮忙。",
       "en": "I am Xiao Chen. I help here.",
       "pinyin": "Wǒ shì Xiǎo Chén, zài zhèlǐ bāngmáng.",
@@ -1450,7 +1463,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1459,7 +1472,7 @@
     {
       "id": "reply_chen1",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "XIAOCHEN",
       "zh": "好吃！",
       "en": "Yes!",
       "pinyin": "Hǎochī!",
@@ -1483,7 +1496,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1492,7 +1505,7 @@
     {
       "id": "reply_chen2",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "XIAOCHEN",
       "zh": "一辆很贵的车。",
       "en": "A very expensive car.",
       "pinyin": "Yí liàng hěn guì de chē.",
@@ -1516,7 +1529,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1598,7 +1611,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1631,7 +1644,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1691,15 +1704,19 @@
       ],
       "on_enter": {
         "append_explored_hotspots": "envelope"
+      },
+      "context": {
+        "zh": "透过门上的玻璃，你瞥见外面有人拿着一个红色文件袋。",
+        "en": "Through the glass door, you glimpse someone outside holding a red document envelope."
       }
     },
     {
       "id": "reply_envelope0",
       "scene_id": "S5",
       "speaker": "narrator",
-      "zh": "封套上有字，但看不清名字。",
-      "en": "There is writing, but you cannot read the name.",
-      "pinyin": "Fēngtào shàng yǒu zì, dàn kàn bu qīng míngzi.",
+      "zh": "袋子是红色的，里面装着文件。",
+      "en": "The envelope is red, with papers inside.",
+      "pinyin": "Dàizi shì hóngsè de, lǐmiàn zhuāngzhe wénjiàn.",
       "asset_refs": [
         "BG02_SHOP_MAIN"
       ],
@@ -1720,7 +1737,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1729,7 +1746,7 @@
     {
       "id": "reply_envelope1",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "XIAOCHEN",
       "zh": "我不知道。",
       "en": "I do not know.",
       "pinyin": "Wǒ bù zhīdào.",
@@ -1753,7 +1770,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1763,9 +1780,9 @@
       "id": "reply_envelope2",
       "scene_id": "S5",
       "speaker": "narrator",
-      "zh": "你没有碰文件袋。",
-      "en": "You leave the envelope alone.",
-      "pinyin": "Nǐ méiyǒu pèng wénjiàndài.",
+      "zh": "你移开视线，继续吃面。",
+      "en": "You look away and return to your noodles.",
+      "pinyin": "Nǐ yíkāi shìxiàn, jìxù chī miàn.",
       "asset_refs": [
         "BG02_SHOP_MAIN"
       ],
@@ -1786,7 +1803,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1873,7 +1890,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1882,7 +1899,7 @@
     {
       "id": "reply_door1",
       "scene_id": "S5",
-      "speaker": "narrator",
+      "speaker": "XIAOCHEN",
       "zh": "不知道，刚停了一辆车。",
       "en": "I do not know. A car just stopped.",
       "pinyin": "Bù zhīdào, gāng tíng le yí liàng chē.",
@@ -1906,7 +1923,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -1939,7 +1956,7 @@
           "zh": "继续吃面",
           "en": "Keep eating",
           "pinyin": "jìxù chī miàn",
-          "next": "gu",
+          "next": "gu_arrival",
           "set": {},
           "requires": {}
         }
@@ -2020,7 +2037,11 @@
           },
           "requires": {}
         }
-      ]
+      ],
+      "context": {
+        "zh": "他径直走到你的桌前，把红色文件袋放下。你从没见过这个人，他却像认识你。",
+        "en": "He walks straight to your table and sets down the red envelope. You have never met him, but he seems to recognize you."
+      }
     },
     {
       "id": "gu_what",
@@ -2100,7 +2121,7 @@
     {
       "id": "gu_eat",
       "scene_id": "S6",
-      "speaker": "GU",
+      "speaker": "OWNER",
       "zh": "老板娘：先让人吃口面！",
       "en": "Owner: Let them eat first!",
       "pinyin": "Lǎobǎnniáng: Xiān ràng rén chī kǒu miàn!",
@@ -2216,7 +2237,11 @@
           "zh": "你认出了那个红色文件袋。",
           "en": "You recognize that red envelope."
         }
-      ]
+      ],
+      "context": {
+        "zh": "男人自称顾承泽。他打开文件，指着收件人的名字，说那就是你。他声称在找一位遗产继承人，但你还没有理由相信他。",
+        "en": "The man introduces himself as Gu Chengze. He opens the document and points to a name he says is yours. He claims to be looking for an heir. You have no reason to trust that claim yet."
+      }
     },
     {
       "id": "inherit_accept",
@@ -2236,7 +2261,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "rival",
+          "next": "rival_arrival",
           "set": {},
           "requires": {}
         }
@@ -2260,7 +2285,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "rival",
+          "next": "rival_arrival",
           "set": {},
           "requires": {}
         }
@@ -2284,7 +2309,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "rival",
+          "next": "rival_arrival",
           "set": {},
           "requires": {}
         }
@@ -2308,7 +2333,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "rival",
+          "next": "rival_arrival",
           "set": {},
           "requires": {}
         }
@@ -2394,7 +2419,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "name",
+          "next": "open_file",
           "set": {},
           "requires": {}
         }
@@ -2418,7 +2443,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "name",
+          "next": "open_file",
           "set": {},
           "requires": {}
         }
@@ -2442,7 +2467,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "name",
+          "next": "open_file",
           "set": {},
           "requires": {}
         }
@@ -2466,7 +2491,7 @@
           "zh": "继续",
           "en": "Continue",
           "pinyin": "jìxù",
-          "next": "name",
+          "next": "open_file",
           "set": {},
           "requires": {}
         }
@@ -2515,7 +2540,12 @@
           "set": {},
           "requires": {}
         }
-      ]
+      ],
+      "context": {
+        "zh": "她看的是文件里的旧名字，不是刚才顾承泽指给你的收件人姓名。她的表情变了。",
+        "en": "She is looking at an older name in the document, not the recipient’s name Gu pointed out. Her expression changes."
+      },
+      "objective": "Ask the owner about the name she recognizes."
     },
     {
       "id": "silence",
@@ -2539,7 +2569,8 @@
           "set": {},
           "requires": {}
         }
-      ]
+      ],
+      "objective": "She will not explain. Check your phone."
     },
     {
       "id": "sms",
@@ -2564,7 +2595,11 @@
           "requires": {}
         }
       ],
-      "translation_collapsed": true
+      "translation_collapsed": true,
+      "context": {
+        "zh": "老板娘不肯再说。你的手机突然振动：一条陌生号码发来的短信。你看了眼桌上文件中的地址。是谁知道你在这里？",
+        "en": "The owner refuses to explain. Your phone vibrates: a text from an unknown number. You glance at the address in the document. Who knows you are here?"
+      }
     },
     {
       "id": "end",
@@ -2580,6 +2615,118 @@
       "kind": "end",
       "choices": [],
       "persist": "episode_01_state"
+    },
+    {
+      "id": "enter_shop",
+      "scene_id": "S1",
+      "speaker": "narrator",
+      "zh": "你推开门，找了张空桌。",
+      "en": "You push open the door and find an empty table.",
+      "pinyin": "Nǐ tuīkāi mén, zhǎo le zhāng kōng zhuō.",
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "enter_shop_next",
+          "zh": "坐下",
+          "en": "Sit down",
+          "pinyin": "Zuòxià",
+          "next": "welcome",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "context": {
+        "zh": "门旁写着“好运面馆”。店里有热汤的香味，墙上挂着几种面食的照片。老板娘从柜台后抬起头。",
+        "en": "The entrance says “Good Fortune Noodles.” You smell hot broth. Pictures of noodle dishes line the wall, and the owner looks up from the counter."
+      },
+      "objective": "Step inside and take a seat."
+    },
+    {
+      "id": "gu_arrival",
+      "scene_id": "S6",
+      "speaker": "narrator",
+      "zh": "门开了。一个男人拿着红色文件袋走进来。",
+      "en": "The door opens. A man walks in carrying a red document envelope.",
+      "pinyin": "Mén kāi le. Yí ge nánrén názhe hóngsè wénjiàndài zǒu jìnlái.",
+      "asset_refs": [
+        "BG04_DOOR"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "gu_arrival_next",
+          "zh": "看着他",
+          "en": "Look at him",
+          "pinyin": "Kànzhe tā",
+          "next": "gu",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "objective": "A stranger is coming toward you. See what he wants."
+    },
+    {
+      "id": "rival_arrival",
+      "scene_id": "S8",
+      "speaker": "narrator",
+      "zh": "你还没来得及问，门又开了。",
+      "en": "Before you can ask another question, the door opens again.",
+      "pinyin": "Nǐ hái méi láidejí wèn, mén yòu kāi le.",
+      "asset_refs": [
+        "BG04_DOOR"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "rival_arrival_next",
+          "zh": "看向门口",
+          "en": "Look toward the door",
+          "pinyin": "Kàn xiàng ménkǒu",
+          "next": "rival",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "context": {
+        "zh": "另一个穿深灰外套的男人快步走进店，盯着顾承泽。你还没签字，也没有拿走文件。",
+        "en": "Another man, in a dark gray coat, strides in and fixes his eyes on Gu. You have not signed anything or taken the document."
+      },
+      "objective": "Someone interrupts. Listen before deciding."
+    },
+    {
+      "id": "open_file",
+      "scene_id": "S9",
+      "speaker": "narrator",
+      "zh": "老板娘走过来，看了看桌上的文件。",
+      "en": "The owner comes over and looks at the document on the table.",
+      "pinyin": "Lǎobǎnniáng zǒu guòlái, kàn le kàn zhuō shàng de wénjiàn.",
+      "asset_refs": [
+        "BG02_SHOP_MAIN"
+      ],
+      "learning_tags": [],
+      "kind": "dialogue",
+      "choices": [
+        {
+          "id": "open_file_next",
+          "zh": "看她的反应",
+          "en": "Watch her reaction",
+          "pinyin": "Kàn tā de fǎnyìng",
+          "next": "name",
+          "set": {},
+          "requires": {}
+        }
+      ],
+      "context": {
+        "zh": "两个陌生人的说法互相矛盾。你还不知道谁在说真话。老板娘似乎注意到了文件里另一个名字。",
+        "en": "The two strangers contradict each other. You do not know who is telling the truth. The owner seems to notice another name inside the document."
+      },
+      "objective": "Watch what catches the owner’s attention."
     }
   ]
 }

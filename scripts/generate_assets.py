@@ -71,6 +71,10 @@ def reference(aid,assets):
  return {'asset_id':aid,'sha256':record['sha256'],'path':record['path'],'scope':record.get('reference_scope','full_image')},'data:'+mimetypes.guess_type(image.name)[0]+';base64,'+base64.b64encode(data).decode()
 def run(args):
  dotenv();all_assets={a['id']:a for a in manifest()['assets']}
+ if getattr(args,'asset_plan',None):
+  for definition in read(ROOT/args.asset_plan)['assets']:
+   if definition['id'] in all_assets:raise ValueError('Supplemental asset ID must be unique')
+   all_assets[definition['id']]=definition
  selected=[all_assets[args.asset_id]] if args.asset_id else list(all_assets.values())
  if args.max_images<1:raise ValueError('--max-images must be positive')
  if not args.dry_run:
@@ -150,7 +154,7 @@ def run(args):
    failed=True;break
  if failed:raise SystemExit(1)
 def parser():
- p=argparse.ArgumentParser();p.add_argument('--edit-target');p.add_argument('--edit-prompt-file');p.add_argument('--dry-run',action='store_true');p.add_argument('--asset-id');p.add_argument('--max-images',type=int,default=1);p.add_argument('--max-spend-rmb',type=float);p.add_argument('--unit-price-rmb',type=float);p.add_argument('--model');p.add_argument('--resume',action='store_true');p.add_argument('--confirm-paid',action='store_true');p.add_argument('--candidate',default='1');return p
+ p=argparse.ArgumentParser();p.add_argument('--asset-plan');p.add_argument('--edit-target');p.add_argument('--edit-prompt-file');p.add_argument('--dry-run',action='store_true');p.add_argument('--asset-id');p.add_argument('--max-images',type=int,default=1);p.add_argument('--max-spend-rmb',type=float);p.add_argument('--unit-price-rmb',type=float);p.add_argument('--model');p.add_argument('--resume',action='store_true');p.add_argument('--confirm-paid',action='store_true');p.add_argument('--candidate',default='1');return p
 if __name__=='__main__':
  try:
   args=parser().parse_args()

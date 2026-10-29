@@ -1,0 +1,28 @@
+{
+  "asset_id": "DLG_OWNER_GUARDED",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "只修改参考图老板娘的面部微表情，其余场景、人物身份、头发、黑针织衫、围裙、姿势、光线、菜品海报和镜头完全保持原样。她正在看到一个令人担忧的旧名字：彻底去掉嘴角笑意，嘴角自然平直，双唇轻轻紧闭，下眼睑微微收紧，眉头极轻微皱起，眼神低垂并专注于文件，神态凝重、警惕、想起一件不愿提的事。不是微笑，也不是夸张惊恐，不瞪眼、不张嘴。保留自然皮肤纹理，避免塑料脸。画面底部纸张不出现可读文字，仅纯色纸边。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "DLG_OWNER_GUARDED",
+      "sha256": "f1bf49ad8c8e4037219dc913e8d48bcc38a22713c1ae4a7f50f573ef2def3237",
+      "path": "assets/candidates/DLG_OWNER_GUARDED/dialogue-v1.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "fb4fdabfb5e4334c5e09ffc117cc1b61191389be5a96684f423c52153ac695d9",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "98ba55ba02becf10c7c2a0b770d9304dfee741a505462e283c2b468ec402c7c6",
+  "candidate": "dialogue-v2",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/DLG_OWNER_GUARDED/dialogue-v2.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

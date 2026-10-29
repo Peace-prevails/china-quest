@@ -1,0 +1,28 @@
+{
+  "asset_id": "CG01_FILE_SLAM",
+  "model": "doubao-seedream-5-0-pro-260628",
+  "prompt": "编辑参考图，保留原有构图和摄影质感。人物脸部表情、眼睛视线、面部身份、头部、服装、身体姿势、手指和红文件袋全部严格保留原样，不修改人物。只修改背景陈设，让其与营业中的面馆一致。所有镜头统一的新陈设：左墙原有四个深木框内依次为牛肉汤面、炸酱拌面、黄瓜凉菜、卤牛肉的写实食物海报，没有任何文字；海报下左墙窄深木搁板上有两只不锈钢筷子筒、白瓷小碗、红盖辣椒油罐和小醋壶。后方小柜台左端有不锈钢餐具架与白碗，厨房内隐约有不锈钢汤锅。保持这些陈设在原空间的合理位置，不可在右门一侧再添加海报或架子。相机外的陈设无需硬塞入画面。无汉字无字母无数字无品牌无二维码，别生成空白菜单板。保持同一房间，不重新装修、不改变地砖。真实摄影，无其他人物。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "CG01_FILE_SLAM",
+      "sha256": "69bc06211051fd276a00917f570949c1312ca10d2e5c83d9c1b792c5dec62ce4",
+      "path": "assets/candidates/CG01_FILE_SLAM/cg-pro-expression-v3.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "6f834c421e8ff13d42a0f6bc8acd25cb5723541e2b1f1ba2328480952be76ed0",
+  "price_ceiling_rmb": 0.6,
+  "fingerprint": "5ea0ac033e05c45dedd88499ecd007e2c3bab0f78c06c2591203d1288485abc2",
+  "candidate": "shop-lived-in-v2",
+  "status": "rejected",
+  "image": "assets/candidates/CG01_FILE_SLAM/shop-lived-in-v2.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "右墙多出海报与置物架，已局部修正。"
+}

@@ -1,0 +1,28 @@
+{
+  "asset_id": "DLG_AUNT_HELPFUL",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9真实生活摄影。参考图仅约束2026北京现代生活胡同的建筑、花盆、自行车和停靠小汽车。一个55岁左右普通北京路人阿姨站在该胡同里给镜头处的游客指路，胸部以上中近景，人物居中，头顶留12%空间，双手不入画。普通短发带少量灰白，圆脸自然年龄纹，便装深紫色外套，神情耐心和善，轻微微笑像在自然讲话，不摆拍不夸张。保留自然肤质，不磨皮。背景适度虚化但可以看到同样胡同。无其他人物、无文字、无标志，无人物照片。\n参考图1（BG01_HUTONG）仅约束场景布局、建筑材质与室内陈设。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG01_HUTONG",
+      "sha256": "ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3",
+      "path": "assets/approved/BG01_HUTONG/ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3.jpg",
+      "scope": "scene_layout"
+    }
+  ],
+  "sha256": "ec4053932e686116c519ef1e1623f381948f0100cc7142ab4a30dabb7c3d0c19",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "e3e99d7f4fee0661ce33da7ca3fa440148077e215c483b92321381d17d1639da",
+  "candidate": "dialogue-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/DLG_AUNT_HELPFUL/dialogue-v1.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

@@ -1,0 +1,28 @@
+{
+  "asset_id": "BG04_DOOR",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "编辑参考图，保留原有构图和摄影质感。保持原门口近景的木框玻璃门和门框分格、把手、外景、相机完全不变。店内无人，只清理门旁墙面过重的脱皮，保持常见旧店痕迹。门旁只放一个不抢眼的窄木餐具置物架，摆少量白碗，尺寸可信。左墙海报在镜头外，不得把菜单海报搬到门边。所有镜头统一的新陈设：左墙原有四个深木框内依次为牛肉汤面、炸酱拌面、黄瓜凉菜、卤牛肉的写实食物海报，没有任何文字；海报下左墙窄深木搁板上有两只不锈钢筷子筒、白瓷小碗、红盖辣椒油罐和小醋壶。后方小柜台左端有不锈钢餐具架与白碗，厨房内隐约有不锈钢汤锅。保持这些陈设在原空间的合理位置，不可在右门一侧再添加海报或架子。相机外的陈设无需硬塞入画面。无汉字无字母无数字无品牌无二维码，别生成空白菜单板。保持同一房间，不重新装修、不改变地砖。真实摄影，无其他人物。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG04_DOOR",
+      "sha256": "1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1",
+      "path": "assets/candidates/BG04_DOOR/door-clean-01.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "d0e9ad739494e3bcd056f29b8ecbd5207ceca827553d1b13192d64acb234c6fb",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "7cec192ad83ffe59ffaef118ee371889b33419a7cb52ad7fcdcbaa0284188dce",
+  "candidate": "shop-lived-in-v2",
+  "status": "rejected",
+  "image": "assets/candidates/BG04_DOOR/shop-lived-in-v2.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "错误把菜单和厨房道具移动到门边，已重做。"
+}

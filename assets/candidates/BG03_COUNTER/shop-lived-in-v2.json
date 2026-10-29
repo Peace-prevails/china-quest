@@ -1,0 +1,28 @@
+{
+  "asset_id": "BG03_COUNTER",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "编辑参考图，保留原有构图和摄影质感。保持原柜台近景的透视和构图，柜台位置、大小、厨房入口和相机完全不变。柜台正面和前半台面保留空白；后方左端放小号碗架与少量白瓷碗。店内无人。所有镜头统一的新陈设：左墙原有四个深木框内依次为牛肉汤面、炸酱拌面、黄瓜凉菜、卤牛肉的写实食物海报，没有任何文字；海报下左墙窄深木搁板上有两只不锈钢筷子筒、白瓷小碗、红盖辣椒油罐和小醋壶。后方小柜台左端有不锈钢餐具架与白碗，厨房内隐约有不锈钢汤锅。保持这些陈设在原空间的合理位置，不可在右门一侧再添加海报或架子。相机外的陈设无需硬塞入画面。无汉字无字母无数字无品牌无二维码，别生成空白菜单板。保持同一房间，不重新装修、不改变地砖。真实摄影，无其他人物。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG03_COUNTER",
+      "sha256": "e9cf17d082deb7b04c781d18b9dbaa2801405d81c8bbc42ac0764fe5d80171a9",
+      "path": "assets/candidates/BG03_COUNTER/derived-round-01-1.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "9192753bbb8b4918d80e3f4f7a5d7b46ab18c6b6e1cc7eead4ebc9c43621f3a1",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "2cf6ea678789ceb5c92a4444fdc11c22d590c7ccaaa471fa870087722afa0ade",
+  "candidate": "shop-lived-in-v2",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BG03_COUNTER/shop-lived-in-v2.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

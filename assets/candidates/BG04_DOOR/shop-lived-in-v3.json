@@ -1,0 +1,28 @@
+{
+  "asset_id": "BG04_DOOR",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "这张图是从室内正对门口的近景，左侧菜单墙和厨房完全不在镜头内。只做极小范围修图：修补门两侧墙面下方大片脱皮，擦掉明显脏污，保留旧面馆的自然使用痕迹和灰白墙色。不增加任何摆设、不增加菜单海报、不增加搁板、不增加碗、不增加桌子、不增加锅，不改变玻璃中的倒影。不添加人。完全保留原有木框玻璃门、分格、把手、门槛、地面、墙面转角、开关、电线、暖灯和门外同一片空的灰砖墙胡同。真实摄影，16:9，与修整后的老北京小面馆一致。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG04_DOOR",
+      "sha256": "1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1",
+      "path": "assets/candidates/BG04_DOOR/door-clean-01.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "3a72678862058394ae8bb57a783e29fba7c7158394148cb21ecea001356b3d46",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "b350ba90e365e3021f90377016465217991f6b61b88ed37be6c50a03cf69259d",
+  "candidate": "shop-lived-in-v3",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BG04_DOOR/shop-lived-in-v3.jpg",
+  "reference_scope": "scene_layout",
+  "background_is_reference": true,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

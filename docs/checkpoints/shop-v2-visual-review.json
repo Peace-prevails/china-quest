@@ -1,0 +1,36 @@
+{
+  "revision": "shop-v2-dialogue",
+  "selected": {
+    "BG02_SHOP_MAIN": "shop-lived-in-v2",
+    "BG03_COUNTER": "shop-lived-in-v2",
+    "BG04_DOOR": "shop-lived-in-v3",
+    "CG01_FILE_SLAM": "shop-lived-in-v3",
+    "DLG_OWNER_WARM": "dialogue-v1",
+    "DLG_OWNER_GUARDED": "dialogue-v2",
+    "DLG_CHEN_FRIENDLY": "dialogue-v1",
+    "DLG_CHEN_UNSURE": "dialogue-v1",
+    "DLG_GU_CALM": "dialogue-v1",
+    "DLG_GU_HESITANT": "dialogue-v1",
+    "DLG_RIVAL_URGENT": "dialogue-v1",
+    "DLG_AUNT_HELPFUL": "dialogue-v1",
+    "BEAT_MEAL_BEEF": "continuity-v1",
+    "BEAT_MEAL_ZHAJIANG": "continuity-v1",
+    "BEAT_GU_ARRIVAL": "continuity-v1",
+    "BEAT_RIVAL_ENTRY": "continuity-v1"
+  },
+  "retained_base_assets": [
+    "BG01_HUTONG",
+    "CH01_OWNER",
+    "CH02_XIAOCHEN",
+    "CH03_GU",
+    "CH04_RIVAL",
+    "PR01_BEEF_NOODLES",
+    "PR02_WATER",
+    "PR03_ENVELOPE"
+  ],
+  "reviewed_outputs": 19,
+  "selected_outputs": 16,
+  "rejected_outputs": 3,
+  "continuity_note": "同一已批准房间与人物参考；四幅食品顺序、左侧餐具架与厨房位置统一，生成细节并非逐像素相同。",
+  "human_approval_pending": true
+}

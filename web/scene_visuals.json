@@ -1,0 +1,322 @@
+{
+  "directions": {
+    "asset": "DLG_AUNT_HELPFUL",
+    "speaker": "aunt",
+    "expression": "helpful",
+    "focus": "50% 35%"
+  },
+  "directions_help": {
+    "asset": "DLG_AUNT_HELPFUL",
+    "speaker": "aunt",
+    "expression": "helpful",
+    "focus": "50% 35%"
+  },
+  "welcome": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "welcome_help": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "explain_beef": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "price_beef": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "explain_zhajiang": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "price_zhajiang": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "explain_water": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "price_water": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "explain_cola": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "price_cola": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "confirm": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "confirm_help": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "spice": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "spice_help": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "water": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "served": {
+    "asset": "BEAT_MEAL_BEEF",
+    "expression": "serving",
+    "speaker": "OWNER",
+    "focus": "50% 50%",
+    "asset_by_item": {
+      "beef": "BEAT_MEAL_BEEF",
+      "zhajiang": "BEAT_MEAL_ZHAJIANG"
+    }
+  },
+  "total": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "water_price": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "hotspot_owner": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "reply_owner0": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "reply_owner1": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "reply_owner2": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "hotspot_chen": {
+    "asset": "DLG_CHEN_FRIENDLY",
+    "speaker": "XIAOCHEN",
+    "expression": "friendly",
+    "focus": "55% 35%"
+  },
+  "reply_chen0": {
+    "asset": "DLG_CHEN_FRIENDLY",
+    "speaker": "XIAOCHEN",
+    "expression": "friendly",
+    "focus": "55% 35%"
+  },
+  "reply_chen1": {
+    "asset": "DLG_CHEN_FRIENDLY",
+    "speaker": "XIAOCHEN",
+    "expression": "friendly",
+    "focus": "55% 35%"
+  },
+  "reply_chen2": {
+    "asset": "DLG_CHEN_UNSURE",
+    "speaker": "XIAOCHEN",
+    "expression": "uncertain",
+    "focus": "55% 35%"
+  },
+  "reply_envelope1": {
+    "asset": "DLG_CHEN_UNSURE",
+    "speaker": "XIAOCHEN",
+    "expression": "uncertain",
+    "focus": "55% 35%"
+  },
+  "reply_door1": {
+    "asset": "DLG_CHEN_UNSURE",
+    "speaker": "XIAOCHEN",
+    "expression": "uncertain",
+    "focus": "55% 35%"
+  },
+  "gu": {
+    "asset": "CG01_FILE_SLAM",
+    "speaker": "GU",
+    "expression": "arrival",
+    "focus": "55% 35%"
+  },
+  "gu_what": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "gu_identity": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "gu_stranger": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "gu_eat": {
+    "asset": "DLG_OWNER_WARM",
+    "speaker": "OWNER",
+    "expression": "welcoming",
+    "focus": "55% 35%"
+  },
+  "gu_help": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "billion": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "inherit_accept": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "inherit_reject": {
+    "asset": "DLG_GU_HESITANT",
+    "speaker": "GU",
+    "expression": "hesitant",
+    "focus": "55% 35%"
+  },
+  "inherit_question": {
+    "asset": "DLG_GU_CALM",
+    "speaker": "GU",
+    "expression": "attentive",
+    "focus": "55% 35%"
+  },
+  "inherit_ownership": {
+    "asset": "DLG_GU_HESITANT",
+    "speaker": "GU",
+    "expression": "hesitant",
+    "focus": "55% 35%"
+  },
+  "rival": {
+    "asset": "DLG_RIVAL_URGENT",
+    "speaker": "RIVAL",
+    "expression": "urgent",
+    "focus": "55% 35%"
+  },
+  "align_question_second": {
+    "asset": "DLG_RIVAL_URGENT",
+    "speaker": "RIVAL",
+    "expression": "urgent",
+    "focus": "55% 35%"
+  },
+  "align_against_gu": {
+    "asset": "DLG_RIVAL_URGENT",
+    "speaker": "RIVAL",
+    "expression": "urgent",
+    "focus": "55% 35%"
+  },
+  "align_distrust_both": {
+    "asset": "DLG_RIVAL_URGENT",
+    "speaker": "RIVAL",
+    "expression": "urgent",
+    "focus": "55% 35%"
+  },
+  "align_wants_document": {
+    "asset": "DLG_RIVAL_URGENT",
+    "speaker": "RIVAL",
+    "expression": "urgent",
+    "focus": "55% 35%"
+  },
+  "name": {
+    "asset": "DLG_OWNER_GUARDED",
+    "speaker": "OWNER",
+    "expression": "guarded",
+    "focus": "55% 35%"
+  },
+  "silence": {
+    "asset": "DLG_OWNER_GUARDED",
+    "speaker": "OWNER",
+    "expression": "guarded",
+    "focus": "55% 35%"
+  },
+  "bill": {
+    "asset": "BEAT_MEAL_BEEF",
+    "expression": "meal",
+    "speaker": "narrator",
+    "focus": "50% 50%",
+    "asset_by_item": {
+      "beef": "BEAT_MEAL_BEEF",
+      "zhajiang": "BEAT_MEAL_ZHAJIANG"
+    }
+  },
+  "gu_arrival": {
+    "asset": "BEAT_GU_ARRIVAL",
+    "expression": "arrival",
+    "speaker": "narrator",
+    "focus": "50% 50%"
+  },
+  "rival_arrival": {
+    "asset": "BEAT_RIVAL_ENTRY",
+    "expression": "arrival",
+    "speaker": "narrator",
+    "focus": "50% 50%"
+  },
+  "open_file": {
+    "asset": "DLG_OWNER_GUARDED",
+    "expression": "guarded",
+    "speaker": "narrator",
+    "focus": "50% 50%"
+  }
+}

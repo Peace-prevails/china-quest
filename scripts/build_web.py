@@ -12,6 +12,19 @@ def build():
   if asset['approved_reference_image']!=reference['path']:raise ValueError('Manifest and approval differ')
   target=output/'images'/source.name;target.parent.mkdir(exist_ok=True)
   shutil.copyfile(source,target);assets[asset['id']]='images/'+source.name
+ # Revised shots are explicitly a review preview; original approvals stay immutable.
+ revision_path=ROOT/'episodes/ep01/visual_revision.json'
+ if revision_path.exists():
+  revision=read(revision_path)
+  if revision.get('status')!='review_preview':raise ValueError('Unknown visual revision status')
+  for aid,row in revision['assets'].items():
+   source=(ROOT/row['path']).resolve()
+   if not source.is_relative_to((ROOT/'assets/candidates').resolve()):raise ValueError('Preview asset must be archived')
+   metadata=read(source.with_suffix('.json'))
+   if metadata['asset_id']!=aid or metadata['sha256']!=row['sha256'] or digest(source.read_bytes())!=row['sha256']:raise ValueError('Preview asset integrity failed')
+   if not metadata.get('visual_review_complete'):raise ValueError('Visual QA required before preview')
+   target=output/'images'/(row['sha256']+source.suffix);shutil.copyfile(source,target);assets[aid]='images/'+target.name
+  write(output/'visual_revision.json',{'status':revision['status'],'revision':revision['revision']})
  for source in (ROOT/'web').iterdir():
   if source.suffix in ['.html','.css','.mjs','.json']:shutil.copyfile(source,output/source.name)
  shutil.copyfile(ROOT/'episodes/ep01/episode_01.json',output/'episode.json')

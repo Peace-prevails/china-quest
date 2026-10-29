@@ -1,0 +1,28 @@
+{
+  "asset_id": "CG01_FILE_SLAM",
+  "model": "doubao-seedream-5-0-pro-260628",
+  "prompt": "对参考图做局部背景修正。人物的脸、表情、头发、衣服、身体、手、红文件袋、桌面和构图必须全部原样保留。仅修改两处：1. 删除画面最右边门旁墙面上多出来的食物海报，让右边墙面成为原有普通灰白旧墙，删除右边新添的小置物架及调料，不移动门和门把手。2. 左墙四张菜品照片分别保持牛肉面、炸酱面、黄瓜、卤牛肉，但四张都装在同款细深棕木框内，不要白边相纸直接贴墙。左墙搁板和厨房原样保留。不增加新物品。保持原图自然摄影质感。\n",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "CG01_FILE_SLAM",
+      "sha256": "6f834c421e8ff13d42a0f6bc8acd25cb5723541e2b1f1ba2328480952be76ed0",
+      "path": "assets/candidates/CG01_FILE_SLAM/shop-lived-in-v2.jpg",
+      "scope": "edit_target"
+    }
+  ],
+  "sha256": "e6dbce0f157fb9e93027ee21aa17c7a258fac84a0cf7346c69056af0492ab650",
+  "price_ceiling_rmb": 0.6,
+  "fingerprint": "e6c80ed4f7be3c8e85d2c9a450ad2c415fad5b6e58d6b1ba92a30a2b7cbf022d",
+  "candidate": "shop-lived-in-v3",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/CG01_FILE_SLAM/shop-lived-in-v3.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

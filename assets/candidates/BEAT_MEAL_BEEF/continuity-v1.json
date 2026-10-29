@@ -1,0 +1,40 @@
+{
+  "asset_id": "BEAT_MEAL_BEEF",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9真实摄影，玩家坐在面馆前景桌旁的第一人称中景。参考图1是房间布局，参考图2只锁定老板娘的脸型身份、黑针织衫与旧围裙。老板娘在桌子对面微笑着刚放好一碗普通牛肉汤面，清汤、正常牛肉片、葱花，不是红油火锅，碗稳放在桌面前景中央，老板娘的脸清楚可见，双手已经收回、落在画面下方不露手。食物热气很少很自然。人物头部和碗均完整处于画面中间70%范围内，人物上方留12%空间。桌上没有饮料，没有文件袋，无其他人物。左墙原有四个深木框内依次是牛肉面、炸酱面、黄瓜、卤牛肉的无字食品照片，下面窄深木搁板有不锈钢筷子筒、白瓷碗和红盖调料罐，厨房左后方有碗架。原有桌椅、布局和右侧玻璃门不变。自然冷暖光、真实食物尺度、真实皮肤，不夸张表情，无文字无品牌。\n参考图1（BG02_SHOP_MAIN）仅约束场景布局、建筑材质与室内陈设。\n参考图2（CH01_OWNER）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。\n参考图3（PR01_BEEF_NOODLES）只参考主体物品，忽略其背景。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "scope": "scene_layout"
+    },
+    {
+      "asset_id": "CH01_OWNER",
+      "sha256": "9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba",
+      "path": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
+      "scope": "identity_only"
+    },
+    {
+      "asset_id": "PR01_BEEF_NOODLES",
+      "sha256": "23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e",
+      "path": "assets/approved/PR01_BEEF_NOODLES/23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e.jpg",
+      "scope": "object_only"
+    }
+  ],
+  "sha256": "36b7bfe10c0ac94bb53be905bd2cc766f647e38a91064911081fb127294102cd",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "8e9214691e3958c5360d42e32e189697c55bc45673e727237b3103324644891d",
+  "candidate": "continuity-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BEAT_MEAL_BEEF/continuity-v1.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "Use in review preview; identity, action and composition checked. Awaiting user review."
+}

@@ -1,0 +1,34 @@
+{
+  "asset_id": "DLG_OWNER_WARM",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9摄影级真实北京小面馆剧情对话镜头。参考图1只锁定已批准面馆的房间布局、旧木桌、后方小柜台和厨房、右侧木框玻璃门；参考图2只锁定人物身份、脸型、发型和服装，完全忽略其原背景。玩家坐着，与站在桌边的人交谈，胸部以上中近景，人物在正中偏右一点，头顶留出约12%画幅，脸部占画面高度约30%，面孔和双眼清晰。双手不入画，不新增其他人物。自然的傍晚暖灯与冷光，保持真实皮肤和轻微左右差异，不磨皮，不夸张表演。老板娘穿已批准的深色针织衫和旧围裙，微微抬眼看向镜头处的客人，嘴角温和自然，正在耐心介绍菜单，不露齿大笑。所有镜头统一的新陈设：左墙原有四个深木框内依次为牛肉汤面、炸酱拌面、黄瓜凉菜、卤牛肉的写实食物海报，没有任何文字；海报下左墙窄深木搁板上有两只不锈钢筷子筒、白瓷小碗、红盖辣椒油罐和小醋壶。后方小柜台左端有不锈钢餐具架与白碗，厨房内隐约有不锈钢汤锅。保持这些陈设在原空间的合理位置，不可在右门一侧再添加海报或架子。相机外的陈设无需硬塞入画面。无汉字无字母无数字无品牌无二维码，别生成空白菜单板。\n参考图1（BG02_SHOP_MAIN）仅约束场景布局、建筑材质与室内陈设。\n参考图2（CH01_OWNER）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "scope": "scene_layout"
+    },
+    {
+      "asset_id": "CH01_OWNER",
+      "sha256": "9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba",
+      "path": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
+      "scope": "identity_only"
+    }
+  ],
+  "sha256": "95a3a9c2842c62eed55a997d0261a3222c59dc3c4ce444a7a97e2290eff39c73",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "ebb9e420bf5a7de2deda02dc326e21d586f339990c36800f81872a343cc628af",
+  "candidate": "dialogue-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/DLG_OWNER_WARM/dialogue-v1.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "修订试玩版：已完成下载、哈希与画面检查，等待用户审阅；原批准参考保持不变。"
+}

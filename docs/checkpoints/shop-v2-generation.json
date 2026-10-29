@@ -1,0 +1,18 @@
+{
+  "expected_images": 12,
+  "completed": [
+    "assets/candidates/BG02_SHOP_MAIN/shop-lived-in-v2.jpg",
+    "assets/candidates/BG03_COUNTER/shop-lived-in-v2.jpg",
+    "assets/candidates/BG04_DOOR/shop-lived-in-v2.jpg",
+    "assets/candidates/CG01_FILE_SLAM/shop-lived-in-v2.jpg",
+    "assets/candidates/DLG_OWNER_WARM/dialogue-v1.jpg",
+    "assets/candidates/DLG_OWNER_GUARDED/dialogue-v1.jpg",
+    "assets/candidates/DLG_CHEN_FRIENDLY/dialogue-v1.jpg",
+    "assets/candidates/DLG_CHEN_UNSURE/dialogue-v1.jpg",
+    "assets/candidates/DLG_GU_CALM/dialogue-v1.jpg",
+    "assets/candidates/DLG_GU_HESITANT/dialogue-v1.jpg",
+    "assets/candidates/DLG_RIVAL_URGENT/dialogue-v1.jpg"
+  ],
+  "all_outputs_await_user_review": true,
+  "note": "Initial generation batch log; final inventory and refinements are recorded in shop-v2-visual-review.json."
+}

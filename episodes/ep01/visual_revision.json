@@ -1,0 +1,87 @@
+{
+  "revision": "shop-v2-dialogue",
+  "status": "review_preview",
+  "note": "User requested revised shop decor and visible speaking characters. This preview does not change the previous human-approved references.",
+  "assets": {
+    "BG02_SHOP_MAIN": {
+      "path": "assets/candidates/BG02_SHOP_MAIN/shop-lived-in-v2.jpg",
+      "sha256": "6d56024b07ad7540aaffbab5ebdcf125372e79e6ca3524d3f5d0fb0c491abb14",
+      "candidate": "shop-lived-in-v2"
+    },
+    "BG03_COUNTER": {
+      "path": "assets/candidates/BG03_COUNTER/shop-lived-in-v2.jpg",
+      "sha256": "9192753bbb8b4918d80e3f4f7a5d7b46ab18c6b6e1cc7eead4ebc9c43621f3a1",
+      "candidate": "shop-lived-in-v2"
+    },
+    "BG04_DOOR": {
+      "path": "assets/candidates/BG04_DOOR/shop-lived-in-v3.jpg",
+      "sha256": "3a72678862058394ae8bb57a783e29fba7c7158394148cb21ecea001356b3d46",
+      "candidate": "shop-lived-in-v3"
+    },
+    "CG01_FILE_SLAM": {
+      "path": "assets/candidates/CG01_FILE_SLAM/shop-lived-in-v3.jpg",
+      "sha256": "e6dbce0f157fb9e93027ee21aa17c7a258fac84a0cf7346c69056af0492ab650",
+      "candidate": "shop-lived-in-v3"
+    },
+    "DLG_OWNER_WARM": {
+      "path": "assets/candidates/DLG_OWNER_WARM/dialogue-v1.jpg",
+      "sha256": "95a3a9c2842c62eed55a997d0261a3222c59dc3c4ce444a7a97e2290eff39c73",
+      "candidate": "dialogue-v1"
+    },
+    "DLG_OWNER_GUARDED": {
+      "path": "assets/candidates/DLG_OWNER_GUARDED/dialogue-v2.jpg",
+      "sha256": "fb4fdabfb5e4334c5e09ffc117cc1b61191389be5a96684f423c52153ac695d9",
+      "candidate": "dialogue-v2"
+    },
+    "DLG_CHEN_FRIENDLY": {
+      "path": "assets/candidates/DLG_CHEN_FRIENDLY/dialogue-v1.jpg",
+      "sha256": "af2c102877b055cf36afab24edcd1f2a5f540058454de4237b9f28b9749ff83f",
+      "candidate": "dialogue-v1"
+    },
+    "DLG_CHEN_UNSURE": {
+      "path": "assets/candidates/DLG_CHEN_UNSURE/dialogue-v1.jpg",
+      "sha256": "a9f432d20f0d4a3533fd0ea65ba8e6322c8c5b159e4764190ec7771c881cde47",
+      "candidate": "dialogue-v1"
+    },
+    "DLG_GU_CALM": {
+      "path": "assets/candidates/DLG_GU_CALM/dialogue-v1.jpg",
+      "sha256": "23a3b4ad4d9f5cdf0c4d3c322cc280b08c220487a80f808cfd06cf78b4ccd9dd",
+      "candidate": "dialogue-v1"
+    },
+    "DLG_GU_HESITANT": {
+      "path": "assets/candidates/DLG_GU_HESITANT/dialogue-v1.jpg",
+      "sha256": "46c824ba61474a9c9267e1dd6d3b4f1e8d6cd5299f54d76268e414f81af7284e",
+      "candidate": "dialogue-v1"
+    },
+    "DLG_RIVAL_URGENT": {
+      "path": "assets/candidates/DLG_RIVAL_URGENT/dialogue-v1.jpg",
+      "sha256": "d5dedee0ef6b0d234c9b91dcc0ad9f926994be70463db433756f5a46a13da431",
+      "candidate": "dialogue-v1"
+    },
+    "DLG_AUNT_HELPFUL": {
+      "path": "assets/candidates/DLG_AUNT_HELPFUL/dialogue-v1.jpg",
+      "sha256": "ec4053932e686116c519ef1e1623f381948f0100cc7142ab4a30dabb7c3d0c19",
+      "candidate": "dialogue-v1"
+    },
+    "BEAT_MEAL_BEEF": {
+      "path": "assets/candidates/BEAT_MEAL_BEEF/continuity-v1.jpg",
+      "sha256": "36b7bfe10c0ac94bb53be905bd2cc766f647e38a91064911081fb127294102cd",
+      "candidate": "continuity-v1"
+    },
+    "BEAT_MEAL_ZHAJIANG": {
+      "path": "assets/candidates/BEAT_MEAL_ZHAJIANG/continuity-v1.jpg",
+      "sha256": "b03847ef0502278d4aa0f1a803da5914f83de3d265fd192851b7f7efd89b4842",
+      "candidate": "continuity-v1"
+    },
+    "BEAT_GU_ARRIVAL": {
+      "path": "assets/candidates/BEAT_GU_ARRIVAL/continuity-v1.jpg",
+      "sha256": "05bde66cddc771690586b9b5eadb30e180422d6f01cbff2ef6fdb60f44b5e2e7",
+      "candidate": "continuity-v1"
+    },
+    "BEAT_RIVAL_ENTRY": {
+      "path": "assets/candidates/BEAT_RIVAL_ENTRY/continuity-v1.jpg",
+      "sha256": "49d72bc4ce4fc1f82a203c8f336b63d5d06b70c4db92367575ae1f9187fc9366",
+      "candidate": "continuity-v1"
+    }
+  }
+}

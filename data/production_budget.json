@@ -127,7 +127,7 @@
     "1f9bccf0e60976c857382d74230a618e99358c2e49303cc82a35e831c3d5adf9": {
       "asset_id": "BG03_COUNTER",
       "model": "doubao-seedream-5-0-flash-260915",
-      "status": "generated",
+      "status": "approved",
       "price_ceiling_rmb": 0.12
     },
     "13aa98d53cca80dbdefd7e4db01390f060ab8468ad08bcc92878ddb5d9a69222": {
@@ -139,7 +139,7 @@
     "2c5eff001e0bcaaf88ce8e1c00af1945fd7bde404cf02fed0e8820731afd8dc4": {
       "asset_id": "BG04_DOOR",
       "model": "doubao-seedream-5-0-flash-260915",
-      "status": "generated",
+      "status": "approved",
       "price_ceiling_rmb": 0.12
     },
     "f5182cb45375426e038e038b592bcd182eef322375dc930ef168a75741c1b602": {
@@ -175,10 +175,124 @@
     "12332c4bd7a001aaf834ca703e374e46b48f5c26e6be0ee0cb0ed076b45424d9": {
       "asset_id": "CG01_FILE_SLAM",
       "model": "doubao-seedream-5-0-pro-260628",
+      "status": "approved",
+      "price_ceiling_rmb": 0.6
+    },
+    "f0b7662081906e8d7691d3a87dacaf2ea30820927cae86fc18493f3265878403": {
+      "asset_id": "BG02_SHOP_MAIN",
+      "model": "doubao-seedream-5-0-pro-260628",
       "status": "generated",
       "price_ceiling_rmb": 0.6
+    },
+    "2cf6ea678789ceb5c92a4444fdc11c22d590c7ccaaa471fa870087722afa0ade": {
+      "asset_id": "BG03_COUNTER",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "7cec192ad83ffe59ffaef118ee371889b33419a7cb52ad7fcdcbaa0284188dce": {
+      "asset_id": "BG04_DOOR",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "rejected",
+      "price_ceiling_rmb": 0.12
+    },
+    "5ea0ac033e05c45dedd88499ecd007e2c3bab0f78c06c2591203d1288485abc2": {
+      "asset_id": "CG01_FILE_SLAM",
+      "model": "doubao-seedream-5-0-pro-260628",
+      "status": "rejected",
+      "price_ceiling_rmb": 0.6
+    },
+    "ebb9e420bf5a7de2deda02dc326e21d586f339990c36800f81872a343cc628af": {
+      "asset_id": "DLG_OWNER_WARM",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "7d907752aaf812b2458d132001fe238a037c92790dc8e74a48e7d5e968ffd7c6": {
+      "asset_id": "DLG_OWNER_GUARDED",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "rejected",
+      "price_ceiling_rmb": 0.12
+    },
+    "8a02ece1ba4a216461daeb2ea6fbcccd212b9ce0a7dce64fccb0503ba77d69d6": {
+      "asset_id": "DLG_CHEN_FRIENDLY",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "809ec5899eb1fe60b57d5f4c29060b4bed50e661d0e838275c1059f839738664": {
+      "asset_id": "DLG_CHEN_UNSURE",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "6110c83ca78be3199764ba1d81db69ae90fa903415400183ee7e38ffde88d756": {
+      "asset_id": "DLG_GU_CALM",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "0bbd409109308dc07ac89f2614eceba3b0d4d5a2908c246ce3314a2a52dd6d89": {
+      "asset_id": "DLG_GU_HESITANT",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "15c1972789a22890bc415d4807f4d11a43a9612018e91035c93b745cd12c7544": {
+      "asset_id": "DLG_RIVAL_URGENT",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "e6c80ed4f7be3c8e85d2c9a450ad2c415fad5b6e58d6b1ba92a30a2b7cbf022d": {
+      "asset_id": "CG01_FILE_SLAM",
+      "model": "doubao-seedream-5-0-pro-260628",
+      "status": "generated",
+      "price_ceiling_rmb": 0.6
+    },
+    "98ba55ba02becf10c7c2a0b770d9304dfee741a505462e283c2b468ec402c7c6": {
+      "asset_id": "DLG_OWNER_GUARDED",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "e3e99d7f4fee0661ce33da7ca3fa440148077e215c483b92321381d17d1639da": {
+      "asset_id": "DLG_AUNT_HELPFUL",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "b350ba90e365e3021f90377016465217991f6b61b88ed37be6c50a03cf69259d": {
+      "asset_id": "BG04_DOOR",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "8e9214691e3958c5360d42e32e189697c55bc45673e727237b3103324644891d": {
+      "asset_id": "BEAT_MEAL_BEEF",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "121022fdb4f97378ac617070854e21fe466f26e78e75ed62138e6c65f4f2cc49": {
+      "asset_id": "BEAT_MEAL_ZHAJIANG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "6e9f86b2c859763db4d29f17ff03a5a79ed8f5c5656df3224acc13395e45ce71": {
+      "asset_id": "BEAT_GU_ARRIVAL",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "6b48f2e37af128529d979b4b1ee4312720d887abcdf60bdfb52d6a7e12ecd569": {
+      "asset_id": "BEAT_RIVAL_ENTRY",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
     }
   },
-  "reserved_and_estimated_rmb": 4.96,
-  "remaining_estimate_rmb": 35.04
+  "reserved_and_estimated_rmb": 8.68,
+  "remaining_estimate_rmb": 31.32
 }

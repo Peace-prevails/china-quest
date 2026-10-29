@@ -1,0 +1,34 @@
+{
+  "asset_id": "BEAT_GU_ARRIVAL",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9真实摄影。相机在面馆室内正对现有木框玻璃入口门，参考图1锁定门的形状、木框分格、金属门把、门外灰砖墙和门两边墙面，不添加海报、厨房和其他道具。参考图2只锁人物身份和服装，完全忽略其背景。顾承泽刚从门外走进来，站在门口中央，膝部以上中景，门被推开一点，黑色西装，疲惫而专注地看向镜头的客人，手中提一个深红色空白A4文件袋，尚未放到桌上。只有这个人，无别人，无玩家身体。室内暖灯和门外傍晚冷光，脸部正常曝光而非剪影，正常人体比例，手部自然，没有额外手指，无文字、品牌。\n参考图1（BG04_DOOR）仅约束场景布局、建筑材质与室内陈设。\n参考图2（CH03_GU）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG04_DOOR",
+      "sha256": "1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1",
+      "path": "assets/approved/BG04_DOOR/1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1.jpg",
+      "scope": "scene_layout"
+    },
+    {
+      "asset_id": "CH03_GU",
+      "sha256": "ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626",
+      "path": "assets/approved/CH03_GU/ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626.jpg",
+      "scope": "identity_only"
+    }
+  ],
+  "sha256": "05bde66cddc771690586b9b5eadb30e180422d6f01cbff2ef6fdb60f44b5e2e7",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "6e9f86b2c859763db4d29f17ff03a5a79ed8f5c5656df3224acc13395e45ce71",
+  "candidate": "continuity-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BEAT_GU_ARRIVAL/continuity-v1.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "Use in review preview; identity, action and composition checked. Awaiting user review."
+}
