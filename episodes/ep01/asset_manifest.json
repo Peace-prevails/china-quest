@@ -53,7 +53,7 @@
         "BG02_SHOP_MAIN"
       ],
       "candidate_target": 1,
-      "approved_reference_image": null,
+      "approved_reference_image": "assets/approved/BG03_COUNTER/e9cf17d082deb7b04c781d18b9dbaa2801405d81c8bbc42ac0764fe5d80171a9.jpg",
       "transparency": "opaque"
     },
     {
@@ -68,7 +68,7 @@
         "BG02_SHOP_MAIN"
       ],
       "candidate_target": 1,
-      "approved_reference_image": null,
+      "approved_reference_image": "assets/approved/BG04_DOOR/1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1.jpg",
       "transparency": "opaque"
     },
     {

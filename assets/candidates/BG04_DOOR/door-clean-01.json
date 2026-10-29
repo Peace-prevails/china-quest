@@ -15,7 +15,7 @@
   "price_ceiling_rmb": 0.12,
   "fingerprint": "2c5eff001e0bcaaf88ce8e1c00af1945fd7bde404cf02fed0e8820731afd8dc4",
   "candidate": "door-clean-01",
-  "status": "awaiting_human_review",
+  "status": "approved",
   "image": "assets/candidates/BG04_DOOR/door-clean-01.jpg",
   "reference_scope": "scene_layout",
   "background_is_reference": true,
@@ -23,6 +23,6 @@
     "downloaded": true,
     "sha256_matches": true
   },
-  "recommendation": "重做版本：已去除误生人物，保留批准主场景的木框玻璃门、冷暖光与墙面材质。",
+  "recommendation": "用户已确认采用，作为正式场景背景。",
   "visual_review_complete": true
 }

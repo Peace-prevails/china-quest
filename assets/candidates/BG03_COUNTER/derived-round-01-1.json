@@ -15,7 +15,7 @@
   "price_ceiling_rmb": 0.12,
   "fingerprint": "1f9bccf0e60976c857382d74230a618e99358c2e49303cc82a35e831c3d5adf9",
   "candidate": "derived-round-01-1",
-  "status": "awaiting_human_review",
+  "status": "approved",
   "image": "assets/candidates/BG03_COUNTER/derived-round-01-1.jpg",
   "reference_scope": "scene_layout",
   "background_is_reference": true,
@@ -23,6 +23,6 @@
     "downloaded": true,
     "sha256_matches": true
   },
-  "recommendation": "沿用批准的面馆材质与厨房入口；柜台被放大到前景，空间位置需要人工确认。",
+  "recommendation": "用户已确认采用，作为正式场景背景。",
   "visual_review_complete": true
 }

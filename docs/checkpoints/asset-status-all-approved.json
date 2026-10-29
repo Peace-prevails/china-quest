@@ -1,0 +1,199 @@
+{
+  "base_assets": 12,
+  "candidate_target_total": 22,
+  "approved_assets": 12,
+  "assets": [
+    {
+      "id": "BG01_HUTONG",
+      "category": "backgrounds",
+      "candidate_target": 1,
+      "candidates": 4,
+      "statuses": {
+        "approved": 1,
+        "generated": 1,
+        "uncertain": 2
+      },
+      "approved_reference_image": "assets/approved/BG01_HUTONG/ecfd5701c7d646d45e69fd7b6d3512efc35e468312114632d935531df68214c3.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "BG02_SHOP_MAIN",
+      "category": "backgrounds",
+      "candidate_target": 3,
+      "candidates": 3,
+      "statuses": {
+        "approved": 1,
+        "generated": 2
+      },
+      "approved_reference_image": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "BG03_COUNTER",
+      "category": "backgrounds",
+      "candidate_target": 1,
+      "candidates": 1,
+      "statuses": {
+        "approved": 1
+      },
+      "approved_reference_image": "assets/approved/BG03_COUNTER/e9cf17d082deb7b04c781d18b9dbaa2801405d81c8bbc42ac0764fe5d80171a9.jpg",
+      "errors": [],
+      "dependencies": [
+        "BG02_SHOP_MAIN"
+      ],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "BG04_DOOR",
+      "category": "backgrounds",
+      "candidate_target": 1,
+      "candidates": 2,
+      "statuses": {
+        "approved": 1,
+        "rejected": 1
+      },
+      "approved_reference_image": "assets/approved/BG04_DOOR/1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1.jpg",
+      "errors": [],
+      "dependencies": [
+        "BG02_SHOP_MAIN"
+      ],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "CH01_OWNER",
+      "category": "characters",
+      "candidate_target": 3,
+      "candidates": 4,
+      "statuses": {
+        "approved": 1,
+        "generated": 2,
+        "uncertain": 1
+      },
+      "approved_reference_image": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "CH02_XIAOCHEN",
+      "category": "characters",
+      "candidate_target": 3,
+      "candidates": 3,
+      "statuses": {
+        "approved": 1,
+        "generated": 2
+      },
+      "approved_reference_image": "assets/approved/CH02_XIAOCHEN/05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "CH03_GU",
+      "category": "characters",
+      "candidate_target": 3,
+      "candidates": 3,
+      "statuses": {
+        "approved": 1,
+        "generated": 2
+      },
+      "approved_reference_image": "assets/approved/CH03_GU/ce79ce2c50a554b47c8f905096876906b1da38ca6c259232e9928c0c1cda4626.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "CH04_RIVAL",
+      "category": "characters",
+      "candidate_target": 3,
+      "candidates": 3,
+      "statuses": {
+        "approved": 1,
+        "generated": 2
+      },
+      "approved_reference_image": "assets/approved/CH04_RIVAL/20faa1df1ff0e42699918b154c312e1b9d84aec3b78c18bd5b58bb82bdb0fc8b.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "PR01_BEEF_NOODLES",
+      "category": "props",
+      "candidate_target": 1,
+      "candidates": 1,
+      "statuses": {
+        "approved": 1
+      },
+      "approved_reference_image": "assets/approved/PR01_BEEF_NOODLES/23febaadced9566b33eafc5b17da7eb25fd4d06f427ae5040d961f072acdda9e.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "PR02_WATER",
+      "category": "props",
+      "candidate_target": 1,
+      "candidates": 1,
+      "statuses": {
+        "approved": 1
+      },
+      "approved_reference_image": "assets/approved/PR02_WATER/732d8887e9c7a0ced91acb410c9974d68b74cd44e617e2881afc46f66d2742ee.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "PR03_ENVELOPE",
+      "category": "props",
+      "candidate_target": 1,
+      "candidates": 1,
+      "statuses": {
+        "approved": 1
+      },
+      "approved_reference_image": "assets/approved/PR03_ENVELOPE/81b313d5c0d4dc2e5353dc82abd85bb9bb0e183def175d0ad390bcb4f8e524fa.jpg",
+      "errors": [],
+      "dependencies": [],
+      "blocked_by": [],
+      "ready_for_generation": true
+    },
+    {
+      "id": "CG01_FILE_SLAM",
+      "category": "cg",
+      "candidate_target": 1,
+      "candidates": 3,
+      "statuses": {
+        "approved": 1,
+        "generated": 1,
+        "rejected": 1
+      },
+      "approved_reference_image": "assets/approved/CG01_FILE_SLAM/69bc06211051fd276a00917f570949c1312ca10d2e5c83d9c1b792c5dec62ce4.jpg",
+      "errors": [],
+      "dependencies": [
+        "BG02_SHOP_MAIN",
+        "CH03_GU",
+        "PR03_ENVELOPE"
+      ],
+      "blocked_by": [],
+      "ready_for_generation": true
+    }
+  ],
+  "paid_generation_authorized": true,
+  "budget": {
+    "approved_total_rmb": 40,
+    "estimated_and_reserved_rmb": 4.96
+  }
+}

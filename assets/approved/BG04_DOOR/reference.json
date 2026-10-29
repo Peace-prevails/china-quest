@@ -1,0 +1,9 @@
+{
+  "asset_id": "BG04_DOOR",
+  "path": "assets/approved/BG04_DOOR/1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1.jpg",
+  "sha256": "1bda557c67b3cd0a6f0c5f9936e7783210c0f83bf3afded7f1762771239d8fd1",
+  "review_note": "用户明确确认门口 door-clean-01 和柜台视角均可采用。",
+  "source_record": "assets/generated/backgrounds/BG04_DOOR/2c5eff001e0bcaaf88ce8e1c00af1945fd7bde404cf02fed0e8820731afd8dc4/record.json",
+  "reference_scope": "scene_layout",
+  "ignore_background": false
+}
