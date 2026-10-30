@@ -25,3 +25,16 @@
 - 官方系统音色列表：https://docs.coze.cn/dev_how_to_guides_sys_voice
 - 豆包语音音色列表：https://docs.volcengine.com/docs/doubao-voice/tone-list-3?lang=zh
 - Agent Plan语音接入：https://docs.volcengine.com/docs/ark/agent-plan-personal-voice-model?lang=zh
+
+## 2026-10-30 密钥接入实测
+
+用户提供语音密钥后，已只保存在被Git忽略的.env（权限0600）。分别发起一次11字符短句测试，无自动重试：
+
+- seed-tts-1.0 / 北京小爷：HTTP 403，服务错误码45000030，`[resource_id=volc.service_type.10029] requested resource not granted`。
+- seed-tts-2.0 / 清爽男大2.0（仅作权限测试）：HTTP 403，服务错误码45000030，`[resource_id=volc.seedtts.default] requested resource not granted`。
+
+两次均未返回音频。请求被明确拒绝，预算中登记为api_rejected，不计入成功生成估算；实际结算仍以供应商账单为准。脱敏记录在assets/audio/samples/*/record.json。
+
+下一步检查豆包语音控制台服务开通状态和密钥所属项目资源权限；1.0音色不能替换资源参数直接当2.0调用。未购买资源包、未修改账号权限。
+
+已核对官方2.0按调用后付费价格为3元/万字符（https://docs.volcengine.com/docs/doubao-voice/billing-instructions?lang=zh）。本轮未找到1.0现行按量价格，不套用2.0价格。

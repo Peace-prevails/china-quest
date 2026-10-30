@@ -1,0 +1,21 @@
+{
+  "fingerprint": "bc859a04b7f95321b4cbed3263f7d7a590650a57fa9e61d5173f799c42249dee",
+  "text": "我是小陈，在这里帮忙。",
+  "speaker": "zh_male_beijingxiaoye_moon_bigtts",
+  "resource": "seed-tts-1.0",
+  "status": "api_rejected",
+  "budget_reserve_rmb": 0.1,
+  "price_note": "Conservative test reservation, not verified billed price",
+  "request_id": "977f8d5f-2811-4d49-a8e5-70633ab67a31",
+  "http_status": "403",
+  "transport_exit": 0,
+  "events": [
+    {
+      "header": {
+        "reqid": "977f8d5f-2811-4d49-a8e5-70633ab67a31",
+        "code": 45000030,
+        "message": "[resource_id=volc.service_type.10029] requested resource not granted"
+      }
+    }
+  ]
+}

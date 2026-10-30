@@ -1,0 +1,21 @@
+{
+  "fingerprint": "26963e930f637b8e9643a8a8c06e27496c67e06a68c7ae924c2140d3b4889002",
+  "text": "我是小陈，在这里帮忙。",
+  "speaker": "zh_male_qingshuangnanda_uranus_bigtts",
+  "resource": "seed-tts-2.0",
+  "status": "api_rejected",
+  "budget_reserve_rmb": 0.1,
+  "price_note": "Conservative test reservation, not verified billed price",
+  "request_id": "264ae0ff-dc09-46fc-83f8-1aaa8a2f928a",
+  "http_status": "403",
+  "transport_exit": 0,
+  "events": [
+    {
+      "header": {
+        "reqid": "264ae0ff-dc09-46fc-83f8-1aaa8a2f928a",
+        "code": 45000030,
+        "message": "[resource_id=volc.seedtts.default] requested resource not granted"
+      }
+    }
+  ]
+}

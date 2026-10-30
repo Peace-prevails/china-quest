@@ -303,6 +303,18 @@
       "model": "doubao-seedream-5-0-flash-260915",
       "status": "generated",
       "price_ceiling_rmb": 0.12
+    },
+    "bc859a04b7f95321b4cbed3263f7d7a590650a57fa9e61d5173f799c42249dee": {
+      "asset_id": "VOICE_CHEN_SAMPLE",
+      "model": "seed-tts-1.0",
+      "status": "api_rejected",
+      "price_ceiling_rmb": 0.1
+    },
+    "26963e930f637b8e9643a8a8c06e27496c67e06a68c7ae924c2140d3b4889002": {
+      "asset_id": "VOICE_TTS2_ACCESS_SAMPLE",
+      "model": "seed-tts-2.0",
+      "status": "api_rejected",
+      "price_ceiling_rmb": 0.1
     }
   },
   "reserved_and_estimated_rmb": 8.92,
