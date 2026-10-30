@@ -315,6 +315,12 @@
       "model": "seed-tts-2.0",
       "status": "api_rejected",
       "price_ceiling_rmb": 0.1
+    },
+    "1e74870f9af434e9641316a2eedc36f5f7a9c3de89efa231c40a2be4dce0b432": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "api_rejected",
+      "price_ceiling_rmb": 2
     }
   },
   "reserved_and_estimated_rmb": 8.92,

@@ -38,3 +38,9 @@
 下一步检查豆包语音控制台服务开通状态和密钥所属项目资源权限；1.0音色不能替换资源参数直接当2.0调用。未购买资源包、未修改账号权限。
 
 已核对官方2.0按调用后付费价格为3元/万字符（https://docs.volcengine.com/docs/doubao-voice/billing-instructions?lang=zh）。本轮未找到1.0现行按量价格，不套用2.0价格。
+
+## 用户提供 Seed-Audio 接口后的实测
+
+接口为 POST /api/v3/tts/create，model=seed-audio-1.0，与TTS1.0/2.0不同。已按用户要求准备男女分开的北京口音短句；男声一次测试返回 HTTP403 / 45000030 / `[resource_id=volc.service_type.10074] requested resource not granted`。未产生音频，女声未发送，以免在相同权限阻塞下重复调用。
+
+需要检查“豆包音频生成模型1.0”服务和密钥的项目资源权限，不能仅开通语音合成TTS。脚本 scripts/generate_voice_samples.py 默认只预览提示词；显式--execute才付费调用，不自动重试已有请求。权限修复后需先确认旧请求确实被拒绝，再为新尝试建立新记录，不覆盖历史。
