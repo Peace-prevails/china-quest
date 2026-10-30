@@ -321,8 +321,20 @@
       "model": "seed-audio-1.0",
       "status": "api_rejected",
       "price_ceiling_rmb": 2
+    },
+    "5965cfc704d72fe740025e42c4595942c5f8c4884d006a2b94cdd98109cfda82": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.106667
+    },
+    "884befd0d57245507968d184de07b721c86f56267a9a101066ed06951ca8a1f6": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.1
     }
   },
-  "reserved_and_estimated_rmb": 8.92,
-  "remaining_estimate_rmb": 31.08
+  "reserved_and_estimated_rmb": 9.126667,
+  "remaining_estimate_rmb": 30.873333
 }

@@ -8,7 +8,7 @@ SAMPLES={
  'chen':('小陈·北京男声','年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔','我是小陈，在这儿帮忙。您先吃着，有事儿叫我。'),
  'owner':('老板娘·北京女声','四十多岁成年女性，北京本地口音，声线温暖略低，干练亲切，不尖细，不装年轻','好嘞，面来了！您慢慢吃，辣椒和醋在这儿。')
 }
-def run(name,execute=False):
+def run(name,execute=False,retry_rejected=False):
  title,voice,line=SAMPLES[name]
  prompt=f'干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。{voice}。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，约6至10秒，说完即结束：“{line}”'
  payload={'model':'seed-audio-1.0','text_prompt':prompt,'audio_config':{'format':'mp3','sample_rate':48000,'pitch_rate':0,'speech_rate':0,'loudness_rate':0},'watermark':{}}
@@ -16,7 +16,16 @@ def run(name,execute=False):
  if not execute:print(json.dumps({'sample':name,'payload':payload,'reserve_rmb':2},ensure_ascii=False));return
  dotenv();key=os.environ.get('VOLC_VOICE_API_KEY')
  if not key:raise ValueError('Missing local voice credential')
- if recordpath.exists():print('CACHED/PRIOR REQUEST',name,read(recordpath)['status']);return
+ if recordpath.exists():
+  previous=read(recordpath)
+  if not retry_rejected or previous['status']!='api_rejected':
+   print('CACHED/PRIOR REQUEST',name,previous['status']);return
+  attempt=1
+  while (folder/f'attempt-{attempt}.json').exists():
+   prior=read(folder/f'attempt-{attempt}.json')
+   if prior['status']!='api_rejected':raise ValueError('Previous attempt must be resolved before retry')
+   attempt+=1
+  fp=digest((fp+':attempt:'+str(attempt)).encode());recordpath=folder/f'attempt-{attempt}.json';raw=ROOT/'local/voice-responses'/(fp+'.json')
  folder.mkdir(parents=True,exist_ok=True);raw.parent.mkdir(parents=True,exist_ok=True)
  record={'id':name,'title':title,'text':line,'prompt':prompt,'model':'seed-audio-1.0','fingerprint':fp,'status':'requesting','request_id':str(uuid.uuid4()),'price_basis':'1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB','review_status':'awaiting_listening_review'}
  reserve(ROOT,fp,'VOICE_'+name.upper(),record['model'],2);write(recordpath,record)
@@ -45,4 +54,4 @@ def run(name,execute=False):
  print(json.dumps(record,ensure_ascii=False),flush=True)
  if record['status']!='generated':raise SystemExit('Stopped; inspect recorded result before another request')
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--sample',choices=SAMPLES,required=True);p.add_argument('--execute',action='store_true');a=p.parse_args();run(a.sample,a.execute)
+ p=argparse.ArgumentParser();p.add_argument('--sample',choices=SAMPLES,required=True);p.add_argument('--execute',action='store_true');p.add_argument('--retry-rejected',action='store_true');a=p.parse_args();run(a.sample,a.execute,a.retry_rejected)

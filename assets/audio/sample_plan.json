@@ -1,21 +1,23 @@
 {
   "model": "seed-audio-1.0",
-  "status": "blocked_resource_permission",
+  "status": "samples_generated_awaiting_listening_review",
   "resource": "volc.service_type.10074",
   "samples": [
     {
       "id": "chen",
       "title": "小陈·北京男声",
       "voice": "年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔",
-      "text": "我是小陈，在这儿帮忙。您先吃着，有事儿叫我。"
+      "text": "我是小陈，在这儿帮忙。您先吃着，有事儿叫我。",
+      "audio": "assets/audio/samples/seed-audio-chen-1e74870f9af4/sample.mp3"
     },
     {
       "id": "owner",
       "title": "老板娘·北京女声",
       "voice": "四十多岁成年女性，北京本地口音，声线温暖略低，干练亲切，不尖细，不装年轻",
-      "text": "好嘞，面来了！您慢慢吃，辣椒和醋在这儿。"
+      "text": "好嘞，面来了！您慢慢吃，辣椒和醋在这儿。",
+      "audio": "assets/audio/samples/seed-audio-owner-884befd0d572/sample.mp3"
     }
   ],
-  "female_request_sent": false,
-  "note": "User requested separate male/female Beijing accents. Male request rejected with HTTP403; no audio generated."
+  "female_request_sent": true,
+  "note": "Both samples generated successfully after user confirmed service availability; listening review pending."
 }

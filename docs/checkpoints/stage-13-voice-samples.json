@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-30",
+  "model": "seed-audio-1.0",
+  "result": "two_samples_generated",
+  "samples": [
+    {
+      "id": "chen",
+      "audio": "assets/audio/samples/seed-audio-chen-1e74870f9af4/sample.mp3",
+      "sha256": "0fb7082391285059c7b1e80382a4d0344b80e8eef2d65e43335fd2763d38608e",
+      "original_duration": 6.4,
+      "estimated_rmb": 0.106667
+    },
+    {
+      "id": "owner",
+      "audio": "assets/audio/samples/seed-audio-owner-884befd0d572/sample.mp3",
+      "sha256": "c17840751d1f4d186bf2a0f81b9f74ee6a7e013d26786829deec7a5258bfe25c",
+      "original_duration": 6.0,
+      "estimated_rmb": 0.1
+    }
+  ],
+  "validation": "ffprobe: both MP3, 48000Hz, stereo, nonzero duration",
+  "listening_review": "pending; no claim of accent or exact transcript verified",
+  "estimated_total_project_rmb": 9.126667,
+  "credentials_committed": false
+}

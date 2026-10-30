@@ -1,0 +1,22 @@
+{
+  "id": "chen",
+  "title": "小陈·北京男声",
+  "text": "我是小陈，在这儿帮忙。您先吃着，有事儿叫我。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，约6至10秒，说完即结束：“我是小陈，在这儿帮忙。您先吃着，有事儿叫我。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "5965cfc704d72fe740025e42c4595942c5f8c4884d006a2b94cdd98109cfda82",
+  "status": "generated",
+  "request_id": "4531b048-077b-4bd0-a915-ad1cc392badc",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/samples/seed-audio-chen-1e74870f9af4/sample.mp3",
+  "sha256": "0fb7082391285059c7b1e80382a4d0344b80e8eef2d65e43335fd2763d38608e",
+  "bytes": 103725,
+  "original_duration": 6.4,
+  "duration": 6.4,
+  "estimated_rmb": 0.106667
+}
