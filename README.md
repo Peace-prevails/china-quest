@@ -118,3 +118,11 @@ python3 scripts/build_candidate_gallery.py
 生图连接如遇本机 urllib TLS 中断，可在同样的审批和累计预算限制下使用 `ARK_HTTP_TRANSPORT=curl`。Key 通过临时权限文件传入，不出现在进程参数中；网络错误仍保守记录为 uncertain，不做自动付费重试。人工决定新尝试时必须保留旧请求预留并使用可审计的新 candidate 标签。
 
 现代胡同资料与设计边界见 [docs/hutong_2026_reference_notes.md](docs/hutong_2026_reference_notes.md)。12项基础图片均已获得用户批准，正式清单为 episodes/ep01/approved_asset_manifest.json。
+
+## 本集表达总结与配音调研
+
+结尾新增9组表达复习卡：地点、点餐、拒绝、价格、听不懂、这个／那个、身份、认识关系。区分见过的表达与实际选择，给出拼音、意思和替换用法；新存档记录所选表达，旧存档不伪造选择记录，探索回放不污染主存档。
+
+探索总景按订单切换，完整显示面碗、小陈擦桌、老板娘整理瓷碗与门外汽车；原有18项修订图仍为用户待审阅的预览版本。
+
+现有方舟Key查询138项模型未见独立TTS；豆包语音服务与北京口音候选、鉴权区别、样音计划详见 [配音调研](docs/TTS_RESEARCH.md)。目前未生成音频，未产生配音费用。

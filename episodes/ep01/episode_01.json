@@ -72,7 +72,8 @@
   "initial_learning": {
     "hint_usage": {},
     "phrase_exposure": {},
-    "replay_count": 0
+    "replay_count": 0,
+    "selected_expressions": {}
   },
   "menu": [
     {
@@ -1191,9 +1192,9 @@
         },
         {
           "id": "explore_3",
-          "zh": "红色文件袋",
-          "en": "Red envelope",
-          "pinyin": "hóngsè wénjiàndài",
+          "zh": "门外的动静",
+          "en": "Activity outside",
+          "pinyin": "Mén wài de dòngjing",
           "next": "hotspot_envelope",
           "set": {},
           "requires": {}
@@ -1218,8 +1219,8 @@
         }
       ],
       "context": {
-        "zh": "你开始吃面。一个穿灰蓝衬衫的年轻人在店里帮忙，老板娘叫他“小陈”。门外刚停下一辆车。你可以聊几句，也可以继续吃。",
-        "en": "As you eat, a young man in a gray-blue shirt helps around the shop. The owner calls him Xiao Chen. A car has just stopped outside. You can chat, look around, or keep eating."
+        "zh": "你把筷子搁在碗边。穿灰蓝衬衫的小陈擦了擦桌边，老板娘在柜台后整理瓷碗。玻璃门外，一辆车刚停稳。可以和他们聊聊，也可以观察店里和门外。",
+        "en": "You rest your chopsticks beside the bowl. Xiao Chen, in a gray-blue shirt, wipes the table while the owner sorts bowls behind the counter. A car has just stopped outside the glass door. Chat with them, look around, or keep eating."
       }
     },
     {
@@ -1278,6 +1279,10 @@
       ],
       "on_enter": {
         "append_explored_hotspots": "owner"
+      },
+      "context": {
+        "zh": "老板娘放下手中的碗，抬眼看你。你可以问洗手间在哪儿，也可以问刚才点的面。",
+        "en": "The owner puts down a bowl and looks up. You can ask for directions to the restroom or ask about your order."
       }
     },
     {
@@ -1434,6 +1439,10 @@
       ],
       "on_enter": {
         "append_explored_hotspots": "chen"
+      },
+      "context": {
+        "zh": "小陈停下手里的活，等你开口。你可以问他的名字，也可以问问门外那辆车。",
+        "en": "Xiao Chen pauses his work, waiting for you to speak. Ask who he is, or ask about the car outside."
       }
     },
     {
@@ -1582,6 +1591,10 @@
       ],
       "on_enter": {
         "append_explored_hotspots": "menu"
+      },
+      "context": {
+        "zh": "你又看了一遍菜单。牛肉面28元，炸酱面24元；这次只看，不会重新下单。",
+        "en": "You glance at the menu again: beef noodles ¥28, zhajiang noodles ¥24. You are browsing; this will not place another order."
       }
     },
     {

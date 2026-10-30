@@ -1,0 +1,40 @@
+{
+  "asset_id": "BEAT_EXPLORE_BEEF",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "16:9写实电影摄影，北京现代小面馆，玩家坐在桌边的第一人称广角场景，不出现玩家身体。参考1只锁定房间布局：左墙四幅食物照片，后左小柜台厨房，右侧木框玻璃门。参考2只锁定小陈的脸、灰蓝色衬衫和发型；参考3只锁定老板娘的脸、黑针织衫与旧围裙，忽略人物参考的背景。画面清楚包含三个层次：前景下方完整一碗牛肉汤面，薄牛肉片、面条、清汤放在旧木桌上，筷子平放碗边；中景正中偏右小陈站在另一张桌旁用一块干净抹布擦桌子，抬头自然看向玩家，身体与脸清楚；后景左侧老板娘站在小柜台后整理白瓷碗。只有这两个人，无其他人物。右侧玻璃门后胡同里能看见一辆靠边停好的深灰色小汽车的局部车身，不堵门不穿墙，不过分突出汽车。左墙四个木框依次是牛肉面、炸酱面、黄瓜、卤牛肉的食物照片；下方窄搁板有筷子筒、白瓷碗、红盖辣椒油和醋壶。不要文字。傍晚暖灯，现代北京普通居民生活质感，自然面部，不要摆拍笑容，无文件袋，无陌生西装男。小陈与老板娘动作清楚，碗、人物、门口都在画内。\n参考图1（BG02_SHOP_MAIN）仅约束场景布局、建筑材质与室内陈设。\n参考图2（CH02_XIAOCHEN）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。\n参考图3（CH01_OWNER）只参考人物的面部身份、体态和已确认服装；完全忽略该图背景、空间布局、道具与光线，以目标场景指令为准。",
+  "size": "2K",
+  "references": [
+    {
+      "asset_id": "BG02_SHOP_MAIN",
+      "sha256": "7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9",
+      "path": "assets/approved/BG02_SHOP_MAIN/7e8f669d3e966fc94aada82adfc7f915ead426f779bc32da92470512565c6ba9.jpg",
+      "scope": "scene_layout"
+    },
+    {
+      "asset_id": "CH02_XIAOCHEN",
+      "sha256": "05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41",
+      "path": "assets/approved/CH02_XIAOCHEN/05b522160abd6b23ade1ebdfb8740bce460d84bd9af960bf3bec078da5f04b41.jpg",
+      "scope": "identity_only"
+    },
+    {
+      "asset_id": "CH01_OWNER",
+      "sha256": "9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba",
+      "path": "assets/approved/CH01_OWNER/9f8a63a2c789a157c6fddee36c5cde26127ea35dc21b8812429b25fb383497ba.jpg",
+      "scope": "identity_only"
+    }
+  ],
+  "sha256": "6c1e58bd64139dd6197223d331cd98d1adfce784ce0404dd4fd4e782358e1b7c",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "5bce8da1181199a03a262e5ae1789fc0b97d6c2dd18932b252c16740346b7aec",
+  "candidate": "explore-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/BEAT_EXPLORE_BEEF/explore-v1.jpg",
+  "reference_scope": "full_image",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "recommendation": "探索镜头：已核对订单面碗、小陈擦桌、老板娘整理瓷碗、门外汽车均可见；待用户审阅。"
+}

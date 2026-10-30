@@ -9,6 +9,7 @@ def build():
     groups=list(GROUPS)
     labels={'DLG_OWNER_WARM':'老板娘 · 招呼客人','DLG_OWNER_GUARDED':'老板娘 · 凝重警惕','DLG_CHEN_FRIENDLY':'小陈 · 轻松介绍','DLG_CHEN_UNSURE':'小陈 · 不确定','DLG_GU_CALM':'顾承泽 · 克制说明','DLG_GU_HESITANT':'顾承泽 · 迟疑','DLG_RIVAL_URGENT':'陆先生 · 急切打断','DLG_AUNT_HELPFUL':'路人阿姨 · 指路'}
     labels.update({'BEAT_MEAL_BEEF':'上菜 · 牛肉面','BEAT_MEAL_ZHAJIANG':'上菜 · 炸酱面','BEAT_GU_ARRIVAL':'顾承泽 · 到店','BEAT_RIVAL_ENTRY':'陆先生 · 闯入'})
+    labels.update({'BEAT_EXPLORE_BEEF':'探索全景 · 牛肉面','BEAT_EXPLORE_ZHAJIANG':'探索全景 · 炸酱面'})
     groups.extend(labels.items())
     for aid,title in groups:
         cards=[]

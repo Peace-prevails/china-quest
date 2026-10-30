@@ -12,7 +12,7 @@ def tasks():
   ('BG04_DOOR','door-clean-01','door','flash',.12),
   ('CG01_FILE_SLAM','cg-pro-expression-v3','cg','pro',.60)]:
   rows.append((aid,'shop-lived-in-v2',price,['--edit-target',f'assets/candidates/{aid}/{old}.jpg','--edit-prompt-file',f'assets/prompts/shop-v2/{prompt}.txt','--model','doubao-seedream-5-0-'+model+('-260628' if model=='pro' else '-260915')]))
- for a in read(ROOT/PLAN)['assets']:rows.append((a['id'],'continuity-v1' if a['id'].startswith('BEAT_') else 'dialogue-v1',.12,['--asset-plan',PLAN]))
+ for a in read(ROOT/PLAN)['assets']:rows.append((a['id'],'explore-v1' if a['id'].startswith('BEAT_EXPLORE_') else 'continuity-v1' if a['id'].startswith('BEAT_') else 'dialogue-v1',.12,['--asset-plan',PLAN]))
  return rows
 def main(execute):
  budget=load_budget(ROOT)

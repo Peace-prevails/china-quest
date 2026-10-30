@@ -318,5 +318,15 @@
     "expression": "guarded",
     "speaker": "narrator",
     "focus": "50% 50%"
+  },
+  "explore": {
+    "asset": "BEAT_EXPLORE_BEEF",
+    "asset_by_item": {
+      "beef": "BEAT_EXPLORE_BEEF",
+      "zhajiang": "BEAT_EXPLORE_ZHAJIANG"
+    },
+    "speaker": "narrator",
+    "expression": "exploration",
+    "focus": "50% 50%"
   }
 }

@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {Story} from '../web/engine.mjs';
+import {lessonSummary} from '../web/learning.mjs';
+const data=JSON.parse(fs.readFileSync('episodes/ep01/episode_01.json'));
+const s=new Story(data);s.choose('start_2');
+let rows=lessonSummary(s.learning);assert.equal(rows.find(r=>r.tag==='在哪里').encountered,true);assert.equal(rows.find(r=>r.tag==='在哪里').selected.length,0);
+s.current='water';s.choose('water_0');rows=lessonSummary(s.learning);assert.equal(rows.find(r=>r.tag==='我要').selected[0].text,'我要水。');assert.equal(rows.find(r=>r.tag==='我不要').selected.length,0);
+const old=s.save();delete old.learning.selected_expressions;const restored=new Story(data);restored.load(old);assert.deepEqual(restored.learning.selected_expressions,{});assert.ok(lessonSummary(restored.learning).every(r=>r.selected.length===0));
+const bad=s.save();bad.learning.selected_expressions={'我要水。':-1};assert.throws(()=>restored.load(bad));
+s.current='end';const replay=s.replay();replay.current='water';replay.choose('water_1');assert.equal(s.learning.selected_expressions['我不要水。'],undefined);
+console.log('PASS review distinguishes encountered/chosen, migrates old saves, validates history and isolates replay');

@@ -8,7 +8,7 @@ class WebTests(unittest.TestCase):
   cases=[]
   for food,spice,water,reaction,alignment in itertools.product(['牛肉面','炸酱面'],[True,False],[True,False],['我要。','我不要。','这是什么？','这是谁的？'],['你是谁？','我不认识他。','我也不认识你。','文件给我。']):
    s=Story();ids=[]
-   route=['面馆在哪里？','我听不懂','往前走','坐下','菜单',food,'我要这个。','我不要这个。',food,'我要这个。','我听不懂。','我要这个。','我听不懂。','我要辣。' if spice else '我不要辣。','我要水。' if water else '我不要水。','谢谢','这个多少钱？','好','红色文件袋','看一眼','继续吃面','看着他','我听不懂。','继续',reaction,'继续','看向门口',alignment,'继续','看她的反应','谁死了？','看手机','结束']
+   route=['面馆在哪里？','我听不懂','往前走','坐下','菜单',food,'我要这个。','我不要这个。',food,'我要这个。','我听不懂。','我要这个。','我听不懂。','我要辣。' if spice else '我不要辣。','我要水。' if water else '我不要水。','谢谢','这个多少钱？','好','门外的动静','看一眼','继续吃面','看着他','我听不懂。','继续',reaction,'继续','看向门口',alignment,'继续','看她的反应','谁死了？','看手机','结束']
    for label in route:
     choice=next(c for c in s.view()['choices'] if c['zh']==label);ids.append(choice['id']);s.choose(choice['id'])
    cases.append({'choices':ids,'expected':{'version':1,'episode_id':s.data['id'],'current':s.current,'story':s.state,'learning':s.learning}})
@@ -33,3 +33,7 @@ class WebTests(unittest.TestCase):
   revision=read(ROOT/'episodes/ep01/visual_revision.json')
   available=set(revision['assets'])|{a['id'] for a in read(ROOT/'episodes/ep01/approved_asset_manifest.json')['assets']}
   for node,shot in read(ROOT/'web/scene_visuals.json').items():self.assertIn(shot['asset'],available,node)
+
+ def test_learning_review_and_old_save_migration(self):
+  result=subprocess.run(["node","tests/learning_review.mjs"],cwd=ROOT,text=True,capture_output=True)
+  self.assertEqual(result.returncode,0,result.stderr)

@@ -6,3 +6,7 @@
 .story-context{border-left:3px solid #b67b50;padding:1px 16px;margin:12px 0 22px;color:#ced7d0;font-size:14px;line-height:1.65}.story-context p{margin:6px 0}.story-context p+ p{color:#aab9b2}.dialogue-stage[data-expression="serving"],.dialogue-stage[data-expression="meal"]{aspect-ratio:16/9;max-height:none}
 /* Keep the scene full width when its height is capped on wide screens. */
 .stage{width:100%}
+
+.learning-review{margin:44px 0;text-align:left;border-top:1px solid #465047;padding-top:30px}.learning-review h2{font-family:Georgia,serif;font-size:30px;margin:12px 0}.review-intro{font-size:14px!important;line-height:1.7}.review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}.review-card{border:1px solid #4a544b;padding:20px;border-radius:8px;background:#222923}.review-status{color:#d5b77c;font-size:11px}.review-card h3{font-size:16px;margin:12px 0}.review-card p{font-size:14px!important;line-height:1.7!important;margin:8px 0!important}.review-card summary{cursor:pointer;color:#e6cc95;margin:16px 0;font-size:13px}.review-card .review-zh{font-size:22px!important}.review-picked{border-top:1px solid #465047;padding-top:10px}@media(max-width:700px){.review-grid{grid-template-columns:1fr}.review-card{padding:16px}}
+
+.stage[data-expression="exploration"]{aspect-ratio:16/9;min-height:0;max-height:none}.stage[data-expression="exploration"] .hotspots{display:none}

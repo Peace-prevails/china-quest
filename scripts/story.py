@@ -2,7 +2,7 @@ import copy
 from common import ROOT,read,write
 class Story:
  def __init__(self):
-  self.data=read(ROOT/'episodes/ep01/episode_01.json');self.nodes={n['id']:n for n in self.data['nodes']};self.state=self.data['initial_state'].copy();self.state['explored_hotspots']=[];self.learning={'hint_usage':{},'phrase_exposure':{},'replay_count':0};self.current=self.data['start']
+  self.data=read(ROOT/'episodes/ep01/episode_01.json');self.nodes={n['id']:n for n in self.data['nodes']};self.state=self.data['initial_state'].copy();self.state['explored_hotspots']=[];self.learning=copy.deepcopy(self.data['initial_learning']);self.current=self.data['start']
  def values(self):
   item=next((x for x in self.data['menu'] if x['id']==self.state['item_selected']),None)
   return {'item_name':item['zh'] if item else '', 'item_en':item['en'] if item else '', 'item_price':item['price'] if item else 0,'total':(item['price'] if item else 0)+(3 if self.state['wants_water'] else 0)}
@@ -15,6 +15,7 @@ class Story:
   if c is None:raise ValueError('Unknown choice')
   if not all(self.state.get(k)==v for k,v in c['requires'].items()):raise ValueError('Choice precondition failed')
   if c['next'] in ['spice','confirm'] and not self.state['item_selected'] and not c['set'].get('item_selected'):raise ValueError('Select a main dish first')
+  selected=self.learning.setdefault('selected_expressions',{});selected[c['zh']]=selected.get(c['zh'],0)+1
   for tag in n['learning_tags']:self.learning['phrase_exposure'][tag]=self.learning['phrase_exposure'].get(tag,0)+1
   if '听不懂' in c['zh']:self.learning['hint_usage'][n['scene_id']]=self.learning['hint_usage'].get(n['scene_id'],0)+1
   self.state.update(c['set']);self.current=c['next']
@@ -35,7 +36,9 @@ class Story:
   if state['spicy'] is not None and type(state['spicy']) is not bool:raise ValueError('Invalid saved spice')
   if not isinstance(state['explored_hotspots'],list) or not all(x in ['owner','chen','menu','envelope','door'] for x in state['explored_hotspots']):raise ValueError('Invalid hotspot history')
   if not isinstance(learning.get('hint_usage'),dict) or not isinstance(learning.get('phrase_exposure'),dict) or type(learning.get('replay_count')) is not int:raise ValueError('Invalid learning record')
-  self.state=copy.deepcopy(state);self.learning=copy.deepcopy(learning);self.current=saved['current']
+  selected=learning.get('selected_expressions',{})
+  if not isinstance(selected,dict) or any(type(v) is not int or v<0 for v in selected.values()):raise ValueError('Invalid selected expression history')
+  self.state=copy.deepcopy(state);self.learning=copy.deepcopy(learning);self.learning.setdefault('selected_expressions',{});self.current=saved['current']
   return self.view()
  def replay_exploration(self):
   if self.current!='end':raise ValueError('Finish the episode before replaying exploration')

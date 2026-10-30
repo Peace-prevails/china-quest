@@ -82,6 +82,16 @@
       "path": "assets/candidates/BEAT_RIVAL_ENTRY/continuity-v1.jpg",
       "sha256": "49d72bc4ce4fc1f82a203c8f336b63d5d06b70c4db92367575ae1f9187fc9366",
       "candidate": "continuity-v1"
+    },
+    "BEAT_EXPLORE_BEEF": {
+      "path": "assets/candidates/BEAT_EXPLORE_BEEF/explore-v1.jpg",
+      "sha256": "6c1e58bd64139dd6197223d331cd98d1adfce784ce0404dd4fd4e782358e1b7c",
+      "candidate": "explore-v1"
+    },
+    "BEAT_EXPLORE_ZHAJIANG": {
+      "path": "assets/candidates/BEAT_EXPLORE_ZHAJIANG/explore-v1.jpg",
+      "sha256": "5dd1c1f84fc9fa2147d83e7c94c59e7a55a3ad0759e61fa615bbd46f49186ff7",
+      "candidate": "explore-v1"
     }
   }
 }

@@ -291,8 +291,20 @@
       "model": "doubao-seedream-5-0-flash-260915",
       "status": "generated",
       "price_ceiling_rmb": 0.12
+    },
+    "5bce8da1181199a03a262e5ae1789fc0b97d6c2dd18932b252c16740346b7aec": {
+      "asset_id": "BEAT_EXPLORE_BEEF",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "f23d8cbe28795079e6d2a49108b8c29d9a210ca7a28bcceb34bafed3ee12f571": {
+      "asset_id": "BEAT_EXPLORE_ZHAJIANG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
     }
   },
-  "reserved_and_estimated_rmb": 8.68,
-  "remaining_estimate_rmb": 31.32
+  "reserved_and_estimated_rmb": 8.92,
+  "remaining_estimate_rmb": 31.08
 }
