@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-31",
+  "sample": {
+    "id": "narrator",
+    "title": "教学旁白·北京年轻女声",
+    "text": "面馆在哪里？我要这个。这个多少钱？我听不懂。",
+    "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。二十五岁左右的北京本地年轻成年女性教学旁白，声线清亮自然、亲切松弛，与老板娘和老年阿姨明显不同。使用自然轻北京口音，有北京年轻女性日常说话的语调，发音清晰、声调准确，不刻意压嗓，不装可爱，不改变教学用词。北京年轻女声教学朗读，保留自然轻北京口音，语速比正常对话慢约20%，每句之间留约1秒停顿，完整自然地读句子，不拆字、不拼读拼音，不刻意堆砌儿化，便于零基础用户模仿。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，约10至16秒，说完即结束：“面馆在哪里？我要这个。这个多少钱？我听不懂。”",
+    "model": "seed-audio-1.0",
+    "fingerprint": "dcf65072f6049f0bad5b51b41d8e60c76642d04c73bc2c5846514c005ce6015e",
+    "status": "generated",
+    "request_id": "5d842d7b-8aa1-43f0-81a2-9811619a2dc3",
+    "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+    "review_status": "awaiting_listening_review",
+    "http_status": "200",
+    "transport_exit": 0,
+    "provider_code": null,
+    "provider_message": "",
+    "audio": "assets/audio/samples/seed-audio-narrator-dcf65072f604/sample.mp3",
+    "sha256": "40124b77b9f74fea4f4982faf0499d91b7b4b408b32990d20ce09417e585d029",
+    "bytes": 153261,
+    "original_duration": 9.5,
+    "duration": 9.5,
+    "estimated_rmb": 0.158333
+  },
+  "probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "format": {
+      "duration": "9.552000"
+    }
+  },
+  "validation": "MP3 duration and SHA256 verified; listening review pending.",
+  "reserved_and_estimated_rmb": 9.781667
+}

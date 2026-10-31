@@ -351,8 +351,14 @@
       "model": "seed-audio-1.0",
       "status": "generated",
       "price_ceiling_rmb": 0.163333
+    },
+    "dcf65072f6049f0bad5b51b41d8e60c76642d04c73bc2c5846514c005ce6015e": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.158333
     }
   },
-  "reserved_and_estimated_rmb": 9.623334,
-  "remaining_estimate_rmb": 30.376666
+  "reserved_and_estimated_rmb": 9.781667,
+  "remaining_estimate_rmb": 30.218333
 }

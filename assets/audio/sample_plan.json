@@ -37,13 +37,14 @@
     },
     {
       "id": "narrator",
-      "title": "教学旁白·清晰女声",
-      "voice": "三十岁左右成年女性教学旁白，清澈平稳、亲切专业，与老板娘和老年阿姨明显不同。使用清晰标准普通话，声母韵母与声调准确，不加口语儿化，不改变教学用词",
+      "title": "教学旁白·北京年轻女声",
+      "voice": "二十五岁左右的北京本地年轻成年女性教学旁白，声线清亮自然、亲切松弛，与老板娘和老年阿姨明显不同。使用自然轻北京口音，有北京年轻女性日常说话的语调，发音清晰、声调准确，不刻意压嗓，不装可爱，不改变教学用词",
       "text": "面馆在哪里？我要这个。这个多少钱？我听不懂。",
-      "audio": "assets/audio/samples/seed-audio-narrator-9e473d89e230/sample.mp3",
-      "review_status": "awaiting_listening_review"
+      "audio": "assets/audio/samples/seed-audio-narrator-dcf65072f604/sample.mp3",
+      "review_status": "awaiting_listening_review",
+      "previous_audio": "assets/audio/samples/seed-audio-narrator-9e473d89e230/sample.mp3"
     }
   ],
   "female_request_sent": true,
-  "note": "User accepted Chen and owner samples. Gu, elderly aunt, and teaching narrator generated; listening review pending. Narrator uses clear standard Mandarin for learning."
+  "note": "User accepted Chen and owner samples. Additional roles await listening review. Per user request, teaching narrator now uses a young Beijing female voice with clear, slower delivery; previous version retained."
 }
