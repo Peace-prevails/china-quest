@@ -1,5 +1,5 @@
 """Package only public story files and hash-verified approved assets for local play."""
-import shutil
+import shutil,re
 from common import ROOT,read,write,digest
 
 def build():
@@ -25,8 +25,15 @@ def build():
    if not metadata.get('visual_review_complete'):raise ValueError('Visual QA required before preview')
    target=output/'images'/(row['sha256']+source.suffix);shutil.copyfile(source,target);assets[aid]='images/'+target.name
   write(output/'visual_revision.json',{'status':revision['status'],'revision':revision['revision']})
- for source in (ROOT/'web').iterdir():
-  if source.suffix in ['.html','.css','.mjs','.json']:shutil.copyfile(source,output/source.name)
+ sources=sorted((ROOT/'web').iterdir())
+ version=digest(b''.join(p.read_bytes() for p in sources if p.suffix in ['.html','.css','.mjs','.json'])+b''.join(p.read_bytes() for p in (ROOT/'episodes/ep01').glob('*.json')))[:12]
+ for source in sources:
+  if source.suffix in ['.html','.css','.mjs','.json']:
+   if source.suffix in ['.html','.mjs']:
+    content=re.sub(r'([\w./-]+\.(?:mjs|css))([\"\'])',lambda m:m[1]+'?v='+version+m[2],source.read_text())
+    content=content.replace('fetch(path)',f"fetch(path+'?v={version}')").replace("fetch('audio.json')",f"fetch('audio.json?v={version}')")
+    (output/source.name).write_text(content)
+   else:shutil.copyfile(source,output/source.name)
  shutil.copyfile(ROOT/'episodes/ep01/episode_01.json',output/'episode.json')
  write(output/'assets.json',assets)
  audio_path=ROOT/'episodes/ep01/audio_manifest.json';clips=[]

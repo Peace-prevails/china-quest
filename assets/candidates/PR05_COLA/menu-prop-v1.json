@@ -1,0 +1,21 @@
+{
+  "asset_id": "PR05_COLA",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "1:1摄影级真实小面馆菜单实物摄影。朴素浅棕旧木桌，柔和中性室内光，轻微真实使用痕迹，浅景深，背景简洁虚化。主体完整入镜，四周留约10%边距，适合手机菜单正方形缩略图。无人物无手，无文字无标识无水印，不要夸张广告光效。一只普通透明直身玻璃杯，装着深棕色可乐，几块自然形状冰块，杯沿下方有细小气泡，杯壁少量冷凝水。杯子完整入镜，玻璃厚度和折射可信，可以从杯口看到冰块。无吸管无装饰水果，无瓶罐无商标，不是咖啡不是啤酒，没有厚泡沫帽。稍高于杯口的平视角度。",
+  "size": "2K",
+  "references": [],
+  "sha256": "58732ba992687209e9040f8933d3aa1fdd85e77a1da0bfcbadf27f903d37636d",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "9015cddc5658111054b695700e080eaee30661839a88a53a8e70f0505a8342f4",
+  "candidate": "menu-prop-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/PR05_COLA/menu-prop-v1.jpg",
+  "reference_scope": "object_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "visual_review_note": "Assistant inspected: complete subject, plausible food/drink, consistent simple tabletop photography; no generated text or visible watermark. Awaiting user acceptance."
+}

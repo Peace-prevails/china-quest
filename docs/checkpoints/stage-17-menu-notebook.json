@@ -1,0 +1,27 @@
+{
+  "stage": 17,
+  "date": "2026-10-31",
+  "features": [
+    "Real zhajiang and cola photos in menu, item cards and order thumbnails",
+    "Spoiler-bounded story recap and encountered-expression notebook",
+    "0.8x pitch-preserving playback and saved audio preferences",
+    "Versioned scripts, CSS and data fetches prevent stale-cache missing images"
+  ],
+  "images": [
+    "assets/candidates/PR04_ZHAJIANG/menu-prop-v1.jpg",
+    "assets/candidates/PR05_COLA/menu-prop-v1.jpg"
+  ],
+  "prompt_plan": "episodes/ep01/menu_prop_plan.json",
+  "image_review": "Assistant visually checked both images; user acceptance pending. Added as review_preview without replacing immutable base approvals.",
+  "validation": {
+    "tests": 43,
+    "result": "passed",
+    "browser": "All 4 menu photos loaded; notebook at opening contains no future events; slow playback works; 390px menu/notebook screenshots; no console errors"
+  },
+  "screenshots": [
+    "local/stage17-menu-mobile.png",
+    "local/stage17-notebook-mobile.png"
+  ],
+  "new_image_estimate_rmb": 0.24,
+  "total_estimate_and_reserve_rmb": 16.368331
+}

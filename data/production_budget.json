@@ -1113,8 +1113,20 @@
       "model": "seed-audio-1.0",
       "status": "generated",
       "price_ceiling_rmb": 0.058333
+    },
+    "0d6d6cfe989d1d41fde775e78a9a15477ac1188bdc321effb2e0cc8084deae33": {
+      "asset_id": "PR04_ZHAJIANG",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
+    },
+    "9015cddc5658111054b695700e080eaee30661839a88a53a8e70f0505a8342f4": {
+      "asset_id": "PR05_COLA",
+      "model": "doubao-seedream-5-0-flash-260915",
+      "status": "generated",
+      "price_ceiling_rmb": 0.12
     }
   },
-  "reserved_and_estimated_rmb": 16.128331,
-  "remaining_estimate_rmb": 23.871669
+  "reserved_and_estimated_rmb": 16.368331,
+  "remaining_estimate_rmb": 23.631669
 }

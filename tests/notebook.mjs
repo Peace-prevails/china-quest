@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {Story} from '../web/engine.mjs';
+import {notebook} from '../web/notebook.mjs';
+const s=new Story(JSON.parse(fs.readFileSync('episodes/ep01/episode_01.json')));
+let before=JSON.stringify(s.save());let notes=notebook(s);assert.equal(JSON.stringify(s.save()),before);assert.equal(notes.facts.length,1);assert.ok(!JSON.stringify(notes.facts).includes('billion'));
+s.current='gu_arrival';notes=notebook(s);assert.ok(!JSON.stringify(notes.facts).includes('billion'));assert.ok(!JSON.stringify(notes.facts).includes('second man'));
+s.current='billion';notes=notebook(s);assert.ok(JSON.stringify(notes.facts).includes('not been verified'));assert.ok(!JSON.stringify(notes.facts).includes('second man'));
+s.current='rival_arrival';s.state.inheritance_response='reject';assert.ok(!JSON.stringify(notebook(s).facts).includes('second man'));
+s.current='rival';assert.ok(JSON.stringify(notebook(s).facts).includes('second man'));assert.ok(!JSON.stringify(notebook(s).facts).includes('dead'));
+s.current='open_file';assert.ok(!JSON.stringify(notebook(s).facts).includes('dead'));
+s.current='name';assert.ok(JSON.stringify(notebook(s).facts).includes('dead'));assert.ok(!JSON.stringify(notebook(s).facts).includes('unknown sender'));
+s.current='sms';assert.ok(JSON.stringify(notebook(s).facts).includes('unknown sender'));
+s.current='total';s.state.item_selected='zhajiang';s.state.wants_water=true;assert.ok(JSON.stringify(notebook(s).facts).includes('¥27'));
+console.log('Notebook spoiler boundaries, exact order and non-mutating inspection verified');

@@ -37,3 +37,17 @@ class WebTests(unittest.TestCase):
  def test_learning_review_and_old_save_migration(self):
   result=subprocess.run(["node","tests/learning_review.mjs"],cwd=ROOT,text=True,capture_output=True)
   self.assertEqual(result.returncode,0,result.stderr)
+ def test_notebook_spoiler_boundaries(self):
+  result=subprocess.run(['node','tests/notebook.mjs'],cwd=ROOT,text=True,capture_output=True)
+  self.assertEqual(result.returncode,0,result.stderr)
+ def test_menu_has_real_photos_for_all_items(self):
+  revision=read(ROOT/'episodes/ep01/visual_revision.json')
+  for aid in ['PR04_ZHAJIANG','PR05_COLA']:
+   row=revision['assets'][aid];self.assertTrue((ROOT/row['path']).exists())
+   self.assertTrue(read((ROOT/row['path']).with_suffix('.json'))['visual_review_complete'])
+  source=(ROOT/'web/app.mjs').read_text();self.assertNotIn('🍜',source);self.assertNotIn('🥤',source)
+ def test_public_build_versions_scripts_and_data(self):
+  output=build();html=(output/'index.html').read_text();js=(output/'app.mjs').read_text()
+  self.assertRegex(html,r'app\.mjs\?v=[0-9a-f]{12}')
+  self.assertRegex(js,r"engine\.mjs\?v=[0-9a-f]{12}")
+  self.assertIn("fetch(path+'?v=",js);self.assertIn("fetch('audio.json?v=",js)

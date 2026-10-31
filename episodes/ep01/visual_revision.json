@@ -92,6 +92,16 @@
       "path": "assets/candidates/BEAT_EXPLORE_ZHAJIANG/explore-v1.jpg",
       "sha256": "5dd1c1f84fc9fa2147d83e7c94c59e7a55a3ad0759e61fa615bbd46f49186ff7",
       "candidate": "explore-v1"
+    },
+    "PR04_ZHAJIANG": {
+      "path": "assets/candidates/PR04_ZHAJIANG/menu-prop-v1.jpg",
+      "sha256": "def58525be9af83d3fc6f66b17959d7ac619c04756a06be3de9b6209a593d1a1",
+      "candidate": "menu-prop-v1"
+    },
+    "PR05_COLA": {
+      "path": "assets/candidates/PR05_COLA/menu-prop-v1.jpg",
+      "sha256": "58732ba992687209e9040f8933d3aa1fdd85e77a1da0bfcbadf27f903d37636d",
+      "candidate": "menu-prop-v1"
     }
   }
 }

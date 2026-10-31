@@ -12,3 +12,4 @@ assert.equal(await p.play('owner','missing'),false);assert.match(messages.at(-1)
 const blocked=new VoicePlayer([{role:'owner',text:'你好',audio:'hello.mp3'}],()=>({pause(){},play:async()=>{throw Error('autoplay blocked');}}));assert.equal(await blocked.play('owner','你好'),false);
 assert.equal(voiceRole('RIVAL'),'rival');assert.equal(voiceRole('aunt'),'aunt');
 console.log('Audio matching, cancellation, stale events and playback rejection checks passed');
+p.setRate(.8);await p.play('owner','一共28元。');assert.equal(p.current.playbackRate,.8);assert.equal(p.current.preservesPitch,true);p.setRate(1);assert.equal(p.current.playbackRate,1);p.stop();

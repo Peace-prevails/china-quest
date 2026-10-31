@@ -1,0 +1,21 @@
+{
+  "asset_id": "PR04_ZHAJIANG",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "prompt": "1:1摄影级真实小面馆菜单实物摄影。朴素浅棕旧木桌，柔和中性室内光，轻微真实使用痕迹，浅景深，背景简洁虚化。主体完整入镜，四周留约10%边距，适合手机菜单正方形缩略图。无人物无手，无文字无标识无水印，不要夸张广告光效。普通白色瓷碗中一份北京家常炸酱面：自然偏粗的白色小麦面条，顶上一小勺深棕色带肉丁的黄酱炸酱，一侧是清爽黄瓜丝，少量焯水黄豆芽。是干拌面，尚未拌匀，面条可见，不是汤面，没有汤汁，没有牛肉大片，不是黑色韩式炸酱面。正常一人份，颜色朴素自然。约45度俯视拍摄。",
+  "size": "2K",
+  "references": [],
+  "sha256": "def58525be9af83d3fc6f66b17959d7ac619c04756a06be3de9b6209a593d1a1",
+  "price_ceiling_rmb": 0.12,
+  "fingerprint": "0d6d6cfe989d1d41fde775e78a9a15477ac1188bdc321effb2e0cc8084deae33",
+  "candidate": "menu-prop-v1",
+  "status": "awaiting_human_review",
+  "image": "assets/candidates/PR04_ZHAJIANG/menu-prop-v1.jpg",
+  "reference_scope": "object_only",
+  "background_is_reference": false,
+  "validation": {
+    "downloaded": true,
+    "sha256_matches": true
+  },
+  "visual_review_complete": true,
+  "visual_review_note": "Assistant inspected: complete subject, plausible food/drink, consistent simple tabletop photography; no generated text or visible watermark. Awaiting user acceptance."
+}
