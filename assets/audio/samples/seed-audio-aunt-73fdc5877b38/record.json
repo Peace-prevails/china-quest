@@ -1,0 +1,22 @@
+{
+  "id": "aunt",
+  "title": "路人阿姨·北京老年女声",
+  "text": "找面馆啊？往前走，就在右边儿。别着急，慢慢走。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。六十五岁左右的北京本地老年女性，声线比中年老板娘更年长，略带自然沙感但清楚有气息，温和热心，不尖厉、不颤抖、不像儿童。自然清楚的北京老年女性口音，少量自然儿化，语气热心、平易近人，语速适中。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，约10至16秒，说完即结束：“找面馆啊？往前走，就在右边儿。别着急，慢慢走。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "73fdc5877b384a465de61000967749e9204dafd6ab7c69b1c1cdfa4213487f0a",
+  "status": "generated",
+  "request_id": "8d2da547-7f83-4f07-8032-6b68b3a04c9f",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/samples/seed-audio-aunt-73fdc5877b38/sample.mp3",
+  "sha256": "697837a4de365ec9d4cb23da56d3b639255bf594ffe094d8b8068709ae2eb6d1",
+  "bytes": 161325,
+  "original_duration": 10.0,
+  "duration": 10,
+  "estimated_rmb": 0.166667
+}

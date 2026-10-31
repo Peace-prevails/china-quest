@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "我叫顾承泽。终于找到你了。这个，是你的。这十个亿，你要不要？",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，约10至16秒，说完即结束：“我叫顾承泽。终于找到你了。这个，是你的。这十个亿，你要不要？”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "237f1e0201c12e9127369b357a92ef012464e54780550e6ec0daddf0a53e018a",
+  "status": "generated",
+  "request_id": "4a23c459-4734-428f-bce7-c9c010538e90",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/samples/seed-audio-gu-237f1e0201c1/sample.mp3",
+  "sha256": "b0007323682e2e0e9888466184476494e068ea9bb02c66029804d6d75dbdeb46",
+  "bytes": 161325,
+  "original_duration": 10.0,
+  "duration": 10,
+  "estimated_rmb": 0.166667
+}

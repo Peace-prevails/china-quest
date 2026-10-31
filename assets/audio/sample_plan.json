@@ -1,6 +1,6 @@
 {
   "model": "seed-audio-1.0",
-  "status": "samples_generated_awaiting_listening_review",
+  "status": "additional_roles_awaiting_listening_review",
   "resource": "volc.service_type.10074",
   "samples": [
     {
@@ -8,16 +8,42 @@
       "title": "小陈·北京男声",
       "voice": "年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔",
       "text": "我是小陈，在这儿帮忙。您先吃着，有事儿叫我。",
-      "audio": "assets/audio/samples/seed-audio-chen-1e74870f9af4/sample.mp3"
+      "audio": "assets/audio/samples/seed-audio-chen-1e74870f9af4/sample.mp3",
+      "review_status": "accepted_by_user"
     },
     {
       "id": "owner",
       "title": "老板娘·北京女声",
       "voice": "四十多岁成年女性，北京本地口音，声线温暖略低，干练亲切，不尖细，不装年轻",
       "text": "好嘞，面来了！您慢慢吃，辣椒和醋在这儿。",
-      "audio": "assets/audio/samples/seed-audio-owner-884befd0d572/sample.mp3"
+      "audio": "assets/audio/samples/seed-audio-owner-884befd0d572/sample.mp3",
+      "review_status": "accepted_by_user"
+    },
+    {
+      "id": "gu",
+      "title": "顾承泽·克制北京男声",
+      "voice": "三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总",
+      "text": "我叫顾承泽。终于找到你了。这个，是你的。这十个亿，你要不要？",
+      "audio": "assets/audio/samples/seed-audio-gu-237f1e0201c1/sample.mp3",
+      "review_status": "awaiting_listening_review"
+    },
+    {
+      "id": "aunt",
+      "title": "路人阿姨·北京老年女声",
+      "voice": "六十五岁左右的北京本地老年女性，声线比中年老板娘更年长，略带自然沙感但清楚有气息，温和热心，不尖厉、不颤抖、不像儿童",
+      "text": "找面馆啊？往前走，就在右边儿。别着急，慢慢走。",
+      "audio": "assets/audio/samples/seed-audio-aunt-73fdc5877b38/sample.mp3",
+      "review_status": "awaiting_listening_review"
+    },
+    {
+      "id": "narrator",
+      "title": "教学旁白·清晰女声",
+      "voice": "三十岁左右成年女性教学旁白，清澈平稳、亲切专业，与老板娘和老年阿姨明显不同。使用清晰标准普通话，声母韵母与声调准确，不加口语儿化，不改变教学用词",
+      "text": "面馆在哪里？我要这个。这个多少钱？我听不懂。",
+      "audio": "assets/audio/samples/seed-audio-narrator-9e473d89e230/sample.mp3",
+      "review_status": "awaiting_listening_review"
     }
   ],
   "female_request_sent": true,
-  "note": "Both samples generated successfully after user confirmed service availability; listening review pending."
+  "note": "User accepted Chen and owner samples. Gu, elderly aunt, and teaching narrator generated; listening review pending. Narrator uses clear standard Mandarin for learning."
 }

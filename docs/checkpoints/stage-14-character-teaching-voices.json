@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-31",
+  "stage": 14,
+  "samples": [
+    {
+      "id": "gu",
+      "audio": "assets/audio/samples/seed-audio-gu-237f1e0201c1/sample.mp3",
+      "sha256": "b0007323682e2e0e9888466184476494e068ea9bb02c66029804d6d75dbdeb46",
+      "original_duration": 10.0,
+      "estimated_rmb": 0.166667,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "10.056000"
+        }
+      }
+    },
+    {
+      "id": "aunt",
+      "audio": "assets/audio/samples/seed-audio-aunt-73fdc5877b38/sample.mp3",
+      "sha256": "697837a4de365ec9d4cb23da56d3b639255bf594ffe094d8b8068709ae2eb6d1",
+      "original_duration": 10.0,
+      "estimated_rmb": 0.166667,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "10.056000"
+        }
+      }
+    },
+    {
+      "id": "narrator",
+      "audio": "assets/audio/samples/seed-audio-narrator-9e473d89e230/sample.mp3",
+      "sha256": "afb074ef6e72359c4680620d19401c2ee36d4478595146f8de482bae7a3bd9da",
+      "original_duration": 9.8,
+      "estimated_rmb": 0.163333,
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "format": {
+          "duration": "9.864000"
+        }
+      }
+    }
+  ],
+  "validation": "MP3 format, nonzero duration and SHA256 verified; accent and exact spoken words require listening review.",
+  "estimated_new_rmb": 0.496667,
+  "reserved_and_estimated_rmb": 9.623334,
+  "approved_budget_rmb": 40
+}
