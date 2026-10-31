@@ -1,0 +1,27 @@
+{
+  "stage": 16,
+  "date": "2026-10-31",
+  "status": "playable_voice_preview",
+  "clips": 126,
+  "roles": [
+    "aunt",
+    "chen",
+    "gu",
+    "narrator",
+    "owner",
+    "rival"
+  ],
+  "new_estimated_rmb": 6.346664,
+  "total_estimate_and_reserve_rmb": 16.128331,
+  "validation": {
+    "audio": "All 126 SHA256 hashes and MP3 streams/durations verified",
+    "tests": "40 unittest cases; 128 cross-runtime story routes; 27618 reachable states, no dead ends",
+    "browser": "390px playback controls, choice listen without advancing, role playback, full zhajiang+water rejection route to ending; all 9 learning playback buttons visible, playback succeeded, no console errors",
+    "listening": "Previously sampled voice directions approved; new rival voice and all generated dialogue are listening previews, not transcript/timbre verification."
+  },
+  "screenshots": [
+    "local/stage16-mobile-voice.png",
+    "local/stage16-learning-voice.png"
+  ],
+  "manifest": "episodes/ep01/audio_manifest.json"
+}

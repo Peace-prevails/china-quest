@@ -1,0 +1,22 @@
+{
+  "id": "chen",
+  "title": "小陈·北京男声",
+  "text": "我是小陈，在这里帮忙。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“我是小陈，在这里帮忙。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "110d75a6b791c2681b660940eb088498df3a6b6ebd47af13b30325bd23117bf8",
+  "status": "generated",
+  "request_id": "36f1e52c-6c83-4cc2-ab4b-ae711fc62d49",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/a19e2d2c1db176eedc2d/sample.mp3",
+  "sha256": "f03425b7d69efe95a02215f440678c933819256c48590c3189156faac068f09f",
+  "bytes": 60717,
+  "original_duration": 3.7,
+  "duration": 3.7,
+  "estimated_rmb": 0.061667
+}

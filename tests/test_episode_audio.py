@@ -31,3 +31,10 @@ class AudioTests(unittest.TestCase):
      for future in futures:future.result()
    budget=json.loads((root/'data/production_budget.json').read_text());self.assertEqual(len(budget['entries']),4);self.assertAlmostEqual(budget['reserved_and_estimated_rmb'],.4)
    self.assertTrue(all(r['status']=='generated' for r in budget['entries'].values()))
+ def test_committed_voice_inventory_is_complete(self):
+  import json,hashlib
+  root=pathlib.Path(__file__).resolve().parents[1];path=root/'episodes/ep01/audio_manifest.json'
+  if not path.exists():self.skipTest('Audio not generated yet')
+  manifest=json.loads(path.read_text());expected={r['id'] for r in inventory()};self.assertEqual({r['id'] for r in manifest['clips']},expected)
+  for row in manifest['clips']:
+   audio=root/row['audio'];self.assertTrue(audio.is_file());self.assertEqual(hashlib.sha256(audio.read_bytes()).hexdigest(),row['sha256'])

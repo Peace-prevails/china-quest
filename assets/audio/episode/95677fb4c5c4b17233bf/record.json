@@ -1,0 +1,22 @@
+{
+  "id": "aunt",
+  "title": "路人阿姨·北京老年女声",
+  "text": "往前走，右边。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。六十五岁左右的北京本地老年女性，声线比中年老板娘更年长，略带自然沙感但清楚有气息，温和热心，不尖厉、不颤抖、不像儿童。自然清楚的北京老年女性口音，少量自然儿化，语气热心、平易近人，语速适中。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“往前走，右边。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "b913446dcd4002060367ff41b568cef1746f2b66711bb8efffe073ce1bacf686",
+  "status": "generated",
+  "request_id": "6571aa06-54c9-457d-9507-16d6c5106f8b",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/95677fb4c5c4b17233bf/sample.mp3",
+  "sha256": "2a5443f87654d0404aa116ab4e33492d5e0923025499dc3c6ef6b13ec2329ac2",
+  "bytes": 42669,
+  "original_duration": 2.58,
+  "duration": 2.58,
+  "estimated_rmb": 0.043
+}

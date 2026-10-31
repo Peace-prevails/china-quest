@@ -357,8 +357,764 @@
       "model": "seed-audio-1.0",
       "status": "generated",
       "price_ceiling_rmb": 0.158333
+    },
+    "e09404f3f7d0ebaf27eaaacf1a5ea5e81993245a013f9e470ade87a5c3c09118": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "428351f95a79b2df7348c06e8825aac0c6adb24bfd8785d732e5bbeb0fe4bda6": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "7649a8d491554cee092105ce34be537aec4271147142c51abe2fc2a1346d75fc": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "0b50dab8bbbdf8dffea25a3d7338ab24508b1e8e306adcc3febd8327e04847f6": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "b913446dcd4002060367ff41b568cef1746f2b66711bb8efffe073ce1bacf686": {
+      "asset_id": "VOICE_AUNT",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "749e8a6b2407bbd9d680fc65083d07c89e27e974b9f1e239b36324860a81be36": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "03f4f9e8becd177e7f2f8bada9f6a1dc96ec6e7406902d06519b5861311a8841": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "4a150820763f5be3b1ff34113e840c3c3100968e727cd4e0506a788c8cdb570f": {
+      "asset_id": "VOICE_AUNT",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "8cd3f1a63f331463579df83692ddf3b14dcf53bc92f4be4fc2b3663ad1f77dfb": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.051333
+    },
+    "f211607e1c8f14bcba2196aa81be7e844ef6462b51e07c9b1752c551dcb7fe12": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "f3a74a153f2394393bbc301d2d5d0ef5f5b0801276760ddd1c48ecf0e7a24e17": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "d00263dd1d9f09d617b71d5aba5ba3ae2dfcddd5cf4c544e8f0f8b4de891768a": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "11df1fdcf07e4f8c8fbe1396bea16aaf5393e7e7a5af732f16d02b14dac0428f": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "03a5473639c5cc411eba79bb4d94b686a2d205f5deffb3b9589ac3ee91825a24": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "fb9d0af2ef0814b80abe44aacff0585fff79ade5d0b77fe4342d6dc6579e0ddd": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "9683cca7d92dc5e29ba1fddb9a33e4efd575b1e6ece1ec79caefc9249324934a": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "783f592a43468fae008d6c873ce481b69df48f7aec8fcbab5ec7d1d77ad4dbe0": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.053333
+    },
+    "ac42f91ff8ba179565c988bf292348e650ad6f0f542b13f043c5286de5cc597a": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "1ac80217db7db22723e92411f3b47f675fc47804ca49c39325e28a7f639e10d6": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "c60c6bff3b0279b13a826b9c9471dcb54f238cf840c2fd3dc4a665b6bcd763d2": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "469b9d61fc9b73ccf27b68895aaa3f39ae83c1bc57ca9b774080f6bf568500df": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "0d134cd5f6a3826469a8d6c99d98fe6dc08eb28777b17a9aae7dfd31a6466d88": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "88fd0f1445d6eb8467a38a0db1828dd294a3c573fec526dab02b48ab69022a7d": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "956929b7bedac06a61fc639fcb713dfec802102c0d3bb02cce6a8056ee63267e": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "94102c9f1dd5fa34628bf2e60c43fba4b991f1148943ac942e156be83a32b284": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.036667
+    },
+    "dfd7b960a61985bd532ad7e302d1794e5d2e7ac72f35901bf77285fc07a0d97b": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.031333
+    },
+    "76f7540c4f617c4d04756cd5eb02c9aa459616348ebfc8ea85b24e4ad952212a": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "4d41469aca2dec6c6f726ca98bfb94533c20947d76262bd29b622a2fcb1e9e6f": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.028333
+    },
+    "dd4ce7556702cbc66d87965e688bad5bc1d59be63cf583b29dd7da7c39a68f4b": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "dcc8cb45b606a2393dfac01f27706db66c36731737b33cd29cdf0545358d562e": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "10de2070d873bd11058688405f02cb54758eeffaedb14226a751db8ee50d04fb": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.028333
+    },
+    "beda949b49415101e448bbb2b8850dd8285793493d122fa87470bef0c246c572": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.053333
+    },
+    "0fe12789ee41c353e1b4c4caefed6995e612e90a9f214f3a3b333fc03ec031af": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "599d8e64536366c5e0ab24776487560e2cfaa025d1b080263ed48754b9b077ca": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "b8994495b033cb458a701b09dd646fc36485f36f6e0af5060cf9dd829190b211": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "2f7ef899da7c4f4c54316904bb0ee214a5738e35ee92bf897c43b8c0c44ecf82": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "b626ddd8dbe88fc84be51832e0635215c10b2b4f514574fd3600f1580785ae9c": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "830382a477e83cd66a12b6897caad38b02890f3742b2bc9734adbee1a93894bf": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.058333
+    },
+    "f6d290e74a9d9ffc762c04cbea1a2fb8ac4ce8fd2bd9f0849c86ff836748f949": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "430abdfeac0a2bbd9e0dcd1e46f2094233f890f1f270ebb82b975cb87fc36a16": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "759ad9c9742f302492aca79ad2a914b41e6afbff301fffda35add1991afba4ef": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "83722f2b395a7318ed62d4da377a735049e3e5cc80ba69a1683ddd5e4b6839c6": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "692523c82d93058f1d63d72a20707a7976f3a82728cf5b28d09d6605e986ecc4": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.054667
+    },
+    "fe32a3b812dbf3f581950a67d459917e7fed19104e51fdd8e8efa567ee60cf44": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.046333
+    },
+    "c7a19a5cb44b32e094b08d424d065812c07d2d7bf853492b4ba54ce705ed0902": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.053333
+    },
+    "ac0e691773e32e40de613e62f8f84ba3e5ab97afba56961bde20a4ac8f85801a": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "4cad45a53d9ace5692c483d5f1c23f61e517d79a32aeb419a296741bc39a44b4": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "a15cc6cec23873a5123d5da3f55971468d43f2cc22f9324898980deb012ec145": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.029667
+    },
+    "246bbb6f407594633141f9caccbc98315604c15fb5bb20e32fd8552104d5b913": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.056667
+    },
+    "5270049d2ff5e7fed0991eeb72f6e008249904aeda23f5c8873020f7524630a2": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.036667
+    },
+    "895b86c9ae96752c563bebf1257dc6417d56b62dfc37cf31e69ab21a2de0f17e": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "2a8443ce591bfda4d739b981d9f09de1c3f5b75ace4c0adfd85248b96a2e6d72": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "37e70531d1b4831a9578a4216659f459ea001b13603029f613b84fa4ba2f37d4": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "06dcff6039650280f3596ce2b979373859052e53f9030d424a0ee17738b18dae": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "cf2f09d3b3500901351497fa2bde44082c88f45f42f4ea917136795013d6b5fc": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "11d421b2bb19c342d780da98d53f2696e1103f4e7709668136439dd539f5590c": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.046333
+    },
+    "a81dd039e25e0066ef393b6bd5ec8ea7f6c9829ab1e660a54f8ae6e7555e1a5c": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "263611852a3bb91d206d42e1ebe987eba775e1b2875f43e1944bc086e525ae64": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "e8ec427e928eb0fe25c56fce0ef5f42f87e6026281f9775876a223823d6178ce": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.053333
+    },
+    "0f903cf73ee7bc55d774cd95f999ef6baac88a37b4388d5950fc709d8201dd6a": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.056667
+    },
+    "0e023744a2411972e60808893494e645bd97affcd80b967130bdcf33809a2e5f": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "92c5392ce65161668a779322d79b29ee09ef91e6dece63ce060b830ccc76b183": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "509ab00c5c4724a5a7b2f35cc5f89eaa960c14d97e23f9ec092c611b8242af65": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.053333
+    },
+    "110d75a6b791c2681b660940eb088498df3a6b6ebd47af13b30325bd23117bf8": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.061667
+    },
+    "d495003c3a3b8acdc18de8ef3509fc245b6da6cee79c99448fb01f65f4b92c9c": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "b06ffbd0d1e4f2acb17af7178526ac74a51cd8f77351ef6d4395667406c869de": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.051333
+    },
+    "86abed6bd38a6426c8542e1be37058bd9762ad56aed057c751839560ebdbed02": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.031333
+    },
+    "7f4dc217e64d9b75c6692b183aaded89c6d1f45998ee900c99054043ce9e733d": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "e1857fb0146615124429ddec6d4a8f783851876d2275a0e8c2955ccb6aa1a41f": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.121667
+    },
+    "ee5c6e817c26b91e78cdc56bcb9227de820860413f8790ef19555852056cf1c0": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "3df4102285bff2e39b97c8f5a5bf103866f133f47e7372a4606135c116a1ca8c": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.08
+    },
+    "c1d631586053f08b0a3ec4d2956a5b2b491bb490e4125b3507c6a86dbaf09efb": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.084667
+    },
+    "2689a4f96048452671e5b36d7a9741a853cca0745f0cbcdbfccb32dcceba1091": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.071667
+    },
+    "077a2ca28fe92abb083014cc986be50eff99b663399999deeb86a87556e8a9bd": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "09c534d810178d41fe40d733a2394ce608c15e645e1a87f1dbf89f152ea480b2": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.04
+    },
+    "bb362e5de0da98c2ff15e0a784961c1942420140987f7877caf060b9ef2d8181": {
+      "asset_id": "VOICE_CHEN",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.058333
+    },
+    "8d96f38b5dc9679abe34ece7017a5fd0e3d1d2f938f00749c4396f752c42c4e2": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "8414cc9126aee49971d27a58c93ea1b0420654f1dbbe0013f42d5d07f4dc28d9": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "16fc7a406e54b95b440e4e1d33da510dc0a0353af4ed87f9b9942b0316f2e54e": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.061667
+    },
+    "fb5979409576b66acc36fb1a14a9ce8bda0bd0815c47973f5031f4cb4be095fd": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.081667
+    },
+    "b50e1228a584dcb89530572cff8b86b35e9837cfb4851681d12c31dcee12cc86": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "65be94c0c4368249fe5a38c0f9204fb72d631fd4e084ecc30eb213e7578b42e1": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "b0f0d751fd9ce727c0701c1d43c55d29f51aedb37eb0aca2ff5e589161015fdf": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.053333
+    },
+    "1a1b1cabdc304117345a122890b1d45b668faa0312887f4ec2b5bb0c8fc75533": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.061667
+    },
+    "b2bc82f6eb141b19c14f737675dfb91c15ad90ebd0d87a0189665b97b6b04da8": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "094f82c9a847bba6e0449452c79b279eab84b08044525be7b28daed67c8e9863": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.046333
+    },
+    "478171e2405f4d61ed10ed856365b416a6e01daf3f053e84fdb6c51159bdca48": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "06151f2998834ce152986ff3f8394abd5bd8ca633095155abc483af913ccf85c": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "030645e252234b097baadffb8873a08650d37e1716f6c5fb1f5bc99111e11aad": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.084667
+    },
+    "de8648888463b7850d25a371618e58b88d5e492feedb994332026193633beff5": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "c35b3efc23fde53de745392609f27410cf6dd2097e61cdd7ab3f0e1cd2c6b3fd": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.051333
+    },
+    "e573d7e364f9936bc5837e00f60b2e1dde665b4f6da3f2509f81b9d1657228e0": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "37850caab129623ec4f7e3d33908c3a5735377029ff4fa1e03e94b39ab87cb35": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.061667
+    },
+    "cfcd9545ce50d4aec4e72116e55ef8348ef6082c3176c83e24d5a747385f9664": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.058333
+    },
+    "c0e365909a9ae4dbc38a5670274bfe0649f51b243e0f546eb5dd3334b1db31e5": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "af1c63b6421ac2c3b9271367d303e4c63e39043eeeb6ae30303eb69860ba6938": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.076333
+    },
+    "b311165ff30260e7a83b9795e1458a43e3becf70eba1882cda467ffec5a208cc": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "4ce41ed6140abfcc7a814bc6ccebb49b4a6b4f35788cc511110d1a3723dcf69a": {
+      "asset_id": "VOICE_GU",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.054667
+    },
+    "ba62ed6a38061c534babd58208172520e1c28e9615c712e7904a600c03a27231": {
+      "asset_id": "VOICE_RIVAL",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.073333
+    },
+    "139ea222bc581eef1f6f9fe0c7e6052dafd99464469e5c32fdc3872a2ea04fe8": {
+      "asset_id": "VOICE_RIVAL",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.073333
+    },
+    "f6cc7f087f3ea47883b77de9f243c0c63b9ee1c41ed71791391e80cef3f198ef": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "f0a786578a47ff30573c7c369d5f5b347d20681bd103fe6d576999b4fd8dae83": {
+      "asset_id": "VOICE_RIVAL",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.058333
+    },
+    "7c2267db072a14350a9b36d60ae20fe2b68379312e96787c8ef936203614c3c6": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.056667
+    },
+    "07269e9f2ee1aeb7b82d5ab36a610d7c883a7ee95301410d0b1576e3d3d0ec21": {
+      "asset_id": "VOICE_RIVAL",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.054667
+    },
+    "7c0521548a7b9d81710e83e9ab1991dd1e530fbd3671d10413c9976230d9d967": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.146667
+    },
+    "8dca1bd31d848948ddd0dc040eb6e793dcd1cf8e8189b2a3eea5a5de7d2bf622": {
+      "asset_id": "VOICE_RIVAL",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.073333
+    },
+    "b00971eff963071d3f0a8152eaa07d54057a649b2c49287c5eee6a0af091fc75": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.048333
+    },
+    "9c774eca7b2cf6368f66bb743c8b30f67c8c51606c603996d4bbaba8f18e78bd": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "48d667af8fd6000f320c626cb6805e77ac2793469e8c5fe9568f12ddf667b38d": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "d568a91e283bde869053e67961c9815261fe77c5a5020bb70ed37753ef7caaee": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "01982018f7d7d5a28807f1979439f217f48fb2fdf7087470206862a63d73f876": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.125
+    },
+    "75b6849def7c3d14614e44268525b38e61874d731242996ea7877915664dd5ae": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "91b9332ef4128294f9d1a8537ec783329eb72f60acafaf8866699b106a02a345": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.076333
+    },
+    "8d53c945689ae0a0d8e38c246c488ee3cfd9a7352afd00de8e314e3cc81827c3": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "a67b4ebbbdc0450d9d75e51e66fd3dc30b8a33a9a03b5ffc6afd8f3013595e2b": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.034667
+    },
+    "ca96992a9a8a5469d17586bfd2f7353c639ea61dc86af953d6583092e1370310": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.121667
+    },
+    "ec565a689f30e5dc1334a6ae6f5714805790fb1b40fbb3923d0cc170acd51930": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "bf7f11ca7b7edd43f915d9a6801ed3466e1d1bcc4231ed1f0b67bbd92e62e98f": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.038
+    },
+    "1e1b4dfb960f1d5abe2abccd4820c8e8c52f2a95d094140a563ccbd18767e31f": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.084667
+    },
+    "c8b41377b2cdb094cc6731763916f3f0a49a5b24d89ce09b233f7d0ef583d4ff": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.098333
+    },
+    "257dad53a400dcb26ee21eb5d738da91e29232a65fa26f4b2fca178be17fb1d0": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "39bbad53633cf383f8ffe3dd81980184ea773f41bc73e569bb07d1a71c14a6e6": {
+      "asset_id": "VOICE_NARRATOR",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.065
+    },
+    "890e127943788517698b4d1785623bdfbadbce9454b9b843fe66786059d7547d": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "019e18c089a111781f86207afd5888a7f861e53f414d8667325ba7cf79e16287": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "34e35156179b6316a538503c3221ebc6cba9df615bd45de911ae1f1284e6e55d": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.043
+    },
+    "e412fc2c3ebebd790d9d553475075d386448a29442ccde6e4c9b1415ef66797c": {
+      "asset_id": "VOICE_OWNER",
+      "model": "seed-audio-1.0",
+      "status": "generated",
+      "price_ceiling_rmb": 0.058333
     }
   },
-  "reserved_and_estimated_rmb": 9.781667,
-  "remaining_estimate_rmb": 30.218333
+  "reserved_and_estimated_rmb": 16.128331,
+  "remaining_estimate_rmb": 23.871669
 }

@@ -1,0 +1,22 @@
+{
+  "id": "narrator",
+  "title": "教学旁白·北京年轻女声",
+  "text": "小陈",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。二十五岁左右的北京本地年轻成年女性教学旁白，声线清亮自然、亲切松弛，与老板娘和老年阿姨明显不同。使用自然轻北京口音，有北京年轻女性日常说话的语调，发音清晰、声调准确，不刻意压嗓，不装可爱，不改变教学用词。北京年轻女声教学朗读，保留自然轻北京口音，语速比正常对话慢约20%，每句之间留约1秒停顿，完整自然地读句子，不拆字、不拼读拼音，不刻意堆砌儿化，便于零基础用户模仿。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“小陈”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "06dcff6039650280f3596ce2b979373859052e53f9030d424a0ee17738b18dae",
+  "status": "generated",
+  "request_id": "fd2add19-c4db-4696-baa4-ea97af740750",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/97c657a55fd154ae434e/sample.mp3",
+  "sha256": "6bcda4d57342cdf987eab467e6bcc681c20c3c8e0165bfeba7c6a811f647ea54",
+  "bytes": 34605,
+  "original_duration": 2.08,
+  "duration": 2.08,
+  "estimated_rmb": 0.034667
+}

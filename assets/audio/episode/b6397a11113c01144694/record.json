@@ -1,0 +1,22 @@
+{
+  "id": "owner",
+  "title": "老板娘·北京女声",
+  "text": "24元。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。四十多岁成年女性，北京本地口音，声线温暖略低，干练亲切，不尖细，不装年轻。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“24元。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "dfd7b960a61985bd532ad7e302d1794e5d2e7ac72f35901bf77285fc07a0d97b",
+  "status": "generated",
+  "request_id": "5c336dcb-19aa-4d57-b7cd-d89294f72585",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/b6397a11113c01144694/sample.mp3",
+  "sha256": "dad363b0a1d22f0fc15dbed36daa3f144f45a3d0459f049c0c8dfb90f0d6856b",
+  "bytes": 31533,
+  "original_duration": 1.88,
+  "duration": 1.88,
+  "estimated_rmb": 0.031333
+}

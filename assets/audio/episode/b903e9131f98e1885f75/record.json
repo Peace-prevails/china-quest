@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "这十个亿，是你的。你要不要？",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“这十个亿，是你的。你要不要？”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "030645e252234b097baadffb8873a08650d37e1716f6c5fb1f5bc99111e11aad",
+  "status": "generated",
+  "request_id": "c263fd8e-fdff-463a-b8f8-e8b81ac537d3",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/b903e9131f98e1885f75/sample.mp3",
+  "sha256": "e68b756ac68f109a5f8a0384ca87e527004e251b7610fcb2a08dfc39a202fdca",
+  "bytes": 82605,
+  "original_duration": 5.08,
+  "duration": 5.08,
+  "estimated_rmb": 0.084667
+}

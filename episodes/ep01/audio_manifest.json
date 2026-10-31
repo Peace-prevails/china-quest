@@ -1,0 +1,1628 @@
+{
+  "status": "generated_preview",
+  "note": "Voice directions accepted; each generated line still needs listening review. Exact text lookup; no sample substitution.",
+  "expected_count": 126,
+  "clips": [
+    {
+      "id": "7e86270e813c1e16b70e",
+      "role": "narrator",
+      "text": "北京，傍晚。",
+      "spoken_text": "北京，傍晚。",
+      "sources": [
+        "node:start"
+      ],
+      "audio": "assets/audio/episode/7e86270e813c1e16b70e/sample.mp3",
+      "sha256": "d3539ee21d394d83548072e0cac223984603a149f98506baba53a2b187b1cd63",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "1f7557db7a348ca53bc2",
+      "role": "narrator",
+      "text": "看招牌",
+      "spoken_text": "看招牌",
+      "sources": [
+        "choice:start_0"
+      ],
+      "audio": "assets/audio/episode/1f7557db7a348ca53bc2/sample.mp3",
+      "sha256": "1a80dfc2c5da34ba3b584c1d0cae6dc060817b2cacabeda2912bf6b57246259e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "2134918134ff0f859311",
+      "role": "narrator",
+      "text": "面馆在哪里？",
+      "spoken_text": "面馆在哪里？",
+      "sources": [
+        "choice:start_1",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/2134918134ff0f859311/sample.mp3",
+      "sha256": "0e3a906b6958dc19725350a307c387620af7771cbcc84bbd0f7363530858439d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "bde6adc4511e4395a6e8",
+      "role": "narrator",
+      "text": "往前走",
+      "spoken_text": "往前走",
+      "sources": [
+        "choice:start_2",
+        "choice:directions_help_0"
+      ],
+      "audio": "assets/audio/episode/bde6adc4511e4395a6e8/sample.mp3",
+      "sha256": "f21fb946a1614573313d377ed9e11aebf2a85003bca9f12d13e433b22e70006f",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "95677fb4c5c4b17233bf",
+      "role": "aunt",
+      "text": "往前走，右边。",
+      "spoken_text": "往前走，右边。",
+      "sources": [
+        "node:directions"
+      ],
+      "audio": "assets/audio/episode/95677fb4c5c4b17233bf/sample.mp3",
+      "sha256": "2a5443f87654d0404aa116ab4e33492d5e0923025499dc3c6ef6b13ec2329ac2",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "145e64d06c2fab39bc9b",
+      "role": "narrator",
+      "text": "谢谢",
+      "spoken_text": "谢谢",
+      "sources": [
+        "choice:directions_0",
+        "choice:served_0"
+      ],
+      "audio": "assets/audio/episode/145e64d06c2fab39bc9b/sample.mp3",
+      "sha256": "8c20ea712c589aa0c899f64dc3a4da984aa3838bd4b60a4a1434135fd1439d85",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "8eb1db4179eb3eb2ad07",
+      "role": "narrator",
+      "text": "我听不懂",
+      "spoken_text": "我听不懂",
+      "sources": [
+        "choice:directions_1",
+        "choice:welcome_2",
+        "choice:item_beef_3",
+        "choice:item_zhajiang_3",
+        "choice:item_water_2",
+        "choice:item_cola_2"
+      ],
+      "audio": "assets/audio/episode/8eb1db4179eb3eb2ad07/sample.mp3",
+      "sha256": "b536162bc94bf394b88e3530508761bc59b937a7012e2bd312c8906ab992efd3",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "8117650db24f1b44d8f6",
+      "role": "aunt",
+      "text": "前面，右边。",
+      "spoken_text": "前面，右边。",
+      "sources": [
+        "node:directions_help"
+      ],
+      "audio": "assets/audio/episode/8117650db24f1b44d8f6/sample.mp3",
+      "sha256": "9883a608b33238c7b5505aa55340ef50b6dac417cc05729f37a050aa63c9ac86",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "5641bcdfdccd82510024",
+      "role": "owner",
+      "text": "你好！吃点什么？",
+      "spoken_text": "你好！吃点什么？",
+      "sources": [
+        "node:welcome"
+      ],
+      "audio": "assets/audio/episode/5641bcdfdccd82510024/sample.mp3",
+      "sha256": "8424f9915e22ac3f372869951756d78f8591d03039b950dafee65434597bd134",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "7ddfc5b82ce3091ab064",
+      "role": "narrator",
+      "text": "菜单",
+      "spoken_text": "菜单",
+      "sources": [
+        "choice:welcome_0",
+        "choice:welcome_help_0",
+        "node:menu",
+        "choice:explore_2",
+        "node:hotspot_menu"
+      ],
+      "audio": "assets/audio/episode/7ddfc5b82ce3091ab064/sample.mp3",
+      "sha256": "056db0ba376b311a17d1743a7b8719eb2a9192529d2e9e116467eedabac02a62",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e78a8d9c4abe736312d7",
+      "role": "narrator",
+      "text": "我要……",
+      "spoken_text": "我要……",
+      "sources": [
+        "choice:welcome_1"
+      ],
+      "audio": "assets/audio/episode/e78a8d9c4abe736312d7/sample.mp3",
+      "sha256": "7236a2e41097d150f1f9f05a9961c48a0c5ce7df92899a51e643060513b633b0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "b7602cdad65b8ae4632b",
+      "role": "narrator",
+      "text": "矿泉水",
+      "spoken_text": "矿泉水",
+      "sources": [
+        "choice:welcome_3",
+        "choice:menu_2",
+        "node:item_water"
+      ],
+      "audio": "assets/audio/episode/b7602cdad65b8ae4632b/sample.mp3",
+      "sha256": "c1881958a41eba4144a455b7aa37c73acaa377d256efd14986dae54a56a87b57",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "68675599d0423acf337e",
+      "role": "owner",
+      "text": "看看菜单。",
+      "spoken_text": "看看菜单。",
+      "sources": [
+        "node:welcome_help"
+      ],
+      "audio": "assets/audio/episode/68675599d0423acf337e/sample.mp3",
+      "sha256": "7b50eb132ad4398cc8329f9fbd7540730d9522dc86f48b2c3447719c9816bc66",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "fedefda1d0f251c7abc4",
+      "role": "narrator",
+      "text": "矿泉水，三元。",
+      "spoken_text": "矿泉水，三元。",
+      "sources": [
+        "node:water_card"
+      ],
+      "audio": "assets/audio/episode/fedefda1d0f251c7abc4/sample.mp3",
+      "sha256": "9efbafefb2d929d76a8f15e3e915fc1b340ef800e2c51bc33583e001be5ed59e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "28a970d8fec810633390",
+      "role": "narrator",
+      "text": "看菜单",
+      "spoken_text": "看菜单",
+      "sources": [
+        "choice:water_card_0"
+      ],
+      "audio": "assets/audio/episode/28a970d8fec810633390/sample.mp3",
+      "sha256": "c40a3fce945edfec772253fdd103af35a549ae505979eb06e1be352d44fb9678",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e123dc3cc7b065503ebe",
+      "role": "narrator",
+      "text": "牛肉面",
+      "spoken_text": "牛肉面",
+      "sources": [
+        "choice:menu_0",
+        "node:item_beef"
+      ],
+      "audio": "assets/audio/episode/e123dc3cc7b065503ebe/sample.mp3",
+      "sha256": "85f4c3440c58ce5849f8c6405a8694b45ddc3ecd6e73dd497c5470a07b90c118",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "ddbac4dc06e6c4262b7c",
+      "role": "narrator",
+      "text": "炸酱面",
+      "spoken_text": "炸酱面",
+      "sources": [
+        "choice:menu_1",
+        "node:item_zhajiang"
+      ],
+      "audio": "assets/audio/episode/ddbac4dc06e6c4262b7c/sample.mp3",
+      "sha256": "14f2dab88be1d9485ca68b618ff415680234b4c9a9c876dd3483e1a8a2d3d087",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "7dd6640baa1c082f6d7d",
+      "role": "narrator",
+      "text": "可乐",
+      "spoken_text": "可乐",
+      "sources": [
+        "choice:menu_3",
+        "node:item_cola"
+      ],
+      "audio": "assets/audio/episode/7dd6640baa1c082f6d7d/sample.mp3",
+      "sha256": "1097808386c5dd964ad8162a567752892a41faaa414b20d2c18624a3f4b8dd75",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "2d75feecb820a1a1d5a0",
+      "role": "narrator",
+      "text": "这个是什么？",
+      "spoken_text": "这个是什么？",
+      "sources": [
+        "choice:item_beef_0",
+        "choice:item_zhajiang_0",
+        "choice:item_water_0",
+        "choice:item_cola_0",
+        "choice:hotspot_menu_0"
+      ],
+      "audio": "assets/audio/episode/2d75feecb820a1a1d5a0/sample.mp3",
+      "sha256": "b467490b7975058773b57f267d2e9d03ae6083ab94aec98e5bc13975519c019d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "cfd58d2cd98287c3747f",
+      "role": "narrator",
+      "text": "这个多少钱？",
+      "spoken_text": "这个多少钱？",
+      "sources": [
+        "choice:item_beef_1",
+        "choice:item_zhajiang_1",
+        "choice:item_water_1",
+        "choice:item_cola_1",
+        "choice:bill_0",
+        "choice:hotspot_owner_1",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/cfd58d2cd98287c3747f/sample.mp3",
+      "sha256": "423d3c2998216b7eb67cc6bef95aa73ffae30f72d5860e3cb0697fd85fa8951b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "4ba944bd6a525bf087a3",
+      "role": "narrator",
+      "text": "我要这个。",
+      "spoken_text": "我要这个。",
+      "sources": [
+        "choice:item_beef_2",
+        "choice:item_zhajiang_2",
+        "choice:confirm_help_0",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/4ba944bd6a525bf087a3/sample.mp3",
+      "sha256": "976ce62273e697600b7fed75c13b1fdde3196eaeb450fa0ef0e4f5b2c46dbdf0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "9fd9d4c92e4e7ec68f06",
+      "role": "narrator",
+      "text": "关闭",
+      "spoken_text": "关闭",
+      "sources": [
+        "choice:item_beef_4",
+        "choice:item_zhajiang_4",
+        "choice:item_water_3",
+        "choice:item_cola_3"
+      ],
+      "audio": "assets/audio/episode/9fd9d4c92e4e7ec68f06/sample.mp3",
+      "sha256": "8cf3dc705753cbe18c1e0c19cb96a1c7c68c2a08114d51213ef37752dc824b45",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "cf03fdaf30e629a6cfec",
+      "role": "owner",
+      "text": "这是牛肉面。",
+      "spoken_text": "这是牛肉面。",
+      "sources": [
+        "node:explain_beef"
+      ],
+      "audio": "assets/audio/episode/cf03fdaf30e629a6cfec/sample.mp3",
+      "sha256": "774bfad0048f2d33ca56caa2000ceb6d5934f7edec5b0d5f91869b7d0679a354",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "bb4ef2cbb6b0379de9c6",
+      "role": "narrator",
+      "text": "返回",
+      "spoken_text": "返回",
+      "sources": [
+        "choice:explain_beef_0",
+        "choice:price_beef_0",
+        "choice:explain_zhajiang_0",
+        "choice:price_zhajiang_0",
+        "choice:explain_water_0",
+        "choice:price_water_0",
+        "choice:explain_cola_0",
+        "choice:price_cola_0",
+        "choice:hotspot_owner_3",
+        "choice:reply_owner0_0",
+        "choice:reply_owner1_0",
+        "choice:reply_owner2_0",
+        "choice:hotspot_chen_3",
+        "choice:reply_chen0_0",
+        "choice:reply_chen1_0",
+        "choice:reply_chen2_0",
+        "choice:hotspot_menu_2",
+        "choice:reply_menu0_0",
+        "choice:reply_menu1_0",
+        "choice:hotspot_envelope_3",
+        "choice:reply_envelope0_0",
+        "choice:reply_envelope1_0",
+        "choice:reply_envelope2_0",
+        "choice:hotspot_door_3",
+        "choice:reply_door0_0",
+        "choice:reply_door1_0",
+        "choice:reply_door2_0"
+      ],
+      "audio": "assets/audio/episode/bb4ef2cbb6b0379de9c6/sample.mp3",
+      "sha256": "eea8aeb33ac31a1c164cfc5e0b71e43e15e3c2f51885d4a37f122b043304e0bd",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "bf626f5f1f0c405a369f",
+      "role": "owner",
+      "text": "28元。",
+      "spoken_text": "28元。",
+      "sources": [
+        "node:price_beef",
+        "node:reply_owner1"
+      ],
+      "audio": "assets/audio/episode/bf626f5f1f0c405a369f/sample.mp3",
+      "sha256": "a1230e6d1637ec47e4d54ee73a0fd8d5a90f4c01fc5ef87469c23c6cb5b3028c",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "7b2032e5fb8c9fa032c1",
+      "role": "owner",
+      "text": "这是炸酱面。",
+      "spoken_text": "这是炸酱面。",
+      "sources": [
+        "node:explain_zhajiang"
+      ],
+      "audio": "assets/audio/episode/7b2032e5fb8c9fa032c1/sample.mp3",
+      "sha256": "dca750e020020f77bf78318bca44e82b2df0cca5244787b6aa84f4a510ff705d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "b6397a11113c01144694",
+      "role": "owner",
+      "text": "24元。",
+      "spoken_text": "24元。",
+      "sources": [
+        "node:price_zhajiang",
+        "node:reply_owner1"
+      ],
+      "audio": "assets/audio/episode/b6397a11113c01144694/sample.mp3",
+      "sha256": "dad363b0a1d22f0fc15dbed36daa3f144f45a3d0459f049c0c8dfb90f0d6856b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "ecae98b0405493f3b84f",
+      "role": "owner",
+      "text": "这是矿泉水。",
+      "spoken_text": "这是矿泉水。",
+      "sources": [
+        "node:explain_water"
+      ],
+      "audio": "assets/audio/episode/ecae98b0405493f3b84f/sample.mp3",
+      "sha256": "4a88d56ece417586d4322ae66c5809ea2689f6aa2dee43f3d805a9fd31bb9922",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "39bd69bd2cf15d4e8801",
+      "role": "owner",
+      "text": "3元。",
+      "spoken_text": "3元。",
+      "sources": [
+        "node:price_water"
+      ],
+      "audio": "assets/audio/episode/39bd69bd2cf15d4e8801/sample.mp3",
+      "sha256": "8982a9fe2753b07ef6b55ba2144acac4d9e77423534ad6cb0069268d82daa512",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "adb1936c5b095edd82e7",
+      "role": "owner",
+      "text": "这是可乐。",
+      "spoken_text": "这是可乐。",
+      "sources": [
+        "node:explain_cola"
+      ],
+      "audio": "assets/audio/episode/adb1936c5b095edd82e7/sample.mp3",
+      "sha256": "1591b15c45dd83584986bd7fa8e00647318a4e7438a2c62b7f04ad47d9ea768e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "84b9e5c09540e8aa936c",
+      "role": "owner",
+      "text": "5元。",
+      "spoken_text": "5元。",
+      "sources": [
+        "node:price_cola"
+      ],
+      "audio": "assets/audio/episode/84b9e5c09540e8aa936c/sample.mp3",
+      "sha256": "af23cbe52a3a94b833394407c068a58e17e875c45791eae0469c07b4fea8e460",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "89c35278da271300101e",
+      "role": "owner",
+      "text": "你要牛肉面？",
+      "spoken_text": "你要牛肉面？",
+      "sources": [
+        "node:confirm"
+      ],
+      "audio": "assets/audio/episode/89c35278da271300101e/sample.mp3",
+      "sha256": "16086dc0720b25bfecde44d35d2ecaa0a4782ffb85120050acb6136c0420f75d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "632dad5b21ddcbaa8f40",
+      "role": "narrator",
+      "text": "对，我要这个。",
+      "spoken_text": "对，我要这个。",
+      "sources": [
+        "choice:confirm_0"
+      ],
+      "audio": "assets/audio/episode/632dad5b21ddcbaa8f40/sample.mp3",
+      "sha256": "bc5acffe5aa647eb912079112e25abcddf8619c97c76461d25a4cbb64daf3bde",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "06e644b141d231e0dfdc",
+      "role": "narrator",
+      "text": "我不要这个。",
+      "spoken_text": "我不要这个。",
+      "sources": [
+        "choice:confirm_1",
+        "choice:confirm_help_1"
+      ],
+      "audio": "assets/audio/episode/06e644b141d231e0dfdc/sample.mp3",
+      "sha256": "8330fa1a2e46ea3d3bb99623f9746dc73df96123a7056f9970ddcdc535d35a2d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e1bdfffb31b828dcbcb7",
+      "role": "narrator",
+      "text": "我听不懂。",
+      "spoken_text": "我听不懂。",
+      "sources": [
+        "choice:confirm_2",
+        "choice:spice_2",
+        "choice:gu_4",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/e1bdfffb31b828dcbcb7/sample.mp3",
+      "sha256": "2cd3b576ca58dd7b198aa0ad15f225801a09e7504f7505997066755c603722d8",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "92ccc792de485be498de",
+      "role": "owner",
+      "text": "这个，牛肉面。要吗？",
+      "spoken_text": "这个，牛肉面。要吗？",
+      "sources": [
+        "node:confirm_help"
+      ],
+      "audio": "assets/audio/episode/92ccc792de485be498de/sample.mp3",
+      "sha256": "4fa87fcff28d11093622940aa9fff2d2283a036c56dee33272584a6ad0b71fae",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "3e9b2f301677efed90ac",
+      "role": "owner",
+      "text": "要不要辣？",
+      "spoken_text": "要不要辣？",
+      "sources": [
+        "node:spice"
+      ],
+      "audio": "assets/audio/episode/3e9b2f301677efed90ac/sample.mp3",
+      "sha256": "3eb37c04a8518c2a68e4e6333272916b984794db8e62d87265d1a1b2caf6b816",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "234ce39018f09427f05d",
+      "role": "narrator",
+      "text": "我要辣。",
+      "spoken_text": "我要辣。",
+      "sources": [
+        "choice:spice_0",
+        "choice:spice_help_0"
+      ],
+      "audio": "assets/audio/episode/234ce39018f09427f05d/sample.mp3",
+      "sha256": "0b1958cba27cbd9cf70ea8d944f52d32c3a4406a68290b3addb86993c0593b8f",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "c0ea77284bf814763b36",
+      "role": "narrator",
+      "text": "我不要辣。",
+      "spoken_text": "我不要辣。",
+      "sources": [
+        "choice:spice_1",
+        "choice:spice_help_1",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/c0ea77284bf814763b36/sample.mp3",
+      "sha256": "4b2f4b80b0ff236244e3cb508e4af417a101f74fc6568c971440ff9c3c7f5fa3",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "88782808dd372ef78e16",
+      "role": "owner",
+      "text": "辣？不辣？",
+      "spoken_text": "辣？不辣？",
+      "sources": [
+        "node:spice_help"
+      ],
+      "audio": "assets/audio/episode/88782808dd372ef78e16/sample.mp3",
+      "sha256": "5eb5241eabf6f62df7335b6bc832b339b7068a1d1e88d0b7e3425bd4f9c4d2ff",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "5f70d96725fde77ceb67",
+      "role": "owner",
+      "text": "还要水吗？",
+      "spoken_text": "还要水吗？",
+      "sources": [
+        "node:water"
+      ],
+      "audio": "assets/audio/episode/5f70d96725fde77ceb67/sample.mp3",
+      "sha256": "982e10b861622c0617d2cc9c502f6293f2a647a3854813e54f6814dea84f1ac9",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "0dca15e99ff3ccdd94c2",
+      "role": "narrator",
+      "text": "我要水。",
+      "spoken_text": "我要水。",
+      "sources": [
+        "choice:water_0"
+      ],
+      "audio": "assets/audio/episode/0dca15e99ff3ccdd94c2/sample.mp3",
+      "sha256": "52af7c21d37713915f22fab66d3428880ba79060e02c6040da758906b4870587",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "cb14e21f7d0e895a166b",
+      "role": "narrator",
+      "text": "我不要水。",
+      "spoken_text": "我不要水。",
+      "sources": [
+        "choice:water_1"
+      ],
+      "audio": "assets/audio/episode/cb14e21f7d0e895a166b/sample.mp3",
+      "sha256": "00e1cccc62841c4efb26ad754174c46f7cef0a602f4a8bf3a18cd6ae1af8f3ce",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "071781bc157cc047479d",
+      "role": "owner",
+      "text": "好嘞，面来了！",
+      "spoken_text": "好嘞，面来了！",
+      "sources": [
+        "node:served"
+      ],
+      "audio": "assets/audio/episode/071781bc157cc047479d/sample.mp3",
+      "sha256": "bb47a771bbc542fedc23f9f09d62496e2f9502243e79838ce1a499a8001cd9a0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "32ffc71ea76733169069",
+      "role": "narrator",
+      "text": "先吃点面吧。",
+      "spoken_text": "先吃点面吧。",
+      "sources": [
+        "node:bill"
+      ],
+      "audio": "assets/audio/episode/32ffc71ea76733169069/sample.mp3",
+      "sha256": "c1c12214f7d80d4d169b74ac63595cd19013864abd91ffbfd10fb8b7a4c97e44",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "1473e2f80ae15b158b60",
+      "role": "narrator",
+      "text": "水多少钱？",
+      "spoken_text": "水多少钱？",
+      "sources": [
+        "choice:bill_1"
+      ],
+      "audio": "assets/audio/episode/1473e2f80ae15b158b60/sample.mp3",
+      "sha256": "11f0752fd6a5089d533a19cec033175926eea7835e025186d900d5e70d3b608a",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "365e2ff306ded2451b8e",
+      "role": "narrator",
+      "text": "先吃面。",
+      "spoken_text": "先吃面。",
+      "sources": [
+        "choice:bill_2"
+      ],
+      "audio": "assets/audio/episode/365e2ff306ded2451b8e/sample.mp3",
+      "sha256": "175352cb0417082db49a1e8f11fbec74912504873a14e5428d7d21152a2887fd",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "48bd494cecc3758c530e",
+      "role": "owner",
+      "text": "一共28元。",
+      "spoken_text": "一共28元。",
+      "sources": [
+        "node:total"
+      ],
+      "audio": "assets/audio/episode/48bd494cecc3758c530e/sample.mp3",
+      "sha256": "6a534a5108753e7bd00b22d2df4326ac687807431ec2da49614e6c6fd6e525d7",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "a9f458176e41626a87df",
+      "role": "narrator",
+      "text": "好",
+      "spoken_text": "好",
+      "sources": [
+        "choice:total_0",
+        "choice:water_price_0"
+      ],
+      "audio": "assets/audio/episode/a9f458176e41626a87df/sample.mp3",
+      "sha256": "e27024ba74cd4a786f27257a199260da2e001fcbff29f8a1acf89628217aa592",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "81978d317995435d5ab8",
+      "role": "owner",
+      "text": "水三元。",
+      "spoken_text": "水三元。",
+      "sources": [
+        "node:water_price"
+      ],
+      "audio": "assets/audio/episode/81978d317995435d5ab8/sample.mp3",
+      "sha256": "217cd393bb406804359be7f92588a568c94a7efcd6089748c0665dc31388b00d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "d768d934c18b0097f845",
+      "role": "narrator",
+      "text": "面馆里热闹起来。",
+      "spoken_text": "面馆里热闹起来。",
+      "sources": [
+        "node:explore"
+      ],
+      "audio": "assets/audio/episode/d768d934c18b0097f845/sample.mp3",
+      "sha256": "5266ae36ec4a525ea19e88e56e7c1fee5a9bfc9a80575fd2338278e12c5b8949",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "bf6ae25ba59da8f4fa6b",
+      "role": "narrator",
+      "text": "老板娘",
+      "spoken_text": "老板娘",
+      "sources": [
+        "choice:explore_0",
+        "node:hotspot_owner"
+      ],
+      "audio": "assets/audio/episode/bf6ae25ba59da8f4fa6b/sample.mp3",
+      "sha256": "7a5d01c7c31698a2330d747a7d049c58b197326f8f0e0faa6ee8bde80910a53d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "97c657a55fd154ae434e",
+      "role": "narrator",
+      "text": "小陈",
+      "spoken_text": "小陈",
+      "sources": [
+        "choice:explore_1",
+        "node:hotspot_chen"
+      ],
+      "audio": "assets/audio/episode/97c657a55fd154ae434e/sample.mp3",
+      "sha256": "6bcda4d57342cdf987eab467e6bcc681c20c3c8e0165bfeba7c6a811f647ea54",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "b0ab8bf6e65c63cb4a02",
+      "role": "narrator",
+      "text": "门外的动静",
+      "spoken_text": "门外的动静",
+      "sources": [
+        "choice:explore_3"
+      ],
+      "audio": "assets/audio/episode/b0ab8bf6e65c63cb4a02/sample.mp3",
+      "sha256": "656a5e2750f2e214d89a1cfdec4405d2685ef5bc5ed9e61d2f1287cd656edefa",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "55265fdfdb43e3b48d21",
+      "role": "narrator",
+      "text": "门口",
+      "spoken_text": "门口",
+      "sources": [
+        "choice:explore_4",
+        "node:hotspot_door"
+      ],
+      "audio": "assets/audio/episode/55265fdfdb43e3b48d21/sample.mp3",
+      "sha256": "742e7b01354b25c5c53e87f85da1edb866c0c219192d873c86d04515f4f517a1",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "d4c0b1ee1928231e6871",
+      "role": "narrator",
+      "text": "继续吃面",
+      "spoken_text": "继续吃面",
+      "sources": [
+        "choice:explore_5",
+        "choice:reply_owner0_1",
+        "choice:reply_owner1_1",
+        "choice:reply_owner2_1",
+        "choice:reply_chen0_1",
+        "choice:reply_chen1_1",
+        "choice:reply_chen2_1",
+        "choice:reply_menu0_1",
+        "choice:reply_menu1_1",
+        "choice:reply_envelope0_1",
+        "choice:reply_envelope1_1",
+        "choice:reply_envelope2_1",
+        "choice:hotspot_door_2",
+        "choice:reply_door0_1",
+        "choice:reply_door1_1",
+        "choice:reply_door2_1"
+      ],
+      "audio": "assets/audio/episode/d4c0b1ee1928231e6871/sample.mp3",
+      "sha256": "84918102c557a765805cc335a6e09b1f6e830dc027796aea73cf17ff888d9e43",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "6fc71a255cc54c1a695b",
+      "role": "narrator",
+      "text": "洗手间在哪里？",
+      "spoken_text": "洗手间在哪里？",
+      "sources": [
+        "choice:hotspot_owner_0"
+      ],
+      "audio": "assets/audio/episode/6fc71a255cc54c1a695b/sample.mp3",
+      "sha256": "8f804777ecd42f87caba46b92bfbe279f9d355956ab181de60bf112c5bf70320",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "194c50eda7e96a0011a2",
+      "role": "narrator",
+      "text": "这是什么？",
+      "spoken_text": "这是什么？",
+      "sources": [
+        "choice:hotspot_owner_2",
+        "choice:hotspot_envelope_1",
+        "choice:gu_0",
+        "choice:billion_2",
+        "choice:name_2",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/194c50eda7e96a0011a2/sample.mp3",
+      "sha256": "47dc96f1cb0cc86ac750f8927262b07bc32daebb0ba2daa1c238fb645b0660e2",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "6ed17e2fa27bde28fc5f",
+      "role": "owner",
+      "text": "在后面，左边。",
+      "spoken_text": "在后面，左边。",
+      "sources": [
+        "node:reply_owner0"
+      ],
+      "audio": "assets/audio/episode/6ed17e2fa27bde28fc5f/sample.mp3",
+      "sha256": "30e6f91f8eca7365ee8204b338d623247e2863c9e4d11a3df54b3888a52ffa4b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "4c59bad60990fb02995b",
+      "role": "owner",
+      "text": "这是菜单。",
+      "spoken_text": "这是菜单。",
+      "sources": [
+        "node:reply_owner2"
+      ],
+      "audio": "assets/audio/episode/4c59bad60990fb02995b/sample.mp3",
+      "sha256": "6017ff9bb8e8acc7e19c2512442b10f72dbd7486741c7fec7dead76b0ef8b8a0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "328425f49db4a7afe3fa",
+      "role": "narrator",
+      "text": "你是谁？",
+      "spoken_text": "你是谁？",
+      "sources": [
+        "choice:hotspot_chen_0",
+        "choice:gu_1",
+        "choice:rival_0",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/328425f49db4a7afe3fa/sample.mp3",
+      "sha256": "2257a38beeb8bc9a9510d3ed4e6657037d45d1afa68b2ec4a71a0374b3844d6c",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "eb3f00625a249b808fd4",
+      "role": "narrator",
+      "text": "这个好吃吗？",
+      "spoken_text": "这个好吃吗？",
+      "sources": [
+        "choice:hotspot_chen_1"
+      ],
+      "audio": "assets/audio/episode/eb3f00625a249b808fd4/sample.mp3",
+      "sha256": "569f9b4c9714e885d3e39f99a0c9eb72d63638cf18e198741df0a9df4b26327b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "7c66cd7ecfef066d228b",
+      "role": "narrator",
+      "text": "门口那是什么？",
+      "spoken_text": "门口那是什么？",
+      "sources": [
+        "choice:hotspot_chen_2"
+      ],
+      "audio": "assets/audio/episode/7c66cd7ecfef066d228b/sample.mp3",
+      "sha256": "1b0cc02c3561a789dcc23a6169d5aa925659c652b105f21feae65bf4223c6c87",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "a19e2d2c1db176eedc2d",
+      "role": "chen",
+      "text": "我是小陈，在这里帮忙。",
+      "spoken_text": "我是小陈，在这里帮忙。",
+      "sources": [
+        "node:reply_chen0"
+      ],
+      "audio": "assets/audio/episode/a19e2d2c1db176eedc2d/sample.mp3",
+      "sha256": "f03425b7d69efe95a02215f440678c933819256c48590c3189156faac068f09f",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "dc687f3cccad4aef333c",
+      "role": "chen",
+      "text": "好吃！",
+      "spoken_text": "好吃！",
+      "sources": [
+        "node:reply_chen1"
+      ],
+      "audio": "assets/audio/episode/dc687f3cccad4aef333c/sample.mp3",
+      "sha256": "fde5e16ad9d8ff1fa330c0a57eb29620058074aa2c56ac1d625d6d940ed06d8e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "da1840686d79348fd804",
+      "role": "chen",
+      "text": "一辆很贵的车。",
+      "spoken_text": "一辆很贵的车。",
+      "sources": [
+        "node:reply_chen2"
+      ],
+      "audio": "assets/audio/episode/da1840686d79348fd804/sample.mp3",
+      "sha256": "ba173c3c02fd4430e3b60e28d5eae871945ac03db465adff4d52504a14990f40",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "9ff93e774f7b0f8e46ab",
+      "role": "narrator",
+      "text": "那个多少钱？",
+      "spoken_text": "那个多少钱？",
+      "sources": [
+        "choice:hotspot_menu_1",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/9ff93e774f7b0f8e46ab/sample.mp3",
+      "sha256": "6c9ba14d6e33d0ca94e36a3d5ff87c0bc651cee388756f019d7084c247d9d49c",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "c91a29cd16c1f62523dc",
+      "role": "narrator",
+      "text": "牛肉面、炸酱面、矿泉水、可乐。",
+      "spoken_text": "牛肉面、炸酱面、矿泉水、可乐。",
+      "sources": [
+        "node:reply_menu0"
+      ],
+      "audio": "assets/audio/episode/c91a29cd16c1f62523dc/sample.mp3",
+      "sha256": "d30e8bb1951f35ed302e9d2d9003ad803008a2d3db81f47f3d61b9977ffc81dd",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "a74b8cb16864bd1488aa",
+      "role": "narrator",
+      "text": "牛肉面28元，炸酱面24元，水3元，可乐5元。",
+      "spoken_text": "牛肉面28元，炸酱面24元，水3元，可乐5元。",
+      "sources": [
+        "node:reply_menu1"
+      ],
+      "audio": "assets/audio/episode/a74b8cb16864bd1488aa/sample.mp3",
+      "sha256": "a5f69734e7d9d644204ed6dc5d7f9e6fdcc4d47beb68cf61ce6233ca0b25be61",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "9a51bcca9fb6af7be007",
+      "role": "narrator",
+      "text": "红色文件袋",
+      "spoken_text": "红色文件袋",
+      "sources": [
+        "node:hotspot_envelope"
+      ],
+      "audio": "assets/audio/episode/9a51bcca9fb6af7be007/sample.mp3",
+      "sha256": "4b763e319d517b2754fcacafb9680a0a705bebd3c58f47ce2d6511a602a97e0e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "74d4ae5e9190c2a1ad28",
+      "role": "narrator",
+      "text": "看一眼",
+      "spoken_text": "看一眼",
+      "sources": [
+        "choice:hotspot_envelope_0"
+      ],
+      "audio": "assets/audio/episode/74d4ae5e9190c2a1ad28/sample.mp3",
+      "sha256": "0869206de39118789eba28b4e249bc6973d2be468af7a589d4cd92eb81b7c2b2",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "2ebf24a670cc22c2443f",
+      "role": "narrator",
+      "text": "不碰",
+      "spoken_text": "不碰",
+      "sources": [
+        "choice:hotspot_envelope_2"
+      ],
+      "audio": "assets/audio/episode/2ebf24a670cc22c2443f/sample.mp3",
+      "sha256": "99a02816aec9748730f2ac2824b0a89d06d5fdfff34d9cf6775aecdf382a7cb6",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "5267961697588288aa09",
+      "role": "narrator",
+      "text": "袋子是红色的，里面装着文件。",
+      "spoken_text": "袋子是红色的，里面装着文件。",
+      "sources": [
+        "node:reply_envelope0"
+      ],
+      "audio": "assets/audio/episode/5267961697588288aa09/sample.mp3",
+      "sha256": "4d64adf4af0e5ec6bbed13862420c14ddfefccc0bc1563092e3b66f9f62c4cf2",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "74417ec3f50552c782ed",
+      "role": "chen",
+      "text": "我不知道。",
+      "spoken_text": "我不知道。",
+      "sources": [
+        "node:reply_envelope1"
+      ],
+      "audio": "assets/audio/episode/74417ec3f50552c782ed/sample.mp3",
+      "sha256": "0bcabf805d2ada8341e2b1c43a1f03f9cb71d5e28527658d576bee15059ce57e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "f98f0a7f6a803da66923",
+      "role": "narrator",
+      "text": "你移开视线，继续吃面。",
+      "spoken_text": "你移开视线，继续吃面。",
+      "sources": [
+        "node:reply_envelope2"
+      ],
+      "audio": "assets/audio/episode/f98f0a7f6a803da66923/sample.mp3",
+      "sha256": "0fef960859fa4ef503ebf56bd8ab9d55522d3bb643f42c92fdf40e7b54f81cfb",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "1eb5c42eee059e9a13b5",
+      "role": "narrator",
+      "text": "看外面",
+      "spoken_text": "看外面",
+      "sources": [
+        "choice:hotspot_door_0"
+      ],
+      "audio": "assets/audio/episode/1eb5c42eee059e9a13b5/sample.mp3",
+      "sha256": "a54762b4f8824a8cd67b11424b644171391638ea31bd6472a807710313047e59",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "cb4ff82fdef553c0f19f",
+      "role": "narrator",
+      "text": "谁来了？",
+      "spoken_text": "谁来了？",
+      "sources": [
+        "choice:hotspot_door_1"
+      ],
+      "audio": "assets/audio/episode/cb4ff82fdef553c0f19f/sample.mp3",
+      "sha256": "adf9a1f05ab88fba29d4714ef3eceeb131deaa52468eaf6306b7d7765d46ed3e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "f042399f28b5e39651d1",
+      "role": "narrator",
+      "text": "一辆车停在门口。",
+      "spoken_text": "一辆车停在门口。",
+      "sources": [
+        "node:reply_door0"
+      ],
+      "audio": "assets/audio/episode/f042399f28b5e39651d1/sample.mp3",
+      "sha256": "2b18f5b832c6ca9e9f0cafe03e4181530ce2500d304b6360ccaacb086a41854d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "51ef183fb2a229936215",
+      "role": "chen",
+      "text": "不知道，刚停了一辆车。",
+      "spoken_text": "不知道，刚停了一辆车。",
+      "sources": [
+        "node:reply_door1"
+      ],
+      "audio": "assets/audio/episode/51ef183fb2a229936215/sample.mp3",
+      "sha256": "965540dd69a9f254542dfe746a836b77bcc1040d09c6c96fffe276674d538268",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "5ee01ec5750582f93680",
+      "role": "narrator",
+      "text": "你回到座位。",
+      "spoken_text": "你回到座位。",
+      "sources": [
+        "node:reply_door2"
+      ],
+      "audio": "assets/audio/episode/5ee01ec5750582f93680/sample.mp3",
+      "sha256": "ee5b9bf53d3cbcd6b51d4a3a86300bcffb349862913fbf73d7b6ca7dc31e7d8a",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "bc46dec911378f651a21",
+      "role": "gu",
+      "text": "终于找到你了！这个，是你的。",
+      "spoken_text": "终于找到你了！这个，是你的。",
+      "sources": [
+        "node:gu"
+      ],
+      "audio": "assets/audio/episode/bc46dec911378f651a21/sample.mp3",
+      "sha256": "c0e6d1656c79a478b525e7b7125df00536c0efa3baeb1732e269540107d7959f",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "6c18c6826883c66ecc1f",
+      "role": "narrator",
+      "text": "我不认识你。",
+      "spoken_text": "我不认识你。",
+      "sources": [
+        "choice:gu_2",
+        "lesson"
+      ],
+      "audio": "assets/audio/episode/6c18c6826883c66ecc1f/sample.mp3",
+      "sha256": "682242a2c31283126ea39d423f45f7d6010ad5ea5cbfb8abcdd126d896c086c5",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e7cf42fbd23a37bcd4ae",
+      "role": "narrator",
+      "text": "我要吃饭。",
+      "spoken_text": "我要吃饭。",
+      "sources": [
+        "choice:gu_3"
+      ],
+      "audio": "assets/audio/episode/e7cf42fbd23a37bcd4ae/sample.mp3",
+      "sha256": "3cc8b4f8764b47f4772c2d460520a3f7a676208a0b2d50110f553cee001dc40b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "c9263fba9417601fd92a",
+      "role": "gu",
+      "text": "一份遗产文件。",
+      "spoken_text": "一份遗产文件。",
+      "sources": [
+        "node:gu_what"
+      ],
+      "audio": "assets/audio/episode/c9263fba9417601fd92a/sample.mp3",
+      "sha256": "c91c91a6c40ee290b4041b369743e0c7a08642dd91d876e42867320a5b06866f",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "151c18851775aebac583",
+      "role": "narrator",
+      "text": "继续",
+      "spoken_text": "继续",
+      "sources": [
+        "choice:gu_what_0",
+        "choice:gu_identity_0",
+        "choice:gu_stranger_0",
+        "choice:gu_eat_0",
+        "choice:gu_help_0",
+        "choice:inherit_accept_0",
+        "choice:inherit_reject_0",
+        "choice:inherit_question_0",
+        "choice:inherit_ownership_0",
+        "choice:align_question_second_0",
+        "choice:align_against_gu_0",
+        "choice:align_distrust_both_0",
+        "choice:align_wants_document_0"
+      ],
+      "audio": "assets/audio/episode/151c18851775aebac583/sample.mp3",
+      "sha256": "61628fa75e4743b5f2e18a07bba5ea53d5949a0d58fb2d4ee26682afd5a44432",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e876723a84d51addc0e2",
+      "role": "gu",
+      "text": "我叫顾承泽。",
+      "spoken_text": "我叫顾承泽。",
+      "sources": [
+        "node:gu_identity"
+      ],
+      "audio": "assets/audio/episode/e876723a84d51addc0e2/sample.mp3",
+      "sha256": "a30e7ad89769bb175900a5fb8e6abea2fbf9440102f7ddae6c85179e45226772",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "a79c4c477b9f21d01a67",
+      "role": "gu",
+      "text": "我知道，但事情很复杂。",
+      "spoken_text": "我知道，但事情很复杂。",
+      "sources": [
+        "node:gu_stranger"
+      ],
+      "audio": "assets/audio/episode/a79c4c477b9f21d01a67/sample.mp3",
+      "sha256": "5fde572c1148413bb3c8ecd2b60b1bb4d137d11a591ab37138dcca6a66b217b5",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "606b4d1b8cf599d1283d",
+      "role": "owner",
+      "text": "老板娘：先让人吃口面！",
+      "spoken_text": "先让人吃口面！",
+      "sources": [
+        "node:gu_eat"
+      ],
+      "audio": "assets/audio/episode/606b4d1b8cf599d1283d/sample.mp3",
+      "sha256": "017600c3f60429bb6b40aef4f9ca381b5ccbb9f71b918ad69bba4c6d9626201b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e4d52084b2b88007c00c",
+      "role": "gu",
+      "text": "这是你的钱。",
+      "spoken_text": "这是你的钱。",
+      "sources": [
+        "node:gu_help"
+      ],
+      "audio": "assets/audio/episode/e4d52084b2b88007c00c/sample.mp3",
+      "sha256": "61aa524ee6f4622cf8a86b24f4809934c89f827073f09da168e1962edb78569b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "b903e9131f98e1885f75",
+      "role": "gu",
+      "text": "这十个亿，是你的。你要不要？",
+      "spoken_text": "这十个亿，是你的。你要不要？",
+      "sources": [
+        "node:billion"
+      ],
+      "audio": "assets/audio/episode/b903e9131f98e1885f75/sample.mp3",
+      "sha256": "e68b756ac68f109a5f8a0384ca87e527004e251b7610fcb2a08dfc39a202fdca",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "8189dc3392f2621240e8",
+      "role": "narrator",
+      "text": "我要。",
+      "spoken_text": "我要。",
+      "sources": [
+        "choice:billion_0"
+      ],
+      "audio": "assets/audio/episode/8189dc3392f2621240e8/sample.mp3",
+      "sha256": "92d3a7ad9774ac1d114be00406b22357540beb96a9b7dfa8ffcebeb4a666c5f7",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "864a3e8c594770a52184",
+      "role": "narrator",
+      "text": "我不要。",
+      "spoken_text": "我不要。",
+      "sources": [
+        "choice:billion_1"
+      ],
+      "audio": "assets/audio/episode/864a3e8c594770a52184/sample.mp3",
+      "sha256": "b9d1d55723ec97414e3d3cf6935427487cae7d3f8933600e56b061669954f3f3",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "c56df3f5c05af1f7f860",
+      "role": "narrator",
+      "text": "这是谁的？",
+      "spoken_text": "这是谁的？",
+      "sources": [
+        "choice:billion_3"
+      ],
+      "audio": "assets/audio/episode/c56df3f5c05af1f7f860/sample.mp3",
+      "sha256": "fc5b8e834ccc503d40bd6d8f69540af4d1fbbaeb7a50a38e3b42055b5136847d",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "d55b5a7fce4a7754d009",
+      "role": "gu",
+      "text": "太好了，请在这里签字。",
+      "spoken_text": "太好了，请在这里签字。",
+      "sources": [
+        "node:inherit_accept"
+      ],
+      "audio": "assets/audio/episode/d55b5a7fce4a7754d009/sample.mp3",
+      "sha256": "98f06f3a64a056d3afa619a1f77ef9fee1a90bb068dfa12587dd936fd5eae008",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "32e69b6e8a91e7826f9f",
+      "role": "gu",
+      "text": "十个亿都不要？为什么？",
+      "spoken_text": "十个亿都不要？为什么？",
+      "sources": [
+        "node:inherit_reject"
+      ],
+      "audio": "assets/audio/episode/32e69b6e8a91e7826f9f/sample.mp3",
+      "sha256": "bff0a49b51a8afbae1d71b04320162e9255688be7bb2255b12104cc2005529b1",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "76e94dd5474a90b192e0",
+      "role": "gu",
+      "text": "这是一份遗产文件，名字是你的。",
+      "spoken_text": "这是一份遗产文件，名字是你的。",
+      "sources": [
+        "node:inherit_question"
+      ],
+      "audio": "assets/audio/episode/76e94dd5474a90b192e0/sample.mp3",
+      "sha256": "9e230dc8926c44558c424eda6610680f326c9c54c296b4a74cec538d4c012d4e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "30a4b8c6791ae6c30fd1",
+      "role": "gu",
+      "text": "现在……是你的。",
+      "spoken_text": "现在……是你的。",
+      "sources": [
+        "node:inherit_ownership"
+      ],
+      "audio": "assets/audio/episode/30a4b8c6791ae6c30fd1/sample.mp3",
+      "sha256": "bb61b3948ac9c1f3fc8b0653fdd9486b73c928561e5b4eb3bceff703843fdb18",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "6a1e584cb163718f427c",
+      "role": "rival",
+      "text": "第二个男人指着顾承泽：“等等！不能给你！他认错人了！”",
+      "spoken_text": "等等！不能给你！他认错人了！",
+      "sources": [
+        "node:rival"
+      ],
+      "audio": "assets/audio/episode/6a1e584cb163718f427c/sample.mp3",
+      "sha256": "7ab279601bdfcf4d964ffb723d2e6d2b1e3885628a6a768876bbcaa078bafb80",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "dd160e84e18f7812a3a1",
+      "role": "narrator",
+      "text": "我不认识他。",
+      "spoken_text": "我不认识他。",
+      "sources": [
+        "choice:rival_1"
+      ],
+      "audio": "assets/audio/episode/dd160e84e18f7812a3a1/sample.mp3",
+      "sha256": "6eada0c855fc5fc271480766ce6ab5d92a6ed81ddb26c70c23d0f950d6b49d71",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "9b3a10ce267835ede70d",
+      "role": "narrator",
+      "text": "我也不认识你。",
+      "spoken_text": "我也不认识你。",
+      "sources": [
+        "choice:rival_2"
+      ],
+      "audio": "assets/audio/episode/9b3a10ce267835ede70d/sample.mp3",
+      "sha256": "281b5f85d373d7e202364b9e2e84d73d2efe32226354dae47c5f4b744029a1a9",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "046f3ab08f884bf8bed6",
+      "role": "narrator",
+      "text": "文件给我。",
+      "spoken_text": "文件给我。",
+      "sources": [
+        "choice:rival_3"
+      ],
+      "audio": "assets/audio/episode/046f3ab08f884bf8bed6/sample.mp3",
+      "sha256": "ab9b0ce3e276de01b7f7f8aa1eb330375b827ed5d830f6f92a94be1b5c629ce0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "93b0739aac413082946b",
+      "role": "rival",
+      "text": "我姓陆。先别相信顾承泽。",
+      "spoken_text": "我姓陆。先别相信顾承泽。",
+      "sources": [
+        "node:align_question_second"
+      ],
+      "audio": "assets/audio/episode/93b0739aac413082946b/sample.mp3",
+      "sha256": "3eb6f10aa210744d49b30b0fa997cb5ae8ef1109f49cb9e0ad05e40f2b58219b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "206224487804fbc51156",
+      "role": "rival",
+      "text": "那就别接他的文件。",
+      "spoken_text": "那就别接他的文件。",
+      "sources": [
+        "node:align_against_gu"
+      ],
+      "audio": "assets/audio/episode/206224487804fbc51156/sample.mp3",
+      "sha256": "e621af0cd41f41333e6b7788a4c771f844749fa06fb3c5a502b5a6f8ba7f4125",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "fa440e777ec4bedcd658",
+      "role": "rival",
+      "text": "你小心一点是对的。",
+      "spoken_text": "你小心一点是对的。",
+      "sources": [
+        "node:align_distrust_both"
+      ],
+      "audio": "assets/audio/episode/fa440e777ec4bedcd658/sample.mp3",
+      "sha256": "6dc52b034176fd34af1156bd134a867b86a2718d94196f5fc71248e1bef28938",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "03b64662a27ce4a6bcb3",
+      "role": "rival",
+      "text": "先等等，你还不知道里面是什么。",
+      "spoken_text": "先等等，你还不知道里面是什么。",
+      "sources": [
+        "node:align_wants_document"
+      ],
+      "audio": "assets/audio/episode/03b64662a27ce4a6bcb3/sample.mp3",
+      "sha256": "56793baf713fa93e8ab8b86d76e4c2bcc17e2ca12a320faaa84353aced17da5b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "36e3903b2f3c01750eee",
+      "role": "owner",
+      "text": "这个名字……我二十年前见过。不可能，那个人不是已经死了吗？",
+      "spoken_text": "这个名字……我二十年前见过。不可能，那个人不是已经死了吗？",
+      "sources": [
+        "node:name"
+      ],
+      "audio": "assets/audio/episode/36e3903b2f3c01750eee/sample.mp3",
+      "sha256": "8e3ed887ecc56f0ab1ad9edd1ee4e6ce122062e4c8da1e7be1f572ccfade177e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "0d5728e034eeabea3e78",
+      "role": "narrator",
+      "text": "什么意思？",
+      "spoken_text": "什么意思？",
+      "sources": [
+        "choice:name_0"
+      ],
+      "audio": "assets/audio/episode/0d5728e034eeabea3e78/sample.mp3",
+      "sha256": "768257877c00503beb4dc64adbbb9c5f85eef65507acea5685cddd6bf1e72ccd",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "caeb31fbdc72fef4a55d",
+      "role": "narrator",
+      "text": "谁死了？",
+      "spoken_text": "谁死了？",
+      "sources": [
+        "choice:name_1"
+      ],
+      "audio": "assets/audio/episode/caeb31fbdc72fef4a55d/sample.mp3",
+      "sha256": "f6c7b0b3d4bc7688c7f65ad69a186887bac76dfa288193c41c241c3bfdaf40cd",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "0081a4d3abcd7cb01550",
+      "role": "owner",
+      "text": "现在不能说。",
+      "spoken_text": "现在不能说。",
+      "sources": [
+        "node:silence"
+      ],
+      "audio": "assets/audio/episode/0081a4d3abcd7cb01550/sample.mp3",
+      "sha256": "53aea03fe5424435e8b29abeca4f9b67c97064f5ddfe036939cc5834749a78b3",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "47a9a1b29fcf90cc2f5a",
+      "role": "narrator",
+      "text": "看手机",
+      "spoken_text": "看手机",
+      "sources": [
+        "choice:silence_0"
+      ],
+      "audio": "assets/audio/episode/47a9a1b29fcf90cc2f5a/sample.mp3",
+      "sha256": "af0c02b627c6b168529d21ad1b2df343f21dcea991f6d393576f0ba2287d17f0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "e806f227454e59e290c8",
+      "role": "narrator",
+      "text": "不要相信他们。明天中午，去文件上的地址。",
+      "spoken_text": "不要相信他们。明天中午，去文件上的地址。",
+      "sources": [
+        "node:sms"
+      ],
+      "audio": "assets/audio/episode/e806f227454e59e290c8/sample.mp3",
+      "sha256": "6f055b5c18e0cc720a77646eeafac5b7955cfa19af56771e998ed985d5d55280",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "ded66e6646b0d721a960",
+      "role": "narrator",
+      "text": "结束",
+      "spoken_text": "结束",
+      "sources": [
+        "choice:sms_0"
+      ],
+      "audio": "assets/audio/episode/ded66e6646b0d721a960/sample.mp3",
+      "sha256": "6ba36cc22bf562bf163a15e0ca514a80b37b618ff2a7f429aa9bb565234b430c",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "38f1a2f523f0c71cbbe0",
+      "role": "narrator",
+      "text": "第一集完",
+      "spoken_text": "第一集完",
+      "sources": [
+        "node:end"
+      ],
+      "audio": "assets/audio/episode/38f1a2f523f0c71cbbe0/sample.mp3",
+      "sha256": "de388799c0c956b4042645e1a25eb73b25f5b43e1666e89a46b07d9f350c9cdd",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "9320eb4919384271c36a",
+      "role": "narrator",
+      "text": "你推开门，找了张空桌。",
+      "spoken_text": "你推开门，找了张空桌。",
+      "sources": [
+        "node:enter_shop"
+      ],
+      "audio": "assets/audio/episode/9320eb4919384271c36a/sample.mp3",
+      "sha256": "3ee6acceefa25dac31a6d8118c51d49a61b26b19171fe87b253afd8927098dff",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "df619060396ed42ef172",
+      "role": "narrator",
+      "text": "坐下",
+      "spoken_text": "坐下",
+      "sources": [
+        "choice:enter_shop_next"
+      ],
+      "audio": "assets/audio/episode/df619060396ed42ef172/sample.mp3",
+      "sha256": "97537e0497fdae0d208dcc1fcda2c4911f1eb6abef4f3ff61326d69012ab3f40",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "2b51bb3338daf8301ef6",
+      "role": "narrator",
+      "text": "门开了。一个男人拿着红色文件袋走进来。",
+      "spoken_text": "门开了。一个男人拿着红色文件袋走进来。",
+      "sources": [
+        "node:gu_arrival"
+      ],
+      "audio": "assets/audio/episode/2b51bb3338daf8301ef6/sample.mp3",
+      "sha256": "ac6c4b008099a1de5a86bedfca9d453159cb196abec14ce866f530dbee34b87b",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "30c1342e5c6bc7c1580d",
+      "role": "narrator",
+      "text": "看着他",
+      "spoken_text": "看着他",
+      "sources": [
+        "choice:gu_arrival_next"
+      ],
+      "audio": "assets/audio/episode/30c1342e5c6bc7c1580d/sample.mp3",
+      "sha256": "a0053b9973b4a00aad6bb6ce8ba523ceee712f4a70a5a324127b31fa131bc9c1",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "a6f322388c7002a4dc27",
+      "role": "narrator",
+      "text": "你还没来得及问，门又开了。",
+      "spoken_text": "你还没来得及问，门又开了。",
+      "sources": [
+        "node:rival_arrival"
+      ],
+      "audio": "assets/audio/episode/a6f322388c7002a4dc27/sample.mp3",
+      "sha256": "664da4c46704873c696cbe272edc0b6f0252dd9eaf2ea19045ff7c8d31631398",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "00c16d01c4725d0bc7b1",
+      "role": "narrator",
+      "text": "看向门口",
+      "spoken_text": "看向门口",
+      "sources": [
+        "choice:rival_arrival_next"
+      ],
+      "audio": "assets/audio/episode/00c16d01c4725d0bc7b1/sample.mp3",
+      "sha256": "e2ea6a93e826beb0acebbdf17f9a797f23a7b8707ca8bfb08c7f99e865bf6ca6",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "1bd7814a1bb2f9635f22",
+      "role": "narrator",
+      "text": "老板娘走过来，看了看桌上的文件。",
+      "spoken_text": "老板娘走过来，看了看桌上的文件。",
+      "sources": [
+        "node:open_file"
+      ],
+      "audio": "assets/audio/episode/1bd7814a1bb2f9635f22/sample.mp3",
+      "sha256": "347cfe3e76fca0c7571dd514da2b58124450f7691954414a6cc70c7447b0bd36",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "8c8524b4ab571a09ca3b",
+      "role": "narrator",
+      "text": "看她的反应",
+      "spoken_text": "看她的反应",
+      "sources": [
+        "choice:open_file_next"
+      ],
+      "audio": "assets/audio/episode/8c8524b4ab571a09ca3b/sample.mp3",
+      "sha256": "42caa84927dec52ff0521a8776b61169ad003a6d282c831699604e33b3ebb742",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "a504f9766d27c6361952",
+      "role": "owner",
+      "text": "一共31元。",
+      "spoken_text": "一共31元。",
+      "sources": [
+        "node:total"
+      ],
+      "audio": "assets/audio/episode/a504f9766d27c6361952/sample.mp3",
+      "sha256": "5cad6eee4c1b14455f011e2116f657e8e9a14dfbab10946369ffa12ce28f88d0",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "afcb91cb1077d7e2b1e0",
+      "role": "owner",
+      "text": "你要炸酱面？",
+      "spoken_text": "你要炸酱面？",
+      "sources": [
+        "node:confirm"
+      ],
+      "audio": "assets/audio/episode/afcb91cb1077d7e2b1e0/sample.mp3",
+      "sha256": "f17ef6bd75a8d01a8c5597cbe3ff783e2fe034a585b812d53ac79d52f1416067",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "090ccee1746864a980ab",
+      "role": "owner",
+      "text": "这个，炸酱面。要吗？",
+      "spoken_text": "这个，炸酱面。要吗？",
+      "sources": [
+        "node:confirm_help"
+      ],
+      "audio": "assets/audio/episode/090ccee1746864a980ab/sample.mp3",
+      "sha256": "204727abb7c69e7e35cf5522008c95b6b00a0a529ff1e9e0d806f984e8321318",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "2f20fe9cbd40b91f021d",
+      "role": "owner",
+      "text": "一共24元。",
+      "spoken_text": "一共24元。",
+      "sources": [
+        "node:total"
+      ],
+      "audio": "assets/audio/episode/2f20fe9cbd40b91f021d/sample.mp3",
+      "sha256": "26cca50667aa8e3cae2aebff352fda30832ff5a2cb05bc59ffca83888e9f452e",
+      "review_status": "generated_preview"
+    },
+    {
+      "id": "1392423029148b175f69",
+      "role": "owner",
+      "text": "一共27元。",
+      "spoken_text": "一共27元。",
+      "sources": [
+        "node:total"
+      ],
+      "audio": "assets/audio/episode/1392423029148b175f69/sample.mp3",
+      "sha256": "0bc33386038e3a7ed4691c097c146214aaa42a9e6a3c442456a071b316ac66b0",
+      "review_status": "generated_preview"
+    }
+  ]
+}

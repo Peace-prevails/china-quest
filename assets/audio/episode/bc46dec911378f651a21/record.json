@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "终于找到你了！这个，是你的。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“终于找到你了！这个，是你的。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "fb5979409576b66acc36fb1a14a9ce8bda0bd0815c47973f5031f4cb4be095fd",
+  "status": "generated",
+  "request_id": "6925a245-c832-45d3-b243-cb36efa61d8c",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/bc46dec911378f651a21/sample.mp3",
+  "sha256": "c0e6d1656c79a478b525e7b7125df00536c0efa3baeb1732e269540107d7959f",
+  "bytes": 79917,
+  "original_duration": 4.9,
+  "duration": 4.9,
+  "estimated_rmb": 0.081667
+}

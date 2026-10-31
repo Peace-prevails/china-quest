@@ -1,0 +1,22 @@
+{
+  "id": "narrator",
+  "title": "教学旁白·北京年轻女声",
+  "text": "不要相信他们。明天中午，去文件上的地址。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。二十五岁左右的北京本地年轻成年女性教学旁白，声线清亮自然、亲切松弛，与老板娘和老年阿姨明显不同。使用自然轻北京口音，有北京年轻女性日常说话的语调，发音清晰、声调准确，不刻意压嗓，不装可爱，不改变教学用词。北京年轻女声教学朗读，保留自然轻北京口音，语速比正常对话慢约20%，每句之间留约1秒停顿，完整自然地读句子，不拆字、不拼读拼音，不刻意堆砌儿化，便于零基础用户模仿。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“不要相信他们。明天中午，去文件上的地址。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "01982018f7d7d5a28807f1979439f217f48fb2fdf7087470206862a63d73f876",
+  "status": "generated",
+  "request_id": "5a36ff44-8669-4ea6-81f9-7404795661df",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/e806f227454e59e290c8/sample.mp3",
+  "sha256": "6f055b5c18e0cc720a77646eeafac5b7955cfa19af56771e998ed985d5d55280",
+  "bytes": 121389,
+  "original_duration": 7.5,
+  "duration": 7.5,
+  "estimated_rmb": 0.125
+}

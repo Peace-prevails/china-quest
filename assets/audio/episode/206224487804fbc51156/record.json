@@ -1,0 +1,22 @@
+{
+  "id": "rival",
+  "title": "陆先生·急切北京男声",
+  "text": "那就别接他的文件。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十三岁左右北京成年男性，声线偏中音、粗粝直接，与顾承泽的低沉克制不同，急切但清楚，不喊叫。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“那就别接他的文件。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "f0a786578a47ff30573c7c369d5f5b347d20681bd103fe6d576999b4fd8dae83",
+  "status": "generated",
+  "request_id": "ac5c7f41-bfda-4c9f-bc09-ea7ce574b46a",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/206224487804fbc51156/sample.mp3",
+  "sha256": "e621af0cd41f41333e6b7788a4c771f844749fa06fb3c5a502b5a6f8ba7f4125",
+  "bytes": 57261,
+  "original_duration": 3.5,
+  "duration": 3.5,
+  "estimated_rmb": 0.058333
+}

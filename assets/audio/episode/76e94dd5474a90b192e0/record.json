@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "这是一份遗产文件，名字是你的。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“这是一份遗产文件，名字是你的。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "af1c63b6421ac2c3b9271367d303e4c63e39043eeeb6ae30303eb69860ba6938",
+  "status": "generated",
+  "request_id": "03dbfc27-e4b6-4995-94f1-684db88aa910",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/76e94dd5474a90b192e0/sample.mp3",
+  "sha256": "9e230dc8926c44558c424eda6610680f326c9c54c296b4a74cec538d4c012d4e",
+  "bytes": 74541,
+  "original_duration": 4.58,
+  "duration": 4.58,
+  "estimated_rmb": 0.076333
+}

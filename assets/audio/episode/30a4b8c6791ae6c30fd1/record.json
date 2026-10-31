@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "现在……是你的。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“现在……是你的。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "4ce41ed6140abfcc7a814bc6ccebb49b4a6b4f35788cc511110d1a3723dcf69a",
+  "status": "generated",
+  "request_id": "db16cd42-e623-4492-844e-bbf795009cbb",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/30a4b8c6791ae6c30fd1/sample.mp3",
+  "sha256": "bb61b3948ac9c1f3fc8b0653fdd9486b73c928561e5b4eb3bceff703843fdb18",
+  "bytes": 53805,
+  "original_duration": 3.28,
+  "duration": 3.28,
+  "estimated_rmb": 0.054667
+}

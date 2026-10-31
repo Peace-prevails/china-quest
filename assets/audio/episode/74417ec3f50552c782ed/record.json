@@ -1,0 +1,22 @@
+{
+  "id": "chen",
+  "title": "小陈·北京男声",
+  "text": "我不知道。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“我不知道。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "09c534d810178d41fe40d733a2394ce608c15e645e1a87f1dbf89f152ea480b2",
+  "status": "generated",
+  "request_id": "102811d8-d5d7-4b7f-9ee4-8c893074cf03",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/74417ec3f50552c782ed/sample.mp3",
+  "sha256": "0bcabf805d2ada8341e2b1c43a1f03f9cb71d5e28527658d576bee15059ce57e",
+  "bytes": 39597,
+  "original_duration": 2.4,
+  "duration": 2.4,
+  "estimated_rmb": 0.04
+}

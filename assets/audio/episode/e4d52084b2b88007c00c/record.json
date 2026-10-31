@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "这是你的钱。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“这是你的钱。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "de8648888463b7850d25a371618e58b88d5e492feedb994332026193633beff5",
+  "status": "generated",
+  "request_id": "d3cc23d8-d21a-411d-845c-2669fe480808",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/e4d52084b2b88007c00c/sample.mp3",
+  "sha256": "61aa524ee6f4622cf8a86b24f4809934c89f827073f09da168e1962edb78569b",
+  "bytes": 42669,
+  "original_duration": 2.58,
+  "duration": 2.58,
+  "estimated_rmb": 0.043
+}

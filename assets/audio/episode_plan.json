@@ -1,0 +1,1245 @@
+[
+  {
+    "id": "7e86270e813c1e16b70e",
+    "role": "narrator",
+    "text": "北京，傍晚。",
+    "spoken_text": "北京，傍晚。",
+    "sources": [
+      "node:start"
+    ]
+  },
+  {
+    "id": "1f7557db7a348ca53bc2",
+    "role": "narrator",
+    "text": "看招牌",
+    "spoken_text": "看招牌",
+    "sources": [
+      "choice:start_0"
+    ]
+  },
+  {
+    "id": "2134918134ff0f859311",
+    "role": "narrator",
+    "text": "面馆在哪里？",
+    "spoken_text": "面馆在哪里？",
+    "sources": [
+      "choice:start_1",
+      "lesson"
+    ]
+  },
+  {
+    "id": "bde6adc4511e4395a6e8",
+    "role": "narrator",
+    "text": "往前走",
+    "spoken_text": "往前走",
+    "sources": [
+      "choice:start_2",
+      "choice:directions_help_0"
+    ]
+  },
+  {
+    "id": "95677fb4c5c4b17233bf",
+    "role": "aunt",
+    "text": "往前走，右边。",
+    "spoken_text": "往前走，右边。",
+    "sources": [
+      "node:directions"
+    ]
+  },
+  {
+    "id": "145e64d06c2fab39bc9b",
+    "role": "narrator",
+    "text": "谢谢",
+    "spoken_text": "谢谢",
+    "sources": [
+      "choice:directions_0",
+      "choice:served_0"
+    ]
+  },
+  {
+    "id": "8eb1db4179eb3eb2ad07",
+    "role": "narrator",
+    "text": "我听不懂",
+    "spoken_text": "我听不懂",
+    "sources": [
+      "choice:directions_1",
+      "choice:welcome_2",
+      "choice:item_beef_3",
+      "choice:item_zhajiang_3",
+      "choice:item_water_2",
+      "choice:item_cola_2"
+    ]
+  },
+  {
+    "id": "8117650db24f1b44d8f6",
+    "role": "aunt",
+    "text": "前面，右边。",
+    "spoken_text": "前面，右边。",
+    "sources": [
+      "node:directions_help"
+    ]
+  },
+  {
+    "id": "5641bcdfdccd82510024",
+    "role": "owner",
+    "text": "你好！吃点什么？",
+    "spoken_text": "你好！吃点什么？",
+    "sources": [
+      "node:welcome"
+    ]
+  },
+  {
+    "id": "7ddfc5b82ce3091ab064",
+    "role": "narrator",
+    "text": "菜单",
+    "spoken_text": "菜单",
+    "sources": [
+      "choice:welcome_0",
+      "choice:welcome_help_0",
+      "node:menu",
+      "choice:explore_2",
+      "node:hotspot_menu"
+    ]
+  },
+  {
+    "id": "e78a8d9c4abe736312d7",
+    "role": "narrator",
+    "text": "我要……",
+    "spoken_text": "我要……",
+    "sources": [
+      "choice:welcome_1"
+    ]
+  },
+  {
+    "id": "b7602cdad65b8ae4632b",
+    "role": "narrator",
+    "text": "矿泉水",
+    "spoken_text": "矿泉水",
+    "sources": [
+      "choice:welcome_3",
+      "choice:menu_2",
+      "node:item_water"
+    ]
+  },
+  {
+    "id": "68675599d0423acf337e",
+    "role": "owner",
+    "text": "看看菜单。",
+    "spoken_text": "看看菜单。",
+    "sources": [
+      "node:welcome_help"
+    ]
+  },
+  {
+    "id": "fedefda1d0f251c7abc4",
+    "role": "narrator",
+    "text": "矿泉水，三元。",
+    "spoken_text": "矿泉水，三元。",
+    "sources": [
+      "node:water_card"
+    ]
+  },
+  {
+    "id": "28a970d8fec810633390",
+    "role": "narrator",
+    "text": "看菜单",
+    "spoken_text": "看菜单",
+    "sources": [
+      "choice:water_card_0"
+    ]
+  },
+  {
+    "id": "e123dc3cc7b065503ebe",
+    "role": "narrator",
+    "text": "牛肉面",
+    "spoken_text": "牛肉面",
+    "sources": [
+      "choice:menu_0",
+      "node:item_beef"
+    ]
+  },
+  {
+    "id": "ddbac4dc06e6c4262b7c",
+    "role": "narrator",
+    "text": "炸酱面",
+    "spoken_text": "炸酱面",
+    "sources": [
+      "choice:menu_1",
+      "node:item_zhajiang"
+    ]
+  },
+  {
+    "id": "7dd6640baa1c082f6d7d",
+    "role": "narrator",
+    "text": "可乐",
+    "spoken_text": "可乐",
+    "sources": [
+      "choice:menu_3",
+      "node:item_cola"
+    ]
+  },
+  {
+    "id": "2d75feecb820a1a1d5a0",
+    "role": "narrator",
+    "text": "这个是什么？",
+    "spoken_text": "这个是什么？",
+    "sources": [
+      "choice:item_beef_0",
+      "choice:item_zhajiang_0",
+      "choice:item_water_0",
+      "choice:item_cola_0",
+      "choice:hotspot_menu_0"
+    ]
+  },
+  {
+    "id": "cfd58d2cd98287c3747f",
+    "role": "narrator",
+    "text": "这个多少钱？",
+    "spoken_text": "这个多少钱？",
+    "sources": [
+      "choice:item_beef_1",
+      "choice:item_zhajiang_1",
+      "choice:item_water_1",
+      "choice:item_cola_1",
+      "choice:bill_0",
+      "choice:hotspot_owner_1",
+      "lesson"
+    ]
+  },
+  {
+    "id": "4ba944bd6a525bf087a3",
+    "role": "narrator",
+    "text": "我要这个。",
+    "spoken_text": "我要这个。",
+    "sources": [
+      "choice:item_beef_2",
+      "choice:item_zhajiang_2",
+      "choice:confirm_help_0",
+      "lesson"
+    ]
+  },
+  {
+    "id": "9fd9d4c92e4e7ec68f06",
+    "role": "narrator",
+    "text": "关闭",
+    "spoken_text": "关闭",
+    "sources": [
+      "choice:item_beef_4",
+      "choice:item_zhajiang_4",
+      "choice:item_water_3",
+      "choice:item_cola_3"
+    ]
+  },
+  {
+    "id": "cf03fdaf30e629a6cfec",
+    "role": "owner",
+    "text": "这是牛肉面。",
+    "spoken_text": "这是牛肉面。",
+    "sources": [
+      "node:explain_beef"
+    ]
+  },
+  {
+    "id": "bb4ef2cbb6b0379de9c6",
+    "role": "narrator",
+    "text": "返回",
+    "spoken_text": "返回",
+    "sources": [
+      "choice:explain_beef_0",
+      "choice:price_beef_0",
+      "choice:explain_zhajiang_0",
+      "choice:price_zhajiang_0",
+      "choice:explain_water_0",
+      "choice:price_water_0",
+      "choice:explain_cola_0",
+      "choice:price_cola_0",
+      "choice:hotspot_owner_3",
+      "choice:reply_owner0_0",
+      "choice:reply_owner1_0",
+      "choice:reply_owner2_0",
+      "choice:hotspot_chen_3",
+      "choice:reply_chen0_0",
+      "choice:reply_chen1_0",
+      "choice:reply_chen2_0",
+      "choice:hotspot_menu_2",
+      "choice:reply_menu0_0",
+      "choice:reply_menu1_0",
+      "choice:hotspot_envelope_3",
+      "choice:reply_envelope0_0",
+      "choice:reply_envelope1_0",
+      "choice:reply_envelope2_0",
+      "choice:hotspot_door_3",
+      "choice:reply_door0_0",
+      "choice:reply_door1_0",
+      "choice:reply_door2_0"
+    ]
+  },
+  {
+    "id": "bf626f5f1f0c405a369f",
+    "role": "owner",
+    "text": "28元。",
+    "spoken_text": "28元。",
+    "sources": [
+      "node:price_beef",
+      "node:reply_owner1"
+    ]
+  },
+  {
+    "id": "7b2032e5fb8c9fa032c1",
+    "role": "owner",
+    "text": "这是炸酱面。",
+    "spoken_text": "这是炸酱面。",
+    "sources": [
+      "node:explain_zhajiang"
+    ]
+  },
+  {
+    "id": "b6397a11113c01144694",
+    "role": "owner",
+    "text": "24元。",
+    "spoken_text": "24元。",
+    "sources": [
+      "node:price_zhajiang",
+      "node:reply_owner1"
+    ]
+  },
+  {
+    "id": "ecae98b0405493f3b84f",
+    "role": "owner",
+    "text": "这是矿泉水。",
+    "spoken_text": "这是矿泉水。",
+    "sources": [
+      "node:explain_water"
+    ]
+  },
+  {
+    "id": "39bd69bd2cf15d4e8801",
+    "role": "owner",
+    "text": "3元。",
+    "spoken_text": "3元。",
+    "sources": [
+      "node:price_water"
+    ]
+  },
+  {
+    "id": "adb1936c5b095edd82e7",
+    "role": "owner",
+    "text": "这是可乐。",
+    "spoken_text": "这是可乐。",
+    "sources": [
+      "node:explain_cola"
+    ]
+  },
+  {
+    "id": "84b9e5c09540e8aa936c",
+    "role": "owner",
+    "text": "5元。",
+    "spoken_text": "5元。",
+    "sources": [
+      "node:price_cola"
+    ]
+  },
+  {
+    "id": "89c35278da271300101e",
+    "role": "owner",
+    "text": "你要牛肉面？",
+    "spoken_text": "你要牛肉面？",
+    "sources": [
+      "node:confirm"
+    ]
+  },
+  {
+    "id": "632dad5b21ddcbaa8f40",
+    "role": "narrator",
+    "text": "对，我要这个。",
+    "spoken_text": "对，我要这个。",
+    "sources": [
+      "choice:confirm_0"
+    ]
+  },
+  {
+    "id": "06e644b141d231e0dfdc",
+    "role": "narrator",
+    "text": "我不要这个。",
+    "spoken_text": "我不要这个。",
+    "sources": [
+      "choice:confirm_1",
+      "choice:confirm_help_1"
+    ]
+  },
+  {
+    "id": "e1bdfffb31b828dcbcb7",
+    "role": "narrator",
+    "text": "我听不懂。",
+    "spoken_text": "我听不懂。",
+    "sources": [
+      "choice:confirm_2",
+      "choice:spice_2",
+      "choice:gu_4",
+      "lesson"
+    ]
+  },
+  {
+    "id": "92ccc792de485be498de",
+    "role": "owner",
+    "text": "这个，牛肉面。要吗？",
+    "spoken_text": "这个，牛肉面。要吗？",
+    "sources": [
+      "node:confirm_help"
+    ]
+  },
+  {
+    "id": "3e9b2f301677efed90ac",
+    "role": "owner",
+    "text": "要不要辣？",
+    "spoken_text": "要不要辣？",
+    "sources": [
+      "node:spice"
+    ]
+  },
+  {
+    "id": "234ce39018f09427f05d",
+    "role": "narrator",
+    "text": "我要辣。",
+    "spoken_text": "我要辣。",
+    "sources": [
+      "choice:spice_0",
+      "choice:spice_help_0"
+    ]
+  },
+  {
+    "id": "c0ea77284bf814763b36",
+    "role": "narrator",
+    "text": "我不要辣。",
+    "spoken_text": "我不要辣。",
+    "sources": [
+      "choice:spice_1",
+      "choice:spice_help_1",
+      "lesson"
+    ]
+  },
+  {
+    "id": "88782808dd372ef78e16",
+    "role": "owner",
+    "text": "辣？不辣？",
+    "spoken_text": "辣？不辣？",
+    "sources": [
+      "node:spice_help"
+    ]
+  },
+  {
+    "id": "5f70d96725fde77ceb67",
+    "role": "owner",
+    "text": "还要水吗？",
+    "spoken_text": "还要水吗？",
+    "sources": [
+      "node:water"
+    ]
+  },
+  {
+    "id": "0dca15e99ff3ccdd94c2",
+    "role": "narrator",
+    "text": "我要水。",
+    "spoken_text": "我要水。",
+    "sources": [
+      "choice:water_0"
+    ]
+  },
+  {
+    "id": "cb14e21f7d0e895a166b",
+    "role": "narrator",
+    "text": "我不要水。",
+    "spoken_text": "我不要水。",
+    "sources": [
+      "choice:water_1"
+    ]
+  },
+  {
+    "id": "071781bc157cc047479d",
+    "role": "owner",
+    "text": "好嘞，面来了！",
+    "spoken_text": "好嘞，面来了！",
+    "sources": [
+      "node:served"
+    ]
+  },
+  {
+    "id": "32ffc71ea76733169069",
+    "role": "narrator",
+    "text": "先吃点面吧。",
+    "spoken_text": "先吃点面吧。",
+    "sources": [
+      "node:bill"
+    ]
+  },
+  {
+    "id": "1473e2f80ae15b158b60",
+    "role": "narrator",
+    "text": "水多少钱？",
+    "spoken_text": "水多少钱？",
+    "sources": [
+      "choice:bill_1"
+    ]
+  },
+  {
+    "id": "365e2ff306ded2451b8e",
+    "role": "narrator",
+    "text": "先吃面。",
+    "spoken_text": "先吃面。",
+    "sources": [
+      "choice:bill_2"
+    ]
+  },
+  {
+    "id": "48bd494cecc3758c530e",
+    "role": "owner",
+    "text": "一共28元。",
+    "spoken_text": "一共28元。",
+    "sources": [
+      "node:total"
+    ]
+  },
+  {
+    "id": "a9f458176e41626a87df",
+    "role": "narrator",
+    "text": "好",
+    "spoken_text": "好",
+    "sources": [
+      "choice:total_0",
+      "choice:water_price_0"
+    ]
+  },
+  {
+    "id": "81978d317995435d5ab8",
+    "role": "owner",
+    "text": "水三元。",
+    "spoken_text": "水三元。",
+    "sources": [
+      "node:water_price"
+    ]
+  },
+  {
+    "id": "d768d934c18b0097f845",
+    "role": "narrator",
+    "text": "面馆里热闹起来。",
+    "spoken_text": "面馆里热闹起来。",
+    "sources": [
+      "node:explore"
+    ]
+  },
+  {
+    "id": "bf6ae25ba59da8f4fa6b",
+    "role": "narrator",
+    "text": "老板娘",
+    "spoken_text": "老板娘",
+    "sources": [
+      "choice:explore_0",
+      "node:hotspot_owner"
+    ]
+  },
+  {
+    "id": "97c657a55fd154ae434e",
+    "role": "narrator",
+    "text": "小陈",
+    "spoken_text": "小陈",
+    "sources": [
+      "choice:explore_1",
+      "node:hotspot_chen"
+    ]
+  },
+  {
+    "id": "b0ab8bf6e65c63cb4a02",
+    "role": "narrator",
+    "text": "门外的动静",
+    "spoken_text": "门外的动静",
+    "sources": [
+      "choice:explore_3"
+    ]
+  },
+  {
+    "id": "55265fdfdb43e3b48d21",
+    "role": "narrator",
+    "text": "门口",
+    "spoken_text": "门口",
+    "sources": [
+      "choice:explore_4",
+      "node:hotspot_door"
+    ]
+  },
+  {
+    "id": "d4c0b1ee1928231e6871",
+    "role": "narrator",
+    "text": "继续吃面",
+    "spoken_text": "继续吃面",
+    "sources": [
+      "choice:explore_5",
+      "choice:reply_owner0_1",
+      "choice:reply_owner1_1",
+      "choice:reply_owner2_1",
+      "choice:reply_chen0_1",
+      "choice:reply_chen1_1",
+      "choice:reply_chen2_1",
+      "choice:reply_menu0_1",
+      "choice:reply_menu1_1",
+      "choice:reply_envelope0_1",
+      "choice:reply_envelope1_1",
+      "choice:reply_envelope2_1",
+      "choice:hotspot_door_2",
+      "choice:reply_door0_1",
+      "choice:reply_door1_1",
+      "choice:reply_door2_1"
+    ]
+  },
+  {
+    "id": "6fc71a255cc54c1a695b",
+    "role": "narrator",
+    "text": "洗手间在哪里？",
+    "spoken_text": "洗手间在哪里？",
+    "sources": [
+      "choice:hotspot_owner_0"
+    ]
+  },
+  {
+    "id": "194c50eda7e96a0011a2",
+    "role": "narrator",
+    "text": "这是什么？",
+    "spoken_text": "这是什么？",
+    "sources": [
+      "choice:hotspot_owner_2",
+      "choice:hotspot_envelope_1",
+      "choice:gu_0",
+      "choice:billion_2",
+      "choice:name_2",
+      "lesson"
+    ]
+  },
+  {
+    "id": "6ed17e2fa27bde28fc5f",
+    "role": "owner",
+    "text": "在后面，左边。",
+    "spoken_text": "在后面，左边。",
+    "sources": [
+      "node:reply_owner0"
+    ]
+  },
+  {
+    "id": "4c59bad60990fb02995b",
+    "role": "owner",
+    "text": "这是菜单。",
+    "spoken_text": "这是菜单。",
+    "sources": [
+      "node:reply_owner2"
+    ]
+  },
+  {
+    "id": "328425f49db4a7afe3fa",
+    "role": "narrator",
+    "text": "你是谁？",
+    "spoken_text": "你是谁？",
+    "sources": [
+      "choice:hotspot_chen_0",
+      "choice:gu_1",
+      "choice:rival_0",
+      "lesson"
+    ]
+  },
+  {
+    "id": "eb3f00625a249b808fd4",
+    "role": "narrator",
+    "text": "这个好吃吗？",
+    "spoken_text": "这个好吃吗？",
+    "sources": [
+      "choice:hotspot_chen_1"
+    ]
+  },
+  {
+    "id": "7c66cd7ecfef066d228b",
+    "role": "narrator",
+    "text": "门口那是什么？",
+    "spoken_text": "门口那是什么？",
+    "sources": [
+      "choice:hotspot_chen_2"
+    ]
+  },
+  {
+    "id": "a19e2d2c1db176eedc2d",
+    "role": "chen",
+    "text": "我是小陈，在这里帮忙。",
+    "spoken_text": "我是小陈，在这里帮忙。",
+    "sources": [
+      "node:reply_chen0"
+    ]
+  },
+  {
+    "id": "dc687f3cccad4aef333c",
+    "role": "chen",
+    "text": "好吃！",
+    "spoken_text": "好吃！",
+    "sources": [
+      "node:reply_chen1"
+    ]
+  },
+  {
+    "id": "da1840686d79348fd804",
+    "role": "chen",
+    "text": "一辆很贵的车。",
+    "spoken_text": "一辆很贵的车。",
+    "sources": [
+      "node:reply_chen2"
+    ]
+  },
+  {
+    "id": "9ff93e774f7b0f8e46ab",
+    "role": "narrator",
+    "text": "那个多少钱？",
+    "spoken_text": "那个多少钱？",
+    "sources": [
+      "choice:hotspot_menu_1",
+      "lesson"
+    ]
+  },
+  {
+    "id": "c91a29cd16c1f62523dc",
+    "role": "narrator",
+    "text": "牛肉面、炸酱面、矿泉水、可乐。",
+    "spoken_text": "牛肉面、炸酱面、矿泉水、可乐。",
+    "sources": [
+      "node:reply_menu0"
+    ]
+  },
+  {
+    "id": "a74b8cb16864bd1488aa",
+    "role": "narrator",
+    "text": "牛肉面28元，炸酱面24元，水3元，可乐5元。",
+    "spoken_text": "牛肉面28元，炸酱面24元，水3元，可乐5元。",
+    "sources": [
+      "node:reply_menu1"
+    ]
+  },
+  {
+    "id": "9a51bcca9fb6af7be007",
+    "role": "narrator",
+    "text": "红色文件袋",
+    "spoken_text": "红色文件袋",
+    "sources": [
+      "node:hotspot_envelope"
+    ]
+  },
+  {
+    "id": "74d4ae5e9190c2a1ad28",
+    "role": "narrator",
+    "text": "看一眼",
+    "spoken_text": "看一眼",
+    "sources": [
+      "choice:hotspot_envelope_0"
+    ]
+  },
+  {
+    "id": "2ebf24a670cc22c2443f",
+    "role": "narrator",
+    "text": "不碰",
+    "spoken_text": "不碰",
+    "sources": [
+      "choice:hotspot_envelope_2"
+    ]
+  },
+  {
+    "id": "5267961697588288aa09",
+    "role": "narrator",
+    "text": "袋子是红色的，里面装着文件。",
+    "spoken_text": "袋子是红色的，里面装着文件。",
+    "sources": [
+      "node:reply_envelope0"
+    ]
+  },
+  {
+    "id": "74417ec3f50552c782ed",
+    "role": "chen",
+    "text": "我不知道。",
+    "spoken_text": "我不知道。",
+    "sources": [
+      "node:reply_envelope1"
+    ]
+  },
+  {
+    "id": "f98f0a7f6a803da66923",
+    "role": "narrator",
+    "text": "你移开视线，继续吃面。",
+    "spoken_text": "你移开视线，继续吃面。",
+    "sources": [
+      "node:reply_envelope2"
+    ]
+  },
+  {
+    "id": "1eb5c42eee059e9a13b5",
+    "role": "narrator",
+    "text": "看外面",
+    "spoken_text": "看外面",
+    "sources": [
+      "choice:hotspot_door_0"
+    ]
+  },
+  {
+    "id": "cb4ff82fdef553c0f19f",
+    "role": "narrator",
+    "text": "谁来了？",
+    "spoken_text": "谁来了？",
+    "sources": [
+      "choice:hotspot_door_1"
+    ]
+  },
+  {
+    "id": "f042399f28b5e39651d1",
+    "role": "narrator",
+    "text": "一辆车停在门口。",
+    "spoken_text": "一辆车停在门口。",
+    "sources": [
+      "node:reply_door0"
+    ]
+  },
+  {
+    "id": "51ef183fb2a229936215",
+    "role": "chen",
+    "text": "不知道，刚停了一辆车。",
+    "spoken_text": "不知道，刚停了一辆车。",
+    "sources": [
+      "node:reply_door1"
+    ]
+  },
+  {
+    "id": "5ee01ec5750582f93680",
+    "role": "narrator",
+    "text": "你回到座位。",
+    "spoken_text": "你回到座位。",
+    "sources": [
+      "node:reply_door2"
+    ]
+  },
+  {
+    "id": "bc46dec911378f651a21",
+    "role": "gu",
+    "text": "终于找到你了！这个，是你的。",
+    "spoken_text": "终于找到你了！这个，是你的。",
+    "sources": [
+      "node:gu"
+    ]
+  },
+  {
+    "id": "6c18c6826883c66ecc1f",
+    "role": "narrator",
+    "text": "我不认识你。",
+    "spoken_text": "我不认识你。",
+    "sources": [
+      "choice:gu_2",
+      "lesson"
+    ]
+  },
+  {
+    "id": "e7cf42fbd23a37bcd4ae",
+    "role": "narrator",
+    "text": "我要吃饭。",
+    "spoken_text": "我要吃饭。",
+    "sources": [
+      "choice:gu_3"
+    ]
+  },
+  {
+    "id": "c9263fba9417601fd92a",
+    "role": "gu",
+    "text": "一份遗产文件。",
+    "spoken_text": "一份遗产文件。",
+    "sources": [
+      "node:gu_what"
+    ]
+  },
+  {
+    "id": "151c18851775aebac583",
+    "role": "narrator",
+    "text": "继续",
+    "spoken_text": "继续",
+    "sources": [
+      "choice:gu_what_0",
+      "choice:gu_identity_0",
+      "choice:gu_stranger_0",
+      "choice:gu_eat_0",
+      "choice:gu_help_0",
+      "choice:inherit_accept_0",
+      "choice:inherit_reject_0",
+      "choice:inherit_question_0",
+      "choice:inherit_ownership_0",
+      "choice:align_question_second_0",
+      "choice:align_against_gu_0",
+      "choice:align_distrust_both_0",
+      "choice:align_wants_document_0"
+    ]
+  },
+  {
+    "id": "e876723a84d51addc0e2",
+    "role": "gu",
+    "text": "我叫顾承泽。",
+    "spoken_text": "我叫顾承泽。",
+    "sources": [
+      "node:gu_identity"
+    ]
+  },
+  {
+    "id": "a79c4c477b9f21d01a67",
+    "role": "gu",
+    "text": "我知道，但事情很复杂。",
+    "spoken_text": "我知道，但事情很复杂。",
+    "sources": [
+      "node:gu_stranger"
+    ]
+  },
+  {
+    "id": "606b4d1b8cf599d1283d",
+    "role": "owner",
+    "text": "老板娘：先让人吃口面！",
+    "spoken_text": "先让人吃口面！",
+    "sources": [
+      "node:gu_eat"
+    ]
+  },
+  {
+    "id": "e4d52084b2b88007c00c",
+    "role": "gu",
+    "text": "这是你的钱。",
+    "spoken_text": "这是你的钱。",
+    "sources": [
+      "node:gu_help"
+    ]
+  },
+  {
+    "id": "b903e9131f98e1885f75",
+    "role": "gu",
+    "text": "这十个亿，是你的。你要不要？",
+    "spoken_text": "这十个亿，是你的。你要不要？",
+    "sources": [
+      "node:billion"
+    ]
+  },
+  {
+    "id": "8189dc3392f2621240e8",
+    "role": "narrator",
+    "text": "我要。",
+    "spoken_text": "我要。",
+    "sources": [
+      "choice:billion_0"
+    ]
+  },
+  {
+    "id": "864a3e8c594770a52184",
+    "role": "narrator",
+    "text": "我不要。",
+    "spoken_text": "我不要。",
+    "sources": [
+      "choice:billion_1"
+    ]
+  },
+  {
+    "id": "c56df3f5c05af1f7f860",
+    "role": "narrator",
+    "text": "这是谁的？",
+    "spoken_text": "这是谁的？",
+    "sources": [
+      "choice:billion_3"
+    ]
+  },
+  {
+    "id": "d55b5a7fce4a7754d009",
+    "role": "gu",
+    "text": "太好了，请在这里签字。",
+    "spoken_text": "太好了，请在这里签字。",
+    "sources": [
+      "node:inherit_accept"
+    ]
+  },
+  {
+    "id": "32e69b6e8a91e7826f9f",
+    "role": "gu",
+    "text": "十个亿都不要？为什么？",
+    "spoken_text": "十个亿都不要？为什么？",
+    "sources": [
+      "node:inherit_reject"
+    ]
+  },
+  {
+    "id": "76e94dd5474a90b192e0",
+    "role": "gu",
+    "text": "这是一份遗产文件，名字是你的。",
+    "spoken_text": "这是一份遗产文件，名字是你的。",
+    "sources": [
+      "node:inherit_question"
+    ]
+  },
+  {
+    "id": "30a4b8c6791ae6c30fd1",
+    "role": "gu",
+    "text": "现在……是你的。",
+    "spoken_text": "现在……是你的。",
+    "sources": [
+      "node:inherit_ownership"
+    ]
+  },
+  {
+    "id": "6a1e584cb163718f427c",
+    "role": "rival",
+    "text": "第二个男人指着顾承泽：“等等！不能给你！他认错人了！”",
+    "spoken_text": "等等！不能给你！他认错人了！",
+    "sources": [
+      "node:rival"
+    ]
+  },
+  {
+    "id": "dd160e84e18f7812a3a1",
+    "role": "narrator",
+    "text": "我不认识他。",
+    "spoken_text": "我不认识他。",
+    "sources": [
+      "choice:rival_1"
+    ]
+  },
+  {
+    "id": "9b3a10ce267835ede70d",
+    "role": "narrator",
+    "text": "我也不认识你。",
+    "spoken_text": "我也不认识你。",
+    "sources": [
+      "choice:rival_2"
+    ]
+  },
+  {
+    "id": "046f3ab08f884bf8bed6",
+    "role": "narrator",
+    "text": "文件给我。",
+    "spoken_text": "文件给我。",
+    "sources": [
+      "choice:rival_3"
+    ]
+  },
+  {
+    "id": "93b0739aac413082946b",
+    "role": "rival",
+    "text": "我姓陆。先别相信顾承泽。",
+    "spoken_text": "我姓陆。先别相信顾承泽。",
+    "sources": [
+      "node:align_question_second"
+    ]
+  },
+  {
+    "id": "206224487804fbc51156",
+    "role": "rival",
+    "text": "那就别接他的文件。",
+    "spoken_text": "那就别接他的文件。",
+    "sources": [
+      "node:align_against_gu"
+    ]
+  },
+  {
+    "id": "fa440e777ec4bedcd658",
+    "role": "rival",
+    "text": "你小心一点是对的。",
+    "spoken_text": "你小心一点是对的。",
+    "sources": [
+      "node:align_distrust_both"
+    ]
+  },
+  {
+    "id": "03b64662a27ce4a6bcb3",
+    "role": "rival",
+    "text": "先等等，你还不知道里面是什么。",
+    "spoken_text": "先等等，你还不知道里面是什么。",
+    "sources": [
+      "node:align_wants_document"
+    ]
+  },
+  {
+    "id": "36e3903b2f3c01750eee",
+    "role": "owner",
+    "text": "这个名字……我二十年前见过。不可能，那个人不是已经死了吗？",
+    "spoken_text": "这个名字……我二十年前见过。不可能，那个人不是已经死了吗？",
+    "sources": [
+      "node:name"
+    ]
+  },
+  {
+    "id": "0d5728e034eeabea3e78",
+    "role": "narrator",
+    "text": "什么意思？",
+    "spoken_text": "什么意思？",
+    "sources": [
+      "choice:name_0"
+    ]
+  },
+  {
+    "id": "caeb31fbdc72fef4a55d",
+    "role": "narrator",
+    "text": "谁死了？",
+    "spoken_text": "谁死了？",
+    "sources": [
+      "choice:name_1"
+    ]
+  },
+  {
+    "id": "0081a4d3abcd7cb01550",
+    "role": "owner",
+    "text": "现在不能说。",
+    "spoken_text": "现在不能说。",
+    "sources": [
+      "node:silence"
+    ]
+  },
+  {
+    "id": "47a9a1b29fcf90cc2f5a",
+    "role": "narrator",
+    "text": "看手机",
+    "spoken_text": "看手机",
+    "sources": [
+      "choice:silence_0"
+    ]
+  },
+  {
+    "id": "e806f227454e59e290c8",
+    "role": "narrator",
+    "text": "不要相信他们。明天中午，去文件上的地址。",
+    "spoken_text": "不要相信他们。明天中午，去文件上的地址。",
+    "sources": [
+      "node:sms"
+    ]
+  },
+  {
+    "id": "ded66e6646b0d721a960",
+    "role": "narrator",
+    "text": "结束",
+    "spoken_text": "结束",
+    "sources": [
+      "choice:sms_0"
+    ]
+  },
+  {
+    "id": "38f1a2f523f0c71cbbe0",
+    "role": "narrator",
+    "text": "第一集完",
+    "spoken_text": "第一集完",
+    "sources": [
+      "node:end"
+    ]
+  },
+  {
+    "id": "9320eb4919384271c36a",
+    "role": "narrator",
+    "text": "你推开门，找了张空桌。",
+    "spoken_text": "你推开门，找了张空桌。",
+    "sources": [
+      "node:enter_shop"
+    ]
+  },
+  {
+    "id": "df619060396ed42ef172",
+    "role": "narrator",
+    "text": "坐下",
+    "spoken_text": "坐下",
+    "sources": [
+      "choice:enter_shop_next"
+    ]
+  },
+  {
+    "id": "2b51bb3338daf8301ef6",
+    "role": "narrator",
+    "text": "门开了。一个男人拿着红色文件袋走进来。",
+    "spoken_text": "门开了。一个男人拿着红色文件袋走进来。",
+    "sources": [
+      "node:gu_arrival"
+    ]
+  },
+  {
+    "id": "30c1342e5c6bc7c1580d",
+    "role": "narrator",
+    "text": "看着他",
+    "spoken_text": "看着他",
+    "sources": [
+      "choice:gu_arrival_next"
+    ]
+  },
+  {
+    "id": "a6f322388c7002a4dc27",
+    "role": "narrator",
+    "text": "你还没来得及问，门又开了。",
+    "spoken_text": "你还没来得及问，门又开了。",
+    "sources": [
+      "node:rival_arrival"
+    ]
+  },
+  {
+    "id": "00c16d01c4725d0bc7b1",
+    "role": "narrator",
+    "text": "看向门口",
+    "spoken_text": "看向门口",
+    "sources": [
+      "choice:rival_arrival_next"
+    ]
+  },
+  {
+    "id": "1bd7814a1bb2f9635f22",
+    "role": "narrator",
+    "text": "老板娘走过来，看了看桌上的文件。",
+    "spoken_text": "老板娘走过来，看了看桌上的文件。",
+    "sources": [
+      "node:open_file"
+    ]
+  },
+  {
+    "id": "8c8524b4ab571a09ca3b",
+    "role": "narrator",
+    "text": "看她的反应",
+    "spoken_text": "看她的反应",
+    "sources": [
+      "choice:open_file_next"
+    ]
+  },
+  {
+    "id": "a504f9766d27c6361952",
+    "role": "owner",
+    "text": "一共31元。",
+    "spoken_text": "一共31元。",
+    "sources": [
+      "node:total"
+    ]
+  },
+  {
+    "id": "afcb91cb1077d7e2b1e0",
+    "role": "owner",
+    "text": "你要炸酱面？",
+    "spoken_text": "你要炸酱面？",
+    "sources": [
+      "node:confirm"
+    ]
+  },
+  {
+    "id": "090ccee1746864a980ab",
+    "role": "owner",
+    "text": "这个，炸酱面。要吗？",
+    "spoken_text": "这个，炸酱面。要吗？",
+    "sources": [
+      "node:confirm_help"
+    ]
+  },
+  {
+    "id": "2f20fe9cbd40b91f021d",
+    "role": "owner",
+    "text": "一共24元。",
+    "spoken_text": "一共24元。",
+    "sources": [
+      "node:total"
+    ]
+  },
+  {
+    "id": "1392423029148b175f69",
+    "role": "owner",
+    "text": "一共27元。",
+    "spoken_text": "一共27元。",
+    "sources": [
+      "node:total"
+    ]
+  }
+]

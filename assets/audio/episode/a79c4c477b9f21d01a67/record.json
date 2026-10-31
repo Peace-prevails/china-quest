@@ -1,0 +1,22 @@
+{
+  "id": "gu",
+  "title": "顾承泽·克制北京男声",
+  "text": "我知道，但事情很复杂。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总。自然清楚的轻北京口音，语速从容，语气克制认真，句间停顿，最后的问题不凶狠、不喊叫。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“我知道，但事情很复杂。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "1a1b1cabdc304117345a122890b1d45b668faa0312887f4ec2b5bb0c8fc75533",
+  "status": "generated",
+  "request_id": "062b8432-db2b-46cb-bb26-43a9eb6c0f96",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/a79c4c477b9f21d01a67/sample.mp3",
+  "sha256": "5fde572c1148413bb3c8ecd2b60b1bb4d137d11a591ab37138dcca6a66b217b5",
+  "bytes": 60717,
+  "original_duration": 3.7,
+  "duration": 3.7,
+  "estimated_rmb": 0.061667
+}

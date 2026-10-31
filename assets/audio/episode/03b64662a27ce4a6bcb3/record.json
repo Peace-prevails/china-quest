@@ -1,0 +1,22 @@
+{
+  "id": "rival",
+  "title": "陆先生·急切北京男声",
+  "text": "先等等，你还不知道里面是什么。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。三十三岁左右北京成年男性，声线偏中音、粗粝直接，与顾承泽的低沉克制不同，急切但清楚，不喊叫。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“先等等，你还不知道里面是什么。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "8dca1bd31d848948ddd0dc040eb6e793dcd1cf8e8189b2a3eea5a5de7d2bf622",
+  "status": "generated",
+  "request_id": "438c63e3-a178-4cf2-b003-e127d3c15a69",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/03b64662a27ce4a6bcb3/sample.mp3",
+  "sha256": "56793baf713fa93e8ab8b86d76e4c2bcc17e2ca12a320faaa84353aced17da5b",
+  "bytes": 71853,
+  "original_duration": 4.4,
+  "duration": 4.4,
+  "estimated_rmb": 0.073333
+}

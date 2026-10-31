@@ -1,0 +1,22 @@
+{
+  "id": "owner",
+  "title": "老板娘·北京女声",
+  "text": "这是菜单。",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。四十多岁成年女性，北京本地口音，声线温暖略低，干练亲切，不尖细，不装年轻。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“这是菜单。”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "0e023744a2411972e60808893494e645bd97affcd80b967130bdcf33809a2e5f",
+  "status": "generated",
+  "request_id": "dc0c136b-0bce-4e86-a058-3dfa70e4218a",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/4c59bad60990fb02995b/sample.mp3",
+  "sha256": "6017ff9bb8e8acc7e19c2512442b10f72dbd7486741c7fec7dead76b0ef8b8a0",
+  "bytes": 39597,
+  "original_duration": 2.4,
+  "duration": 2.4,
+  "estimated_rmb": 0.04
+}

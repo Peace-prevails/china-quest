@@ -1,0 +1,22 @@
+{
+  "id": "chen",
+  "title": "小陈·北京男声",
+  "text": "好吃！",
+  "prompt": "干净的人声录音，只出现一位说话者，没有背景音乐、没有环境音、没有其他人声。年轻成年男性，北京本地口音，声线清爽、自然亲切，不是播音腔。用自然清楚的北京口音，少量自然儿化，语速适中，情绪轻松友好，适合零基础中文学习者听清。不要台湾口音，不要东北口音，不要夸张京剧腔。只说以下台词一次，不朗读任何描述、不加词、不唱歌，按台词自然长度，说完即结束：“好吃！”",
+  "model": "seed-audio-1.0",
+  "fingerprint": "86abed6bd38a6426c8542e1be37058bd9762ad56aed057c751839560ebdbed02",
+  "status": "generated",
+  "request_id": "37ac3756-d86b-4a4b-92ad-1196022b2bc9",
+  "price_basis": "1 RMB/minute original_duration; reserve max 120 seconds = 2 RMB",
+  "review_status": "awaiting_listening_review",
+  "http_status": "200",
+  "transport_exit": 0,
+  "provider_code": null,
+  "provider_message": "",
+  "audio": "assets/audio/episode/dc687f3cccad4aef333c/sample.mp3",
+  "sha256": "fde5e16ad9d8ff1fa330c0a57eb29620058074aa2c56ac1d625d6d940ed06d8e",
+  "bytes": 31533,
+  "original_duration": 1.88,
+  "duration": 1.88,
+  "estimated_rmb": 0.031333
+}
