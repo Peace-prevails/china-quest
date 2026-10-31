@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-31",
+  "project_id": "appgprj_6ae588c028108191aaf3fb0a706de2ee",
+  "url": "https://china-quest-beijing.joeyer.chatgpt.site",
+  "access": "public",
+  "deployment_id": "appgdep_6ae58975affc81919beeee9e72123e66",
+  "status": "succeeded",
+  "source_commit": "da5f42ee2373ddf021b4f3da77e78bac5ca14291",
+  "checkout": "local/public-site",
+  "note": "Static public game only; no API credentials or generator responses; browser-local saves."
+}
