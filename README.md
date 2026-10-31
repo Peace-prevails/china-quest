@@ -125,4 +125,18 @@ python3 scripts/build_candidate_gallery.py
 
 探索总景按订单切换，完整显示面碗、小陈擦桌、老板娘整理瓷碗与门外汽车；原有18项修订图仍为用户待审阅的预览版本。
 
-现有方舟Key查询138项模型未见独立TTS；豆包语音服务与北京口音候选、鉴权区别、样音计划详见 [配音调研](docs/TTS_RESEARCH.md)。目前未生成音频，未产生配音费用。
+现有方舟Key查询138项模型未见独立TTS；豆包语音服务与北京口音候选、鉴权区别、样音计划详见 [配音调研](docs/TTS_RESEARCH.md)。已用用户提供的 Seed-Audio 1.0 接口生成并选定角色样音；教学旁白按用户最新要求使用北京年轻女声。费用、鉴权实测与历史记录见同一文档。
+
+
+## 第一集配音预览
+
+对白、玩家选项和结尾9组表达支持本地MP3播放。点 `Listen` 试听选项不会提交选择；`Auto voice` 默认关闭，开启后朗读新节点；换节点、回标题、切到后台会停止旧音频。实际订单的两种面条和四种总价分别匹配，不用相似样音替代。音频暂不可用时仍可玩文字剧情。
+
+```sh
+python3 scripts/episode_audio.py           # 仅生成可审查清单，不调用API
+python3 scripts/episode_audio.py --execute # 在已有预算授权内续跑；成功文件缓存，未决请求阻止重发
+python3 scripts/build_web.py
+node tests/audio_player.mjs
+```
+
+每批最多4个请求；预算锁串行更新，先按最长120秒预留每条2元，再按返回原始时长估算。只运行一个配音批处理进程，不与其他付费生成进程同时运行。`episodes/ep01/audio_manifest.json` 标记为 generated_preview：已选定声线方向，但生成模型不保证逐句音色完全相同，台词和口音仍需人工试听。发布包仅包含校验过的MP3，不包含密钥或供应商响应。

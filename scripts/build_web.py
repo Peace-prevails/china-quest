@@ -29,6 +29,14 @@ def build():
   if source.suffix in ['.html','.css','.mjs','.json']:shutil.copyfile(source,output/source.name)
  shutil.copyfile(ROOT/'episodes/ep01/episode_01.json',output/'episode.json')
  write(output/'assets.json',assets)
+ audio_path=ROOT/'episodes/ep01/audio_manifest.json';clips=[]
+ if audio_path.exists():
+  for row in read(audio_path)['clips']:
+   source=(ROOT/row['audio']).resolve()
+   if not source.is_relative_to((ROOT/'assets/audio/episode').resolve()) or digest(source.read_bytes())!=row['sha256']:raise ValueError('Audio integrity failed')
+   target=output/'audio'/(row['sha256']+'.mp3');target.parent.mkdir(exist_ok=True);shutil.copyfile(source,target)
+   clips.append({'role':row['role'],'text':row['text'],'audio':'audio/'+target.name})
+ write(output/'audio.json',{'clips':clips})
  print(output)
  return output
 if __name__=='__main__':build()

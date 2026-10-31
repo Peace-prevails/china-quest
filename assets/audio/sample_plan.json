@@ -1,6 +1,6 @@
 {
   "model": "seed-audio-1.0",
-  "status": "additional_roles_awaiting_listening_review",
+  "status": "voice_directions_accepted",
   "resource": "volc.service_type.10074",
   "samples": [
     {
@@ -25,7 +25,7 @@
       "voice": "三十岁左右成年男性，声线中低音，质感沉稳干净，轻微北京本地口音，说话有分寸、有一点疲惫但不虚弱，不是小陈那样的活泼青年声，不压嗓，不装霸总",
       "text": "我叫顾承泽。终于找到你了。这个，是你的。这十个亿，你要不要？",
       "audio": "assets/audio/samples/seed-audio-gu-237f1e0201c1/sample.mp3",
-      "review_status": "awaiting_listening_review"
+      "review_status": "accepted_by_user"
     },
     {
       "id": "aunt",
@@ -33,7 +33,7 @@
       "voice": "六十五岁左右的北京本地老年女性，声线比中年老板娘更年长，略带自然沙感但清楚有气息，温和热心，不尖厉、不颤抖、不像儿童",
       "text": "找面馆啊？往前走，就在右边儿。别着急，慢慢走。",
       "audio": "assets/audio/samples/seed-audio-aunt-73fdc5877b38/sample.mp3",
-      "review_status": "awaiting_listening_review"
+      "review_status": "accepted_by_user"
     },
     {
       "id": "narrator",
@@ -41,10 +41,10 @@
       "voice": "二十五岁左右的北京本地年轻成年女性教学旁白，声线清亮自然、亲切松弛，与老板娘和老年阿姨明显不同。使用自然轻北京口音，有北京年轻女性日常说话的语调，发音清晰、声调准确，不刻意压嗓，不装可爱，不改变教学用词",
       "text": "面馆在哪里？我要这个。这个多少钱？我听不懂。",
       "audio": "assets/audio/samples/seed-audio-narrator-dcf65072f604/sample.mp3",
-      "review_status": "awaiting_listening_review",
+      "review_status": "accepted_by_user",
       "previous_audio": "assets/audio/samples/seed-audio-narrator-9e473d89e230/sample.mp3"
     }
   ],
   "female_request_sent": true,
-  "note": "User accepted Chen and owner samples. Additional roles await listening review. Per user request, teaching narrator now uses a young Beijing female voice with clear, slower delivery; previous version retained."
+  "note": "User accepted current voice directions and authorized overall implementation. Full generated dialogue is a listening preview, not automatically individually approved."
 }
